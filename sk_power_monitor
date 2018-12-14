@@ -4,6 +4,7 @@ import logging
 from signal import pause
 from subprocess import check_call
 
+import daemon
 from gpiozero import Button
 
 
@@ -13,7 +14,7 @@ HOLD_TIME = 5.0
 
 def shutdown():
     logging.warn("Power out for {} seconds, shutting down".format(HOLD_TIME))
-    check_call(['echo', 'poweroff'])
+    check_call(['poweroff'])
 
 
 def main():
@@ -24,4 +25,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    with daemon.DaemonContext():
+        main()
