@@ -7,20 +7,21 @@ from subprocess import check_call
 from gpiozero import Button
 
 
-BCM_PIN = 25
-HOLD_TIME = 5
+BCM_PIN = 26
+HOLD_TIME = 5.0
 
 
 def shutdown():
     logging.warn("Power out for {} seconds, shutting down".format(HOLD_TIME))
-    check_call(['echo', 'sudo', 'poweroff'])
+    check_call(['echo', 'poweroff'])
 
 
 def main():
-    shutdown_btn = Button(BCM_PIN, hold_time=HOLD_TIME)
+    shutdown_btn = Button(BCM_PIN, pull_up=True, hold_time=HOLD_TIME)
     shutdown_btn.when_held = shutdown
 
     pause()
+
 
 if __name__ == '__main__':
     main()
