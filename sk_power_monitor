@@ -12,18 +12,25 @@ BCM_PIN = 26
 HOLD_TIME = 5.0
 
 
-def shutdown():
-    logging.warn("Power out for {} seconds, shutting down".format(HOLD_TIME))
+def shutdown(logger):
+    logger.warn("Power out for {} seconds, shutting down".format(HOLD_TIME))
     check_call(['poweroff'])
 
 
 def main():
+    logger = logging.getLogger('sk_power_monitor')
+    logger.addHandler(logging.handlers.SysLogHandler(address='/dev/log'))
+    logger.setLevel(logging.INFO)
+
     shutdown_btn = Button(BCM_PIN, pull_up=True, hold_time=HOLD_TIME)
-    shutdown_btn.when_held = shutdown
+    
+    def shutdown_with_logging():
+        shutdown(logger)
+    
+    shutdown_btn.when_held = shutdown_with_logging
 
     pause()
 
 
 if __name__ == '__main__':
-    with daemon.DaemonContext():
-        main()
+    main()
