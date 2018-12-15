@@ -9,7 +9,7 @@ from gpiozero import Button
 
 
 BCM_PIN = 26
-HOLD_TIME = 5.0
+HOLD_TIME = 10.0
 
 
 def shutdown(logger):
