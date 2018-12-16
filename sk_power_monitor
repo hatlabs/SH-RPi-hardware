@@ -51,9 +51,13 @@ def run_state_machine(logger):
 def gpio_cleanup():
     GPIO.cleanup()
 
+
 def main():
     logger = logging.getLogger('sk_power_monitor')
-    logger.addHandler(logging.handlers.SysLogHandler(address='/dev/log'))
+    handler = logging.handlers.SysLogHandler(address='/dev/log')
+    formatter = logging.Formatter('%(processName)s[%(process)d]: %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
     logger.setLevel(logging.INFO)
 
     GPIO.setmode(GPIO.BCM)
@@ -61,9 +65,8 @@ def main():
 
     atexit.register(gpio_cleanup)
 
-    print("Entering state machine")
-
     run_state_machine(logger)
+
 
 if __name__ == '__main__':
     main()
