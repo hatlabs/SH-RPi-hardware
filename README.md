@@ -16,6 +16,9 @@ a couple of super-capacitors. In the case power for the board is
 disconnected, the supercaps are able to supply sufficient power
 that the device is able to shut itself down in a controlled fashion.
 
+A sample circuit fulfilling the purpose is presented in the `circuit`
+subdirectory.
+
 Installation
 ------------
 
