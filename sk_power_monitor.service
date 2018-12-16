@@ -1,0 +1,14 @@
+[Unit]
+Description=SK Power Monitor
+After=syslog.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=/usr/local/bin/sk_power_monitor
+
+[Install]
+WantedBy=multi-user.target
