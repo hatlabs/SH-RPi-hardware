@@ -55,7 +55,7 @@ def gpio_cleanup():
 def main():
     logger = logging.getLogger('sk_power_monitor')
     handler = logging.handlers.SysLogHandler(address='/dev/log')
-    formatter = logging.Formatter('%(processName)s[%(process)d]: %(message)s')
+    formatter = logging.Formatter('%(name)s[%(process)d]: %(message)s')
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logger.setLevel(logging.INFO)
