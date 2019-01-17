@@ -1,5 +1,5 @@
 [Unit]
-Description=SK Power Monitor
+Description=Pi Super UPS
 After=syslog.target
 StartLimitIntervalSec=0
 
@@ -8,7 +8,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=pi
-ExecStart=/usr/local/bin/sk_power_monitor
+ExecStart=/usr/local/bin/pi-super-ups
 
 [Install]
 WantedBy=multi-user.target

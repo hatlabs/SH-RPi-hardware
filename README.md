@@ -1,10 +1,10 @@
-sk_power_monitor
-================
+Pi Super-UPS
+============
 
 Introduction
 ------------
 
-`sk_power_monitor` is a simple power monitor for Raspberry Pi. It 
+`pi-super-ups` is a simple power monitor for Raspberry Pi. It
 monitors a defined GPIO pin on the Raspberry Pi. If the pin goes
 high for ten seconds, a shutdown is triggered. Using GPIO 3 is highly
 recommended because that allows for automatic restarting when power
@@ -22,22 +22,22 @@ subdirectory.
 Installation
 ------------
 
-Until a proper `setup.py` file has been written, the executable needs 
-to be manually installed. 
+Until a proper `setup.py` file has been written, the executable needs
+to be manually installed.
 
 First, install the required dependency:
 
     sudo pip3 install RPi
 
-Then, copy `sk_power_monitor` to `/usr/local/bin`. This should already
-allow running the script. However, since calling `poweroff` requires
-elevated privileges, it is done using `sudo`. Give your preferred user
-permissions to call `poweroff` without a password by running `sudo visudo`
-and adding the following line:
+Then, copy `pi_super_ups.py` to `/usr/local/bin/pi-super-ups`. This
+should already allow running the script. However, since calling
+`poweroff` requires elevated privileges, it is done using `sudo`.
+Give your preferred user permissions to call `poweroff` without a
+password by running `sudo visudo` and adding the following line:
 
     pi ALL = NOPASSWD: /sbin/poweroff
 
-Finally, to run the script automatically as a service, copy 
+Finally, to run the script automatically as a service, copy
 `sk_power_monitor.service` to `/etc/systemd/system`.
 
 
