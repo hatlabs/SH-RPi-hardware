@@ -16,8 +16,8 @@ HOLD_TIME = 10.0
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--sense-pin', nargs=1, type=int, default=GPIO_PIN)
-    parser.add_argument('--hold-time', nargs=1, type=float, default=HOLD_TIME)
+    parser.add_argument('--sense-pin', type=int, default=GPIO_PIN)
+    parser.add_argument('--hold-time', type=float, default=HOLD_TIME)
     parser.add_argument('-n', default=False, action='store_true')
 
     return parser.parse_args()
