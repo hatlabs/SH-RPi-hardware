@@ -1,8 +1,24 @@
-Pi Super-UPS
-============
+# Pi Super-UPS
 
-Introduction
-------------
+## Hardware
+
+TODO: Explain design goals
+
+TODO: Explain features
+
+The KiCad design files are in the `hardware` subdirectory. They are still
+untested and no suitability for any purpose is claimed.
+
+![PCB revision C](pcb-revC.png)
+
+## Firmware
+
+The hardware needs some ATTiny13a code to correctly control the
+wakeup pin (GPIO3) state. This is still to be written!
+
+## Service software
+
+### Introduction
 
 `pi-super-ups` is a simple power monitor for Raspberry Pi. It
 monitors a defined GPIO pin on the Raspberry Pi. If the pin goes
@@ -19,18 +35,15 @@ that the device is able to shut itself down in a controlled fashion.
 A sample circuit fulfilling the purpose is presented in the `circuit`
 subdirectory.
 
-Installation
-------------
+### Installation
 
-Until a proper `setup.py` file has been written, the executable needs
-to be manually installed.
+The monitor script can be installed by issueing the following command
+in the `src` subdirectory:
 
-First, install the required dependency:
+    sudo python3 setup.py install
 
-    sudo pip3 install RPi
-
-Then, copy `pi_super_ups.py` to `/usr/local/bin/pi-super-ups`. This
-should already allow running the script. However, since calling
+At this point, you
+should already be able to run the script. However, since calling
 `poweroff` requires elevated privileges, it is done using `sudo`.
 Give your preferred user permissions to call `poweroff` without a
 password by running `sudo visudo` and adding the following line:
@@ -40,8 +53,6 @@ password by running `sudo visudo` and adding the following line:
 Finally, to run the script automatically as a service, copy
 `sk_power_monitor.service` to `/etc/systemd/system`.
 
-
-Usage
------
+### Usage
 
 To configure the monitor behavior, directly edit the script file.
