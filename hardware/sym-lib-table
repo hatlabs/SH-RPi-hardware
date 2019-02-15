@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name raspi-supercap-ups-rescue)(type Legacy)(uri ${KIPRJMOD}/raspi-supercap-ups-rescue.lib)(options "")(descr ""))
+  (lib (name CSAB0630-100M)(type Legacy)(uri ${KIPRJMOD}/CSAB0630-100M.lib)(options "")(descr ""))
+  (lib (name pi-supercap-ups-rescue)(type Legacy)(uri ${KIPRJMOD}/pi-supercap-ups-rescue.lib)(options "")(descr ""))
+)
