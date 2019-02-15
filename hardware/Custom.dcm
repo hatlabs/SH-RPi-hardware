@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MT3608
+D High efficiency 2A current mode step-up converter
+K boost converter step-up
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,392 @@
+EESchema Schematic File Version 4
+LIBS:pi-supercap-ups-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Fuse F?
+U 1 1 5C37A036
+P 1750 2050
+AR Path="/5C37A036" Ref="F?"  Part="1" 
+AR Path="/5C3476D8/5C37A036" Ref="F1"  Part="1" 
+F 0 "F1" V 1553 2050 50  0000 C CNN
+F 1 "1A" V 1644 2050 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1680 2050 50  0001 C CNN
+F 3 "~" H 1750 2050 50  0001 C CNN
+	1    1750 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C37A03C
+P 2750 2500
+AR Path="/5C37A03C" Ref="D?"  Part="1" 
+AR Path="/5C3476D8/5C37A03C" Ref="D8"  Part="1" 
+F 0 "D8" V 2788 2383 50  0000 R CNN
+F 1 "RLED" V 2697 2383 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 2500 50  0001 C CNN
+F 3 "~" H 2750 2500 50  0001 C CNN
+	1    2750 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C37A042
+P 2750 2200
+AR Path="/5C37A042" Ref="R?"  Part="1" 
+AR Path="/5C3476D8/5C37A042" Ref="R5"  Part="1" 
+F 0 "R5" H 2820 2246 50  0000 L CNN
+F 1 "3k" H 2820 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 2200 50  0001 C CNN
+F 3 "~" H 2750 2200 50  0001 C CNN
+	1    2750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C37A048
+P 2750 2650
+AR Path="/5C37A048" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C37A048" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 2750 2400 50  0001 C CNN
+F 1 "GND" H 2755 2477 50  0000 C CNN
+F 2 "" H 2750 2650 50  0001 C CNN
+F 3 "" H 2750 2650 50  0001 C CNN
+	1    2750 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 2050 0    50   Input ~ 0
++12V
+Wire Wire Line
+	2750 1750 2750 2050
+Text HLabel 2750 1750 1    50   Output ~ 0
++12V_protected
+Text HLabel 6450 1500 2    50   Output ~ 0
+Vin
+$Comp
+L Diode:1N5820 D?
+U 1 1 5C37FC09
+P 2400 2050
+AR Path="/5C3480BB/5C37FC09" Ref="D?"  Part="1" 
+AR Path="/5C3476D8/5C37FC09" Ref="D9"  Part="1" 
+AR Path="/5C345D5A/5C37FC09" Ref="D?"  Part="1" 
+F 0 "D9" H 2250 1950 50  0000 L CNN
+F 1 "DS34W" V 2450 1700 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2400 1875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 2050 2750 2050
+Connection ~ 2750 2050
+$Comp
+L pi-supercap-ups-rescue:MP1584EN-Custom-raspi-supercap-ups-rescue U2
+U 1 1 5C61D128
+P 4100 2200
+AR Path="/5C61D128" Ref="U2"  Part="1" 
+AR Path="/5C3476D8/5C61D128" Ref="U2"  Part="1" 
+F 0 "U2" H 4200 2550 50  0000 C CNN
+F 1 "MP1584EN" H 4350 2650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5C6210E8
+P 3150 2200
+F 0 "C4" H 3265 2246 50  0000 L CNN
+F 1 "10uF" H 3265 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 2050 50  0001 C CNN
+F 3 "~" H 3150 2200 50  0001 C CNN
+F 4 "50V" H 3150 2200 50  0001 C CNN "Notes"
+	1    3150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6212CC
+P 3150 2350
+AR Path="/5C6212CC" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C6212CC" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 3150 2100 50  0001 C CNN
+F 1 "GND" H 3155 2177 50  0000 C CNN
+F 2 "" H 3150 2350 50  0001 C CNN
+F 3 "" H 3150 2350 50  0001 C CNN
+	1    3150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C621591
+P 3450 2500
+F 0 "R6" H 3520 2546 50  0000 L CNN
+F 1 "100k" H 3520 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3380 2500 50  0001 C CNN
+F 3 "~" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 2200
+Wire Wire Line
+	3450 2350 3700 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5C622092
+P 3450 2650
+AR Path="/5C622092" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C622092" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 3450 2400 50  0001 C CNN
+F 1 "GND" H 3455 2477 50  0000 C CNN
+F 2 "" H 3450 2650 50  0001 C CNN
+F 3 "" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 2050
+Wire Wire Line
+	3150 2050 3450 2050
+Wire Wire Line
+	2750 2050 3150 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5C622AD8
+P 4100 2550
+AR Path="/5C622AD8" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C622AD8" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 4100 2300 50  0001 C CNN
+F 1 "GND" H 4105 2377 50  0000 C CNN
+F 2 "" H 4100 2550 50  0001 C CNN
+F 3 "" H 4100 2550 50  0001 C CNN
+	1    4100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5C622CEF
+P 4400 1500
+F 0 "C5" V 4148 1500 50  0000 C CNN
+F 1 "100nF" V 4239 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4438 1350 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 1500 4100 1500
+Wire Wire Line
+	4100 1500 4100 1850
+$Comp
+L Device:L L1
+U 1 1 5C623058
+P 5450 1500
+F 0 "L1" V 5640 1500 50  0000 C CNN
+F 1 "15uH" V 5549 1500 50  0000 C CNN
+F 2 "CSAB0630-100M:INDC6060X300" H 5450 1500 50  0001 C CNN
+F 3 "~" H 5450 1500 50  0001 C CNN
+	1    5450 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5C623382
+P 5800 1650
+F 0 "C7" H 5915 1696 50  0000 L CNN
+F 1 "47uF" H 5915 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5838 1500 50  0001 C CNN
+F 3 "~" H 5800 1650 50  0001 C CNN
+F 4 "Min 6.3V" H 5800 1650 50  0001 C CNN "Notes"
+	1    5800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5C623580
+P 5250 2350
+F 0 "R8" H 5320 2396 50  0000 L CNN
+F 1 "40.2k" H 5320 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 2350 50  0001 C CNN
+F 3 "~" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5C6236AD
+P 5600 2200
+F 0 "R9" V 5807 2200 50  0000 C CNN
+F 1 "210k" V 5716 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5530 2200 50  0001 C CNN
+F 3 "~" H 5600 2200 50  0001 C CNN
+	1    5600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D10
+U 1 1 5C623A17
+P 5100 1650
+F 0 "D10" V 5054 1729 50  0000 L CNN
+F 1 "DS34W" V 5145 1729 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5100 1650 50  0001 C CNN
+F 3 "~" H 5100 1650 50  0001 C CNN
+F 4 "Min voltage 25V, min current 3A" V 5100 1650 50  0001 C CNN "Notes"
+	1    5100 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C623F79
+P 4700 2850
+F 0 "R7" H 4770 2896 50  0000 L CNN
+F 1 "100k" H 4770 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 2850 50  0001 C CNN
+F 3 "~" H 4700 2850 50  0001 C CNN
+	1    4700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5C624A07
+P 4700 2500
+F 0 "C6" H 4815 2546 50  0000 L CNN
+F 1 "150pF" H 4815 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4738 2350 50  0001 C CNN
+F 3 "~" H 4700 2500 50  0001 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C624E3C
+P 4700 3050
+AR Path="/5C624E3C" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C624E3C" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 4700 2800 50  0001 C CNN
+F 1 "GND" H 4705 2877 50  0000 C CNN
+F 2 "" H 4700 3050 50  0001 C CNN
+F 3 "" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2700 4700 2650
+Wire Wire Line
+	4700 2350 4500 2350
+Wire Wire Line
+	4700 3000 4700 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5C62767E
+P 5100 1800
+AR Path="/5C62767E" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C62767E" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 5100 1550 50  0001 C CNN
+F 1 "GND" H 5105 1627 50  0000 C CNN
+F 2 "" H 5100 1800 50  0001 C CNN
+F 3 "" H 5100 1800 50  0001 C CNN
+	1    5100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2050 4800 2050
+Wire Wire Line
+	5600 1500 5800 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5C628A80
+P 5800 1800
+AR Path="/5C628A80" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C628A80" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 5800 1550 50  0001 C CNN
+F 1 "GND" H 5805 1627 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C628CF2
+P 5250 2600
+AR Path="/5C628CF2" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5C628CF2" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 5250 2350 50  0001 C CNN
+F 1 "GND" H 5255 2427 50  0000 C CNN
+F 2 "" H 5250 2600 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2600 5250 2500
+Wire Wire Line
+	4500 2200 5250 2200
+Wire Wire Line
+	5750 2200 6200 2200
+Wire Wire Line
+	4800 1500 4800 2050
+Wire Wire Line
+	6200 1500 6200 2200
+Wire Wire Line
+	4550 1500 4800 1500
+Connection ~ 4800 1500
+Connection ~ 5250 2200
+Wire Wire Line
+	5250 2200 5450 2200
+Connection ~ 5800 1500
+Wire Wire Line
+	5800 1500 6200 1500
+Connection ~ 6200 1500
+Wire Wire Line
+	6200 1500 6450 1500
+Connection ~ 5100 1500
+Wire Wire Line
+	5100 1500 5300 1500
+Wire Wire Line
+	4800 1500 5100 1500
+Wire Wire Line
+	1600 2050 1500 2050
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5C65DD59
+P 3450 1850
+F 0 "#FLG0104" H 3450 1925 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 2024 50  0000 C CNN
+F 2 "" H 3450 1850 50  0001 C CNN
+F 3 "~" H 3450 1850 50  0001 C CNN
+	1    3450 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1850 3450 2050
+Connection ~ 3450 2050
+Wire Wire Line
+	3450 2050 3700 2050
+Text Label 4950 1500 2    50   ~ 0
+SW
+Text Label 4800 2200 0    50   ~ 0
+FB
+Text Label 3500 2350 0    50   ~ 0
+FREQ
+Text Label 4600 2350 0    50   ~ 0
+COMP
+Text Label 4100 1500 0    50   ~ 0
+BST
+Text Label 2150 2050 1    50   ~ 0
+12V_fused
+Wire Wire Line
+	1900 2050 2250 2050
+$EndSCHEMATC

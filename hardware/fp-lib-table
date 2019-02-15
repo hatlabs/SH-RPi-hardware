@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name CSAB0630-100M)(type Legacy)(uri ${KIPRJMOD}/CSAB0630-100M.mod)(options "")(descr ""))
+)
