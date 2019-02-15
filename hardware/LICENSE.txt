@@ -1,0 +1,6 @@
+The hardware design in this directory is Copyright Matti Airas and
+contributors, 2019.
+
+This work is licensed under a Creative Commons Attribution 4.0
+International License. The full license text and additional information
+can be found under this link: https://creativecommons.org/licenses/by/4.0/
