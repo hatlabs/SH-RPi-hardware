@@ -92,7 +92,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 3800 4200 50
 	1    3800 4200
 	1    0    0    -1  
 $EndComp
-Text HLabel 4700 4400 2    50   Input ~ 0
+Text HLabel 5800 4400 2    50   Input ~ 0
 ~RESET~
 Text HLabel 4700 3900 2    50   Input ~ 0
 MOSI
@@ -109,7 +109,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 4300 4400 4300
 Wire Wire Line
-	4700 4400 4400 4400
+	5800 4400 5500 4400
 Text HLabel 4700 4200 2    50   Input ~ 0
 Sense_Vcc
 $Comp
@@ -157,4 +157,26 @@ $EndComp
 Connection ~ 2000 3250
 Wire Wire Line
 	2000 3250 1600 3250
+$Comp
+L Device:R R?
+U 1 1 5C840859
+P 5500 4150
+AR Path="/5C840859" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5C840859" Ref="R?"  Part="1" 
+F 0 "R?" H 5570 4196 50  0000 L CNN
+F 1 "10k" H 5570 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5430 4150 50  0001 C CNN
+F 3 "~" H 5500 4150 50  0001 C CNN
+	1    5500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4300 5500 4400
+Connection ~ 5500 4400
+Wire Wire Line
+	5500 4400 4400 4400
+Wire Wire Line
+	5500 4000 5500 3900
+Text GLabel 5500 3900 1    50   Input ~ 0
+3.3V
 $EndSCHEMATC
