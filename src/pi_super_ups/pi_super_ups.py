@@ -30,8 +30,8 @@ def run_state_machine(logger, gpio_pin, hold_time, pretend_only=False):
         if state=="START":
             if not GPIO.input(gpio_pin):
                 # pin low means no power
-                logger.warn("Detected blackout on startup")
-                state = "BLACKOUT"
+                logger.warn("Detected blackout on startup, ignoring")
+                state = "OK"
             else:
                 state = "OK"
         elif state=="OK":
