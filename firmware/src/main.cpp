@@ -9,8 +9,8 @@
 // end up in poweroff state, unable to resume by itself.
 //
 // If a Raspberry is in poweroff state, it can be rebooted
-// by pulling GPIO3 low for a short time. Also, all GPIO outputs
-// should be pulled high in the poweroff state.
+// by pulling GPIO3 low for a short time. Also, GPIO 0-8 have
+// pull-ups to 3.3V enabled, GPIO 9-27 have pull-downs to 0V enabled.
 //
 // Output is varied according to the following logic table:
 //
