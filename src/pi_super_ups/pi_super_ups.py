@@ -26,30 +26,27 @@ def parse_arguments():
 
 def run_state_machine(logger, gpio_pin, hold_time, pretend_only=False):
     state = "START"
+    blackout_time = 0
     while True:
         if state=="START":
             if not GPIO.input(gpio_pin):
                 # pin low means no power
                 logger.warn("Detected blackout on startup, ignoring")
-                state = "OK"
-            else:
-                state = "OK"
+            state = "OK"
         elif state=="OK":
-            GPIO.wait_for_edge(gpio_pin, GPIO.FALLING)
-            logger.warn("Detected blackout")
-            state = "BLACKOUT"
+            if not GPIO.input(gpio_pin):
+                logger.warn("Detected blackout")
+                blackout_time = time.time()
+                state = "BLACKOUT"
         elif state=="BLACKOUT":
-            channel = GPIO.wait_for_edge(gpio_pin, GPIO.RISING,
-                                         timeout=int(hold_time*1000))
-            if channel is None:
+            if GPIO.input(gpio_pin):
+                logger.info("Power resumed")
+                state = "OK"
+            elif time.time()-blackout_time > hold_time:
                 # didn't get power back in time
                 logger.warn("Blacked out for {} s, shutting down"
                                 .format(hold_time))
                 state = "SHUTDOWN"
-            else:
-                logger.info("Power resumed")
-                state = "OK"
-            pass
         elif state=="SHUTDOWN":
             if pretend_only:
                 logger.warn("Would execute /sbin/poweroff")
