@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -64,7 +64,7 @@ P 4450 1350
 AR Path="/5C359B99" Ref="R?"  Part="1" 
 AR Path="/5C3480BB/5C359B99" Ref="R12"  Part="1" 
 F 0 "R12" H 4520 1396 50  0000 L CNN
-F 1 "1k" H 4520 1305 50  0000 L CNN
+F 1 "2.2k" H 4520 1305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4380 1350 50  0001 C CNN
 F 3 "~" H 4450 1350 50  0001 C CNN
 	1    4450 1350
@@ -84,9 +84,11 @@ F 3 "" H 4450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups-rescue:MT3608-Custom-raspi-supercap-ups-rescue U3
+L pi-supercap-ups:MT3608 U3
 U 1 1 5C35E3F1
 P 2300 1550
+AR Path="/5C35E3F1" Ref="U3"  Part="1" 
+AR Path="/5C3480BB/5C35E3F1" Ref="U3"  Part="1" 
 F 0 "U3" H 2300 1865 50  0000 C CNN
 F 1 "MT3608" H 2300 1774 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2300 1750 50  0001 C CNN
@@ -99,7 +101,7 @@ L Device:L L2
 U 1 1 5C35EE3F
 P 2250 1000
 F 0 "L2" V 2440 1000 50  0000 C CNN
-F 1 "4.7uH" V 2349 1000 50  0000 C CNN
+F 1 "5.6uH" V 2349 1000 50  0000 C CNN
 F 2 "Inductor_SMD:L_4.5x4.8_H3_Handsolder" H 2250 1000 50  0001 C CNN
 F 3 "~" H 2250 1000 50  0001 C CNN
 	1    2250 1000
