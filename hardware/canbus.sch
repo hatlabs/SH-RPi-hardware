@@ -1,10 +1,10 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:pi-supercap-ups-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -202,8 +202,6 @@ Wire Wire Line
 	6700 1250 6700 2050
 Connection ~ 6700 2050
 Wire Wire Line
-	6700 2050 7250 2050
-Wire Wire Line
 	7100 1400 7100 1250
 $Comp
 L Device:C C9
@@ -291,91 +289,6 @@ Wire Wire Line
 Connection ~ 5500 950 
 Wire Wire Line
 	5500 950  5950 950 
-Wire Wire Line
-	4050 1850 4600 1850
-Wire Wire Line
-	3300 1750 4200 1750
-$Comp
-L Device:LED D10
-U 1 1 5C63AE4E
-P 4200 2750
-F 0 "D10" V 4238 2633 50  0000 R CNN
-F 1 "GLED" V 4147 2633 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 2750 50  0001 C CNN
-F 3 "~" H 4200 2750 50  0001 C CNN
-	1    4200 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D11
-U 1 1 5C63AF79
-P 4600 2750
-F 0 "D11" V 4638 2633 50  0000 R CNN
-F 1 "GLED" V 4547 2633 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 2750 50  0001 C CNN
-F 3 "~" H 4600 2750 50  0001 C CNN
-	1    4600 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5C63B109
-P 4200 2250
-F 0 "R9" H 4270 2296 50  0000 L CNN
-F 1 "2.2k" H 4270 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4130 2250 50  0001 C CNN
-F 3 "~" H 4200 2250 50  0001 C CNN
-	1    4200 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5C63B229
-P 4600 2250
-F 0 "R10" H 4670 2296 50  0000 L CNN
-F 1 "2.2k" H 4670 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4530 2250 50  0001 C CNN
-F 3 "~" H 4600 2250 50  0001 C CNN
-	1    4600 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5C63B348
-P 4200 3000
-F 0 "#PWR029" H 4200 2750 50  0001 C CNN
-F 1 "GND" H 4205 2827 50  0000 C CNN
-F 2 "" H 4200 3000 50  0001 C CNN
-F 3 "" H 4200 3000 50  0001 C CNN
-	1    4200 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5C63B441
-P 4600 3000
-F 0 "#PWR030" H 4600 2750 50  0001 C CNN
-F 1 "GND" H 4605 2827 50  0000 C CNN
-F 2 "" H 4600 3000 50  0001 C CNN
-F 3 "" H 4600 3000 50  0001 C CNN
-	1    4600 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 3000 4200 2900
-Wire Wire Line
-	4600 2900 4600 3000
-Wire Wire Line
-	4600 2600 4600 2400
-Wire Wire Line
-	4200 2400 4200 2600
-Wire Wire Line
-	4200 2100 4200 1750
-Connection ~ 4200 1750
-Wire Wire Line
-	4200 1750 4450 1750
-Wire Wire Line
-	4600 2100 4600 1850
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5C65483E
@@ -420,9 +333,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 1750 5450 1750
 Connection ~ 4450 1750
-Wire Wire Line
-	4600 1850 5450 1850
-Connection ~ 4600 1850
 $Comp
 L Device:C C10
 U 1 1 5C66D5F2
@@ -462,4 +372,10 @@ Text Label 1400 2450 0    50   ~ 0
 OSC2
 Text Label 1950 2550 3    50   ~ 0
 OSC1
+Wire Wire Line
+	3300 1750 4450 1750
+Wire Wire Line
+	4050 1850 5450 1850
+Wire Wire Line
+	6700 2050 7250 2050
 $EndSCHEMATC

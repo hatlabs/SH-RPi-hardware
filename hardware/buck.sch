@@ -1,10 +1,10 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:pi-supercap-ups-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -35,7 +35,7 @@ P 2100 2350
 AR Path="/5C3476D8/5CA62D4C" Ref="C?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D4C" Ref="C13"  Part="1" 
 F 0 "C13" H 2215 2396 50  0000 L CNN
-F 1 "10uF" H 2215 2305 50  0000 L CNN
+F 1 "10uF 16V" H 2215 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 2200 50  0001 C CNN
 F 3 "~" H 2100 2350 50  0001 C CNN
 F 4 "50V" H 2100 2350 50  0001 C CNN "Notes"
@@ -142,8 +142,8 @@ P 4750 1800
 AR Path="/5C3476D8/5CA62D82" Ref="C?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D82" Ref="C16"  Part="1" 
 F 0 "C16" H 4865 1846 50  0000 L CNN
-F 1 "47uF" H 4865 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4788 1650 50  0001 C CNN
+F 1 "100uF 10V" H 4865 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4788 1650 50  0001 C CNN
 F 3 "~" H 4750 1800 50  0001 C CNN
 F 4 "Min 6.3V" H 4750 1800 50  0001 C CNN "Notes"
 	1    4750 1800
@@ -169,7 +169,7 @@ P 4550 2350
 AR Path="/5C3476D8/5CA62D90" Ref="R?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D90" Ref="R14"  Part="1" 
 F 0 "R14" V 4757 2350 50  0000 C CNN
-F 1 "210k" V 4666 2350 50  0000 C CNN
+F 1 "232k" V 4666 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 2350 50  0001 C CNN
 F 3 "~" H 4550 2350 50  0001 C CNN
 	1    4550 2350
@@ -286,20 +286,15 @@ Wire Wire Line
 Wire Wire Line
 	3450 2350 4200 2350
 Wire Wire Line
-	4700 2350 5600 2350
+	4700 2350 5100 2350
 Wire Wire Line
 	3750 1650 3750 2200
-Wire Wire Line
-	5600 1650 5600 2350
 Wire Wire Line
 	3500 1650 3750 1650
 Connection ~ 3750 1650
 Connection ~ 4200 2350
 Wire Wire Line
 	4200 2350 4400 2350
-Connection ~ 5600 1650
-Wire Wire Line
-	5600 1650 5850 1650
 Connection ~ 4050 1650
 Wire Wire Line
 	4050 1650 4300 1650
@@ -335,48 +330,23 @@ Text Label 3050 1650 0    50   ~ 0
 BST
 Text HLabel 1700 2200 0    50   Input ~ 0
 Vin
-$Comp
-L Device:D_Schottky D?
-U 1 1 5CA8EF52
-P 5350 1650
-AR Path="/5C345D5A/5CA8EF52" Ref="D?"  Part="1" 
-AR Path="/5CA8EF52" Ref="D?"  Part="1" 
-AR Path="/5CA65CC5/5CA8EF52" Ref="D13"  Part="1" 
-F 0 "D13" H 5350 1434 50  0000 C CNN
-F 1 "DS34W" H 5350 1525 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 5350 1650 50  0001 C CNN
-F 3 "~" H 5350 1650 50  0001 C CNN
-F 4 "Min current 3A" H 5350 1650 50  0001 C CNN "Notes"
-	1    5350 1650
-	-1   0    0    1   
-$EndComp
 Connection ~ 4750 1650
-Wire Wire Line
-	5500 1650 5600 1650
 Text HLabel 5850 1650 2    50   Output ~ 0
-Vout_R
+Vbuck
 Wire Wire Line
 	4750 1650 5100 1650
-Text HLabel 5850 1200 2    50   Output ~ 0
-Vout
-Wire Wire Line
-	5850 1200 5100 1200
-Wire Wire Line
-	5100 1200 5100 1650
 Connection ~ 5100 1650
-Wire Wire Line
-	5100 1650 5200 1650
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5CAACEED
-P 5100 1200
+P 5600 1500
 AR Path="/5C345D5A/5CAACEED" Ref="TP?"  Part="1" 
 AR Path="/5CA65CC5/5CAACEED" Ref="TP8"  Part="1" 
-F 0 "TP8" H 5158 1320 50  0000 L CNN
-F 1 "Vbuck" H 5158 1229 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5300 1200 50  0001 C CNN
-F 3 "~" H 5300 1200 50  0001 C CNN
-	1    5100 1200
+F 0 "TP8" H 5658 1620 50  0000 L CNN
+F 1 "Vbuck" H 5658 1529 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5800 1500 50  0001 C CNN
+F 3 "~" H 5800 1500 50  0001 C CNN
+	1    5600 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -393,4 +363,17 @@ F 3 "" H 3100 2700 50  0001 C CNN
 	1    3100 2700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5100 1650 5100 2350
+Text Notes 4550 2600 0    50   ~ 0
+FB voltage divider designed to have\na 5.4V voltage at Vbuck
+Wire Wire Line
+	5600 1500 5600 1650
+Connection ~ 5600 1650
+Wire Wire Line
+	5600 1650 5850 1650
+Text Notes 5350 2100 0    50   ~ 0
+Max 3A current output
+Wire Wire Line
+	5100 1650 5600 1650
 $EndSCHEMATC
