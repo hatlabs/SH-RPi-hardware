@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -13,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L power:GND #PWR?
@@ -27,10 +32,10 @@ F 3 "" H 3800 5400 50  0001 C CNN
 	1    3800 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 2800 1    50   Input ~ 0
+Text GLabel 4100 2600 2    50   Input ~ 0
 3.3V
 Wire Wire Line
-	3800 2800 3800 3100
+	3800 2800 3800 2900
 Text HLabel 5800 5100 2    50   Input ~ 0
 ~RESET~
 Wire Wire Line
@@ -82,10 +87,6 @@ Wire Wire Line
 Connection ~ 5500 5100
 Wire Wire Line
 	5500 5100 4400 5100
-Wire Wire Line
-	5500 4700 5500 4600
-Text GLabel 5500 4600 1    50   Input ~ 0
-3.3V
 $Comp
 L Device:R R?
 U 1 1 5CF4FF7C
@@ -93,14 +94,14 @@ P 1650 2700
 AR Path="/5CF4FF7C" Ref="R?"  Part="1" 
 AR Path="/5C33FF90/5CF4FF7C" Ref="R27"  Part="1" 
 F 0 "R27" H 1720 2746 50  0000 L CNN
-F 1 "40k" H 1720 2655 50  0000 L CNN
+F 1 "50k" H 1720 2655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1580 2700 50  0001 C CNN
 F 3 "~" H 1650 2700 50  0001 C CNN
 	1    1650 2700
 	1    0    0    -1  
 $EndComp
 Text HLabel 2400 3050 2    50   Output ~ 0
-Vcc:5
+V12:6
 Wire Wire Line
 	1650 3050 1650 2850
 Connection ~ 1650 3050
@@ -171,17 +172,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 3050 2250 3050
 Connection ~ 2250 3050
-$Comp
-L MCU_Microchip_ATtiny:ATtiny44-20SSU U1
-U 1 1 5D51A7F9
-P 3800 4500
-F 0 "U1" H 3271 4546 50  0000 R CNN
-F 1 "ATtiny44-20SSU" H 3271 4455 50  0000 R CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 4500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 3800 4500 50  0001 C CNN
-	1    3800 4500
-	1    0    0    -1  
-$EndComp
 $Bitmap
 Pos 3650 6600
 Scale 1.000000
@@ -11875,29 +11865,25 @@ SDA
 Text HLabel 4650 4300 2    50   BiDi ~ 0
 SCL
 Text HLabel 4650 4400 2    50   BiDi ~ 0
-PA5_LED0
+PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
 PA7
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
-Text HLabel 4650 4100 2    50   BiDi ~ 0
-Vcap:5{slash}3
 Text HLabel 4650 4000 2    50   BiDi ~ 0
-Vcc:5
+V12:6
 Text HLabel 4650 3900 2    50   BiDi ~ 0
 PA0
 Text HLabel 4650 4800 2    50   BiDi ~ 0
 PB0
 Text HLabel 4650 4900 2    50   BiDi ~ 0
-PB1
+PB1_LED0
 Text HLabel 4650 5000 2    50   BiDi ~ 0
 PB2_LED1
 Wire Wire Line
 	4650 3900 4400 3900
 Wire Wire Line
 	4400 4000 4650 4000
-Wire Wire Line
-	4650 4100 4400 4100
 Wire Wire Line
 	4400 4200 4650 4200
 Wire Wire Line
@@ -11914,4 +11900,55 @@ Wire Wire Line
 	4400 4900 4650 4900
 Wire Wire Line
 	4650 5000 4400 5000
+$Comp
+L Diode:BAT54C D4
+U 1 1 5D59AF4D
+P 3800 2600
+F 0 "D4" H 3800 2825 50  0000 C CNN
+F 1 "BAT54C" H 3800 2734 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3875 2725 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 3720 2600 50  0001 C CNN
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 2600 0    50   Input ~ 0
+2.65V
+Wire Wire Line
+	5500 2900 4850 2900
+Wire Wire Line
+	5500 2900 5500 4700
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 2900 3800 3100
+Text HLabel 3800 3300 0    50   Input ~ 0
+ATT_Vcc
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D5BF9CE
+P 4850 2900
+F 0 "#FLG0103" H 4850 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 3073 50  0000 C CNN
+F 2 "" H 4850 2900 50  0001 C CNN
+F 3 "~" H 4850 2900 50  0001 C CNN
+	1    4850 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 2900
+Wire Wire Line
+	4850 2900 3800 2900
+$Comp
+L MCU_Microchip_ATtiny:ATtiny44-20SSU U1
+U 1 1 5D62E779
+P 3800 4500
+F 0 "U1" H 3271 4546 50  0000 R CNN
+F 1 "ATtiny44-20SSU" H 3271 4455 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 4500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 3800 4500 50  0001 C CNN
+	1    3800 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4650 4100 2    50   Input ~ 0
+VcapS
+Wire Wire Line
+	4650 4100 4400 4100
 $EndSCHEMATC

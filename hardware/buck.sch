@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -13,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L pi-supercap-ups:MP1584EN U?
@@ -35,7 +40,7 @@ P 2100 2350
 AR Path="/5C3476D8/5CA62D4C" Ref="C?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D4C" Ref="C13"  Part="1" 
 F 0 "C13" H 2215 2396 50  0000 L CNN
-F 1 "10uF 16V" H 2215 2305 50  0000 L CNN
+F 1 "10uF 50V" H 2215 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 2200 50  0001 C CNN
 F 3 "~" H 2100 2350 50  0001 C CNN
 F 4 "50V" H 2100 2350 50  0001 C CNN "Notes"
@@ -63,7 +68,7 @@ P 2400 2650
 AR Path="/5C3476D8/5CA62D59" Ref="R?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D59" Ref="R12"  Part="1" 
 F 0 "R12" H 2470 2696 50  0000 L CNN
-F 1 "100k" H 2470 2605 50  0000 L CNN
+F 1 "200k" H 2470 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 2650 50  0001 C CNN
 F 3 "~" H 2400 2650 50  0001 C CNN
 	1    2400 2650
@@ -129,9 +134,11 @@ P 4450 1650
 AR Path="/5C3476D8/5CA62D7A" Ref="L?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D7A" Ref="L1"  Part="1" 
 F 0 "L1" V 4640 1650 50  0000 C CNN
-F 1 "15uH" V 4549 1650 50  0000 C CNN
-F 2 "CSAB0630-100M:INDC6060X300" H 4450 1650 50  0001 C CNN
+F 1 "10uH 3.5A" V 4549 1650 50  0000 C CNN
+F 2 "custom:L_TDK_SLF10165_HandSolder" H 4450 1650 50  0001 C CNN
 F 3 "~" H 4450 1650 50  0001 C CNN
+F 4 "https://lcsc.com/product-detail/Inductors-SMD_TDK_SLF10165T-100M3R8-3PF_TDK-SLF10165T-100M3R8-3PF_C91527.html" V 4450 1650 50  0001 C CNN "URL"
+F 5 "TDK SLF10165T-100M3R8-3PF" V 4450 1650 50  0001 C CNN "Part"
 	1    4450 1650
 	0    -1   -1   0   
 $EndComp
@@ -142,8 +149,8 @@ P 4750 1800
 AR Path="/5C3476D8/5CA62D82" Ref="C?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D82" Ref="C16"  Part="1" 
 F 0 "C16" H 4865 1846 50  0000 L CNN
-F 1 "100uF 10V" H 4865 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4788 1650 50  0001 C CNN
+F 1 "22uF 6.3V" H 4865 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 1650 50  0001 C CNN
 F 3 "~" H 4750 1800 50  0001 C CNN
 F 4 "Min 6.3V" H 4750 1800 50  0001 C CNN "Notes"
 	1    4750 1800
@@ -169,7 +176,7 @@ P 4550 2350
 AR Path="/5C3476D8/5CA62D90" Ref="R?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D90" Ref="R14"  Part="1" 
 F 0 "R14" V 4757 2350 50  0000 C CNN
-F 1 "232k" V 4666 2350 50  0000 C CNN
+F 1 "93k" V 4666 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 2350 50  0001 C CNN
 F 3 "~" H 4550 2350 50  0001 C CNN
 	1    4550 2350
@@ -196,7 +203,7 @@ P 3650 3000
 AR Path="/5C3476D8/5CA62D9F" Ref="R?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D9F" Ref="R13"  Part="1" 
 F 0 "R13" H 3720 3046 50  0000 L CNN
-F 1 "100k" H 3720 2955 50  0000 L CNN
+F 1 "54.9k" H 3720 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 3000 50  0001 C CNN
 F 3 "~" H 3650 3000 50  0001 C CNN
 	1    3650 3000
@@ -366,7 +373,7 @@ $EndComp
 Wire Wire Line
 	5100 1650 5100 2350
 Text Notes 4550 2600 0    50   ~ 0
-FB voltage divider designed to have\na 5.4V voltage at Vbuck
+FB voltage divider designed to have\na 2.65V voltage at Vbuck
 Wire Wire Line
 	5600 1500 5600 1650
 Connection ~ 5600 1650
