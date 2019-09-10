@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -27,8 +27,8 @@ AR Path="/5CA6B4E8" Ref="C?"  Part="1"
 AR Path="/5C3480BB/5CA6B4E8" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5CA6B4E8" Ref="C17"  Part="1" 
 F 0 "C17" H 4968 2496 50  0000 L CNN
-F 1 "100uF 10V" H 4968 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4888 2300 50  0001 C CNN
+F 1 "47uF 10V" H 4968 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4888 2300 50  0001 C CNN
 F 3 "~" H 4850 2450 50  0001 C CNN
 	1    4850 2450
 	1    0    0    -1  
@@ -55,9 +55,9 @@ AR Path="/5C3480BB/5CA6B4FC" Ref="L?"  Part="1"
 AR Path="/5CA73F16/5CA6B4FC" Ref="L2"  Part="1" 
 F 0 "L2" V 3540 1700 50  0000 C CNN
 F 1 "1uH" V 3449 1700 50  0000 C CNN
-F 2 "Inductor_SMD:L_Wuerth_HCI-1350" H 3350 1700 50  0001 C CNN
+F 2 "Inductor_SMD:L_Abracon_ASPI-0630LR" H 3350 1700 50  0001 C CNN
 F 3 "" H 3350 1700 50  0001 C CNN
-F 4 "BCIHP0750-1R0" V 3350 1700 50  0001 C CNN "Notes"
+F 4 "Shun Xiang Nuo Elec SMMS0630-1R0M" V 3350 1700 50  0001 C CNN "Notes"
 	1    3350 1700
 	0    -1   -1   0   
 $EndComp
@@ -129,22 +129,6 @@ Text Label 4200 2600 0    50   ~ 0
 FB
 Text HLabel 2150 1700 0    50   Input ~ 0
 Vin
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5CAAC10F
-P 3800 1300
-AR Path="/5C345D5A/5CAAC10F" Ref="TP?"  Part="1" 
-AR Path="/5CA73F16/5CAAC10F" Ref="TP9"  Part="1" 
-F 0 "TP9" H 3858 1420 50  0000 L CNN
-F 1 "VboostSW" H 3858 1329 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4000 1300 50  0001 C CNN
-F 3 "~" H 4000 1300 50  0001 C CNN
-	1    3800 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 3800 1700
-Wire Wire Line
-	3800 1300 3800 1700
 Wire Wire Line
 	3800 2600 4350 2600
 Text Notes 5150 2000 0    50   ~ 0
@@ -159,7 +143,7 @@ AR Path="/5CF608F8" Ref="C?"  Part="1"
 AR Path="/5C3480BB/5CF608F8" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5CF608F8" Ref="C19"  Part="1" 
 F 0 "C19" H 2518 1946 50  0000 L CNN
-F 1 "1uF 10V" H 2518 1855 50  0000 L CNN
+F 1 "10uF 10V" H 2518 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2438 1750 50  0001 C CNN
 F 3 "~" H 2400 1900 50  0001 C CNN
 	1    2400 1900
@@ -184,20 +168,6 @@ F 3 "" H 2400 2050 50  0001 C CNN
 	1    2400 2050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5D545585
-P 2800 2900
-AR Path="/5D545585" Ref="R?"  Part="1" 
-AR Path="/5C3480BB/5D545585" Ref="R?"  Part="1" 
-AR Path="/5CA73F16/5D545585" Ref="R22"  Part="1" 
-F 0 "R22" H 2870 2946 50  0000 L CNN
-F 1 "10k" H 2870 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 2900 50  0001 C CNN
-F 3 "~" H 2800 2900 50  0001 C CNN
-	1    2800 2900
-	1    0    0    -1  
-$EndComp
 Text HLabel 1500 2600 0    50   Input ~ 0
 EN
 $Comp
@@ -215,10 +185,10 @@ F 3 "" H 2800 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups:TPS61022 U4
+L pi-supercap-ups:TPS61022 U2
 U 1 1 5D5AC086
 P 3400 2400
-F 0 "U4" H 3400 2865 50  0000 C CNN
+F 0 "U2" H 3400 2865 50  0000 C CNN
 F 1 "TPS61022" H 3400 2774 50  0000 C CNN
 F 2 "custom:TPS61022RWUR" H 3450 2600 50  0001 C CNN
 F 3 "" H 3450 2600 50  0001 C CNN
@@ -246,15 +216,13 @@ Wire Wire Line
 Wire Wire Line
 	3800 2300 4350 2300
 Wire Wire Line
-	5500 2300 4850 2300
+	5500 2300 5450 2300
 Connection ~ 4350 2300
 Connection ~ 4850 2300
 Wire Wire Line
 	4850 2300 4350 2300
 Wire Wire Line
 	2800 2500 3000 2500
-Wire Wire Line
-	2800 2750 2800 2500
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5D5B325B
@@ -303,4 +271,39 @@ F 3 "" H 2150 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3200 2150 3150
+$Comp
+L Device:C C?
+U 1 1 5D8155D9
+P 5450 2450
+AR Path="/5D8155D9" Ref="C?"  Part="1" 
+AR Path="/5C3480BB/5D8155D9" Ref="C?"  Part="1" 
+AR Path="/5CA73F16/5D8155D9" Ref="C6"  Part="1" 
+F 0 "C6" H 5568 2496 50  0000 L CNN
+F 1 "47uF 10V" H 5568 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5488 2300 50  0001 C CNN
+F 3 "~" H 5450 2450 50  0001 C CNN
+	1    5450 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 2300
+Wire Wire Line
+	5450 2300 4850 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5D815A89
+P 5450 2700
+AR Path="/5D815A89" Ref="#PWR?"  Part="1" 
+AR Path="/5C3480BB/5D815A89" Ref="#PWR?"  Part="1" 
+AR Path="/5CA73F16/5D815A89" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 5450 2450 50  0001 C CNN
+F 1 "GND" H 5455 2527 50  0000 C CNN
+F 2 "" H 5450 2700 50  0001 C CNN
+F 3 "" H 5450 2700 50  0001 C CNN
+	1    5450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2600 5450 2700
+Wire Wire Line
+	2800 3050 2800 2500
 $EndSCHEMATC
