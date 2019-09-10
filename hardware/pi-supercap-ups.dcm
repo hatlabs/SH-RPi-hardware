@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MCP25625T-E_ML
+D Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN
+F https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf
+$ENDCMP
+#
 #End Doc Library

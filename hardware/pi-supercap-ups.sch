@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -20,18 +20,21 @@ Comment8 ""
 Comment9 ""
 $EndDescr
 $Sheet
-S 3100 5350 1050 750 
+S 3100 4450 1050 950 
 U 5C348474
 F0 "CANbus interface" 50
 F1 "canbus.sch" 50
-F2 "INT" I R 4150 5550 50 
-F3 "SI" I R 4150 5750 50 
-F4 "SO" I R 4150 5850 50 
-F5 "CS" I R 4150 5950 50 
-F6 "SCK" I R 4150 5650 50 
-F7 "CAN_H" O L 3100 5450 50 
-F8 "CAN_L" O L 3100 5550 50 
-F9 "5V" I L 3100 5950 50 
+F2 "SI" I R 4150 5200 50 
+F3 "SO" I R 4150 5300 50 
+F4 "SCK" I R 4150 5100 50 
+F5 "CS0" I L 3100 4550 50 
+F6 "CAN0_H" O L 3100 4750 50 
+F7 "CAN0_L" O L 3100 4850 50 
+F8 "INT0" O L 3100 4650 50 
+F9 "CAN1_H" O R 4150 4750 50 
+F10 "CAN1_L" O R 4150 4850 50 
+F11 "INT1" O R 4150 4650 50 
+F12 "CS1" I R 4150 4550 50 
 $EndSheet
 $Comp
 L power:+12V #PWR01
@@ -47,70 +50,48 @@ F 3 "" H 850 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2650 3700 2650 1300
+	2650 2800 2650 1300
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 5C36628B
-P 8950 5300
-F 0 "J1" H 8870 4875 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 8870 4966 50  0000 C CNN
-F 2 "custom:WJ2EDGR-5.08-4P" H 8950 5300 50  0001 C CNN
-F 3 "~" H 8950 5300 50  0001 C CNN
-	1    8950 5300
+P 8950 5000
+F 0 "J1" H 8870 4575 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 8870 4666 50  0000 C CNN
+F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-4P" H 8950 5000 50  0001 C CNN
+F 3 "~" H 8950 5000 50  0001 C CNN
+	1    8950 5000
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR013
 U 1 1 5C366383
-P 9700 5400
+P 10450 5000
 AR Path="/5C366383" Ref="#PWR013"  Part="1" 
 AR Path="/5C3476D8/5C366383" Ref="#PWR?"  Part="1" 
-F 0 "#PWR013" H 9700 5250 50  0001 C CNN
-F 1 "+12V" V 9715 5528 50  0000 L CNN
-F 2 "" H 9700 5400 50  0001 C CNN
-F 3 "" H 9700 5400 50  0001 C CNN
-	1    9700 5400
+F 0 "#PWR013" H 10450 4850 50  0001 C CNN
+F 1 "+12V" V 10465 5128 50  0000 L CNN
+F 2 "" H 10450 5000 50  0001 C CNN
+F 3 "" H 10450 5000 50  0001 C CNN
+	1    10450 5000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5C366549
-P 10200 5300
-F 0 "#PWR017" H 10200 5050 50  0001 C CNN
-F 1 "GND" V 10205 5172 50  0000 R CNN
-F 2 "" H 10200 5300 50  0001 C CNN
-F 3 "" H 10200 5300 50  0001 C CNN
-	1    10200 5300
+P 9750 5100
+F 0 "#PWR017" H 9750 4850 50  0001 C CNN
+F 1 "GND" V 9755 4972 50  0000 R CNN
+F 2 "" H 9750 5100 50  0001 C CNN
+F 3 "" H 9750 5100 50  0001 C CNN
+	1    9750 5100
 	0    -1   -1   0   
 $EndComp
-Text Label 2900 5450 2    50   ~ 0
-CAN_H
 Wire Wire Line
-	2900 5450 3100 5450
-Text Label 2900 5550 2    50   ~ 0
-CAN_L
+	4300 5100 4150 5100
 Wire Wire Line
-	2900 5550 3100 5550
-Text Label 9150 5200 0    50   ~ 0
-CAN_H
-Text Label 9150 5100 0    50   ~ 0
-CAN_L
+	4300 5200 4150 5200
 Wire Wire Line
-	4300 5550 4150 5550
-Wire Wire Line
-	4300 5650 4150 5650
-Wire Wire Line
-	4300 5750 4150 5750
-Wire Wire Line
-	4300 5850 4150 5850
-Wire Wire Line
-	4300 5950 4150 5950
-Text GLabel 9800 1550 1    50   Input ~ 0
-3.3V
-Text Label 9500 1550 1    50   ~ 0
-5V
-Text Label 9600 1550 1    50   ~ 0
-5V
+	4300 5300 4150 5300
 $Comp
 L power:GND #PWR08
 U 1 1 5C368636
@@ -135,18 +116,14 @@ F 3 "" H 9400 4150 50  0001 C CNN
 	1    9400 4150
 	1    0    0    -1  
 $EndComp
-Text Label 4300 5550 0    50   ~ 0
-INT
-Text Label 4300 5650 0    50   ~ 0
+Text Label 4300 5100 0    50   ~ 0
 SCK
-Text Label 4300 5750 0    50   ~ 0
+Text Label 4300 5200 0    50   ~ 0
 SI
-Text Label 4300 5850 0    50   ~ 0
+Text Label 4300 5300 0    50   ~ 0
 SO
-Text Label 4300 5950 0    50   ~ 0
-CS
 Text Label 10500 3050 0    50   ~ 0
-CS
+CS0
 Text Label 10500 3350 0    50   ~ 0
 SCK
 Text Label 10500 3250 0    50   ~ 0
@@ -154,7 +131,7 @@ SI
 Text Label 10500 3150 0    50   ~ 0
 SO
 Text Label 8900 3050 2    50   ~ 0
-INT
+GPIO22
 Text GLabel 9900 1100 1    50   Input ~ 0
 3.3V
 $Comp
@@ -229,50 +206,41 @@ NoConn ~ 8900 2350
 NoConn ~ 8900 2450
 NoConn ~ 8900 3150
 NoConn ~ 8900 3250
-NoConn ~ 8900 3550
 NoConn ~ 10500 3550
-NoConn ~ 10500 2950
 NoConn ~ 10500 2750
 NoConn ~ 10500 2650
 NoConn ~ 10500 2550
 NoConn ~ 10500 2050
 NoConn ~ 10500 1950
 Wire Wire Line
-	3100 5950 2900 5950
-Text Label 2900 5950 2    50   ~ 0
-5V
-Wire Wire Line
-	9700 5400 9600 5400
+	10450 5000 10350 5000
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5C3909EF
-P 9600 5400
-F 0 "#FLG02" H 9600 5475 50  0001 C CNN
-F 1 "PWR_FLAG" H 9600 5573 50  0000 C CNN
-F 2 "" H 9600 5400 50  0001 C CNN
-F 3 "~" H 9600 5400 50  0001 C CNN
-	1    9600 5400
+P 10350 5000
+F 0 "#FLG02" H 10350 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 10350 5173 50  0000 C CNN
+F 2 "" H 10350 5000 50  0001 C CNN
+F 3 "~" H 10350 5000 50  0001 C CNN
+	1    10350 5000
 	-1   0    0    1   
 $EndComp
-Connection ~ 9600 5400
+Connection ~ 10350 5000
 Wire Wire Line
-	9600 5400 9150 5400
+	10350 5000 9150 5000
 Wire Wire Line
-	10200 5300 10000 5300
+	9750 5100 9550 5100
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5C391989
-P 9750 5300
-F 0 "#FLG03" H 9750 5375 50  0001 C CNN
-F 1 "PWR_FLAG" H 9750 5474 50  0000 C CNN
-F 2 "" H 9750 5300 50  0001 C CNN
-F 3 "~" H 9750 5300 50  0001 C CNN
-	1    9750 5300
-	1    0    0    -1  
+P 9300 5100
+F 0 "#FLG03" H 9300 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 9300 5274 50  0000 C CNN
+F 2 "" H 9300 5100 50  0001 C CNN
+F 3 "~" H 9300 5100 50  0001 C CNN
+	1    9300 5100
+	-1   0    0    1   
 $EndComp
-Connection ~ 9750 5300
-Wire Wire Line
-	9750 5300 9150 5300
 Wire Wire Line
 	9900 1100 9900 1250
 $Comp
@@ -287,25 +255,23 @@ F 3 "~" H 9900 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 9900 1250
-Wire Wire Line
-	9900 1250 9900 1550
-Text Label 4300 3700 0    50   ~ 0
+Text Label 4300 2800 0    50   ~ 0
 ATT_RESET
 NoConn ~ 8900 3350
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5C65097F
-P 10000 5300
-F 0 "TP2" H 10050 5500 50  0000 L CNN
-F 1 "GND" H 10050 5400 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 10200 5300 50  0001 C CNN
-F 3 "~" H 10200 5300 50  0001 C CNN
-	1    10000 5300
-	1    0    0    -1  
+P 9550 5100
+F 0 "TP2" H 9350 5300 50  0000 L CNN
+F 1 "GND" H 9350 5200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 9750 5100 50  0001 C CNN
+F 3 "~" H 9750 5100 50  0001 C CNN
+	1    9550 5100
+	-1   0    0    1   
 $EndComp
-Connection ~ 10000 5300
+Connection ~ 9550 5100
 Wire Wire Line
-	10000 5300 9750 5300
+	9550 5100 9300 5100
 Wire Wire Line
 	2650 1300 2800 1300
 Connection ~ 2650 1300
@@ -339,7 +305,7 @@ AR Path="/5CA75C6E" Ref="D3"  Part="1"
 AR Path="/5C3476D8/5CA75C6E" Ref="D?"  Part="1" 
 F 0 "D3" V 2238 1633 50  0000 R CNN
 F 1 "RLED" V 2147 1633 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 1750 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 1750 50  0001 C CNN
 F 3 "~" H 2200 1750 50  0001 C CNN
 	1    2200 1750
 	0    -1   -1   0   
@@ -463,24 +429,24 @@ Wire Wire Line
 $Comp
 L Device:R R20
 U 1 1 5CB8E06B
-P 6100 5050
-F 0 "R20" H 6170 5096 50  0000 L CNN
-F 1 "100k" H 6170 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 5050 50  0001 C CNN
-F 3 "~" H 6100 5050 50  0001 C CNN
-	1    6100 5050
+P 6550 5050
+F 0 "R20" H 6620 5096 50  0000 L CNN
+F 1 "100k" H 6620 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 5050 50  0001 C CNN
+F 3 "~" H 6550 5050 50  0001 C CNN
+	1    6550 5050
 	1    0    0    -1  
 $EndComp
-Text Label 6100 4700 0    50   ~ 0
+Text Label 6550 4700 0    50   ~ 0
 Vcap
 Wire Wire Line
-	6100 4700 6100 4900
+	6550 4700 6550 4900
 Wire Wire Line
-	6300 5300 6100 5300
+	6750 5300 6550 5300
 Wire Wire Line
-	6100 5300 6100 5200
+	6550 5300 6550 5200
 Wire Wire Line
-	7500 2850 7150 2850
+	7900 2900 7550 2900
 NoConn ~ 10500 3650
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -492,28 +458,6 @@ F 2 "" H 3600 1650 50  0001 C CNN
 F 3 "~" H 3600 1650 50  0001 C CNN
 	1    3600 1650
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5CF399BC
-P 5550 3900
-F 0 "R5" H 5620 3946 50  0000 L CNN
-F 1 "0" H 5620 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5480 3900 50  0001 C CNN
-F 3 "~" H 5550 3900 50  0001 C CNN
-	1    5550 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5CF3A7CE
-P 5550 4200
-F 0 "R6" H 5620 4246 50  0000 L CNN
-F 1 "0" H 5620 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5480 4200 50  0001 C CNN
-F 3 "~" H 5550 4200 50  0001 C CNN
-	1    5550 4200
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4750 1300 4750 2050
@@ -566,142 +510,142 @@ NoConn ~ 8900 2650
 NoConn ~ 8900 2750
 NoConn ~ 8900 2850
 Wire Wire Line
-	2650 3700 3100 3700
+	2650 2800 3100 2800
 Wire Wire Line
-	4300 3700 4150 3700
+	4300 2800 4150 2800
 $Sheet
-S 3100 3600 1050 1500
+S 3100 2700 1050 1500
 U 5C33FF90
 F0 "inv_Sense_Vcc" 50
 F1 "inv_Sense_Vcc.sch" 50
-F2 "+12V" I L 3100 3700 50 
-F3 "~RESET~" I R 4150 3700 50 
-F4 "V12:6" O R 4150 3800 50 
-F5 "SDA" B R 4150 3900 50 
-F6 "SCL" B R 4150 4000 50 
-F7 "PA5" B R 4150 4100 50 
-F8 "PA7" B R 4150 4200 50 
-F9 "PA3_EN5V" B R 4150 4300 50 
-F10 "PA0" B R 4150 4500 50 
-F11 "PB0" B R 4150 4600 50 
-F12 "PB1_LED0" B R 4150 4700 50 
-F13 "PB2_LED1" B R 4150 4800 50 
-F14 "ATT_Vcc" I L 3100 3850 50 
-F15 "VcapS" I R 4150 4400 50 
+F2 "+12V" I L 3100 2800 50 
+F3 "~RESET~" I R 4150 2800 50 
+F4 "V12:6" O R 4150 2900 50 
+F5 "SDA" B R 4150 3000 50 
+F6 "SCL" B R 4150 3100 50 
+F7 "PA5" B R 4150 3200 50 
+F8 "PA7" B R 4150 3300 50 
+F9 "PA3_EN5V" B R 4150 3400 50 
+F10 "PA0" B R 4150 3600 50 
+F11 "PB0" B R 4150 3700 50 
+F12 "PB1_LED0" B R 4150 3800 50 
+F13 "PB2_LED1" B R 4150 3900 50 
+F14 "ATT_Vcc" I L 3100 2950 50 
+F15 "VcapS" I R 4150 3500 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_02x07_Counter_Clockwise J3
 U 1 1 5D52B7B7
-P 6850 3150
-F 0 "J3" H 6900 3667 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 6900 3576 50  0000 C CNN
-F 2 "custom:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise" H 6850 3150 50  0001 C CNN
-F 3 "~" H 6850 3150 50  0001 C CNN
-	1    6850 3150
+P 7250 3200
+F 0 "J3" H 7300 3717 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 7300 3626 50  0000 C CNN
+F 2 "custom:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise" H 7250 3200 50  0001 C CNN
+F 3 "~" H 7250 3200 50  0001 C CNN
+	1    7250 3200
 	1    0    0    -1  
 $EndComp
-Text Label 6650 3150 2    50   ~ 0
+Text Label 7050 3200 2    50   ~ 0
 ATT_RESET
-Text Label 4300 4600 0    50   ~ 0
+Text Label 4300 3700 0    50   ~ 0
 PB0
-Text Label 4300 4500 0    50   ~ 0
+Text Label 4300 3600 0    50   ~ 0
 PA0
-Text Label 4300 4300 0    50   ~ 0
+Text Label 4300 3400 0    50   ~ 0
 EN5V
-Text Label 4300 4200 0    50   ~ 0
+Text Label 4300 3300 0    50   ~ 0
 PA7
-Text Label 4300 4000 0    50   ~ 0
+Text Label 4300 3100 0    50   ~ 0
 SCL
-Text Label 4300 3900 0    50   ~ 0
+Text Label 4300 3000 0    50   ~ 0
 SDA
-Text Label 4300 3800 0    50   ~ 0
+Text Label 4300 2900 0    50   ~ 0
 V12:6
-Text Label 4300 4800 0    50   ~ 0
+Text Label 4300 3900 0    50   ~ 0
 ATT_LED1
 Wire Wire Line
-	4150 3800 4300 3800
+	4150 2900 4300 2900
 Wire Wire Line
-	4300 3900 4150 3900
+	4300 3000 4150 3000
 Wire Wire Line
-	4150 4000 4300 4000
+	4150 3100 4300 3100
 Wire Wire Line
-	4300 4100 4150 4100
+	4300 3200 4150 3200
 Wire Wire Line
-	4150 4200 4300 4200
+	4150 3300 4300 3300
 Wire Wire Line
-	4300 4300 4150 4300
+	4300 3400 4150 3400
 Wire Wire Line
-	4150 4400 4300 4400
+	4150 3500 4300 3500
 Wire Wire Line
-	4300 4500 4150 4500
+	4300 3600 4150 3600
 Wire Wire Line
-	4150 4600 4300 4600
+	4150 3700 4300 3700
 Wire Wire Line
-	4300 4700 4150 4700
+	4300 3800 4150 3800
 Wire Wire Line
-	4150 4800 4300 4800
-Text Label 7150 3050 0    50   ~ 0
+	4150 3900 4300 3900
+Text Label 7550 3100 0    50   ~ 0
 V12:6
 $Comp
 L power:GND #PWR0102
 U 1 1 5D53367E
-P 7500 2850
-F 0 "#PWR0102" H 7500 2600 50  0001 C CNN
-F 1 "GND" H 7505 2677 50  0000 C CNN
-F 2 "" H 7500 2850 50  0001 C CNN
-F 3 "" H 7500 2850 50  0001 C CNN
-	1    7500 2850
+P 7900 2900
+F 0 "#PWR0102" H 7900 2650 50  0001 C CNN
+F 1 "GND" H 7905 2727 50  0000 C CNN
+F 2 "" H 7900 2900 50  0001 C CNN
+F 3 "" H 7900 2900 50  0001 C CNN
+	1    7900 2900
 	1    0    0    -1  
 $EndComp
-Text Label 7150 3450 0    50   ~ 0
+Text Label 7550 3500 0    50   ~ 0
 PA5
-Text Label 7150 3250 0    50   ~ 0
+Text Label 7550 3300 0    50   ~ 0
 EN5V
-Text Label 6650 3250 2    50   ~ 0
+Text Label 7050 3300 2    50   ~ 0
 ATT_LED1
-Text Label 6650 2950 2    50   ~ 0
+Text Label 7050 3000 2    50   ~ 0
 PB0
-Text Label 6650 3050 2    50   ~ 0
+Text Label 7050 3100 2    50   ~ 0
 ATT_LED0
-Text Label 6650 3350 2    50   ~ 0
+Text Label 7050 3400 2    50   ~ 0
 PA7
-Text Label 6650 3450 2    50   ~ 0
+Text Label 7050 3500 2    50   ~ 0
 SDA
 $Comp
 L Device:C C12
 U 1 1 5D53C242
-P 6100 5550
-F 0 "C12" H 6215 5596 50  0000 L CNN
-F 1 "10nF 5V" H 6215 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 5400 50  0001 C CNN
-F 3 "~" H 6100 5550 50  0001 C CNN
-	1    6100 5550
+P 6550 5550
+F 0 "C12" H 6665 5596 50  0000 L CNN
+F 1 "100nF" H 6665 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 5400 50  0001 C CNN
+F 3 "~" H 6550 5550 50  0001 C CNN
+	1    6550 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5D53C7F8
-P 6100 5800
-F 0 "#PWR0105" H 6100 5550 50  0001 C CNN
-F 1 "GND" H 6105 5627 50  0000 C CNN
-F 2 "" H 6100 5800 50  0001 C CNN
-F 3 "" H 6100 5800 50  0001 C CNN
-	1    6100 5800
+P 6550 5800
+F 0 "#PWR0105" H 6550 5550 50  0001 C CNN
+F 1 "GND" H 6555 5627 50  0000 C CNN
+F 2 "" H 6550 5800 50  0001 C CNN
+F 3 "" H 6550 5800 50  0001 C CNN
+	1    6550 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 5800 6100 5700
-Text Label 7150 3350 0    50   ~ 0
+	6550 5800 6550 5700
+Text Label 7550 3400 0    50   ~ 0
 SCL
-Text Label 7150 2950 0    50   ~ 0
+Text Label 7550 3000 0    50   ~ 0
 PA0
-Text Label 5400 3900 2    50   ~ 0
+Text Label 5300 3000 2    50   ~ 0
 SDA
-Text Label 5400 4200 2    50   ~ 0
+Text Label 5300 3250 2    50   ~ 0
 SCL
-Text Label 5700 3900 0    50   ~ 0
+Text Label 5600 3000 0    50   ~ 0
 GPIO2
-Text Label 5700 4200 0    50   ~ 0
+Text Label 5600 3250 0    50   ~ 0
 GPIO3
 Wire Wire Line
 	7950 5800 7950 5750
@@ -744,8 +688,6 @@ F 3 "" H 7950 5800 50  0001 C CNN
 $EndComp
 Text Label 7950 5000 1    50   ~ 0
 ATT_LED1
-Text Label 6800 1300 0    50   ~ 0
-5V
 $Comp
 L power:GND #PWR05
 U 1 1 5CA6D683
@@ -806,7 +748,7 @@ AR Path="/5CA6D664" Ref="D5"  Part="1"
 AR Path="/5C3480BB/5CA6D664" Ref="D?"  Part="1" 
 F 0 "D5" V 6188 1833 50  0000 R CNN
 F 1 "RLED" V 6097 1833 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6150 1950 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6150 1950 50  0001 C CNN
 F 3 "~" H 6150 1950 50  0001 C CNN
 	1    6150 1950
 	0    -1   -1   0   
@@ -885,36 +827,25 @@ Text GLabel 3600 1000 1    50   Input ~ 0
 2.65V
 Wire Wire Line
 	3600 1000 3600 1300
-Text Label 2950 3850 2    50   ~ 0
+Text Label 2950 2950 2    50   ~ 0
 ATT_Vcc
 Wire Wire Line
-	2950 3850 3100 3850
-Text Label 6650 2850 2    50   ~ 0
+	2950 2950 3100 2950
+Text Label 7050 2900 2    50   ~ 0
 ATT_Vcc
-Text Label 4300 4700 0    50   ~ 0
+Text Label 4300 3800 0    50   ~ 0
 ATT_LED0
-Text Label 4300 4100 0    50   ~ 0
+Text Label 4300 3200 0    50   ~ 0
 PA5
-Text Notes 6050 3600 0    50   ~ 0
+Text Notes 6450 3650 0    50   ~ 0
 Pins SDA, SCL, and PA5 are used for reflashing
-Text Label 7150 3150 0    50   ~ 0
+Text Label 7550 3200 0    50   ~ 0
 VcapS
-Text Label 4300 4400 0    50   ~ 0
+Text Label 4300 3500 0    50   ~ 0
 VcapS
 Wire Wire Line
-	6100 5400 6100 5300
-Connection ~ 6100 5300
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5D5BD4A4
-P 5250 2150
-F 0 "J4" H 5222 2032 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 5222 2123 50  0000 R CNN
-F 2 "custom:WJ2EDGR-5.08-2P" H 5250 2150 50  0001 C CNN
-F 3 "~" H 5250 2150 50  0001 C CNN
-	1    5250 2150
-	-1   0    0    1   
-$EndComp
+	6550 5400 6550 5300
+Connection ~ 6550 5300
 $Comp
 L power:GND #PWR0116
 U 1 1 5D5BDED0
@@ -942,6 +873,179 @@ F 3 "~" H 4950 2050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 4750 2050
-Text Label 6300 5300 0    50   ~ 0
+Text Label 6750 5300 0    50   ~ 0
 VcapS
+Text GLabel 6800 1300 2    50   BiDi ~ 0
+5V
+Text GLabel 9500 1300 1    50   BiDi ~ 0
+5V
+Wire Wire Line
+	9500 1300 9500 1450
+Wire Wire Line
+	9600 1550 9600 1450
+Wire Wire Line
+	9600 1450 9500 1450
+Connection ~ 9500 1450
+Wire Wire Line
+	9500 1450 9500 1550
+Wire Wire Line
+	9800 1550 9800 1400
+Wire Wire Line
+	4150 4550 4300 4550
+Wire Wire Line
+	4150 4650 4300 4650
+Wire Wire Line
+	4150 4750 4300 4750
+Wire Wire Line
+	4150 4850 4300 4850
+Wire Wire Line
+	2950 4550 3100 4550
+Wire Wire Line
+	2950 4850 3100 4850
+Wire Wire Line
+	2950 4750 3100 4750
+Wire Wire Line
+	2950 4650 3100 4650
+Text Label 4300 4550 0    50   ~ 0
+CS1
+Text Label 4300 4650 0    50   ~ 0
+INT1
+Text Label 4300 4750 0    50   ~ 0
+CAN1_H
+Text Label 4300 4850 0    50   ~ 0
+CAN1_L
+Text Label 2950 4550 2    50   ~ 0
+CS0
+Text Label 2950 4650 2    50   ~ 0
+INT0
+Text Label 2950 4750 2    50   ~ 0
+CAN0_H
+Text Label 2950 4850 2    50   ~ 0
+CAN0_L
+Text Label 10500 2950 0    50   ~ 0
+CS1
+Text Label 8900 3550 2    50   ~ 0
+GPIO27
+$Comp
+L Device:R R6
+U 1 1 5CF3A7CE
+P 5450 3250
+F 0 "R6" H 5520 3296 50  0000 L CNN
+F 1 "0" H 5520 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5380 3250 50  0001 C CNN
+F 3 "~" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CF399BC
+P 5450 3000
+F 0 "R5" H 5520 3046 50  0000 L CNN
+F 1 "0" H 5520 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5380 3000 50  0001 C CNN
+F 3 "~" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D6ED133
+P 5450 3500
+F 0 "R4" H 5520 3546 50  0000 L CNN
+F 1 "0" H 5520 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5380 3500 50  0001 C CNN
+F 3 "~" H 5450 3500 50  0001 C CNN
+	1    5450 3500
+	0    -1   -1   0   
+$EndComp
+Text Label 5300 3500 2    50   ~ 0
+INT0
+Text Label 5600 3500 0    50   ~ 0
+GPIO22
+Text Label 5300 3750 2    50   ~ 0
+INT1
+Text Label 5600 3750 0    50   ~ 0
+GPIO27
+$Comp
+L Device:R R8
+U 1 1 5D6ED3C3
+P 5450 3750
+F 0 "R8" H 5520 3796 50  0000 L CNN
+F 1 "0" H 5520 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5380 3750 50  0001 C CNN
+F 3 "~" H 5450 3750 50  0001 C CNN
+	1    5450 3750
+	0    -1   -1   0   
+$EndComp
+Text Label 9150 4800 0    50   ~ 0
+CAN0_H
+Text Label 9150 4900 0    50   ~ 0
+CAN0_L
+$Comp
+L Connector:Screw_Terminal_01x03 J5
+U 1 1 5D6EE7DC
+P 8950 5850
+F 0 "J5" H 8868 5525 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 8868 5616 50  0000 C CNN
+F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-3P" H 8950 5850 50  0001 C CNN
+F 3 "~" H 8950 5850 50  0001 C CNN
+	1    8950 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 5950 9250 5950
+Wire Wire Line
+	9250 5950 9250 6050
+$Comp
+L power:GND #PWR04
+U 1 1 5D6EF527
+P 9250 6050
+F 0 "#PWR04" H 9250 5800 50  0001 C CNN
+F 1 "GND" H 9350 5900 50  0000 R CNN
+F 2 "" H 9250 6050 50  0001 C CNN
+F 3 "" H 9250 6050 50  0001 C CNN
+	1    9250 6050
+	1    0    0    -1  
+$EndComp
+Text Label 9150 5750 0    50   ~ 0
+CAN1_H
+Text Label 9150 5850 0    50   ~ 0
+CAN1_L
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5D6F0292
+P 5250 2150
+F 0 "J4" H 5330 2142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5330 2051 50  0000 L CNN
+F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-2P" H 5250 2150 50  0001 C CNN
+F 3 "~" H 5250 2150 50  0001 C CNN
+	1    5250 2150
+	1    0    0    1   
+$EndComp
+$Sheet
+S 3100 5650 1050 600 
+U 5D6F1C7C
+F0 "RTC" 50
+F1 "rtc.sch" 50
+F2 "SCL" I R 4150 5850 50 
+F3 "SDA" B R 4150 5750 50 
+$EndSheet
+Wire Wire Line
+	4300 5750 4150 5750
+Wire Wire Line
+	4150 5850 4300 5850
+Text Label 4300 5850 0    50   ~ 0
+GPIO3
+Text Label 4300 5750 0    50   ~ 0
+GPIO2
+Wire Wire Line
+	9300 5100 9150 5100
+Connection ~ 9300 5100
+Text Notes 5100 4050 0    50   ~ 0
+0R resistors allow for disabling or re-routing\nsignals connected to Raspi GPIOs
+Wire Wire Line
+	9900 1250 9900 1550
+Text GLabel 9800 1400 1    50   Input ~ 0
+3.3V
 $EndSCHEMATC
