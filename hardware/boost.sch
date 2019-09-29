@@ -80,7 +80,7 @@ AR Path="/5CA6B51B" Ref="R?"  Part="1"
 AR Path="/5C3480BB/5CA6B51B" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5CA6B51B" Ref="R16"  Part="1" 
 F 0 "R16" H 4420 2496 50  0000 L CNN
-F 1 "147k" H 4420 2405 50  0000 L CNN
+F 1 "330k" H 4420 2405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2450 50  0001 C CNN
 F 3 "~" H 4350 2450 50  0001 C CNN
 	1    4350 2450
@@ -94,7 +94,7 @@ AR Path="/5CA6B522" Ref="R?"  Part="1"
 AR Path="/5C3480BB/5CA6B522" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5CA6B522" Ref="R17"  Part="1" 
 F 0 "R17" H 4420 2896 50  0000 L CNN
-F 1 "20k" H 4420 2805 50  0000 L CNN
+F 1 "43k" H 4420 2805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2850 50  0001 C CNN
 F 3 "~" H 4350 2850 50  0001 C CNN
 	1    4350 2850
@@ -130,9 +130,9 @@ FB
 Text HLabel 2150 1700 0    50   Input ~ 0
 Vin
 Wire Wire Line
-	3800 2600 4350 2600
+	3800 2600 3950 2600
 Text Notes 5150 2000 0    50   ~ 0
-FB voltage divider designed\nto provide 5.0V at Vout.
+FB voltage divider designed\nto provide 5.2V at Vout.
 Text HLabel 5500 2300 2    50   Output ~ 0
 Vboost
 $Comp
@@ -214,7 +214,7 @@ $EndComp
 Wire Wire Line
 	3400 3050 3400 2800
 Wire Wire Line
-	3800 2300 4350 2300
+	3800 2300 3950 2300
 Wire Wire Line
 	5500 2300 5450 2300
 Connection ~ 4350 2300
@@ -306,4 +306,23 @@ Wire Wire Line
 	5450 2600 5450 2700
 Wire Wire Line
 	2800 3050 2800 2500
+Text Notes 1950 1400 0    50   ~ 0
+Vin at max. 2.65V
+Connection ~ 3950 2300
+Wire Wire Line
+	3950 2300 4350 2300
+Connection ~ 3950 2600
+Wire Wire Line
+	3950 2600 4350 2600
+$Comp
+L Device:C C7
+U 1 1 5D913E0F
+P 3950 2450
+F 0 "C7" H 4065 2496 50  0000 L CNN
+F 1 "220p" H 4065 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3988 2300 50  0001 C CNN
+F 3 "~" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
