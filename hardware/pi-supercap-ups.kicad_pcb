@@ -502,7 +502,7 @@
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path "/5CA73F16/5D913E0F")
-    (attr smd)
+    (attr virtual)
     (fp_text reference "C7" (at -2.681 0 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
