@@ -36,29 +36,29 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CA62D4C
-P 2100 2350
+P 1400 2350
 AR Path="/5C3476D8/5CA62D4C" Ref="C?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D4C" Ref="C13"  Part="1" 
-F 0 "C13" H 2215 2396 50  0000 L CNN
-F 1 "10uF 50V" H 2215 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2138 2200 50  0001 C CNN
-F 3 "~" H 2100 2350 50  0001 C CNN
-F 4 "50V" H 2100 2350 50  0001 C CNN "Notes"
-	1    2100 2350
+F 0 "C13" H 1515 2396 50  0000 L CNN
+F 1 "10uF 50V" H 1515 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1438 2200 50  0001 C CNN
+F 3 "~" H 1400 2350 50  0001 C CNN
+F 4 "50V" H 1400 2350 50  0001 C CNN "Notes"
+	1    1400 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CA62D53
-P 2100 2500
+P 1400 2500
 AR Path="/5CA62D53" Ref="#PWR?"  Part="1" 
 AR Path="/5C3476D8/5CA62D53" Ref="#PWR?"  Part="1" 
 AR Path="/5CA65CC5/5CA62D53" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 2100 2250 50  0001 C CNN
-F 1 "GND" H 2105 2327 50  0000 C CNN
-F 2 "" H 2100 2500 50  0001 C CNN
-F 3 "" H 2100 2500 50  0001 C CNN
-	1    2100 2500
+F 0 "#PWR037" H 1400 2250 50  0001 C CNN
+F 1 "GND" H 1405 2327 50  0000 C CNN
+F 2 "" H 1400 2500 50  0001 C CNN
+F 3 "" H 1400 2500 50  0001 C CNN
+	1    1400 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -74,7 +74,6 @@ F 3 "~" H 2400 2650 50  0001 C CNN
 	1    2400 2650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2650 2350
 Wire Wire Line
 	2400 2500 2650 2500
 $Comp
@@ -91,11 +90,11 @@ F 3 "" H 2400 2800 50  0001 C CNN
 	1    2400 2800
 	1    0    0    -1  
 $EndComp
-Connection ~ 2100 2200
+Connection ~ 1400 2200
 Wire Wire Line
-	2100 2200 2400 2200
+	1400 2200 1700 2200
 Wire Wire Line
-	1700 2200 2100 2200
+	1000 2200 1400 2200
 $Comp
 L power:GND #PWR?
 U 1 1 5CA62D6B
@@ -310,21 +309,21 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5CA62DDA
-P 2400 2000
+P 1700 2000
 AR Path="/5C3476D8/5CA62DDA" Ref="#FLG?"  Part="1" 
 AR Path="/5CA65CC5/5CA62DDA" Ref="#FLG08"  Part="1" 
-F 0 "#FLG08" H 2400 2075 50  0001 C CNN
-F 1 "PWR_FLAG" H 2400 2174 50  0000 C CNN
-F 2 "" H 2400 2000 50  0001 C CNN
-F 3 "~" H 2400 2000 50  0001 C CNN
-	1    2400 2000
+F 0 "#FLG08" H 1700 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 2174 50  0000 C CNN
+F 2 "" H 1700 2000 50  0001 C CNN
+F 3 "~" H 1700 2000 50  0001 C CNN
+	1    1700 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 2000 2400 2200
-Connection ~ 2400 2200
+	1700 2000 1700 2200
+Connection ~ 1700 2200
 Wire Wire Line
-	2400 2200 2650 2200
+	1700 2200 2650 2200
 Text Label 3900 1650 2    50   ~ 0
 SW
 Text Label 3750 2350 0    50   ~ 0
@@ -335,7 +334,7 @@ Text Label 3550 2500 0    50   ~ 0
 COMP
 Text Label 3050 1650 0    50   ~ 0
 BST
-Text HLabel 1700 2200 0    50   Input ~ 0
+Text HLabel 1000 2200 0    50   Input ~ 0
 Vin
 Connection ~ 4750 1650
 Text HLabel 5850 1650 2    50   Output ~ 0
@@ -383,4 +382,5 @@ Text Notes 5350 2100 0    50   ~ 0
 Max 3A current output
 Wire Wire Line
 	5100 1650 5600 1650
+NoConn ~ 2650 2350
 $EndSCHEMATC

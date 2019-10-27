@@ -448,17 +448,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 2900 7550 2900
 NoConn ~ 10500 3650
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5CF2FDF8
-P 3600 1650
-F 0 "#FLG0101" H 3600 1725 50  0001 C CNN
-F 1 "PWR_FLAG" H 3600 1824 50  0000 C CNN
-F 2 "" H 3600 1650 50  0001 C CNN
-F 3 "~" H 3600 1650 50  0001 C CNN
-	1    3600 1650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4750 1300 4750 2050
 Text Label 5000 2050 2    50   ~ 0
@@ -520,11 +509,11 @@ F0 "inv_Sense_Vcc" 50
 F1 "inv_Sense_Vcc.sch" 50
 F2 "+12V" I L 3100 2800 50 
 F3 "~RESET~" I R 4150 2800 50 
-F4 "V12:6" O R 4150 2900 50 
+F4 "V12s" O R 4150 2900 50 
 F5 "SDA" B R 4150 3000 50 
 F6 "SCL" B R 4150 3100 50 
 F7 "PA5" B R 4150 3200 50 
-F8 "PA7" B R 4150 3300 50 
+F8 "PA7_ENIN" B R 4150 3300 50 
 F9 "PA3_EN5V" B R 4150 3400 50 
 F10 "PA0" B R 4150 3600 50 
 F11 "PB0" B R 4150 3700 50 
@@ -553,13 +542,13 @@ PA0
 Text Label 4300 3400 0    50   ~ 0
 EN5V
 Text Label 4300 3300 0    50   ~ 0
-PA7
+ENIN
 Text Label 4300 3100 0    50   ~ 0
 SCL
 Text Label 4300 3000 0    50   ~ 0
 SDA
 Text Label 4300 2900 0    50   ~ 0
-V12:6
+V12s
 Text Label 4300 3900 0    50   ~ 0
 ATT_LED1
 Wire Wire Line
@@ -585,7 +574,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3900 4300 3900
 Text Label 7550 3100 0    50   ~ 0
-V12:6
+V12s
 $Comp
 L power:GND #PWR0102
 U 1 1 5D53367E
@@ -608,20 +597,9 @@ PB0
 Text Label 7050 3100 2    50   ~ 0
 ATT_LED0
 Text Label 7050 3400 2    50   ~ 0
-PA7
+ENIN
 Text Label 7050 3500 2    50   ~ 0
 SDA
-$Comp
-L Device:C C12
-U 1 1 5D53C242
-P 6550 5550
-F 0 "C12" H 6665 5596 50  0000 L CNN
-F 1 "100nF" H 6665 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 5400 50  0001 C CNN
-F 3 "~" H 6550 5550 50  0001 C CNN
-	1    6550 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5D53C7F8
@@ -785,6 +763,7 @@ F0 "Current limiting" 50
 F1 "current_limiting.sch" 50
 F2 "Vin" I L 3800 1300 50 
 F3 "Vilim" O R 4500 1300 50 
+F4 "ENIN" I L 3800 1500 50 
 $EndSheet
 Wire Wire Line
 	4500 1300 4750 1300
@@ -797,13 +776,12 @@ F0 "Buck converter" 50
 F1 "buck.sch" 50
 F2 "Vin" I L 2800 1300 50 
 F3 "Vbuck" O R 3450 1300 50 
+F4 "ENIN" I R 3450 1500 50 
 $EndSheet
 Wire Wire Line
 	3600 1300 3450 1300
 Connection ~ 3600 1300
 Connection ~ 4750 1300
-Wire Wire Line
-	3600 1300 3600 1650
 Wire Wire Line
 	5750 1300 6150 1300
 Text Label 5000 1500 2    50   ~ 0
@@ -823,10 +801,10 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 $EndComp
 NoConn ~ 8900 2250
 NoConn ~ 8900 3450
-Text GLabel 3600 1000 1    50   Input ~ 0
+Text GLabel 3600 800  1    50   Input ~ 0
 2.65V
 Wire Wire Line
-	3600 1000 3600 1300
+	3600 800  3600 900 
 Text Label 2950 2950 2    50   ~ 0
 ATT_Vcc
 Wire Wire Line
@@ -1048,4 +1026,40 @@ Wire Wire Line
 	9900 1250 9900 1550
 Text GLabel 9800 1400 1    50   Input ~ 0
 3.3V
+$Comp
+L Device:R R26
+U 1 1 5DB5AEA1
+P 6550 5550
+F 0 "R26" H 6620 5596 50  0000 L CNN
+F 1 "68k" H 6620 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 5550 50  0001 C CNN
+F 3 "~" H 6550 5550 50  0001 C CNN
+	1    6550 5550
+	1    0    0    -1  
+$EndComp
+Text Notes 5100 5300 0    50   ~ 0
+VcapS is scaled from 2.7V to 1.1V
+Connection ~ 3600 900 
+Wire Wire Line
+	3600 900  3600 1300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5CF2FDF8
+P 3600 900
+F 0 "#FLG0101" H 3600 975 50  0001 C CNN
+F 1 "PWR_FLAG" V 3600 1200 50  0000 C CNN
+F 2 "" H 3600 900 50  0001 C CNN
+F 3 "~" H 3600 900 50  0001 C CNN
+	1    3600 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1500 3650 1500
+Wire Wire Line
+	3650 1500 3650 1950
+Connection ~ 3650 1500
+Wire Wire Line
+	3650 1500 3800 1500
+Text Label 3650 1950 0    50   ~ 0
+ENIN
 $EndSCHEMATC
