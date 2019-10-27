@@ -242,7 +242,7 @@ $EndComp
 Connection ~ 4000 1500
 Connection ~ 3700 1600
 Wire Wire Line
-	3700 1350 3700 1600
+	3700 1350 3700 1400
 Wire Wire Line
 	4550 1500 4550 2000
 Wire Wire Line
@@ -268,4 +268,13 @@ F 3 "" H 2950 1750 50  0001 C CNN
 	1    2950 1550
 	1    0    0    -1  
 $EndComp
+Text HLabel 4150 950  1    50   Input ~ 0
+ENLIM
+Wire Wire Line
+	4150 950  4150 1400
+Wire Wire Line
+	4150 1400 3700 1400
+Connection ~ 3700 1400
+Wire Wire Line
+	3700 1400 3700 1600
 $EndSCHEMATC

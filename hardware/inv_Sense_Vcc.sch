@@ -94,14 +94,14 @@ P 1650 2700
 AR Path="/5CF4FF7C" Ref="R?"  Part="1" 
 AR Path="/5C33FF90/5CF4FF7C" Ref="R27"  Part="1" 
 F 0 "R27" H 1720 2746 50  0000 L CNN
-F 1 "51k" H 1720 2655 50  0000 L CNN
+F 1 "100k" H 1720 2655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1580 2700 50  0001 C CNN
 F 3 "~" H 1650 2700 50  0001 C CNN
 	1    1650 2700
 	1    0    0    -1  
 $EndComp
 Text HLabel 2400 3050 2    50   Output ~ 0
-V12:6
+V12s
 Wire Wire Line
 	1650 3050 1650 2850
 Connection ~ 1650 3050
@@ -144,7 +144,7 @@ P 2250 3300
 AR Path="/5CFB31B2" Ref="R?"  Part="1" 
 AR Path="/5C33FF90/5CFB31B2" Ref="R28"  Part="1" 
 F 0 "R28" H 2320 3346 50  0000 L CNN
-F 1 "10k" H 2320 3255 50  0000 L CNN
+F 1 "7.5k" H 2320 3255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 3300 50  0001 C CNN
 F 3 "~" H 2250 3300 50  0001 C CNN
 	1    2250 3300
@@ -11871,7 +11871,7 @@ PA7
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
 Text HLabel 4650 4000 2    50   BiDi ~ 0
-V12:6
+V12s
 Text HLabel 4650 3900 2    50   BiDi ~ 0
 PA0
 Text HLabel 4650 4800 2    50   BiDi ~ 0
@@ -11951,4 +11951,6 @@ Text HLabel 4650 4100 2    50   Input ~ 0
 VcapS
 Wire Wire Line
 	4650 4100 4400 4100
+Text Notes 1700 2950 0    50   ~ 0
+V12s scaled to provide 1.1V for 15.76V input
 $EndSCHEMATC
