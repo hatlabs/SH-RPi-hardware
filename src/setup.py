@@ -8,9 +8,10 @@ setup(name='pi_super_ups',
       url='https://github.com/mairas/pi-super-ups',
       packages=find_packages(),
       install_requires=[
-        'RPi.GPIO',
+        'smbus2',
       ],
       entry_points = {
         'console_scripts': ['pi-super-ups=pi_super_ups.pi_super_ups:main'],
+        'console_scripts': ['hat-i2c-report=pi_super_ups.hat_i2c_report:main'],
       }
 )
