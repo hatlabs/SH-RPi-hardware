@@ -11867,7 +11867,7 @@ SCL
 Text HLabel 4650 4400 2    50   BiDi ~ 0
 PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
-PA7
+PA7_ENIN
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
 Text HLabel 4650 4000 2    50   BiDi ~ 0

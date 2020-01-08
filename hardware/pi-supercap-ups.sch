@@ -776,7 +776,6 @@ F0 "Buck converter" 50
 F1 "buck.sch" 50
 F2 "Vin" I L 2800 1300 50 
 F3 "Vbuck" O R 3450 1300 50 
-F4 "ENIN" I R 3450 1500 50 
 $EndSheet
 Wire Wire Line
 	3600 1300 3450 1300
@@ -1054,10 +1053,7 @@ F 3 "~" H 3600 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3450 1500 3650 1500
-Wire Wire Line
 	3650 1500 3650 1950
-Connection ~ 3650 1500
 Wire Wire Line
 	3650 1500 3800 1500
 Text Label 3650 1950 0    50   ~ 0

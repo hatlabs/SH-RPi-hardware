@@ -32,25 +32,10 @@ F 3 "" H 2650 2700 50  0001 C CNN
 	1    2650 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 950  3700 1050
-Text HLabel 3700 950  1    50   Input ~ 0
-Vin
 Text Notes 4750 1850 0    50   ~ 0
 2*1.5A current limit
 Wire Wire Line
 	4550 2000 4900 2000
-$Comp
-L Device:R R19
-U 1 1 5CA942F1
-P 3700 1200
-F 0 "R19" H 3770 1246 50  0000 L CNN
-F 1 "10k" H 3770 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 1200 50  0001 C CNN
-F 3 "~" H 3700 1200 50  0001 C CNN
-	1    3700 1200
-	1    0    0    -1  
-$EndComp
 Text HLabel 1600 1500 0    50   Input ~ 0
 Vin
 Text HLabel 1850 2300 0    50   Input ~ 0
@@ -242,8 +227,6 @@ $EndComp
 Connection ~ 4000 1500
 Connection ~ 3700 1600
 Wire Wire Line
-	3700 1350 3700 1400
-Wire Wire Line
 	4550 1500 4550 2000
 Wire Wire Line
 	4000 1500 4550 1500
@@ -268,13 +251,30 @@ F 3 "" H 2950 1750 50  0001 C CNN
 	1    2950 1550
 	1    0    0    -1  
 $EndComp
-Text HLabel 4150 950  1    50   Input ~ 0
-ENLIM
 Wire Wire Line
-	4150 950  4150 1400
+	3700 1350 3700 1400
+$Comp
+L Device:R R19
+U 1 1 5CA942F1
+P 3700 1200
+F 0 "R19" H 3770 1246 50  0000 L CNN
+F 1 "10k" H 3770 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3630 1200 50  0001 C CNN
+F 3 "~" H 3700 1200 50  0001 C CNN
+	1    3700 1200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3700 950  1    50   Input ~ 0
+Vin
 Wire Wire Line
-	4150 1400 3700 1400
+	3700 950  3700 1050
+Wire Wire Line
+	3700 1400 4100 1400
+Wire Wire Line
+	4100 1400 4100 950 
 Connection ~ 3700 1400
 Wire Wire Line
 	3700 1400 3700 1600
+Text HLabel 4100 950  1    50   Input ~ 0
+ENIN
 $EndSCHEMATC
