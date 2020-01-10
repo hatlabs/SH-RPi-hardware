@@ -1,5 +1,4 @@
-EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,14 +12,9 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
-L pi-supercap-ups:MP1584EN U?
+L sailor-hat-rescue:MP1584EN-sailor-hat U?
 U 1 1 5CA62D44
 P 3050 2350
 AR Path="/5CA62D44" Ref="U?"  Part="1" 

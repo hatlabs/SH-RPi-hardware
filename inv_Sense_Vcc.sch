@@ -1,5 +1,4 @@
-EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L power:GND #PWR?
@@ -11937,9 +11931,11 @@ Connection ~ 4850 2900
 Wire Wire Line
 	4850 2900 3800 2900
 $Comp
-L MCU_Microchip_ATtiny:ATtiny44-20SSU U1
+L sailor-hat-rescue:ATtiny44-20SSU-MCU_Microchip_ATtiny U1
 U 1 1 5D62E779
 P 3800 4500
+AR Path="/5D62E779" Ref="U1"  Part="1" 
+AR Path="/5C33FF90/5D62E779" Ref="U1"  Part="1" 
 F 0 "U1" H 3271 4546 50  0000 R CNN
 F 1 "ATtiny44-20SSU" H 3271 4455 50  0000 R CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 4500 50  0001 C CIN

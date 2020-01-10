@@ -1,5 +1,4 @@
-EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L Device:C C?
@@ -175,7 +169,7 @@ F 3 "" H 2800 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups:TPS61022 U2
+L sailor-hat-rescue:TPS61022-sailor-hat U2
 U 1 1 5D5AC086
 P 3400 2400
 F 0 "U2" H 3400 2865 50  0000 C CNN

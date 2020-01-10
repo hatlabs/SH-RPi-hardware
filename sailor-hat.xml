@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/mairas/BTSync/Shared/sk-server/raspi-supercap-ups/raspi-supercap-ups.sch</source>
+    <source>/Users/mairas/BTSync/Shared/sk-server/rassailor-hat/rassailor-hat.sch</source>
     <date>2019 February 14, Thursday 19:42:38</date>
     <tool>Eeschema (5.0.1-3-g963ef8bb5)</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -10,7 +10,7 @@
         <company/>
         <rev/>
         <date/>
-        <source>raspi-supercap-ups.sch</source>
+        <source>rassailor-hat.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>

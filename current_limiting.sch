@@ -1,5 +1,4 @@
-EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Text HLabel 4900 2000 2    50   Output ~ 0
 Vilim
@@ -148,7 +142,7 @@ F 3 "" H 2950 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups:MT9700 U7
+L sailor-hat-rescue:MT9700-sailor-hat U7
 U 1 1 5D58745D
 P 3200 2350
 F 0 "U7" H 3200 2665 50  0000 C CNN
@@ -241,7 +235,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 1600 3700 1600
 $Comp
-L pi-supercap-ups:MT9700 U6
+L sailor-hat-rescue:MT9700-sailor-hat U6
 U 1 1 5D58745E
 P 2950 1550
 F 0 "U6" H 2950 1865 50  0000 C CNN

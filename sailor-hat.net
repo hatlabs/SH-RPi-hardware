@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /Users/mairas/src/SK/pi-super-ups/hardware/pi-supercap-ups.sch)
+    (source /Users/mairas/src/SK/pi-super-ups/hardware/sailor-hat.sch)
     (date "2019 August 25, Sunday 21:26:56")
     (tool "Eeschema (5.1.4-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source pi-supercap-ups.sch)
+        (source sailor-hat.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -293,14 +293,14 @@
       (value MCP2515-xSO)
       (footprint Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm)
       (datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf)
-      (libsource (lib pi-supercap-ups) (part MCP2515-xSO) (description ""))
+      (libsource (lib sailor-hat) (part MCP2515-xSO) (description ""))
       (sheetpath (names "/CANbus interface/") (tstamps /5C348474/))
       (tstamp 5C34A611))
     (comp (ref U3)
       (value TJA1051T-3)
       (footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm)
       (datasheet http://www.nxp.com/documents/data_sheet/TJA1051.pdf)
-      (libsource (lib pi-supercap-ups) (part TJA1051T-3) (description ""))
+      (libsource (lib sailor-hat) (part TJA1051T-3) (description ""))
       (sheetpath (names "/CANbus interface/") (tstamps /5C348474/))
       (tstamp 5C5F35CC))
     (comp (ref TP6)
@@ -384,7 +384,7 @@
     (comp (ref U4)
       (value TPS61022)
       (footprint custom:TPS61022RWUR)
-      (libsource (lib pi-supercap-ups) (part TPS61022) (description ""))
+      (libsource (lib sailor-hat) (part TPS61022) (description ""))
       (sheetpath (names "/Boost converter/") (tstamps /5CA73F16/))
       (tstamp 5D5AC086))
     (comp (ref SW1)
@@ -488,7 +488,7 @@
     (comp (ref U7)
       (value MT9700)
       (footprint Package_TO_SOT_SMD:SOT-23-5_HandSoldering)
-      (libsource (lib pi-supercap-ups) (part MT9700) (description ""))
+      (libsource (lib sailor-hat) (part MT9700) (description ""))
       (sheetpath (names "/Current limiting/") (tstamps /5CA852AD/))
       (tstamp 5D58745D))
     (comp (ref C23)
@@ -508,13 +508,13 @@
     (comp (ref U6)
       (value MT9700)
       (footprint Package_TO_SOT_SMD:SOT-23-5_HandSoldering)
-      (libsource (lib pi-supercap-ups) (part MT9700) (description ""))
+      (libsource (lib sailor-hat) (part MT9700) (description ""))
       (sheetpath (names "/Current limiting/") (tstamps /5CA852AD/))
       (tstamp 5D58745E))
     (comp (ref U5)
       (value MP1584EN)
       (footprint Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm)
-      (libsource (lib pi-supercap-ups) (part MP1584EN) (description ""))
+      (libsource (lib sailor-hat) (part MP1584EN) (description ""))
       (sheetpath (names "/Buck converter/") (tstamps /5CA65CC5/))
       (tstamp 5CA62D44))
     (comp (ref C13)
@@ -893,7 +893,7 @@
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name B) (type passive))))
-    (libpart (lib pi-supercap-ups) (part MCP2515-xSO)
+    (libpart (lib sailor-hat) (part MCP2515-xSO)
       (footprints
         (fp SOIC*7.5x11.6mm*P1.27mm*))
       (fields
@@ -919,7 +919,7 @@
         (pin (num 16) (name ~CS) (type input))
         (pin (num 17) (name ~RESET) (type input))
         (pin (num 18) (name VDD) (type power_in))))
-    (libpart (lib pi-supercap-ups) (part MP1584EN)
+    (libpart (lib sailor-hat) (part MP1584EN)
       (fields
         (field (name Reference) U)
         (field (name Value) MP1584EN))
@@ -933,7 +933,7 @@
         (pin (num 7) (name VIN) (type power_in))
         (pin (num 8) (name BST) (type input))
         (pin (num 9) (name PGND) (type power_in))))
-    (libpart (lib pi-supercap-ups) (part MT9700)
+    (libpart (lib sailor-hat) (part MT9700)
       (footprints
         (fp SOT?23*))
       (fields
@@ -945,7 +945,7 @@
         (pin (num 3) (name SET) (type input))
         (pin (num 4) (name EN) (type input))
         (pin (num 5) (name VIN) (type power_in))))
-    (libpart (lib pi-supercap-ups) (part TJA1051T-3)
+    (libpart (lib sailor-hat) (part TJA1051T-3)
       (footprints
         (fp SOIC*3.9x4.9mm*P1.27mm*))
       (fields
@@ -961,7 +961,7 @@
         (pin (num 6) (name CANL) (type BiDi))
         (pin (num 7) (name CANH) (type BiDi))
         (pin (num 8) (name S) (type input))))
-    (libpart (lib pi-supercap-ups) (part TPS61022)
+    (libpart (lib sailor-hat) (part TPS61022)
       (footprints
         (fp SOT?23*))
       (fields
@@ -990,8 +990,8 @@
       (uri "/Library/Application Support/kicad/library/MCU_Microchip_ATtiny.lib"))
     (library (logical Switch)
       (uri "/Library/Application Support/kicad/library/Switch.lib"))
-    (library (logical pi-supercap-ups)
-      (uri /Users/mairas/src/SK/pi-super-ups/hardware/pi-supercap-ups.lib)))
+    (library (logical sailor-hat)
+      (uri /Users/mairas/src/SK/pi-super-ups/hardware/sailor-hat.lib)))
   (nets
     (net (code 1) (name /INT)
       (node (ref J2) (pin 15))

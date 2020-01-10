@@ -1,5 +1,4 @@
-EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L power:GND #PWR032
@@ -92,7 +86,7 @@ Wire Wire Line
 Text GLabel 2900 750  0    50   BiDi ~ 0
 5V
 $Comp
-L pi-supercap-ups:MCP25625T-E_ML IC1
+L sailor-hat-rescue:MCP25625T-E_ML-sailor-hat IC1
 U 1 1 5D6C6C57
 P 2250 2350
 F 0 "IC1" H 3400 2800 50  0000 L CNN
@@ -395,7 +389,7 @@ F 3 "~" H 8350 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups:MCP25625T-E_ML IC2
+L sailor-hat-rescue:MCP25625T-E_ML-sailor-hat IC2
 U 1 1 5D6DDFA9
 P 6950 2250
 F 0 "IC2" H 8100 2700 50  0000 L CNN

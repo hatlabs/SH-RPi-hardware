@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:pi-supercap-ups-cache
+LIBS:sailor-hat-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -84,7 +84,7 @@ F 3 "" H 4450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pi-supercap-ups:MT3608 U3
+L sailor-hat:MT3608 U3
 U 1 1 5C35E3F1
 P 2300 1550
 AR Path="/5C35E3F1" Ref="U3"  Part="1" 

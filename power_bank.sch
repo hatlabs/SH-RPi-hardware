@@ -1,5 +1,5 @@
 EESchema Schematic File Version 5
-LIBS:pi-supercap-ups-cache
+LIBS:sailor-hat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
