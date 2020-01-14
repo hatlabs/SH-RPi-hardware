@@ -11931,13 +11931,13 @@ Connection ~ 4850 2900
 Wire Wire Line
 	4850 2900 3800 2900
 $Comp
-L sailor-hat-rescue:ATtiny44-20SSU-MCU_Microchip_ATtiny U1
+L MCU_Microchip_ATtiny:ATtiny841-SSU U1
 U 1 1 5D62E779
 P 3800 4500
 AR Path="/5D62E779" Ref="U1"  Part="1" 
 AR Path="/5C33FF90/5D62E779" Ref="U1"  Part="1" 
 F 0 "U1" H 3271 4546 50  0000 R CNN
-F 1 "ATtiny44-20SSU" H 3271 4455 50  0000 R CNN
+F 1 "ATtiny841-SSU" H 3271 4455 50  0000 R CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 4500 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 3800 4500 50  0001 C CNN
 	1    3800 4500
