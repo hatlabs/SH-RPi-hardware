@@ -622,4 +622,27 @@ Text HLabel 2200 3350 0    50   Input ~ 0
 ENIN
 Wire Wire Line
 	2200 3350 2550 3350
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2A7700
+P 7600 1300
+F 0 "TP?" H 7658 1418 50  0000 L CNN
+F 1 "CSA Out" H 7658 1327 50  0000 L CNN
+F 2 "" H 7800 1300 50  0001 C CNN
+F 3 "~" H 7800 1300 50  0001 C CNN
+	1    7600 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 1300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2A8B09
+P 2950 5150
+F 0 "TP?" H 3008 5268 50  0000 L CNN
+F 1 "REG3.3V" H 3008 5177 50  0000 L CNN
+F 2 "" H 3150 5150 50  0001 C CNN
+F 3 "~" H 3150 5150 50  0001 C CNN
+	1    2950 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

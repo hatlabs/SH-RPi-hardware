@@ -357,19 +357,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 1300 5050 1300
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5CAAD863
-P 2200 1300
-AR Path="/5C345D5A/5CAAD863" Ref="TP?"  Part="1" 
-AR Path="/5CAAD863" Ref="TP1"  Part="1" 
-F 0 "TP1" H 2258 1420 50  0000 L CNN
-F 1 "+12V_prot" H 2258 1329 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2400 1300 50  0001 C CNN
-F 3 "~" H 2400 1300 50  0001 C CNN
-	1    2200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5CA83444
 P 1650 1300
@@ -1023,4 +1010,17 @@ Wire Wire Line
 	4200 1300 4750 1300
 Wire Wire Line
 	3550 1300 4200 1300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5CAAD863
+P 2200 1300
+AR Path="/5C345D5A/5CAAD863" Ref="TP?"  Part="1" 
+AR Path="/5CAAD863" Ref="TP1"  Part="1" 
+F 0 "TP1" H 2258 1420 50  0000 L CNN
+F 1 "+12V_prot" H 2258 1329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2400 1300 50  0001 C CNN
+F 3 "~" H 2400 1300 50  0001 C CNN
+	1    2200 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
