@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -267,7 +267,7 @@ Connection ~ 9550 5100
 Wire Wire Line
 	9550 5100 9300 5100
 Wire Wire Line
-	2650 1300 2800 1300
+	2650 1300 2900 1300
 Connection ~ 2650 1300
 $Sheet
 S 5050 1150 700  500 
@@ -285,7 +285,7 @@ P 1100 1300
 AR Path="/5CA75C67" Ref="F1"  Part="1" 
 AR Path="/5C3476D8/5CA75C67" Ref="F?"  Part="1" 
 F 0 "F1" V 903 1300 50  0000 C CNN
-F 1 "1A" V 994 1300 50  0000 C CNN
+F 1 "2920L110/60MR (1.1A)" V 994 1300 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1030 1300 50  0001 C CNN
 F 3 "~" H 1100 1300 50  0001 C CNN
 	1    1100 1300
@@ -330,60 +330,27 @@ F 3 "" H 2200 1900 50  0001 C CNN
 	1    2200 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Diode:1N5820 D?
-U 1 1 5CA75C84
-P 1850 1300
-AR Path="/5C3480BB/5CA75C84" Ref="D?"  Part="1" 
-AR Path="/5C3476D8/5CA75C84" Ref="D?"  Part="1" 
-AR Path="/5C345D5A/5CA75C84" Ref="D?"  Part="1" 
-AR Path="/5CA75C84" Ref="D2"  Part="1" 
-F 0 "D2" H 1700 1200 50  0000 L CNN
-F 1 "DS34W" V 1900 950 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1850 1125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 1850 1300 50  0001 C CNN
-	1    1850 1300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2000 1300 2200 1300
 Wire Wire Line
 	950  1300 850  1300
-Text Label 1600 1300 1    50   ~ 0
+Text Label 1800 1300 1    50   ~ 0
 12V_fused
-$Comp
-L Device:D_TVS D?
-U 1 1 5CA75C8F
-P 1550 1600
-AR Path="/5C3476D8/5CA75C8F" Ref="D?"  Part="1" 
-AR Path="/5CA75C8F" Ref="D1"  Part="1" 
-F 0 "D1" V 1504 1679 50  0000 L CNN
-F 1 "SMF16CA" V 1595 1679 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1550 1600 50  0001 C CNN
-F 3 "~" H 1550 1600 50  0001 C CNN
-	1    1550 1600
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5CA75C96
-P 1550 1900
+P 1400 1900
 AR Path="/5CA75C96" Ref="#PWR02"  Part="1" 
 AR Path="/5C3476D8/5CA75C96" Ref="#PWR?"  Part="1" 
-F 0 "#PWR02" H 1550 1650 50  0001 C CNN
-F 1 "GND" H 1555 1727 50  0000 C CNN
-F 2 "" H 1550 1900 50  0001 C CNN
-F 3 "" H 1550 1900 50  0001 C CNN
-	1    1550 1900
+F 0 "#PWR02" H 1400 1650 50  0001 C CNN
+F 1 "GND" H 1405 1727 50  0000 C CNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "" H 1400 1900 50  0001 C CNN
+	1    1400 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1900 1550 1750
+	1400 1900 1400 1750
 Wire Wire Line
-	1550 1450 1550 1300
-Connection ~ 1550 1300
-Wire Wire Line
-	1550 1300 1700 1300
+	1400 1450 1400 1300
 Connection ~ 2200 1300
 Wire Wire Line
 	5050 2050 4750 2050
@@ -405,21 +372,17 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5CA83444
-P 1450 1300
-F 0 "#FLG0102" H 1450 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 1450 1474 50  0000 C CNN
-F 2 "" H 1450 1300 50  0001 C CNN
-F 3 "~" H 1450 1300 50  0001 C CNN
-	1    1450 1300
+P 1650 1300
+F 0 "#FLG0102" H 1650 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 1474 50  0000 C CNN
+F 2 "" H 1650 1300 50  0001 C CNN
+F 3 "~" H 1650 1300 50  0001 C CNN
+	1    1650 1300
 	1    0    0    -1  
 $EndComp
-Connection ~ 1450 1300
-Wire Wire Line
-	1450 1300 1550 1300
+Connection ~ 1650 1300
 Wire Wire Line
 	2200 1300 2650 1300
-Wire Wire Line
-	1250 1300 1450 1300
 $Comp
 L Device:R R20
 U 1 1 5CB8E06B
@@ -751,29 +714,14 @@ Wire Wire Line
 Connection ~ 6150 1300
 Connection ~ 6550 1300
 $Sheet
-S 3800 1150 700  500 
-U 5CA852AD
-F0 "Current limiting" 50
-F1 "current_limiting.sch" 50
-F2 "Vin" I L 3800 1300 50 
-F3 "Vilim" O R 4500 1300 50 
-F4 "ENIN" I L 3800 1500 50 
-$EndSheet
-Wire Wire Line
-	4500 1300 4750 1300
-Wire Wire Line
-	3800 1300 3600 1300
-$Sheet
-S 2800 1150 650  500 
+S 2900 1150 650  500 
 U 5CA65CC5
 F0 "Buck converter" 50
 F1 "buck.sch" 50
-F2 "Vin" I L 2800 1300 50 
-F3 "Vbuck" O R 3450 1300 50 
+F2 "Vin" I L 2900 1300 50 
+F3 "Vbuck" O R 3550 1300 50 
+F4 "ENIN" I L 2900 1500 50 
 $EndSheet
-Wire Wire Line
-	3600 1300 3450 1300
-Connection ~ 3600 1300
 Connection ~ 4750 1300
 Wire Wire Line
 	5750 1300 6150 1300
@@ -794,10 +742,10 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 $EndComp
 NoConn ~ 8900 2250
 NoConn ~ 8900 3450
-Text GLabel 3600 800  1    50   Input ~ 0
+Text GLabel 4200 800  1    50   Input ~ 0
 2.65V
 Wire Wire Line
-	3600 800  3600 900 
+	4200 800  4200 900 
 Text Label 2950 2950 2    50   ~ 0
 ATT_Vcc
 Wire Wire Line
@@ -1030,26 +978,49 @@ F 3 "~" H 6550 5550 50  0001 C CNN
 	1    6550 5550
 	1    0    0    -1  
 $EndComp
-Text Notes 5100 5300 0    50   ~ 0
-VcapS is scaled from 2.7V to 1.1V
-Connection ~ 3600 900 
+Text Notes 4900 5300 0    50   ~ 0
+VcapS is scaled from 2.7V to 1.1V\n(this will also drain the caps over time)
+Connection ~ 4200 900 
 Wire Wire Line
-	3600 900  3600 1300
+	4200 900  4200 1300
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5CF2FDF8
-P 3600 900
-F 0 "#FLG0101" H 3600 975 50  0001 C CNN
-F 1 "PWR_FLAG" V 3600 1200 50  0000 C CNN
-F 2 "" H 3600 900 50  0001 C CNN
-F 3 "~" H 3600 900 50  0001 C CNN
-	1    3600 900 
+P 4200 900
+F 0 "#FLG0101" H 4200 975 50  0001 C CNN
+F 1 "PWR_FLAG" V 4200 1200 50  0000 C CNN
+F 2 "" H 4200 900 50  0001 C CNN
+F 3 "~" H 4200 900 50  0001 C CNN
+	1    4200 900 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3650 1500 3650 1950
-Wire Wire Line
-	3650 1500 3800 1500
-Text Label 3650 1950 0    50   ~ 0
+	2800 1500 2800 1950
+Text Label 2800 1950 0    50   ~ 0
 ENIN
+$Comp
+L Device:D_Zener D?
+U 1 1 5E20D410
+P 1400 1600
+F 0 "D?" V 1354 1521 50  0000 R CNN
+F 1 "TPSMA6L16A" V 1445 1521 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 1400 1600 50  0001 C CNN
+F 3 "~" H 1400 1600 50  0001 C CNN
+	1    1400 1600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1250 1300 1400 1300
+Connection ~ 1400 1300
+Wire Wire Line
+	1400 1300 1650 1300
+Wire Wire Line
+	1650 1300 2200 1300
+Wire Wire Line
+	2900 1500 2800 1500
+Connection ~ 4200 1300
+Wire Wire Line
+	4200 1300 4750 1300
+Wire Wire Line
+	3550 1300 4200 1300
 $EndSCHEMATC

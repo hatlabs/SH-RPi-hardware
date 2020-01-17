@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -11906,7 +11906,7 @@ F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 3720 2600 50  0001 C
 	1    0    0    -1  
 $EndComp
 Text GLabel 3500 2600 0    50   Input ~ 0
-2.65V
+REG3.3V
 Wire Wire Line
 	5500 2900 4850 2900
 Wire Wire Line
@@ -11949,4 +11949,25 @@ Wire Wire Line
 	4650 4100 4400 4100
 Text Notes 1700 2950 0    50   ~ 0
 V12s scaled to provide 1.1V for 15.76V input
+Text HLabel 750  2450 1    50   Input ~ 0
+ATT_Vcc
+Wire Wire Line
+	750  2550 750  2450
+Wire Wire Line
+	750  2850 750  3050
+$Comp
+L Device:D_Schottky D?
+U 1 1 5E237065
+P 750 2700
+F 0 "D?" V 704 2779 50  0000 L CNN
+F 1 "LDSR01S30ST5G" V 795 2779 50  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 750 2700 50  0001 C CNN
+F 3 "~" H 750 2700 50  0001 C CNN
+	1    750  2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  3050 1650 3050
+Text Notes 650  3300 0    50   ~ 0
+Clamp V12s to always\nless than ATT_Vcc
 $EndSCHEMATC
