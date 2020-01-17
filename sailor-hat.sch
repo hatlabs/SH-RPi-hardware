@@ -224,31 +224,6 @@ Wire Wire Line
 	10350 5000 9150 5000
 Wire Wire Line
 	9750 5100 9550 5100
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5C391989
-P 9300 5100
-F 0 "#FLG03" H 9300 5175 50  0001 C CNN
-F 1 "PWR_FLAG" H 9300 5274 50  0000 C CNN
-F 2 "" H 9300 5100 50  0001 C CNN
-F 3 "~" H 9300 5100 50  0001 C CNN
-	1    9300 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9900 1100 9900 1250
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5C393112
-P 9900 1250
-F 0 "#FLG04" H 9900 1325 50  0001 C CNN
-F 1 "PWR_FLAG" V 9900 1378 50  0000 L CNN
-F 2 "" H 9900 1250 50  0001 C CNN
-F 3 "~" H 9900 1250 50  0001 C CNN
-	1    9900 1250
-	0    1    1    0   
-$EndComp
-Connection ~ 9900 1250
 Text Label 4300 2800 0    50   ~ 0
 ATT_RESET
 NoConn ~ 8900 3350
@@ -264,8 +239,6 @@ F 3 "~" H 9750 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 9550 5100
-Wire Wire Line
-	9550 5100 9300 5100
 Wire Wire Line
 	2650 1300 2900 1300
 Connection ~ 2650 1300
@@ -337,18 +310,16 @@ Text Label 1800 1300 1    50   ~ 0
 $Comp
 L power:GND #PWR02
 U 1 1 5CA75C96
-P 1400 1900
+P 1400 2400
 AR Path="/5CA75C96" Ref="#PWR02"  Part="1" 
 AR Path="/5C3476D8/5CA75C96" Ref="#PWR?"  Part="1" 
-F 0 "#PWR02" H 1400 1650 50  0001 C CNN
-F 1 "GND" H 1405 1727 50  0000 C CNN
-F 2 "" H 1400 1900 50  0001 C CNN
-F 3 "" H 1400 1900 50  0001 C CNN
-	1    1400 1900
+F 0 "#PWR02" H 1400 2150 50  0001 C CNN
+F 1 "GND" H 1405 2227 50  0000 C CNN
+F 2 "" H 1400 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 1900 1400 1750
 Wire Wire Line
 	1400 1450 1400 1300
 Connection ~ 2200 1300
@@ -356,18 +327,6 @@ Wire Wire Line
 	5050 2050 4750 2050
 Wire Wire Line
 	4750 1300 5050 1300
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5CA83444
-P 1650 1300
-F 0 "#FLG0102" H 1650 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 1474 50  0000 C CNN
-F 2 "" H 1650 1300 50  0001 C CNN
-F 3 "~" H 1650 1300 50  0001 C CNN
-	1    1650 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 1650 1300
 Wire Wire Line
 	2200 1300 2650 1300
 $Comp
@@ -675,17 +634,6 @@ F 3 "~" H 6150 1950 50  0001 C CNN
 	1    6150 1950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5C3903CF
-P 6150 1300
-F 0 "#FLG01" H 6150 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 6150 1474 50  0000 C CNN
-F 2 "" H 6150 1300 50  0001 C CNN
-F 3 "~" H 6150 1300 50  0001 C CNN
-	1    6150 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 1300 6800 1300
 Wire Wire Line
@@ -729,10 +677,6 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 $EndComp
 NoConn ~ 8900 2250
 NoConn ~ 8900 3450
-Text GLabel 4200 800  1    50   Input ~ 0
-2.65V
-Wire Wire Line
-	4200 800  4200 900 
 Text Label 2950 2950 2    50   ~ 0
 ATT_Vcc
 Wire Wire Line
@@ -794,8 +738,6 @@ Wire Wire Line
 Connection ~ 9500 1450
 Wire Wire Line
 	9500 1450 9500 1550
-Wire Wire Line
-	9800 1550 9800 1400
 Wire Wire Line
 	4150 4550 4300 4550
 Wire Wire Line
@@ -945,14 +887,9 @@ Text Label 4300 5850 0    50   ~ 0
 GPIO3
 Text Label 4300 5750 0    50   ~ 0
 GPIO2
-Wire Wire Line
-	9300 5100 9150 5100
-Connection ~ 9300 5100
 Text Notes 5100 4050 0    50   ~ 0
 0R resistors allow for disabling or re-routing\nsignals connected to Raspi GPIOs
-Wire Wire Line
-	9900 1250 9900 1550
-Text GLabel 9800 1400 1    50   Input ~ 0
+Text GLabel 9800 1100 1    50   Input ~ 0
 3.3V
 $Comp
 L Device:R R26
@@ -967,29 +904,15 @@ F 3 "~" H 6550 5550 50  0001 C CNN
 $EndComp
 Text Notes 4900 5300 0    50   ~ 0
 VcapS is scaled from 2.7V to 1.1V\n(this will also drain the caps over time)
-Connection ~ 4200 900 
-Wire Wire Line
-	4200 900  4200 1300
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5CF2FDF8
-P 4200 900
-F 0 "#FLG0101" H 4200 975 50  0001 C CNN
-F 1 "PWR_FLAG" V 4200 1200 50  0000 C CNN
-F 2 "" H 4200 900 50  0001 C CNN
-F 3 "~" H 4200 900 50  0001 C CNN
-	1    4200 900 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2800 1500 2800 1950
 Text Label 2800 1950 0    50   ~ 0
 ENIN
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D1
 U 1 1 5E20D410
 P 1400 1600
-F 0 "D?" V 1354 1521 50  0000 R CNN
+F 0 "D1" V 1354 1521 50  0000 R CNN
 F 1 "TPSMA6L16A" V 1445 1521 50  0000 R CNN
 F 2 "Diode_SMD:D_SMA_Handsoldering" H 1400 1600 50  0001 C CNN
 F 3 "~" H 1400 1600 50  0001 C CNN
@@ -1000,16 +923,7 @@ Wire Wire Line
 	1250 1300 1400 1300
 Connection ~ 1400 1300
 Wire Wire Line
-	1400 1300 1650 1300
-Wire Wire Line
-	1650 1300 2200 1300
-Wire Wire Line
 	2900 1500 2800 1500
-Connection ~ 4200 1300
-Wire Wire Line
-	4200 1300 4750 1300
-Wire Wire Line
-	3550 1300 4200 1300
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5CAAD863
@@ -1023,4 +937,30 @@ F 3 "~" H 2400 1300 50  0001 C CNN
 	1    2200 1300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 1300 4750 1300
+Wire Wire Line
+	1400 1300 2200 1300
+Wire Wire Line
+	9150 5100 9550 5100
+Wire Wire Line
+	9900 1100 9900 1550
+Wire Wire Line
+	9800 1100 9800 1550
+Wire Wire Line
+	1400 1750 1400 2250
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E2C97C1
+P 1400 2250
+F 0 "#FLG0102" H 1400 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 1400 2378 50  0000 L CNN
+F 2 "" H 1400 2250 50  0001 C CNN
+F 3 "~" H 1400 2250 50  0001 C CNN
+	1    1400 2250
+	0    1    1    0   
+$EndComp
+Connection ~ 1400 2250
+Wire Wire Line
+	1400 2250 1400 2400
 $EndSCHEMATC
