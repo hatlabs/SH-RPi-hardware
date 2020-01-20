@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -22,7 +22,7 @@ AR Path="/5C3480BB/5CA6B4E8" Ref="C?"  Part="1"
 AR Path="/5CA73F16/5CA6B4E8" Ref="C17"  Part="1" 
 F 0 "C17" H 4968 2496 50  0000 L CNN
 F 1 "47uF 10V" H 4968 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4888 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 4888 2300 50  0001 C CNN
 F 3 "~" H 4850 2450 50  0001 C CNN
 	1    4850 2450
 	1    0    0    -1  
@@ -133,7 +133,7 @@ AR Path="/5C3480BB/5CF608F8" Ref="C?"  Part="1"
 AR Path="/5CA73F16/5CF608F8" Ref="C19"  Part="1" 
 F 0 "C19" H 3218 1696 50  0000 L CNN
 F 1 "47uF 6.3V" H 3218 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3138 1500 50  0001 C CNN
 F 3 "~" H 3100 1650 50  0001 C CNN
 	1    3100 1650
 	1    0    0    -1  
@@ -262,7 +262,7 @@ AR Path="/5C3480BB/5D8155D9" Ref="C?"  Part="1"
 AR Path="/5CA73F16/5D8155D9" Ref="C6"  Part="1" 
 F 0 "C6" H 5568 2496 50  0000 L CNN
 F 1 "47uF 10V" H 5568 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5488 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5488 2300 50  0001 C CNN
 F 3 "~" H 5450 2450 50  0001 C CNN
 	1    5450 2450
 	1    0    0    -1  

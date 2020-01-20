@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -85,27 +85,6 @@ Wire Wire Line
 	2950 4100 2950 4650
 Text GLabel 2900 750  0    50   BiDi ~ 0
 5V
-$Comp
-L sailor-hat-rescue:MCP25625T-E_ML-sailor-hat IC1
-U 1 1 5D6C6C57
-P 2250 2350
-F 0 "IC1" H 3400 2800 50  0000 L CNN
-F 1 "MCP25625T-E_ML" H 3400 2700 50  0000 L CNN
-F 2 "custom:QFN65P600X600X100-29M-D" H 3400 2850 50  0001 L CNN
-F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 3400 2750 50  0001 L CNN
-F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 3400 2650 50  0001 L CNN "Description"
-F 5 "1" H 3400 2550 50  0001 L CNN "Height"
-F 6 "Microchip" H 3400 2450 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP25625T-E/ML" H 3400 2350 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-MCP25625T-E/ML" H 3400 2250 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP25625T-E%2FML" H 3400 2150 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1773171P" H 3400 2050 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 3400 1950 50  0001 L CNN "RS Price/Stock"
-F 12 "70568355" H 3400 1850 50  0001 L CNN "Allied_Number"
-F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 3400 1750 50  0001 L CNN "Allied Price/Stock"
-	1    2250 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 750  3650 750 
 $Comp
@@ -137,14 +116,9 @@ Wire Wire Line
 Wire Wire Line
 	3800 4100 2950 4100
 Wire Wire Line
-	2950 3600 2950 3750
-Wire Wire Line
 	3050 3750 3050 3900
 Wire Wire Line
 	3050 3900 3150 3900
-Connection ~ 2950 3750
-Wire Wire Line
-	2950 3750 2950 4100
 Wire Wire Line
 	1400 2550 1950 2550
 Wire Wire Line
@@ -244,8 +218,6 @@ F 3 "" H 4150 3050 50  0001 C CNN
 	1    4150 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 2950 4150 2950
 Connection ~ 4150 2950
 Wire Wire Line
 	4150 2950 4150 3050
@@ -321,19 +293,13 @@ Wire Wire Line
 Wire Wire Line
 	6800 2550 6800 3900
 Wire Wire Line
-	8250 2850 8850 2850
-Wire Wire Line
 	7550 4100 7550 3650
-Wire Wire Line
-	7650 3500 7650 3650
 Wire Wire Line
 	7750 3800 7850 3800
 Wire Wire Line
 	7750 3650 7750 3800
 Wire Wire Line
 	7200 4100 7550 4100
-Wire Wire Line
-	7650 3650 7650 4000
 Wire Wire Line
 	6650 4100 7200 4100
 Wire Wire Line
@@ -357,7 +323,6 @@ Connection ~ 8350 650
 NoConn ~ 6950 2850
 NoConn ~ 8250 2650
 NoConn ~ 7850 3650
-Connection ~ 7650 3650
 Connection ~ 8850 2850
 Connection ~ 6100 2450
 Connection ~ 6650 2450
@@ -386,27 +351,6 @@ F 1 "100nF" H 8465 755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8388 650 50  0001 C CNN
 F 3 "~" H 8350 800 50  0001 C CNN
 	1    8350 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L sailor-hat-rescue:MCP25625T-E_ML-sailor-hat IC2
-U 1 1 5D6DDFA9
-P 6950 2250
-F 0 "IC2" H 8100 2700 50  0000 L CNN
-F 1 "MCP25625T-E_ML" H 8100 2600 50  0000 L CNN
-F 2 "custom:QFN65P600X600X100-29M-D" H 8100 2750 50  0001 L CNN
-F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 8100 2650 50  0001 L CNN
-F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 8100 2550 50  0001 L CNN "Description"
-F 5 "1" H 8100 2450 50  0001 L CNN "Height"
-F 6 "Microchip" H 8100 2350 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP25625T-E/ML" H 8100 2250 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-MCP25625T-E/ML" H 8100 2150 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP25625T-E%2FML" H 8100 2050 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1773171P" H 8100 1950 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 8100 1850 50  0001 L CNN "RS Price/Stock"
-F 12 "70568355" H 8100 1750 50  0001 L CNN "Allied_Number"
-F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 8100 1650 50  0001 L CNN "Allied Price/Stock"
-	1    6950 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -651,7 +595,7 @@ F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 5150 3500 50  0001 C CNN
 	1    5250 3500
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5250 3200 1    50   Input ~ 0
+Text GLabel 5250 2700 1    50   Input ~ 0
 3.3V
 NoConn ~ 5550 3500
 Text Label 4950 3500 2    50   ~ 0
@@ -668,4 +612,102 @@ Text Notes 4600 4150 0    50   ~ 0
 Oscillator shared by both CAN controllers
 Wire Wire Line
 	3600 4500 3800 4500
+$Comp
+L Device:C C22
+U 1 1 5E348A13
+P 5600 3050
+F 0 "C22" H 5715 3096 50  0000 L CNN
+F 1 "100nF" H 5715 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5638 2900 50  0001 C CNN
+F 3 "~" H 5600 3050 50  0001 C CNN
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 5E349720
+P 5600 3200
+F 0 "#PWR054" H 5600 2950 50  0001 C CNN
+F 1 "GND" H 5605 3027 50  0000 C CNN
+F 2 "" H 5600 3200 50  0001 C CNN
+F 3 "" H 5600 3200 50  0001 C CNN
+	1    5600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2700 5250 2850
+Wire Wire Line
+	5250 2850 5600 2850
+Wire Wire Line
+	5600 2850 5600 2900
+Connection ~ 5250 2850
+Wire Wire Line
+	5250 2850 5250 3200
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5E4768C7
+P 5250 2850
+F 0 "#FLG0104" H 5250 2925 50  0001 C CNN
+F 1 "PWR_FLAG" V 5250 2977 50  0000 L CNN
+F 2 "" H 5250 2850 50  0001 C CNN
+F 3 "~" H 5250 2850 50  0001 C CNN
+	1    5250 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 2950 4150 2950
+Wire Wire Line
+	8250 2850 8850 2850
+Wire Wire Line
+	2950 3600 2950 3750
+$Comp
+L sailor-hat:MCP25625T-E_ML U7
+U 1 1 5E4911B6
+P 2250 2350
+F 0 "U7" H 3400 2750 50  0000 L CNN
+F 1 "MCP25625T-E_ML" H 3400 2650 50  0000 L CNN
+F 2 "QFN65P600X600X100-29M-D" H 3400 2850 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 3400 2750 50  0001 L CNN
+F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 3400 2650 50  0001 L CNN "Description"
+F 5 "1" H 3400 2550 50  0001 L CNN "Height"
+F 6 "Microchip" H 3400 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP25625T-E/ML" H 3400 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-MCP25625T-E/ML" H 3400 2250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP25625T-E%2FML" H 3400 2150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1773171P" H 3400 2050 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 3400 1950 50  0001 L CNN "RS Price/Stock"
+F 12 "70568355" H 3400 1850 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 3400 1750 50  0001 L CNN "Allied Price/Stock"
+	1    2250 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 3750
+Wire Wire Line
+	2950 3750 2950 4100
+Wire Wire Line
+	7650 3500 7650 3650
+$Comp
+L sailor-hat:MCP25625T-E_ML U8
+U 1 1 5E498F45
+P 6950 2250
+F 0 "U8" H 8100 2650 50  0000 L CNN
+F 1 "MCP25625T-E_ML" H 8100 2550 50  0000 L CNN
+F 2 "QFN65P600X600X100-29M-D" H 8100 2750 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 8100 2650 50  0001 L CNN
+F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 8100 2550 50  0001 L CNN "Description"
+F 5 "1" H 8100 2450 50  0001 L CNN "Height"
+F 6 "Microchip" H 8100 2350 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP25625T-E/ML" H 8100 2250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-MCP25625T-E/ML" H 8100 2150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP25625T-E%2FML" H 8100 2050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1773171P" H 8100 1950 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 8100 1850 50  0001 L CNN "RS Price/Stock"
+F 12 "70568355" H 8100 1750 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 8100 1650 50  0001 L CNN "Allied Price/Stock"
+	1    6950 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 3650
+Wire Wire Line
+	7650 3650 7650 4000
 $EndSCHEMATC

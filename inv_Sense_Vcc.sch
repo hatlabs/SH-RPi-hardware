@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -11861,7 +11861,7 @@ SCL
 Text HLabel 4650 4400 2    50   BiDi ~ 0
 PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
-PA7_ENIN
+PA7
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
 Text HLabel 4650 4000 2    50   BiDi ~ 0
