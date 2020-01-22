@@ -158,7 +158,7 @@ Text Notes 1500 1050 0    50   ~ 0
 Fuse slightly overspecced \nregarding NMEA2000 1A\nmaximum due to strong\ntemperature derating of \npolyfuses.
 Text Notes 2500 2700 0    50   ~ 0
 TVS should be sufficient\nto survive even some\nload dumps, at least in\nconjunction with the\npolyfuse.
-Text Notes 3750 850  0    50   ~ 0
+Text Notes 3650 950  0    50   ~ 0
 Reverse polarity protection
 Connection ~ 3350 1300
 Wire Wire Line
@@ -176,4 +176,6 @@ F 3 "~" H 3000 1850 50  0001 C CNN
 	1    3000 1850
 	0    1    -1   0   
 $EndComp
+Text Label 4150 1650 2    50   ~ 0
+RP_G
 $EndSCHEMATC

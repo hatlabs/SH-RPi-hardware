@@ -100,7 +100,7 @@ Wire Wire Line
 	1650 3050 1650 2850
 Connection ~ 1650 3050
 Text HLabel 1650 2450 1    50   Input ~ 0
-+12V
+12V_prot
 Wire Wire Line
 	1650 2450 1650 2550
 $Comp

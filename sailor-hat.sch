@@ -276,7 +276,7 @@ Wire Wire Line
 NoConn ~ 10500 3650
 Wire Wire Line
 	4250 1300 4250 2050
-Text Label 4500 2050 2    50   ~ 0
+Text Label 4250 1700 2    50   ~ 0
 Vcap
 Text Label 10500 2250 0    50   ~ 0
 SDA
@@ -333,7 +333,7 @@ S 3100 2700 1050 1500
 U 5C33FF90
 F0 "inv_Sense_Vcc" 50
 F1 "inv_Sense_Vcc.sch" 50
-F2 "+12V" I L 3100 2800 50 
+F2 "12V_prot" I L 3100 2800 50 
 F3 "~RESET~" I R 4150 2800 50 
 F4 "V12s" O R 4150 2900 50 
 F5 "SDA" B R 4150 3000 50 
