@@ -1766,7 +1766,7 @@
     (tags diode)
     (path /5CA65CC5/5E271FB2)
     (attr smd)
-    (fp_text reference D6 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference D6 (at 2.159 0.127 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value LDSR01S30ST5G (at 0 1.43 90) (layer F.Fab)
