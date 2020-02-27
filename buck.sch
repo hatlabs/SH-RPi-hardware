@@ -630,4 +630,37 @@ CSAOUT
 Text Label 7600 1900 0    50   ~ 0
 CODIV
 NoConn ~ 2550 3350
+$Comp
+L Device:C C?
+U 1 1 5E563B66
+P 8050 2150
+F 0 "C?" H 8165 2196 50  0000 L CNN
+F 1 "100nF" H 8165 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8088 2000 50  0001 C CNN
+F 3 "~" H 8050 2150 50  0001 C CNN
+	1    8050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1900 8050 1900
+Wire Wire Line
+	8050 1900 8050 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5E566874
+P 8050 2450
+AR Path="/5E566874" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5E566874" Ref="#PWR?"  Part="1" 
+AR Path="/5CA65CC5/5E566874" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2200 50  0001 C CNN
+F 1 "GND" H 8055 2277 50  0000 C CNN
+F 2 "" H 8050 2450 50  0001 C CNN
+F 3 "" H 8050 2450 50  0001 C CNN
+	1    8050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2450 8050 2300
+Text Notes 8200 1950 0    50   ~ 0
+Cap needed to stabilize\nthe feedback loop in the \ncurrent limiter
 $EndSCHEMATC
