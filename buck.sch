@@ -530,12 +530,12 @@ $EndComp
 $Comp
 L Device:C C12
 U 1 1 5E278894
-P 1600 5400
-F 0 "C12" H 1715 5446 50  0000 L CNN
-F 1 "2.2uF 50V" H 1715 5355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1638 5250 50  0001 C CNN
-F 3 "~" H 1600 5400 50  0001 C CNN
-	1    1600 5400
+P 1750 5400
+F 0 "C12" H 1865 5446 50  0000 L CNN
+F 1 "2.2uF 50V" H 1865 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1788 5250 50  0001 C CNN
+F 3 "~" H 1750 5400 50  0001 C CNN
+	1    1750 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -550,17 +550,9 @@ F 3 "~" H 2950 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5250 1600 5150
-Wire Wire Line
-	1600 5150 2050 5150
-Wire Wire Line
 	2650 5150 2950 5150
 Wire Wire Line
 	2950 5150 2950 5250
-Wire Wire Line
-	1600 5550 1600 5650
-Wire Wire Line
-	1600 5650 2350 5650
 Wire Wire Line
 	2950 5650 2950 5550
 Wire Wire Line
@@ -581,7 +573,7 @@ F 3 "" H 2350 5750 50  0001 C CNN
 	1    2350 5750
 	1    0    0    -1  
 $EndComp
-Text HLabel 1450 5150 0    50   Input ~ 0
+Text HLabel 1150 5150 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	3400 5150 2950 5150
@@ -593,9 +585,6 @@ Text Notes 7500 3350 0    50   ~ 0
 Current amplifier is designed to\nstart increasing Vfb once the shunt\ncurrent exceeds 2.7A
 Text GLabel 4200 1300 0    50   Input ~ 0
 REG3.3V
-Wire Wire Line
-	1450 5150 1600 5150
-Connection ~ 1600 5150
 Text GLabel 3400 5150 2    50   Output ~ 0
 REG3.3V
 $Comp
@@ -631,11 +620,11 @@ Text Label 7600 1900 0    50   ~ 0
 CODIV
 NoConn ~ 2550 3350
 $Comp
-L Device:C C?
+L Device:C C23
 U 1 1 5E563B66
 P 8050 2150
-F 0 "C?" H 8165 2196 50  0000 L CNN
-F 1 "100nF" H 8165 2105 50  0000 L CNN
+F 0 "C23" H 8165 2196 50  0000 L CNN
+F 1 "470nF" H 8165 2105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8088 2000 50  0001 C CNN
 F 3 "~" H 8050 2150 50  0001 C CNN
 	1    8050 2150
@@ -651,8 +640,8 @@ U 1 1 5E566874
 P 8050 2450
 AR Path="/5E566874" Ref="#PWR?"  Part="1" 
 AR Path="/5C3476D8/5E566874" Ref="#PWR?"  Part="1" 
-AR Path="/5CA65CC5/5E566874" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8050 2200 50  0001 C CNN
+AR Path="/5CA65CC5/5E566874" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 8050 2200 50  0001 C CNN
 F 1 "GND" H 8055 2277 50  0000 C CNN
 F 2 "" H 8050 2450 50  0001 C CNN
 F 3 "" H 8050 2450 50  0001 C CNN
@@ -663,4 +652,46 @@ Wire Wire Line
 	8050 2450 8050 2300
 Text Notes 8200 1950 0    50   ~ 0
 Cap needed to stabilize\nthe feedback loop in the \ncurrent limiter
+Wire Wire Line
+	1150 5150 1300 5150
+Wire Wire Line
+	1750 5250 1750 5150
+Connection ~ 1750 5150
+Wire Wire Line
+	1750 5150 1900 5150
+Wire Wire Line
+	1750 5550 1750 5650
+Wire Wire Line
+	1750 5650 2350 5650
+$Comp
+L Device:D_Schottky D9
+U 1 1 5E5A1A2A
+P 1450 5150
+F 0 "D9" H 1450 4934 50  0000 C CNN
+F 1 "RB521S-30" H 1450 5025 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 1450 5150 50  0001 C CNN
+F 3 "~" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 5150 1750 5150
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E5BA0FA
+P 1900 5000
+AR Path="/5C3476D8/5E5BA0FA" Ref="#FLG?"  Part="1" 
+AR Path="/5CA65CC5/5E5BA0FA" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 1900 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 5174 50  0000 C CNN
+F 2 "" H 1900 5000 50  0001 C CNN
+F 3 "~" H 1900 5000 50  0001 C CNN
+	1    1900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5000 1900 5150
+Connection ~ 1900 5150
+Wire Wire Line
+	1900 5150 2050 5150
 $EndSCHEMATC
