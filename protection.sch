@@ -43,19 +43,6 @@ F 3 "" H 3000 2000 50  0001 C CNN
 	1    3000 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5E467AD0
-P 3000 1600
-AR Path="/5E467AD0" Ref="D?"  Part="1" 
-AR Path="/5E460E30/5E467AD0" Ref="D1"  Part="1" 
-F 0 "D1" V 2950 1800 50  0000 R CNN
-F 1 "TPSMD16A" V 3050 2100 50  0000 R CNN
-F 2 "Diode_SMD:D_SMC" H 3000 1600 50  0001 C CNN
-F 3 "~" H 3000 1600 50  0001 C CNN
-	1    3000 1600
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	3000 1750 3000 1850
 Connection ~ 3000 1850
@@ -154,8 +141,6 @@ Text HLabel 1300 1300 0    50   Input ~ 0
 +12V
 Text HLabel 4900 1300 2    50   Output ~ 0
 12V_protected
-Text Notes 1500 1050 0    50   ~ 0
-Fuse slightly overspecced \nregarding NMEA2000 1A\nmaximum due to strong\ntemperature derating of \npolyfuses.
 Text Notes 2500 2700 0    50   ~ 0
 TVS should be sufficient\nto survive even some\nload dumps, at least in\nconjunction with the\npolyfuse.
 Text Notes 3650 950  0    50   ~ 0
@@ -178,4 +163,15 @@ F 3 "~" H 3000 1850 50  0001 C CNN
 $EndComp
 Text Label 4150 1650 2    50   ~ 0
 RP_G
+$Comp
+L Device:D_TVS D1
+U 1 1 5E5A3FFE
+P 3000 1600
+F 0 "D1" V 2954 1679 50  0000 L CNN
+F 1 "5.0SMDJ16CA" V 3045 1679 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 3000 1600 50  0001 C CNN
+F 3 "~" H 3000 1600 50  0001 C CNN
+	1    3000 1600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
