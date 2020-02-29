@@ -199,8 +199,6 @@ NoConn ~ 8900 2450
 NoConn ~ 8900 3150
 NoConn ~ 8900 3250
 NoConn ~ 10500 3550
-NoConn ~ 10500 2750
-NoConn ~ 10500 2650
 NoConn ~ 10500 2550
 NoConn ~ 10500 2050
 NoConn ~ 10500 1950
@@ -699,11 +697,11 @@ $EndComp
 Text Label 5300 3500 2    50   ~ 0
 INT0
 Text Label 5600 3500 0    50   ~ 0
-GPIO22
+GPIO5
 Text Label 5300 3750 2    50   ~ 0
 INT1
 Text Label 5600 3750 0    50   ~ 0
-GPIO27
+GPIO6
 $Comp
 L Device:R R8
 U 1 1 5D6ED3C3
@@ -716,9 +714,9 @@ F 3 "~" H 5450 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9150 5000 0    50   ~ 0
-CAN0_H
+CAN1_H
 Text Label 9150 5100 0    50   ~ 0
-CAN0_L
+CAN1_L
 $Comp
 L Connector:Screw_Terminal_01x03 J5
 U 1 1 5D6EE7DC
@@ -744,9 +742,9 @@ F 3 "" H 9600 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9150 5850 0    50   ~ 0
-CAN1_H
+CAN0_H
 Text Label 9150 5950 0    50   ~ 0
-CAN1_L
+CAN0_L
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5D6F0292
@@ -799,10 +797,6 @@ Wire Wire Line
 	9800 1100 9800 1550
 Wire Wire Line
 	9150 5750 9600 5750
-Text Label 8900 3550 2    50   ~ 0
-GPIO27
-Text Label 8900 3050 2    50   ~ 0
-GPIO22
 Connection ~ 2800 1300
 $Comp
 L Connector:TestPoint TP?
@@ -874,4 +868,10 @@ Wire Wire Line
 Wire Wire Line
 	4250 1300 3850 1300
 Connection ~ 4250 1300
+NoConn ~ 8900 3050
+NoConn ~ 8900 3550
+Text Label 10500 2650 0    50   ~ 0
+GPIO5
+Text Label 10500 2750 0    50   ~ 0
+GPIO6
 $EndSCHEMATC
