@@ -11858,7 +11858,7 @@ Text HLabel 4650 4500 2    50   BiDi ~ 0
 SDA
 Text HLabel 4650 4300 2    50   BiDi ~ 0
 SCL
-Text HLabel 4650 4400 2    50   BiDi ~ 0
+Text HLabel 6600 4400 2    50   BiDi ~ 0
 PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
 PA7
@@ -11882,8 +11882,6 @@ Wire Wire Line
 	4400 4200 4650 4200
 Wire Wire Line
 	4650 4300 4400 4300
-Wire Wire Line
-	4400 4400 4650 4400
 Wire Wire Line
 	4650 4500 4400 4500
 Wire Wire Line
@@ -11970,4 +11968,57 @@ Wire Wire Line
 	750  3050 1650 3050
 Text Notes 650  3300 0    50   ~ 0
 Clamp V12s to always\nless than ATT_Vcc
+$Comp
+L Device:R R32
+U 1 1 5E5DE7D1
+P 6350 4650
+F 0 "R32" H 6420 4696 50  0000 L CNN
+F 1 "10k" H 6420 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4650 50  0001 C CNN
+F 3 "~" H 6350 4650 50  0001 C CNN
+	1    6350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E5DFCB9
+P 6350 4150
+F 0 "R6" H 6420 4196 50  0000 L CNN
+F 1 "inf" H 6420 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4150 50  0001 C CNN
+F 3 "~" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4400 6350 4500
+Wire Wire Line
+	4400 4400 6350 4400
+Wire Wire Line
+	6350 4400 6350 4300
+Connection ~ 6350 4400
+Wire Wire Line
+	6350 4400 6600 4400
+Wire Wire Line
+	5500 2900 6350 2900
+Wire Wire Line
+	6350 2900 6350 4000
+Connection ~ 5500 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5E5E1E1A
+P 6350 4900
+AR Path="/5E5E1E1A" Ref="#PWR?"  Part="1" 
+AR Path="/5C33FF90/5E5E1E1A" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 6350 4650 50  0001 C CNN
+F 1 "GND" H 6355 4727 50  0000 C CNN
+F 2 "" H 6350 4900 50  0001 C CNN
+F 3 "" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4900 6350 4800
+Text Notes 6700 4150 0    50   ~ 0
+The voltage divider by R6 and R32 defines the hardware\nrevision of the board. The resistor values should be at least\n10k to ensure proper SPI comms during flashing.
 $EndSCHEMATC
