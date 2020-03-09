@@ -21,6 +21,7 @@ F 0 "C27" H 3065 1396 50  0000 L CNN
 F 1 "100nF" H 3065 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 1200 50  0001 C CNN
 F 3 "~" H 2950 1350 50  0001 C CNN
+F 4 "C14663" H 2950 1350 50  0001 C CNN "LCSC"
 	1    2950 1350
 	0    -1   -1   0   
 $EndComp
@@ -120,6 +121,7 @@ F 0 "U4" H 2600 1661 50  0000 C CNN
 F 1 "DS3231MZ" H 2600 1570 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2600 1650 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 2600 1550 50  0001 C CNN
+F 4 "C107410" H 2600 2150 50  0001 C CNN "LCSC"
 	1    2600 2150
 	1    0    0    -1  
 $EndComp

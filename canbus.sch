@@ -61,6 +61,7 @@ F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3380 4500 50  0
 F 3 "~" H 3450 4500 50  0001 C CNN
 F 4 "" H 3450 4500 50  0001 C CNN "Note"
 F 5 "Min 0.25W" H -3650 2950 50  0001 C CNN "Notes"
+F 6 "C17909" H 3450 4500 50  0001 C CNN "LCSC"
 	1    3450 4500
 	0    1    1    0   
 $EndComp
@@ -95,6 +96,7 @@ F 0 "C3" H 1515 2746 50  0000 L CNN
 F 1 "100nF" H 1515 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1438 2550 50  0001 C CNN
 F 3 "~" H 1400 2700 50  0001 C CNN
+F 4 "C14663" H 1400 2700 50  0001 C CNN "LCSC"
 	1    1400 2700
 	1    0    0    -1  
 $EndComp
@@ -107,6 +109,7 @@ F 0 "C5" H 3765 946 50  0000 L CNN
 F 1 "100nF" H 3765 855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3688 750 50  0001 C CNN
 F 3 "~" H 3650 900 50  0001 C CNN
+F 4 "C14663" H 3650 900 50  0001 C CNN "LCSC"
 	1    3650 900 
 	1    0    0    -1  
 $EndComp
@@ -138,6 +141,7 @@ F 0 "C4" H 2615 4396 50  0000 L CNN
 F 1 "100nF" H 2615 4305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2538 4200 50  0001 C CNN
 F 3 "~" H 2500 4350 50  0001 C CNN
+F 4 "C14663" H 2500 4350 50  0001 C CNN "LCSC"
 	1    2500 4350
 	1    0    0    -1  
 $EndComp
@@ -200,6 +204,7 @@ F 0 "R24" V 1443 2450 50  0000 C CNN
 F 1 "10k" V 1534 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1580 2450 50  0001 C CNN
 F 3 "~" H 1650 2450 50  0001 C CNN
+F 4 "C25804" H 1650 2450 50  0001 C CNN "LCSC"
 	1    1650 2450
 	0    1    1    0   
 $EndComp
@@ -350,6 +355,7 @@ F 0 "C11" H 8465 846 50  0000 L CNN
 F 1 "100nF" H 8465 755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8388 650 50  0001 C CNN
 F 3 "~" H 8350 800 50  0001 C CNN
+F 4 "C14663" H 8350 800 50  0001 C CNN "LCSC"
 	1    8350 800 
 	1    0    0    -1  
 $EndComp
@@ -361,6 +367,7 @@ F 0 "C10" H 7315 4296 50  0000 L CNN
 F 1 "100nF" H 7315 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7238 4100 50  0001 C CNN
 F 3 "~" H 7200 4250 50  0001 C CNN
+F 4 "C14663" H 7200 4250 50  0001 C CNN "LCSC"
 	1    7200 4250
 	1    0    0    -1  
 $EndComp
@@ -405,6 +412,7 @@ F 0 "C9" H 6215 2646 50  0000 L CNN
 F 1 "100nF" H 6215 2555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 2450 50  0001 C CNN
 F 3 "~" H 6100 2600 50  0001 C CNN
+F 4 "C14663" H 6100 2600 50  0001 C CNN "LCSC"
 	1    6100 2600
 	1    0    0    -1  
 $EndComp
@@ -454,6 +462,7 @@ F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8080 4400 50  0
 F 3 "~" H 8150 4400 50  0001 C CNN
 F 4 "" H 8150 4400 50  0001 C CNN "Note"
 F 5 "Min 0.25W" H 1050 2850 50  0001 C CNN "Notes"
+F 6 "C17909" H 8150 4400 50  0001 C CNN "LCSC"
 	1    8150 4400
 	0    1    1    0   
 $EndComp
@@ -478,6 +487,7 @@ F 0 "R25" V 2743 1150 50  0000 C CNN
 F 1 "10k" V 2834 1150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 1150 50  0001 C CNN
 F 3 "~" H 2950 1150 50  0001 C CNN
+F 4 "C25804" H 2950 1150 50  0001 C CNN "LCSC"
 	1    2950 1150
 	1    0    0    -1  
 $EndComp
@@ -494,6 +504,7 @@ F 0 "R21" V 1343 1900 50  0000 C CNN
 F 1 "10k" V 1434 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1480 1900 50  0001 C CNN
 F 3 "~" H 1550 1900 50  0001 C CNN
+F 4 "C25804" H 1550 1900 50  0001 C CNN "LCSC"
 	1    1550 1900
 	1    0    0    -1  
 $EndComp
@@ -527,6 +538,7 @@ F 0 "R30" V 7443 1050 50  0000 C CNN
 F 1 "10k" V 7534 1050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7580 1050 50  0001 C CNN
 F 3 "~" H 7650 1050 50  0001 C CNN
+F 4 "C25804" H 7650 1050 50  0001 C CNN "LCSC"
 	1    7650 1050
 	1    0    0    -1  
 $EndComp
@@ -549,6 +561,7 @@ F 0 "R29" V 6043 1800 50  0000 C CNN
 F 1 "10k" V 6134 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 1800 50  0001 C CNN
 F 3 "~" H 6250 1800 50  0001 C CNN
+F 4 "C25804" H 6250 1800 50  0001 C CNN "LCSC"
 	1    6250 1800
 	1    0    0    -1  
 $EndComp
@@ -589,9 +602,10 @@ L Oscillator:ASE-xxxMHz X1
 U 1 1 5D71F241
 P 5250 3500
 F 0 "X1" H 4906 3546 50  0000 R CNN
-F 1 "S3D8.000000B20F30T" H 4906 3455 50  0000 R CNN
+F 1 "SiT8008AI-22-33E-8.000000D" H 4906 3455 50  0000 R CNN
 F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" H 5950 3150 50  0001 C CNN
 F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 5150 3500 50  0001 C CNN
+F 4 "C39097" H 5250 3500 50  0001 C CNN "LCSC"
 	1    5250 3500
 	-1   0    0    -1  
 $EndComp
@@ -620,6 +634,7 @@ F 0 "C22" H 5715 3096 50  0000 L CNN
 F 1 "100nF" H 5715 3005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5638 2900 50  0001 C CNN
 F 3 "~" H 5600 3050 50  0001 C CNN
+F 4 "C14663" H 5600 3050 50  0001 C CNN "LCSC"
 	1    5600 3050
 	1    0    0    -1  
 $EndComp
@@ -678,6 +693,7 @@ F 10 "1773171P" H 3400 2050 50  0001 L CNN "RS Part Number"
 F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 3400 1950 50  0001 L CNN "RS Price/Stock"
 F 12 "70568355" H 3400 1850 50  0001 L CNN "Allied_Number"
 F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 3400 1750 50  0001 L CNN "Allied Price/Stock"
+F 14 "C191253" H 2250 2350 50  0001 C CNN "LCSC"
 	1    2250 2350
 	1    0    0    -1  
 $EndComp
@@ -704,6 +720,7 @@ F 10 "1773171P" H 8100 1950 50  0001 L CNN "RS Part Number"
 F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 8100 1850 50  0001 L CNN "RS Price/Stock"
 F 12 "70568355" H 8100 1750 50  0001 L CNN "Allied_Number"
 F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 8100 1650 50  0001 L CNN "Allied Price/Stock"
+F 14 "C191253" H 6950 2250 50  0001 C CNN "LCSC"
 	1    6950 2250
 	1    0    0    -1  
 $EndComp
