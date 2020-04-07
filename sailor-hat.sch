@@ -507,10 +507,10 @@ P 6050 1750
 AR Path="/5CA6D67C" Ref="C1"  Part="1" 
 AR Path="/5C3480BB/5CA6D67C" Ref="C?"  Part="1" 
 F 0 "C1" H 6168 1796 50  0000 L CNN
-F 1 "47uF 10V" H 6168 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 6088 1600 50  0001 C CNN
+F 1 "22uF 6.3V" H 6168 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6088 1600 50  0001 C CNN
 F 3 "~" H 6050 1750 50  0001 C CNN
-F 4 "C77101" H 6050 1750 50  0001 C CNN "LCSC"
+F 4 "C45783" H 6050 1750 50  0001 C CNN "LCSC"
 	1    6050 1750
 	1    0    0    -1  
 $EndComp
@@ -556,7 +556,7 @@ F 4 "C2286" H 5650 1950 50  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6050 1300 6300 1300
+	6050 1300 6650 1300
 Wire Wire Line
 	6050 1300 5650 1300
 Wire Wire Line
@@ -644,7 +644,7 @@ $EndComp
 Connection ~ 4250 2050
 Text Label 6750 5300 0    50   ~ 0
 VcapS
-Text GLabel 6300 1300 2    50   BiDi ~ 0
+Text GLabel 6850 1300 2    50   BiDi ~ 0
 5V
 Text GLabel 9500 1300 1    50   BiDi ~ 0
 5V
@@ -887,4 +887,38 @@ Text Label 10500 2650 0    50   ~ 0
 GPIO5
 Text Label 10500 2750 0    50   ~ 0
 GPIO6
+$Comp
+L Device:C C24
+U 1 1 5E66D784
+P 6650 1750
+AR Path="/5E66D784" Ref="C24"  Part="1" 
+AR Path="/5C3480BB/5E66D784" Ref="C?"  Part="1" 
+F 0 "C24" H 6768 1796 50  0000 L CNN
+F 1 "22uF 6.3V" H 6768 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 1600 50  0001 C CNN
+F 3 "~" H 6650 1750 50  0001 C CNN
+F 4 "C45783" H 6650 1750 50  0001 C CNN "LCSC"
+	1    6650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 5E66DE4A
+P 6650 2200
+AR Path="/5E66DE4A" Ref="#PWR057"  Part="1" 
+AR Path="/5C3480BB/5E66DE4A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR057" H 6650 1950 50  0001 C CNN
+F 1 "GND" H 6655 2027 50  0000 C CNN
+F 2 "" H 6650 2200 50  0001 C CNN
+F 3 "" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2200 6650 1900
+Wire Wire Line
+	6650 1600 6650 1300
+Connection ~ 6650 1300
+Wire Wire Line
+	6650 1300 6850 1300
 $EndSCHEMATC

@@ -21,25 +21,11 @@ AR Path="/5CA6B4E8" Ref="C?"  Part="1"
 AR Path="/5C3480BB/5CA6B4E8" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5CA6B4E8" Ref="C17"  Part="1" 
 F 0 "C17" H 4968 2496 50  0000 L CNN
-F 1 "47uF 10V" H 4968 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 4888 2300 50  0001 C CNN
+F 1 "22uF 6.3V" H 4968 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4888 2300 50  0001 C CNN
 F 3 "~" H 4850 2450 50  0001 C CNN
-F 4 "C77101" H 4850 2450 50  0001 C CNN "LCSC"
+F 4 "C45783" H 4850 2450 50  0001 C CNN "LCSC"
 	1    4850 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CA6B4EF
-P 4850 2700
-AR Path="/5CA6B4EF" Ref="#PWR?"  Part="1" 
-AR Path="/5C3480BB/5CA6B4EF" Ref="#PWR?"  Part="1" 
-AR Path="/5CA73F16/5CA6B4EF" Ref="#PWR046"  Part="1" 
-F 0 "#PWR046" H 4850 2450 50  0001 C CNN
-F 1 "GND" H 4855 2527 50  0000 C CNN
-F 2 "" H 4850 2700 50  0001 C CNN
-F 3 "" H 4850 2700 50  0001 C CNN
-	1    4850 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -113,8 +99,6 @@ Connection ~ 4350 2600
 Wire Wire Line
 	4350 3050 4350 3000
 Wire Wire Line
-	4850 2700 4850 2600
-Wire Wire Line
 	2150 1500 2400 1500
 Text Label 3600 1500 0    50   ~ 0
 SW
@@ -126,7 +110,7 @@ Wire Wire Line
 	3800 2600 3950 2600
 Text Notes 5150 2000 0    50   ~ 0
 FB voltage divider designed\nto provide 5.2V at Vout.
-Text HLabel 5500 2300 2    50   Output ~ 0
+Text HLabel 6400 2300 2    50   Output ~ 0
 Vboost
 $Comp
 L Device:C C?
@@ -136,10 +120,10 @@ AR Path="/5CF608F8" Ref="C?"  Part="1"
 AR Path="/5C3480BB/5CF608F8" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5CF608F8" Ref="C19"  Part="1" 
 F 0 "C19" H 3218 1696 50  0000 L CNN
-F 1 "47uF 6.3V" H 3218 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 3138 1500 50  0001 C CNN
+F 1 "22uF 6.3V" H 3218 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 1500 50  0001 C CNN
 F 3 "~" H 3100 1650 50  0001 C CNN
-F 4 "C77101" H 3100 1650 50  0001 C CNN "LCSC"
+F 4 "C45783" H 3100 1650 50  0001 C CNN "LCSC"
 	1    3100 1650
 	1    0    0    -1  
 $EndComp
@@ -204,8 +188,6 @@ Wire Wire Line
 	3400 3050 3400 2800
 Wire Wire Line
 	3800 2300 3950 2300
-Wire Wire Line
-	5500 2300 5450 2300
 Connection ~ 4350 2300
 Connection ~ 4850 2300
 Wire Wire Line
@@ -262,37 +244,18 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5D8155D9
-P 5450 2450
+P 5400 2600
 AR Path="/5D8155D9" Ref="C?"  Part="1" 
 AR Path="/5C3480BB/5D8155D9" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5D8155D9" Ref="C6"  Part="1" 
-F 0 "C6" H 5568 2496 50  0000 L CNN
-F 1 "47uF 10V" H 5568 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 5488 2300 50  0001 C CNN
-F 3 "~" H 5450 2450 50  0001 C CNN
-F 4 "C77101" H 5450 2450 50  0001 C CNN "LCSC"
-	1    5450 2450
+F 0 "C6" H 5518 2646 50  0000 L CNN
+F 1 "22uF 6.3V" H 5518 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 2450 50  0001 C CNN
+F 3 "~" H 5400 2600 50  0001 C CNN
+F 4 "C45783" H 5400 2600 50  0001 C CNN "LCSC"
+	1    5400 2600
 	1    0    0    -1  
 $EndComp
-Connection ~ 5450 2300
-Wire Wire Line
-	5450 2300 4850 2300
-$Comp
-L power:GND #PWR?
-U 1 1 5D815A89
-P 5450 2700
-AR Path="/5D815A89" Ref="#PWR?"  Part="1" 
-AR Path="/5C3480BB/5D815A89" Ref="#PWR?"  Part="1" 
-AR Path="/5CA73F16/5D815A89" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 5450 2450 50  0001 C CNN
-F 1 "GND" H 5455 2527 50  0000 C CNN
-F 2 "" H 5450 2700 50  0001 C CNN
-F 3 "" H 5450 2700 50  0001 C CNN
-	1    5450 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2600 5450 2700
 Wire Wire Line
 	2800 3050 2800 2500
 Text Notes 1950 1400 0    50   ~ 0
@@ -406,4 +369,79 @@ $EndComp
 Connection ~ 2900 1500
 Wire Wire Line
 	2900 1500 3100 1500
+Wire Wire Line
+	5400 2450 5400 2300
+Connection ~ 5400 2300
+Wire Wire Line
+	5400 2300 4850 2300
+Wire Wire Line
+	5400 2300 5950 2300
+$Comp
+L Device:C C?
+U 1 1 5E6767E0
+P 5950 2750
+AR Path="/5E6767E0" Ref="C?"  Part="1" 
+AR Path="/5C3480BB/5E6767E0" Ref="C?"  Part="1" 
+AR Path="/5CA73F16/5E6767E0" Ref="C25"  Part="1" 
+F 0 "C25" H 6068 2796 50  0000 L CNN
+F 1 "22uF 6.3V" H 6068 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 2600 50  0001 C CNN
+F 3 "~" H 5950 2750 50  0001 C CNN
+F 4 "C45783" H 5950 2750 50  0001 C CNN "LCSC"
+	1    5950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2600 5950 2300
+Connection ~ 5950 2300
+Wire Wire Line
+	5950 2300 6400 2300
+Wire Wire Line
+	5950 2900 5950 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5E6767E6
+P 5950 3050
+AR Path="/5E6767E6" Ref="#PWR?"  Part="1" 
+AR Path="/5C3480BB/5E6767E6" Ref="#PWR?"  Part="1" 
+AR Path="/5CA73F16/5E6767E6" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 5950 2800 50  0001 C CNN
+F 1 "GND" H 5955 2877 50  0000 C CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2750 5400 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5D815A89
+P 5400 3050
+AR Path="/5D815A89" Ref="#PWR?"  Part="1" 
+AR Path="/5C3480BB/5D815A89" Ref="#PWR?"  Part="1" 
+AR Path="/5CA73F16/5D815A89" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 5400 2800 50  0001 C CNN
+F 1 "GND" H 5405 2877 50  0000 C CNN
+F 2 "" H 5400 3050 50  0001 C CNN
+F 3 "" H 5400 3050 50  0001 C CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA6B4EF
+P 4850 3050
+AR Path="/5CA6B4EF" Ref="#PWR?"  Part="1" 
+AR Path="/5C3480BB/5CA6B4EF" Ref="#PWR?"  Part="1" 
+AR Path="/5CA73F16/5CA6B4EF" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 4850 2800 50  0001 C CNN
+F 1 "GND" H 4855 2877 50  0000 C CNN
+F 2 "" H 4850 3050 50  0001 C CNN
+F 3 "" H 4850 3050 50  0001 C CNN
+	1    4850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3050 4850 2600
 $EndSCHEMATC
