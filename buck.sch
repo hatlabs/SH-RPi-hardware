@@ -439,7 +439,7 @@ L Device:R R18
 U 1 1 5E26BA09
 P 5500 2650
 F 0 "R18" V 5293 2650 50  0000 C CNN
-F 1 "20m" V 5384 2650 50  0000 C CNN
+F 1 "12m" V 5384 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5430 2650 50  0001 C CNN
 F 3 "~" H 5500 2650 50  0001 C CNN
 F 4 "C25332" H 5500 2650 50  0001 C CNN "LCSC"
@@ -479,7 +479,7 @@ L Device:R R23
 U 1 1 5E2701E7
 P 7600 2150
 F 0 "R23" H 7670 2196 50  0000 L CNN
-F 1 "4.7k" H 7670 2105 50  0000 L CNN
+F 1 "7.5k" H 7670 2105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 2150 50  0001 C CNN
 F 3 "~" H 7600 2150 50  0001 C CNN
 F 4 "C23162" H 7600 2150 50  0001 C CNN "LCSC"
@@ -602,7 +602,7 @@ Connection ~ 4700 1300
 Wire Wire Line
 	4200 1300 4700 1300
 Text Notes 7500 3350 0    50   ~ 0
-Current amplifier is designed to\nstart increasing Vfb once the shunt\ncurrent exceeds 2.7A
+Current amplifier is designed to\nstart increasing Vfb once the shunt\ncurrent exceeds 2.7A\nFIXME: what is the current limit once\nR18, R19, and R23 have been updated?
 Text GLabel 4200 1300 0    50   Input ~ 0
 REG3.3V
 Text GLabel 3400 5150 2    50   Output ~ 0
