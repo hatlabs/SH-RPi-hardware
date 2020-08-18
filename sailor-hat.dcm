@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HT75xx-1-SOT23
+D 100mA Low Dropout Voltage Regulator, Fixed Output, SOT89
+K 100mA LDO Regulator Fixed Positive
+F https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf
+$ENDCMP
+#
 $CMP MCP25625T-E_ML
 D Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN
 F https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf

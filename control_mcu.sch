@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -28,8 +28,6 @@ F 3 "" H 3800 5400 50  0001 C CNN
 $EndComp
 Text GLabel 4100 2600 2    50   Input ~ 0
 3.3V
-Wire Wire Line
-	3800 2800 3800 2900
 Text HLabel 5800 5100 2    50   Input ~ 0
 ~RESET~
 Wire Wire Line
@@ -40,7 +38,7 @@ U 1 1 5C6051E1
 P 4200 3250
 F 0 "C2" H 4315 3296 50  0000 L CNN
 F 1 "100nF" H 4315 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 3100 50  0001 C CNN
 F 3 "~" H 4200 3250 50  0001 C CNN
 F 4 "C14663" H 4200 3250 50  0001 C CNN "LCSC"
 	1    4200 3250
@@ -72,7 +70,7 @@ AR Path="/5C840859" Ref="R?"  Part="1"
 AR Path="/5C33FF90/5C840859" Ref="R7"  Part="1" 
 F 0 "R7" H 5570 4896 50  0000 L CNN
 F 1 "10k" H 5570 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5430 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 4850 50  0001 C CNN
 F 3 "~" H 5500 4850 50  0001 C CNN
 F 4 "C25804" H 5500 4850 50  0001 C CNN "LCSC"
 	1    5500 4850
@@ -83,94 +81,6 @@ Wire Wire Line
 Connection ~ 5500 5100
 Wire Wire Line
 	5500 5100 4400 5100
-$Comp
-L Device:R R?
-U 1 1 5CF4FF7C
-P 1650 2700
-AR Path="/5CF4FF7C" Ref="R?"  Part="1" 
-AR Path="/5C33FF90/5CF4FF7C" Ref="R27"  Part="1" 
-F 0 "R27" H 1720 2746 50  0000 L CNN
-F 1 "100k" H 1720 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1580 2700 50  0001 C CNN
-F 3 "~" H 1650 2700 50  0001 C CNN
-F 4 "C25803" H 1650 2700 50  0001 C CNN "LCSC"
-	1    1650 2700
-	1    0    0    -1  
-$EndComp
-Text HLabel 2400 3050 2    50   Output ~ 0
-V12s
-Wire Wire Line
-	1650 3050 1650 2850
-Connection ~ 1650 3050
-Text HLabel 1650 2450 1    50   Input ~ 0
-12V_prot
-Wire Wire Line
-	1650 2450 1650 2550
-$Comp
-L Device:C C18
-U 1 1 5CF55CCF
-P 1650 3300
-F 0 "C18" H 1765 3346 50  0000 L CNN
-F 1 "100nF" H 1765 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 3150 50  0001 C CNN
-F 3 "~" H 1650 3300 50  0001 C CNN
-F 4 "C14663" H 1650 3300 50  0001 C CNN "LCSC"
-	1    1650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF55E1D
-P 1650 3550
-AR Path="/5CF55E1D" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5CF55E1D" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 1650 3300 50  0001 C CNN
-F 1 "GND" H 1655 3377 50  0000 C CNN
-F 2 "" H 1650 3550 50  0001 C CNN
-F 3 "" H 1650 3550 50  0001 C CNN
-	1    1650 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 3550 1650 3450
-Wire Wire Line
-	1650 3150 1650 3050
-$Comp
-L Device:R R?
-U 1 1 5CFB31B2
-P 2250 3300
-AR Path="/5CFB31B2" Ref="R?"  Part="1" 
-AR Path="/5C33FF90/5CFB31B2" Ref="R28"  Part="1" 
-F 0 "R28" H 2320 3346 50  0000 L CNN
-F 1 "7.5k" H 2320 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 3300 50  0001 C CNN
-F 3 "~" H 2250 3300 50  0001 C CNN
-F 4 "C23234" H 2250 3300 50  0001 C CNN "LCSC"
-	1    2250 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CFB3299
-P 2250 3550
-AR Path="/5CFB3299" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5CFB3299" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 2250 3300 50  0001 C CNN
-F 1 "GND" H 2255 3377 50  0000 C CNN
-F 2 "" H 2250 3550 50  0001 C CNN
-F 3 "" H 2250 3550 50  0001 C CNN
-	1    2250 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 3550 2250 3450
-Wire Wire Line
-	2250 3150 2250 3050
-Wire Wire Line
-	2250 3050 2400 3050
-Wire Wire Line
-	1650 3050 2250 3050
-Connection ~ 2250 3050
 $Bitmap
 Pos 3650 6600
 Scale 1.000000
@@ -11866,7 +11776,7 @@ SCL
 Text HLabel 6600 4400 2    50   BiDi ~ 0
 PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
-PA7
+PA7_LED2
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
 Text HLabel 4650 4000 2    50   BiDi ~ 0
@@ -11911,29 +11821,19 @@ F 4 "C14308" H 3800 2600 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 3500 2600 0    50   Input ~ 0
 REG3.3V
-Wire Wire Line
-	5500 2900 4850 2900
-Wire Wire Line
-	5500 2900 5500 4700
-Connection ~ 3800 2900
-Wire Wire Line
-	3800 2900 3800 3100
 Text HLabel 3800 3300 0    50   Input ~ 0
 ATT_Vcc
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5D5BF9CE
-P 4850 2900
-F 0 "#FLG0103" H 4850 2975 50  0001 C CNN
-F 1 "PWR_FLAG" H 4850 3073 50  0000 C CNN
-F 2 "" H 4850 2900 50  0001 C CNN
-F 3 "~" H 4850 2900 50  0001 C CNN
-	1    4850 2900
-	1    0    0    -1  
+P 3800 2950
+F 0 "#FLG0103" H 3800 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 3123 50  0000 C CNN
+F 2 "" H 3800 2950 50  0001 C CNN
+F 3 "~" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	0    -1   -1   0   
 $EndComp
-Connection ~ 4850 2900
-Wire Wire Line
-	4850 2900 3800 2900
 $Comp
 L MCU_Microchip_ATtiny:ATtiny841-SSU U1
 U 1 1 5D62E779
@@ -11952,39 +11852,15 @@ Text HLabel 4650 4100 2    50   Input ~ 0
 VcapS
 Wire Wire Line
 	4650 4100 4400 4100
-Text Notes 1700 2950 0    50   ~ 0
-V12s scaled to provide 1.1V for 15.76V input
-Text HLabel 750  2450 1    50   Input ~ 0
-ATT_Vcc
-Wire Wire Line
-	750  2550 750  2450
-Wire Wire Line
-	750  2850 750  3050
-$Comp
-L Device:D_Schottky D2
-U 1 1 5E237065
-P 750 2700
-F 0 "D2" V 704 2779 50  0000 L CNN
-F 1 "SDM10U45-7" V 795 2779 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-523" H 750 2700 50  0001 C CNN
-F 3 "~" H 750 2700 50  0001 C CNN
-F 4 "C150997" H 750 2700 50  0001 C CNN "LCSC"
-	1    750  2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	750  3050 1650 3050
-Text Notes 650  3300 0    50   ~ 0
-Clamp V12s to always\nless than ATT_Vcc
 $Comp
 L Device:R R32
 U 1 1 5E5DE7D1
 P 6350 4650
 F 0 "R32" H 6420 4696 50  0000 L CNN
-F 1 "10k" H 6420 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4650 50  0001 C CNN
+F 1 "100k" H 6420 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 4650 50  0001 C CNN
 F 3 "~" H 6350 4650 50  0001 C CNN
-F 4 "C25804" H 6350 4650 50  0001 C CNN "LCSC"
+F 4 "" H 6350 4650 50  0001 C CNN "LCSC"
 	1    6350 4650
 	1    0    0    -1  
 $EndComp
@@ -11993,8 +11869,8 @@ L Device:R R6
 U 1 1 5E5DFCB9
 P 6350 4150
 F 0 "R6" H 6420 4196 50  0000 L CNN
-F 1 "inf" H 6420 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4150 50  0001 C CNN
+F 1 "100k" H 6420 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 4150 50  0001 C CNN
 F 3 "~" H 6350 4150 50  0001 C CNN
 	1    6350 4150
 	1    0    0    -1  
@@ -12008,11 +11884,6 @@ Wire Wire Line
 Connection ~ 6350 4400
 Wire Wire Line
 	6350 4400 6600 4400
-Wire Wire Line
-	5500 2900 6350 2900
-Wire Wire Line
-	6350 2900 6350 4000
-Connection ~ 5500 2900
 $Comp
 L power:GND #PWR?
 U 1 1 5E5E1E1A
@@ -12028,6 +11899,162 @@ F 3 "" H 6350 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 4900 6350 4800
-Text Notes 6700 4150 0    50   ~ 0
-The voltage divider by R6 and R32 defines the hardware\nrevision of the board. The resistor values should be at least\n10k to ensure proper SPI comms during flashing.
+Text Notes 6950 4000 0    50   ~ 0
+The voltage divider by R6 and R32 defines the hardware\nrevision of the board. The resistor values should be at least\n10k to ensure proper SPI comms during flashing.\n\nRev G..H: 0V\nRev J: 0.967V
+Text Notes 650  3300 0    50   ~ 0
+Clamp V12s to always\nless than ATT_Vcc
+$Comp
+L Device:D_Schottky D2
+U 1 1 5E237065
+P 750 2700
+F 0 "D2" V 704 2779 50  0000 L CNN
+F 1 "SDM10U45-7" V 795 2779 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 750 2700 50  0001 C CNN
+F 3 "~" H 750 2700 50  0001 C CNN
+F 4 "C150997" H 750 2700 50  0001 C CNN "LCSC"
+	1    750  2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  2850 750  3050
+Wire Wire Line
+	750  2550 750  2450
+Text HLabel 750  2450 1    50   Input ~ 0
+ATT_Vcc
+Text Notes 750  4000 0    50   ~ 0
+V12s scaled to provide 1.1V for 18V input
+Wire Wire Line
+	2250 3050 2400 3050
+Connection ~ 2250 3050
+Wire Wire Line
+	2250 3150 2250 3050
+Wire Wire Line
+	2250 3550 2250 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5CFB3299
+P 2250 3550
+AR Path="/5CFB3299" Ref="#PWR?"  Part="1" 
+AR Path="/5C33FF90/5CFB3299" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 2250 3300 50  0001 C CNN
+F 1 "GND" H 2255 3377 50  0000 C CNN
+F 2 "" H 2250 3550 50  0001 C CNN
+F 3 "" H 2250 3550 50  0001 C CNN
+	1    2250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CFB31B2
+P 2250 3300
+AR Path="/5CFB31B2" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5CFB31B2" Ref="R28"  Part="1" 
+F 0 "R28" H 2320 3346 50  0000 L CNN
+F 1 "13k" H 2320 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+F 4 "" H 2250 3300 50  0001 C CNN "LCSC"
+	1    2250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3150 1650 3050
+Wire Wire Line
+	1650 3550 1650 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5CF55E1D
+P 1650 3550
+AR Path="/5CF55E1D" Ref="#PWR?"  Part="1" 
+AR Path="/5C33FF90/5CF55E1D" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 1650 3300 50  0001 C CNN
+F 1 "GND" H 1655 3377 50  0000 C CNN
+F 2 "" H 1650 3550 50  0001 C CNN
+F 3 "" H 1650 3550 50  0001 C CNN
+	1    1650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5CF55CCF
+P 1650 3300
+F 0 "C18" H 1765 3346 50  0000 L CNN
+F 1 "100nF" H 1765 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1688 3150 50  0001 C CNN
+F 3 "~" H 1650 3300 50  0001 C CNN
+F 4 "C14663" H 1650 3300 50  0001 C CNN "LCSC"
+	1    1650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2200 1650 2300
+Text HLabel 1650 2200 1    50   Input ~ 0
+12V_prot
+Wire Wire Line
+	750  3050 1650 3050
+Wire Wire Line
+	1650 3050 2250 3050
+Connection ~ 1650 3050
+Wire Wire Line
+	1650 3050 1650 2950
+Text HLabel 2400 3050 2    50   Output ~ 0
+V12s
+$Comp
+L Device:R R?
+U 1 1 5CF4FF7C
+P 1650 2450
+AR Path="/5CF4FF7C" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5CF4FF7C" Ref="R27"  Part="1" 
+F 0 "R27" H 1720 2496 50  0000 L CNN
+F 1 "100k" H 1720 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1580 2450 50  0001 C CNN
+F 3 "~" H 1650 2450 50  0001 C CNN
+F 4 "" H 1650 2450 50  0001 C CNN "LCSC"
+	1    1650 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 2950
+Wire Wire Line
+	3800 2950 3800 3100
+Text HLabel 5600 4600 2    50   Input ~ 0
+ATT_Vcc
+Text HLabel 6350 3500 1    50   Input ~ 0
+ATT_Vcc
+Wire Wire Line
+	6350 3500 6350 3650
+Wire Wire Line
+	5500 4600 5500 4700
+Wire Wire Line
+	5600 4600 5500 4600
+Wire Wire Line
+	3800 2800 3800 2950
+$Comp
+L Device:R R?
+U 1 1 5F49545C
+P 1650 2800
+AR Path="/5F49545C" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5F49545C" Ref="R33"  Part="1" 
+F 0 "R33" H 1720 2846 50  0000 L CNN
+F 1 "100k" H 1720 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1580 2800 50  0001 C CNN
+F 3 "~" H 1650 2800 50  0001 C CNN
+F 4 "" H 1650 2800 50  0001 C CNN "LCSC"
+	1    1650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2650 1650 2600
+$Comp
+L Device:R R34
+U 1 1 5F49A3E0
+P 6350 3800
+F 0 "R34" H 6420 3846 50  0000 L CNN
+F 1 "100k" H 6420 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 3800 50  0001 C CNN
+F 3 "~" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3950 6350 4000
 $EndSCHEMATC
