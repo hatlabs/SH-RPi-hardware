@@ -51,6 +51,7 @@ F 0 "J1" H 870 3075 50  0000 C CNN
 F 1 "Screw_Terminal_01x04" H 870 3166 50  0000 C CNN
 F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-4P" H 950 3500 50  0001 C CNN
 F 3 "~" H 950 3500 50  0001 C CNN
+F 4 "C7245" H 950 3500 50  0001 C CNN "LCSC"
 	1    950  3500
 	-1   0    0    -1  
 $EndComp
@@ -218,7 +219,7 @@ F 0 "R20" H 6620 5096 50  0000 L CNN
 F 1 "100k" H 6620 5005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6480 5050 50  0001 C CNN
 F 3 "~" H 6550 5050 50  0001 C CNN
-F 4 "" H 6550 5050 50  0001 C CNN "LCSC"
+F 4 "C25803" H 6550 5050 50  0001 C CNN "LCSC"
 	1    6550 5050
 	1    0    0    -1  
 $EndComp
@@ -259,7 +260,7 @@ F 0 "R10" H 1170 6346 50  0000 L CNN
 F 1 "2.2k" H 1170 6255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1030 6300 50  0001 C CNN
 F 3 "~" H 1100 6300 50  0001 C CNN
-F 4 "" H 1100 6300 50  0001 C CNN "LCSC"
+F 4 "C4190" H 1100 6300 50  0001 C CNN "LCSC"
 	1    1100 6300
 	1    0    0    -1  
 $EndComp
@@ -410,7 +411,7 @@ F 0 "R9" H 2070 6346 50  0000 L CNN
 F 1 "2.2k" H 2070 6255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 6300 50  0001 C CNN
 F 3 "~" H 2000 6300 50  0001 C CNN
-F 4 "" H 2000 6300 50  0001 C CNN "LCSC"
+F 4 "C4190" H 2000 6300 50  0001 C CNN "LCSC"
 	1    2000 6300
 	1    0    0    -1  
 $EndComp
@@ -450,7 +451,7 @@ F 0 "R3" H 1620 6346 50  0000 L CNN
 F 1 "2.2k" H 1620 6255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1480 6300 50  0001 C CNN
 F 3 "~" H 1550 6300 50  0001 C CNN
-F 4 "" H 1550 6300 50  0001 C CNN "LCSC"
+F 4 "C4190" H 1550 6300 50  0001 C CNN "LCSC"
 	1    1550 6300
 	1    0    0    -1  
 $EndComp
@@ -599,6 +600,7 @@ F 0 "J4" H 4730 2142 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 4730 2051 50  0000 L CNN
 F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-2P" H 4650 2150 50  0001 C CNN
 F 3 "~" H 4650 2150 50  0001 C CNN
+F 4 "C8387" H 4650 2150 50  0001 C CNN "LCSC"
 	1    4650 2150
 	1    0    0    1   
 $EndComp
@@ -627,15 +629,15 @@ L Device:R R26
 U 1 1 5DB5AEA1
 P 6550 5550
 F 0 "R26" H 6620 5596 50  0000 L CNN
-F 1 "133k" H 6620 5505 50  0000 L CNN
+F 1 "130k" H 6620 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6480 5550 50  0001 C CNN
 F 3 "~" H 6550 5550 50  0001 C CNN
-F 4 "" H 6550 5550 50  0001 C CNN "LCSC"
+F 4 "C22795" H 6550 5550 50  0001 C CNN "LCSC"
 	1    6550 5550
 	1    0    0    -1  
 $EndComp
 Text Notes 4900 5300 0    50   ~ 0
-VcapS is scaled from 2.76V to 1.1V\n(this will also drain the cap over time)
+VcapS is scaled from 2.8V to 1.1V\n(this will also drain the cap over time)
 Wire Wire Line
 	9900 1100 9900 1200
 Wire Wire Line
@@ -679,7 +681,7 @@ GPIO5
 Wire Wire Line
 	2050 2150 1700 2150
 Wire Wire Line
-	1850 2400 1850 2250
+	1850 2400 1850 2350
 Wire Wire Line
 	1850 2250 1700 2250
 $Comp
@@ -750,7 +752,7 @@ F 0 "R1" H 2470 6346 50  0000 L CNN
 F 1 "2.2k" H 2470 6255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 6300 50  0001 C CNN
 F 3 "~" H 2400 6300 50  0001 C CNN
-F 4 "" H 2400 6300 50  0001 C CNN "LCSC"
+F 4 "C4190" H 2400 6300 50  0001 C CNN "LCSC"
 	1    2400 6300
 	1    0    0    -1  
 $EndComp
@@ -896,7 +898,7 @@ F 0 "R31" H 6620 4746 50  0000 L CNN
 F 1 "100k" H 6620 4655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6480 4700 50  0001 C CNN
 F 3 "~" H 6550 4700 50  0001 C CNN
-F 4 "" H 6550 4700 50  0001 C CNN "LCSC"
+F 4 "C25803" H 6550 4700 50  0001 C CNN "LCSC"
 	1    6550 4700
 	1    0    0    -1  
 $EndComp
@@ -945,13 +947,14 @@ Status 1
 Text Notes 850  7250 0    50   ~ 0
 12V voltage
 $Comp
-L Connector:Screw_Terminal_01x02 J5
+L Connector:Screw_Terminal_01x03 J5
 U 1 1 5F63E370
 P 1500 2250
 F 0 "J5" H 1580 2242 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 1580 2151 50  0000 L CNN
-F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-2P" H 1500 2250 50  0001 C CNN
+F 1 "Screw_Terminal_01x03" H 1580 2151 50  0000 L CNN
+F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-3P" H 1500 2250 50  0001 C CNN
 F 3 "~" H 1500 2250 50  0001 C CNN
+F 4 "C8406" H 1500 2250 50  0001 C CNN "LCSC"
 	1    1500 2250
 	-1   0    0    1   
 $EndComp
@@ -966,4 +969,12 @@ F 3 "~" H 1550 4650 50  0001 C CNN
 	1    1550 4650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1700 2350
+Wire Wire Line
+	1700 2350 1850 2350
+Connection ~ 1850 2350
+Wire Wire Line
+	1850 2350 1850 2250
+Text Notes 900  2900 0    50   ~ 0
+3-pin terminal chosen to avoid\nmixing up with the cap\nconnector
 $EndSCHEMATC
