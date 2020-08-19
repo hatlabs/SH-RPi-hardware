@@ -46,13 +46,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 5C36628B
-P 950 3600
-F 0 "J1" H 870 3175 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 870 3266 50  0000 C CNN
-F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-4P" H 950 3600 50  0001 C CNN
-F 3 "~" H 950 3600 50  0001 C CNN
-	1    950  3600
-	-1   0    0    1   
+P 950 3500
+F 0 "J1" H 870 3075 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 870 3166 50  0000 C CNN
+F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-4P" H 950 3500 50  0001 C CNN
+F 3 "~" H 950 3500 50  0001 C CNN
+	1    950  3500
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4300 5100 4150 5100
@@ -177,21 +177,21 @@ NoConn ~ 10500 2550
 NoConn ~ 10500 2050
 NoConn ~ 10500 1950
 Wire Wire Line
-	2550 3400 2450 3400
+	1750 3500 1650 3500
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5C3909EF
-P 2450 3400
-F 0 "#FLG02" H 2450 3475 50  0001 C CNN
-F 1 "PWR_FLAG" H 2450 3573 50  0000 C CNN
-F 2 "" H 2450 3400 50  0001 C CNN
-F 3 "~" H 2450 3400 50  0001 C CNN
-	1    2450 3400
+P 1650 3500
+F 0 "#FLG02" H 1650 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 3673 50  0000 C CNN
+F 2 "" H 1650 3500 50  0001 C CNN
+F 3 "~" H 1650 3500 50  0001 C CNN
+	1    1650 3500
 	-1   0    0    1   
 $EndComp
-Connection ~ 2450 3400
+Connection ~ 1650 3500
 Wire Wire Line
-	2450 3400 1150 3400
+	1650 3500 1150 3500
 Text Label 4300 2800 0    50   ~ 0
 ATT_RESET
 NoConn ~ 8900 3350
@@ -587,9 +587,9 @@ F 3 "" H 1850 2400 50  0001 C CNN
 	1    1850 2400
 	1    0    0    -1  
 $EndComp
-Text Label 1150 3600 0    50   ~ 0
-CAN0_H
 Text Label 1150 3700 0    50   ~ 0
+CAN0_H
+Text Label 1150 3600 0    50   ~ 0
 CAN0_L
 $Comp
 L Connector:Screw_Terminal_01x02 J4
@@ -696,63 +696,37 @@ F 3 "" H 2050 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP?
-U 1 1 5F3D8B43
-P 1600 4500
-AR Path="/5C348474/5F3D8B43" Ref="JP?"  Part="1" 
-AR Path="/5F3D8B43" Ref="JP2"  Part="1" 
-F 0 "JP2" H 1600 4643 50  0000 C CNN
-F 1 "Term" H 1600 4644 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 4500 50  0001 C CNN
-F 3 "~" H 1600 4500 50  0001 C CNN
-	1    1600 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_2_Open JP?
-U 1 1 5F3DA4D3
-P 1600 4800
-AR Path="/5C348474/5F3DA4D3" Ref="JP?"  Part="1" 
-AR Path="/5F3DA4D3" Ref="JP3"  Part="1" 
-F 0 "JP3" H 1600 4943 50  0000 C CNN
-F 1 "Term" H 1600 4944 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 4800 50  0001 C CNN
-F 3 "~" H 1600 4800 50  0001 C CNN
-	1    1600 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0110
 U 1 1 5F3DA86F
-P 1800 4500
+P 1850 4650
 AR Path="/5F3DA86F" Ref="#PWR0110"  Part="1" 
 AR Path="/5C3476D8/5F3DA86F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0110" H 1800 4350 50  0001 C CNN
-F 1 "+12V" V 1815 4628 50  0000 L CNN
-F 2 "" H 1800 4500 50  0001 C CNN
-F 3 "" H 1800 4500 50  0001 C CNN
-	1    1800 4500
+F 0 "#PWR0110" H 1850 4500 50  0001 C CNN
+F 1 "+12V" V 1865 4778 50  0000 L CNN
+F 2 "" H 1850 4650 50  0001 C CNN
+F 3 "" H 1850 4650 50  0001 C CNN
+	1    1850 4650
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5F3DAE5A
-P 1950 4850
-F 0 "#PWR0111" H 1950 4600 50  0001 C CNN
-F 1 "GND" H 2050 4700 50  0000 R CNN
-F 2 "" H 1950 4850 50  0001 C CNN
-F 3 "" H 1950 4850 50  0001 C CNN
-	1    1950 4850
+P 2000 4800
+F 0 "#PWR0111" H 2000 4550 50  0001 C CNN
+F 1 "GND" H 2100 4650 50  0000 R CNN
+F 2 "" H 2000 4800 50  0001 C CNN
+F 3 "" H 2000 4800 50  0001 C CNN
+	1    2000 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 4500 1400 4500
+	1150 4650 1350 4650
 Wire Wire Line
-	1200 4800 1400 4800
+	1150 4750 1350 4750
 Wire Wire Line
-	1800 4800 1950 4800
+	1850 4750 2000 4750
 Wire Wire Line
-	1950 4800 1950 4850
+	2000 4750 2000 4800
 $Comp
 L power:GND #PWR0112
 U 1 1 5F41050D
@@ -822,9 +796,9 @@ F13 "PB2_LED1" B R 4150 3900 50
 F14 "ATT_Vcc" I L 3100 2950 50 
 F15 "VcapS" I R 4150 3500 50 
 $EndSheet
-Text Label 2550 3400 0    50   ~ 0
-CAN0_12V
 Text Label 1750 3500 0    50   ~ 0
+CAN0_12V
+Text Label 1750 3400 0    50   ~ 0
 CAN0_GND
 Wire Wire Line
 	2950 5100 3100 5100
@@ -853,7 +827,7 @@ Text Label 10500 2750 0    50   ~ 0
 GPIO6
 Text Notes 7450 2400 0    50   ~ 0
 Note: using GPIO6 as CE\nrequires DTB modifications\n(but allows the board to be \nused simultaneously with other\ndevices requiring SPI)
-Text Notes 700  5300 0    50   ~ 0
+Text Notes 850  5300 0    50   ~ 0
 These jumpers allow connecting N2K\nto the main power feed, allowing the RPi\nto be powered via the N2K power feed.
 Text Notes 1350 5700 0    50   ~ 0
 On-board LEDs
@@ -956,12 +930,12 @@ $EndComp
 Connection ~ 9900 1200
 Wire Wire Line
 	9900 1200 9900 1550
-Text Label 1200 4500 2    50   ~ 0
+Text Label 1150 4650 2    50   ~ 0
 CAN0_12V
-Text Label 1200 4800 2    50   ~ 0
+Text Label 1150 4750 2    50   ~ 0
 CAN0_GND
 Wire Wire Line
-	1150 3500 1750 3500
+	1150 3400 1750 3400
 Text Notes 1400 7250 0    50   ~ 0
 5V enabled
 Text Notes 2350 7250 0    50   ~ 0
@@ -980,5 +954,16 @@ F 2 "custom:TerminalBlock_WJ15EDGRC-3.81-2P" H 1500 2250 50  0001 C CNN
 F 3 "~" H 1500 2250 50  0001 C CNN
 	1    1500 2250
 	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J6
+U 1 1 5F46DA2F
+P 1550 4650
+F 0 "J6" H 1600 4867 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 1600 4776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 1550 4650 50  0001 C CNN
+F 3 "~" H 1550 4650 50  0001 C CNN
+	1    1550 4650
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
