@@ -1,29 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_02x02_Odd_Even
-#
-DEF Connector_Generic_Conn_02x02_Odd_Even J 0 40 Y N 1 F N
-F0 "J" 50 100 50 H V C CNN
-F1 "Connector_Generic_Conn_02x02_Odd_Even" 50 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_2x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 150 -150 1 1 10 f
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 300 0 150 L 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 300 -100 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_02x07_Counter_Clockwise
 #
 DEF Connector_Generic_Conn_02x07_Counter_Clockwise J 0 40 Y N 1 F N
@@ -791,6 +768,28 @@ S -200 200 200 -100 0 1 10 f
 X GND 1 0 -200 100 U 50 50 1 1 W
 X VOUT 2 300 100 100 L 50 50 1 1 w
 X VIN 3 -300 100 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# sailor-hat_INA199A1DCKR
+#
+DEF sailor-hat_INA199A1DCKR U 0 40 Y Y 1 L N
+F0 "U" -50 400 50 H V L BNN
+F1 "sailor-hat_INA199A1DCKR" -250 300 50 H V L BNN
+F2 "SOT65P210X110-6N" 300 -600 50 H I L BNN
+F3 "74R6382" 300 -500 50 H I L BNN
+F4 "SC70-6" 300 -400 50 H I L BNN
+F5 "INA199A1DCKR" 300 -300 50 H I L BNN
+F6 "-" 300 -200 50 H I L BNN
+F7 "Texas Instruments" 300 -100 50 H I L BNN
+DRAW
+S 250 -250 -250 250 1 1 0 f
+X REF 1 -450 -200 200 R 40 40 0 0 I
+X GND 2 0 -450 200 U 40 40 0 0 P
+X V+ 3 -450 200 200 R 40 40 0 0 W
+X IN+ 4 -450 50 200 R 40 40 0 0 I
+X IN- 5 -450 -50 200 R 40 40 0 0 I
+X OUT 6 450 200 200 L 40 40 0 0 O
 ENDDRAW
 ENDDEF
 #

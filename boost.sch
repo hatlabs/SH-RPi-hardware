@@ -70,32 +70,30 @@ AR Path="/5CA6B522" Ref="R?"  Part="1"
 AR Path="/5C3480BB/5CA6B522" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5CA6B522" Ref="R17"  Part="1" 
 F 0 "R17" H 4420 2896 50  0000 L CNN
-F 1 "13k" H 4420 2805 50  0000 L CNN
+F 1 "39k" H 4420 2805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 2850 50  0001 C CNN
 F 3 "~" H 4350 2850 50  0001 C CNN
-F 4 "C22797" H 4350 2850 50  0001 C CNN "LCSC"
+F 4 "C23153" H 4350 2850 50  0001 C CNN "LCSC"
 	1    4350 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CA6B529
-P 4350 3850
+P 4350 3050
 AR Path="/5CA6B529" Ref="#PWR?"  Part="1" 
 AR Path="/5C3480BB/5CA6B529" Ref="#PWR?"  Part="1" 
 AR Path="/5CA73F16/5CA6B529" Ref="#PWR045"  Part="1" 
-F 0 "#PWR045" H 4350 3600 50  0001 C CNN
-F 1 "GND" H 4355 3677 50  0000 C CNN
-F 2 "" H 4350 3850 50  0001 C CNN
-F 3 "" H 4350 3850 50  0001 C CNN
-	1    4350 3850
+F 0 "#PWR045" H 4350 2800 50  0001 C CNN
+F 1 "GND" H 4355 2877 50  0000 C CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0001 C CNN
+	1    4350 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4350 2600 4350 2700
 Connection ~ 4350 2600
-Wire Wire Line
-	4350 3850 4350 3700
 Wire Wire Line
 	2150 1500 2400 1500
 Text Label 3600 1500 0    50   ~ 0
@@ -104,8 +102,6 @@ Text Label 4200 2600 0    50   ~ 0
 FB
 Text HLabel 2150 1500 0    50   Input ~ 0
 Vin
-Wire Wire Line
-	3800 2600 3950 2600
 Text Notes 5150 2000 0    50   ~ 0
 FB voltage divider designed\nto provide 5.21V at Vout.
 Text HLabel 6400 2300 2    50   Output ~ 0
@@ -185,8 +181,6 @@ F 3 "" H 3400 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 3050 3400 2800
-Wire Wire Line
-	3800 2300 3950 2300
 Connection ~ 4350 2300
 Connection ~ 4850 2300
 Wire Wire Line
@@ -259,24 +253,6 @@ Wire Wire Line
 	2900 3050 2900 2500
 Text Notes 1950 1400 0    50   ~ 0
 Vin at max. 2.65V
-Connection ~ 3950 2300
-Wire Wire Line
-	3950 2300 4350 2300
-Connection ~ 3950 2600
-Wire Wire Line
-	3950 2600 4350 2600
-$Comp
-L Device:C C7
-U 1 1 5D913E0F
-P 3950 2450
-F 0 "C7" H 4065 2496 50  0000 L CNN
-F 1 "220pF" H 4065 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 2300 50  0001 C CNN
-F 3 "~" H 3950 2450 50  0001 C CNN
-F 4 "C1603" H 3950 2450 50  0001 C CNN "LCSC"
-	1    3950 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 1500 3800 2200
 Connection ~ 3100 1500
@@ -376,44 +352,8 @@ F 3 "" H 4850 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 3050 4850 2600
-$Comp
-L Device:R R?
-U 1 1 5F48CB1D
-P 4350 3200
-AR Path="/5F48CB1D" Ref="R?"  Part="1" 
-AR Path="/5C3480BB/5F48CB1D" Ref="R?"  Part="1" 
-AR Path="/5CA73F16/5F48CB1D" Ref="R29"  Part="1" 
-F 0 "R29" H 4420 3246 50  0000 L CNN
-F 1 "13k" H 4420 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 3200 50  0001 C CNN
-F 3 "~" H 4350 3200 50  0001 C CNN
-F 4 "C22797" H 4350 3200 50  0001 C CNN "LCSC"
-	1    4350 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 3050 4350 3000
-$Comp
-L Device:R R?
-U 1 1 5F48D0EA
-P 4350 3550
-AR Path="/5F48D0EA" Ref="R?"  Part="1" 
-AR Path="/5C3480BB/5F48D0EA" Ref="R?"  Part="1" 
-AR Path="/5CA73F16/5F48D0EA" Ref="R30"  Part="1" 
-F 0 "R30" H 4420 3596 50  0000 L CNN
-F 1 "13k" H 4420 3505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 3550 50  0001 C CNN
-F 3 "~" H 4350 3550 50  0001 C CNN
-F 4 "C22797" H 4350 3550 50  0001 C CNN "LCSC"
-	1    4350 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 3400 4350 3350
 Text Notes 900  3000 0    50   ~ 0
 Switch/header allows for\npower-cycling the RPi.
-Text Notes 4600 3750 0    50   ~ 0
-Resistors in series to reduce\nthe unique part count
 Wire Wire Line
 	2150 2600 2600 2600
 Wire Wire Line
@@ -458,4 +398,10 @@ Wire Wire Line
 	2600 3000 2600 3050
 Text Notes 2400 3600 0    50   ~ 0
 R21 pulls EN down when\nthe MCU is unpowered
+Wire Wire Line
+	3800 2300 4350 2300
+Wire Wire Line
+	3800 2600 4350 2600
+Wire Wire Line
+	4350 3000 4350 3050
 $EndSCHEMATC
