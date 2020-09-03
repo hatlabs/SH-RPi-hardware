@@ -301,7 +301,7 @@ F 3 "" H 2400 6950 50  0001 C CNN
 	1    2400 6950
 	1    0    0    -1  
 $EndComp
-Text HLabel 1200 6350 0    50   Input ~ 0
+Text HLabel 1500 6350 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	3450 6350 3000 6350
@@ -311,8 +311,6 @@ REG3.3V
 Text Label 5450 3300 0    50   ~ 0
 Vout
 Wire Wire Line
-	1200 6350 1350 6350
-Wire Wire Line
 	1800 6450 1800 6350
 Connection ~ 1800 6350
 Wire Wire Line
@@ -321,20 +319,6 @@ Wire Wire Line
 	1800 6750 1800 6850
 Wire Wire Line
 	1800 6850 2400 6850
-$Comp
-L Device:D_Schottky D9
-U 1 1 5E5A1A2A
-P 1500 6350
-F 0 "D9" H 1500 6134 50  0000 C CNN
-F 1 "PSBD521S-40" H 1500 6225 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 1500 6350 50  0001 C CNN
-F 3 "~" H 1500 6350 50  0001 C CNN
-F 4 "C168633" H 1500 6350 50  0001 C CNN "LCSC"
-	1    1500 6350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1650 6350 1800 6350
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5E5BA0FA
@@ -456,6 +440,7 @@ F 4 "SC70-6" H 7450 2300 50  0001 L BNN "Field4"
 F 5 "INA199A1DCKR" H 7450 2300 50  0001 L BNN "Field5"
 F 6 "-" H 7450 2300 50  0001 L BNN "Field6"
 F 7 "Texas Instruments" H 7450 2300 50  0001 L BNN "Field7"
+F 8 "C59135" H 7450 2300 50  0001 C CNN "LCSC"
 	1    7450 2300
 	1    0    0    -1  
 $EndComp
@@ -567,9 +552,10 @@ L Device:D_Schottky D6
 U 1 1 5F51426E
 P 7600 3900
 F 0 "D6" V 7646 3821 50  0000 R CNN
-F 1 "RB521S-30" V 7555 3821 50  0000 R CNN
+F 1 "PSBD521S-40" V 7555 3821 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-523" H 7600 3900 50  0001 C CNN
 F 3 "~" H 7600 3900 50  0001 C CNN
+F 4 "C168633" H 7600 3900 50  0001 C CNN "LCSC"
 	1    7600 3900
 	0    -1   -1   0   
 $EndComp
@@ -650,4 +636,6 @@ F 3 "" H 8950 4350 50  0001 C CNN
 	1    8950 4350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1500 6350 1800 6350
 $EndSCHEMATC
