@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/mairas/src/SK/sailor-hat/sailor-hat-hardware/sailor-hat.sch)
-    (date "2020 September 03, Thursday 12:31:31")
+    (date "2020 September 03, Thursday 14:04:44")
     (tool "Eeschema (5.1.5-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -755,17 +755,17 @@
       (footprint Diode_SMD:D_SMB)
       (datasheet ~)
       (fields
-        (field (name LCSC) C113992))
+        (field (name LCSC) C114002))
       (libsource (lib Device) (part D_TVS) (description "Bidirectional transient-voltage-suppression diode"))
       (sheetpath (names /Protection/) (tstamps /5E460E30/))
       (tstamp 5F59D8F4))
     (comp (ref D13)
-      (value SS210)
-      (footprint Diode_SMD:D_SMA)
+      (value SM4007PL)
+      (footprint Diode_SMD:D_SOD-123F)
       (datasheet ~)
       (fields
-        (field (name LCSC) C168633))
-      (libsource (lib Device) (part D_Schottky) (description "Schottky diode"))
+        (field (name LCSC) C64898))
+      (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names /Protection/) (tstamps /5E460E30/))
       (tstamp 5F59D8FB))
     (comp (ref C11)
@@ -1048,6 +1048,20 @@
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive))
         (pin (num 4) (name 4) (type passive))))
+    (libpart (lib Device) (part D)
+      (description Diode)
+      (docs ~)
+      (footprints
+        (fp TO-???*)
+        (fp *_Diode_*)
+        (fp *SingleDiode*)
+        (fp D_*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) D))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
     (libpart (lib Device) (part D_Schottky)
       (description "Schottky diode")
       (docs ~)
