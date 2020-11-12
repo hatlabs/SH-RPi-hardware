@@ -3,14 +3,14 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
-Title ""
+Sheet 6 8
+Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Rev "revL"
+Comp "Hat Laboratories"
+Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment2 "To view a copy of this license, visit "
+Comment3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."
 Comment4 ""
 $EndDescr
 $Comp
@@ -18,8 +18,8 @@ L power:GND #PWR?
 U 1 1 5C38F484
 P 3800 5400
 AR Path="/5C38F484" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5C38F484" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 3800 5150 50  0001 C CNN
+AR Path="/5C33FF90/5C38F484" Ref="#PWR0603"  Part="1" 
+F 0 "#PWR0603" H 3800 5150 50  0001 C CNN
 F 1 "GND" H 3805 5227 50  0000 C CNN
 F 2 "" H 3800 5400 50  0001 C CNN
 F 3 "" H 3800 5400 50  0001 C CNN
@@ -28,15 +28,13 @@ F 3 "" H 3800 5400 50  0001 C CNN
 $EndComp
 Text GLabel 4100 2600 2    50   Input ~ 0
 3.3V
-Text HLabel 5800 5100 2    50   Input ~ 0
-~RESET~
 Wire Wire Line
 	5800 5100 5500 5100
 $Comp
-L Device:C C2
+L Device:C C602
 U 1 1 5C6051E1
 P 4200 3250
-F 0 "C2" H 4315 3296 50  0000 L CNN
+F 0 "C602" H 4315 3296 50  0000 L CNN
 F 1 "100nF" H 4315 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 3100 50  0001 C CNN
 F 3 "~" H 4200 3250 50  0001 C CNN
@@ -49,8 +47,8 @@ L power:GND #PWR?
 U 1 1 5C6052C2
 P 4200 3400
 AR Path="/5C6052C2" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5C6052C2" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 4200 3150 50  0001 C CNN
+AR Path="/5C33FF90/5C6052C2" Ref="#PWR0604"  Part="1" 
+F 0 "#PWR0604" H 4200 3150 50  0001 C CNN
 F 1 "GND" H 4205 3227 50  0000 C CNN
 F 2 "" H 4200 3400 50  0001 C CNN
 F 3 "" H 4200 3400 50  0001 C CNN
@@ -67,8 +65,8 @@ L Device:R R?
 U 1 1 5C840859
 P 5500 4850
 AR Path="/5C840859" Ref="R?"  Part="1" 
-AR Path="/5C33FF90/5C840859" Ref="R7"  Part="1" 
-F 0 "R7" H 5570 4896 50  0000 L CNN
+AR Path="/5C33FF90/5C840859" Ref="R603"  Part="1" 
+F 0 "R603" H 5570 4896 50  0000 L CNN
 F 1 "10k" H 5570 4805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 4850 50  0001 C CNN
 F 3 "~" H 5500 4850 50  0001 C CNN
@@ -11773,18 +11771,10 @@ Text HLabel 4650 4500 2    50   BiDi ~ 0
 SDA
 Text HLabel 4650 4300 2    50   BiDi ~ 0
 SCL
-Text HLabel 6600 4400 2    50   BiDi ~ 0
-PA5
 Text HLabel 4650 4600 2    50   BiDi ~ 0
 PA7_LED2
 Text HLabel 4650 4200 2    50   BiDi ~ 0
 PA3_EN5V
-Text HLabel 4650 4000 2    50   BiDi ~ 0
-V12s
-Text HLabel 4650 3900 2    50   BiDi ~ 0
-PA0
-Text HLabel 4650 4800 2    50   BiDi ~ 0
-PB0
 Text HLabel 4650 4900 2    50   BiDi ~ 0
 PB1_LED0
 Text HLabel 4650 5000 2    50   BiDi ~ 0
@@ -11808,10 +11798,10 @@ Wire Wire Line
 Wire Wire Line
 	4650 5000 4400 5000
 $Comp
-L Diode:BAT54C D4
+L Diode:BAT54C D602
 U 1 1 5D59AF4D
 P 3800 2600
-F 0 "D4" H 3800 2825 50  0000 C CNN
+F 0 "D602" H 3800 2825 50  0000 C CNN
 F 1 "BAT54C" H 3800 2734 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3875 2725 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 3720 2600 50  0001 C CNN
@@ -11821,13 +11811,11 @@ F 4 "C375703" H 3800 2600 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 3500 2600 0    50   Input ~ 0
 REG3.3V
-Text HLabel 3800 3300 0    50   Input ~ 0
-ATT_Vcc
 $Comp
-L power:PWR_FLAG #FLG0103
+L power:PWR_FLAG #FLG0601
 U 1 1 5D5BF9CE
 P 3800 2950
-F 0 "#FLG0103" H 3800 3025 50  0001 C CNN
+F 0 "#FLG0601" H 3800 3025 50  0001 C CNN
 F 1 "PWR_FLAG" H 3800 3123 50  0000 C CNN
 F 2 "" H 3800 2950 50  0001 C CNN
 F 3 "~" H 3800 2950 50  0001 C CNN
@@ -11835,12 +11823,12 @@ F 3 "~" H 3800 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny841-SSU U1
+L MCU_Microchip_ATtiny:ATtiny841-SSU U?
 U 1 1 5D62E779
 P 3800 4500
-AR Path="/5D62E779" Ref="U1"  Part="1" 
-AR Path="/5C33FF90/5D62E779" Ref="U1"  Part="1" 
-F 0 "U1" H 3271 4546 50  0000 R CNN
+AR Path="/5D62E779" Ref="U?"  Part="1" 
+AR Path="/5C33FF90/5D62E779" Ref="U601"  Part="1" 
+F 0 "U601" H 3271 4546 50  0000 R CNN
 F 1 "ATtiny841-SSU" H 3271 4455 50  0000 R CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 4500 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 3800 4500 50  0001 C CNN
@@ -11848,67 +11836,15 @@ F 4 "C219103" H 3800 4500 50  0001 C CNN "LCSC"
 	1    3800 4500
 	1    0    0    -1  
 $EndComp
-Text HLabel 4650 4100 2    50   Input ~ 0
-VcapS
 Wire Wire Line
 	4650 4100 4400 4100
-$Comp
-L Device:R R32
-U 1 1 5E5DE7D1
-P 6350 4650
-F 0 "R32" H 6420 4696 50  0000 L CNN
-F 1 "100k" H 6420 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 4650 50  0001 C CNN
-F 3 "~" H 6350 4650 50  0001 C CNN
-F 4 "C25803" H 6350 4650 50  0001 C CNN "LCSC"
-	1    6350 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5E5DFCB9
-P 6350 4150
-F 0 "R6" H 6420 4196 50  0000 L CNN
-F 1 "200k" H 6420 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 4150 50  0001 C CNN
-F 3 "~" H 6350 4150 50  0001 C CNN
-F 4 "C25811" H 6350 4150 50  0001 C CNN "LCSC"
-	1    6350 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4400 6350 4500
-Wire Wire Line
-	4400 4400 6350 4400
-Wire Wire Line
-	6350 4400 6350 4300
-Connection ~ 6350 4400
-Wire Wire Line
-	6350 4400 6600 4400
-$Comp
-L power:GND #PWR?
-U 1 1 5E5E1E1A
-P 6350 4900
-AR Path="/5E5E1E1A" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5E5E1E1A" Ref="#PWR056"  Part="1" 
-F 0 "#PWR056" H 6350 4650 50  0001 C CNN
-F 1 "GND" H 6355 4727 50  0000 C CNN
-F 2 "" H 6350 4900 50  0001 C CNN
-F 3 "" H 6350 4900 50  0001 C CNN
-	1    6350 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4900 6350 4800
-Text Notes 6950 4000 0    50   ~ 0
-The voltage divider by R6 and R32 defines the hardware\nrevision of the board. The resistor values should be at least\n10k to ensure proper SPI comms during flashing.\n\nRev G..H: 0V\nRev J: 0.967V
 Text Notes 650  3300 0    50   ~ 0
 Clamp V12s to always\nless than ATT_Vcc
 $Comp
-L Device:D_Schottky D2
+L Device:D_Schottky D601
 U 1 1 5E237065
 P 750 2700
-F 0 "D2" V 704 2779 50  0000 L CNN
+F 0 "D601" V 704 2779 50  0000 L CNN
 F 1 "PSBD521S-40" V 795 2779 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" H 750 2700 50  0001 C CNN
 F 3 "~" H 750 2700 50  0001 C CNN
@@ -11936,8 +11872,8 @@ L power:GND #PWR?
 U 1 1 5CFB3299
 P 2250 3550
 AR Path="/5CFB3299" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5CFB3299" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 2250 3300 50  0001 C CNN
+AR Path="/5C33FF90/5CFB3299" Ref="#PWR0602"  Part="1" 
+F 0 "#PWR0602" H 2250 3300 50  0001 C CNN
 F 1 "GND" H 2255 3377 50  0000 C CNN
 F 2 "" H 2250 3550 50  0001 C CNN
 F 3 "" H 2250 3550 50  0001 C CNN
@@ -11949,8 +11885,8 @@ L Device:R R?
 U 1 1 5CFB31B2
 P 2250 3300
 AR Path="/5CFB31B2" Ref="R?"  Part="1" 
-AR Path="/5C33FF90/5CFB31B2" Ref="R28"  Part="1" 
-F 0 "R28" H 2320 3346 50  0000 L CNN
+AR Path="/5C33FF90/5CFB31B2" Ref="R602"  Part="1" 
+F 0 "R602" H 2320 3346 50  0000 L CNN
 F 1 "2.2k" H 2320 3255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 3300 50  0001 C CNN
 F 3 "~" H 2250 3300 50  0001 C CNN
@@ -11967,8 +11903,8 @@ L power:GND #PWR?
 U 1 1 5CF55E1D
 P 1650 3550
 AR Path="/5CF55E1D" Ref="#PWR?"  Part="1" 
-AR Path="/5C33FF90/5CF55E1D" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 1650 3300 50  0001 C CNN
+AR Path="/5C33FF90/5CF55E1D" Ref="#PWR0601"  Part="1" 
+F 0 "#PWR0601" H 1650 3300 50  0001 C CNN
 F 1 "GND" H 1655 3377 50  0000 C CNN
 F 2 "" H 1650 3550 50  0001 C CNN
 F 3 "" H 1650 3550 50  0001 C CNN
@@ -11976,10 +11912,10 @@ F 3 "" H 1650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
+L Device:C C601
 U 1 1 5CF55CCF
 P 1650 3300
-F 0 "C18" H 1765 3346 50  0000 L CNN
+F 0 "C601" H 1765 3346 50  0000 L CNN
 F 1 "100nF" H 1765 3255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1688 3150 50  0001 C CNN
 F 3 "~" H 1650 3300 50  0001 C CNN
@@ -11988,7 +11924,7 @@ F 4 "C14663" H 1650 3300 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Text HLabel 1650 2500 1    50   Input ~ 0
-12V_prot
+Vin_prot
 Wire Wire Line
 	750  3050 1650 3050
 Wire Wire Line
@@ -11996,15 +11932,13 @@ Wire Wire Line
 Connection ~ 1650 3050
 Wire Wire Line
 	1650 3050 1650 2950
-Text HLabel 2400 3050 2    50   Output ~ 0
-V12s
 $Comp
 L Device:R R?
 U 1 1 5CF4FF7C
 P 1650 2800
 AR Path="/5CF4FF7C" Ref="R?"  Part="1" 
-AR Path="/5C33FF90/5CF4FF7C" Ref="R27"  Part="1" 
-F 0 "R27" H 1720 2846 50  0000 L CNN
+AR Path="/5C33FF90/5CF4FF7C" Ref="R601"  Part="1" 
+F 0 "R601" H 1720 2846 50  0000 L CNN
 F 1 "62k" H 1720 2755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1580 2800 50  0001 C CNN
 F 3 "~" H 1650 2800 50  0001 C CNN
@@ -12017,8 +11951,6 @@ Wire Wire Line
 	3800 2950 3800 3100
 Text HLabel 5600 4600 2    50   Input ~ 0
 ATT_Vcc
-Text HLabel 6350 3800 1    50   Input ~ 0
-ATT_Vcc
 Wire Wire Line
 	5500 4600 5500 4700
 Wire Wire Line
@@ -12028,5 +11960,135 @@ Wire Wire Line
 Wire Wire Line
 	1650 2500 1650 2650
 Wire Wire Line
-	6350 3800 6350 4000
+	4650 4400 4400 4400
+Wire Wire Line
+	6450 1600 6100 1600
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J?
+U 1 1 5FAF5996
+P 5800 1900
+AR Path="/5FAF5996" Ref="J?"  Part="1" 
+AR Path="/5C33FF90/5FAF5996" Ref="J601"  Part="1" 
+F 0 "J601" H 5850 2417 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 5850 2326 50  0000 C CNN
+F 2 "custom:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise" H 5800 1900 50  0001 C CNN
+F 3 "~" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1900 2    50   ~ 0
+RESET
+Text Label 6100 1800 0    50   ~ 0
+V12s
+$Comp
+L power:GND #PWR?
+U 1 1 5FAF599E
+P 6450 1600
+AR Path="/5FAF599E" Ref="#PWR?"  Part="1" 
+AR Path="/5C33FF90/5FAF599E" Ref="#PWR0605"  Part="1" 
+F 0 "#PWR0605" H 6450 1350 50  0001 C CNN
+F 1 "GND" H 6455 1427 50  0000 C CNN
+F 2 "" H 6450 1600 50  0001 C CNN
+F 3 "" H 6450 1600 50  0001 C CNN
+	1    6450 1600
+	1    0    0    -1  
+$EndComp
+Text Label 6100 2200 0    50   ~ 0
+PA5
+Text Label 6100 2000 0    50   ~ 0
+PA3_EN5V
+Text Label 5600 2000 2    50   ~ 0
+PB2_LED1
+Text Label 5600 1700 2    50   ~ 0
+PB0
+Text Label 5600 1800 2    50   ~ 0
+PB1_LED0
+Text Label 5600 2100 2    50   ~ 0
+PA7_LED2
+Text Label 5600 2200 2    50   ~ 0
+SDA
+Text Label 6100 2100 0    50   ~ 0
+SCL
+Text Label 6100 1700 0    50   ~ 0
+PA0
+Text Label 5600 1600 2    50   ~ 0
+ATT_Vcc
+Text Notes 5200 2550 0    50   ~ 0
+Pins SDA, SCL, and PA5 are used for reflashing.\n
+Text Label 6100 1900 0    50   ~ 0
+VcapS
+Wire Wire Line
+	8000 3050 8000 3250
+Text Notes 6350 3650 0    50   ~ 0
+VcapS is scaled from 2.8V to 1.1V\n(this will also drain the cap over time)
+$Comp
+L Device:R R?
+U 1 1 5FAFDE9B
+P 8000 3900
+AR Path="/5FAFDE9B" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5FAFDE9B" Ref="R605"  Part="1" 
+F 0 "R605" H 8070 3946 50  0000 L CNN
+F 1 "130k" H 8070 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+F 4 "C22795" H 8000 3900 50  0001 C CNN "LCSC"
+	1    8000 3900
+	1    0    0    -1  
+$EndComp
+Text Label 8200 3650 0    50   ~ 0
+VcapS
+Wire Wire Line
+	8000 4150 8000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5FAFDEA3
+P 8000 4150
+AR Path="/5FAFDEA3" Ref="#PWR?"  Part="1" 
+AR Path="/5C33FF90/5FAFDEA3" Ref="#PWR0606"  Part="1" 
+F 0 "#PWR0606" H 8000 3900 50  0001 C CNN
+F 1 "GND" H 8005 3977 50  0000 C CNN
+F 2 "" H 8000 4150 50  0001 C CNN
+F 3 "" H 8000 4150 50  0001 C CNN
+	1    8000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3750 8000 3650
+Wire Wire Line
+	8000 3650 8000 3550
+Connection ~ 8000 3650
+Wire Wire Line
+	8200 3650 8000 3650
+$Comp
+L Device:R R?
+U 1 1 5FAFDEAF
+P 8000 3400
+AR Path="/5FAFDEAF" Ref="R?"  Part="1" 
+AR Path="/5C33FF90/5FAFDEAF" Ref="R604"  Part="1" 
+F 0 "R604" H 8070 3446 50  0000 L CNN
+F 1 "200k" H 8070 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 3400 50  0001 C CNN
+F 3 "~" H 8000 3400 50  0001 C CNN
+F 4 "C25811" H 8000 3400 50  0001 C CNN "LCSC"
+	1    8000 3400
+	1    0    0    -1  
+$EndComp
+Text Label 4650 4100 0    50   ~ 0
+VcapS
+Text HLabel 8000 3050 1    50   Input ~ 0
+Vcap
+Text Label 2400 3050 0    50   ~ 0
+V12s
+Text Label 4650 4000 0    50   ~ 0
+V12s
+Text Label 4650 3900 0    50   ~ 0
+PA0
+Text Label 4650 4400 0    50   ~ 0
+PA5
+Text Label 4650 4800 0    50   ~ 0
+PB0
+Text Label 3800 3450 2    50   ~ 0
+ATT_Vcc
+Text Label 5800 5100 0    50   ~ 0
+RESET
 $EndSCHEMATC
