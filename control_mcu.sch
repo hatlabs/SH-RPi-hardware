@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
 Rev "revL"
@@ -26,8 +26,6 @@ F 3 "" H 3800 5400 50  0001 C CNN
 	1    3800 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 2600 2    50   Input ~ 0
-3.3V
 Wire Wire Line
 	5800 5100 5500 5100
 $Comp
@@ -36,9 +34,9 @@ U 1 1 5C6051E1
 P 4200 3250
 F 0 "C602" H 4315 3296 50  0000 L CNN
 F 1 "100nF" H 4315 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4238 3100 50  0001 C CNN
 F 3 "~" H 4200 3250 50  0001 C CNN
-F 4 "C14663" H 4200 3250 50  0001 C CNN "LCSC"
+F 4 "C1525" H 4200 3250 50  0001 C CNN "LCSC"
 	1    4200 3250
 	1    0    0    -1  
 $EndComp
@@ -68,9 +66,9 @@ AR Path="/5C840859" Ref="R?"  Part="1"
 AR Path="/5C33FF90/5C840859" Ref="R603"  Part="1" 
 F 0 "R603" H 5570 4896 50  0000 L CNN
 F 1 "10k" H 5570 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 4850 50  0001 C CNN
 F 3 "~" H 5500 4850 50  0001 C CNN
-F 4 "C25804" H 5500 4850 50  0001 C CNN "LCSC"
+F 4 "C25744" H 5500 4850 50  0001 C CNN "LCSC"
 	1    5500 4850
 	1    0    0    -1  
 $EndComp
@@ -11839,7 +11837,7 @@ $EndComp
 Wire Wire Line
 	4650 4100 4400 4100
 Text Notes 650  3300 0    50   ~ 0
-Clamp V12s to always\nless than ATT_Vcc
+Clamp VinS to always\nless than ATT_Vcc
 $Comp
 L Device:D_Schottky D601
 U 1 1 5E237065
@@ -11859,7 +11857,7 @@ Wire Wire Line
 Text HLabel 750  2450 1    50   Input ~ 0
 ATT_Vcc
 Text Notes 750  4000 0    50   ~ 0
-V12s scaled to provide 1.1V for 32V input
+VinS scaled to provide 1.1V for 32V input
 Wire Wire Line
 	2250 3050 2400 3050
 Connection ~ 2250 3050
@@ -11888,9 +11886,9 @@ AR Path="/5CFB31B2" Ref="R?"  Part="1"
 AR Path="/5C33FF90/5CFB31B2" Ref="R602"  Part="1" 
 F 0 "R602" H 2320 3346 50  0000 L CNN
 F 1 "2.2k" H 2320 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 3300 50  0001 C CNN
 F 3 "~" H 2250 3300 50  0001 C CNN
-F 4 "C4190" H 2250 3300 50  0001 C CNN "LCSC"
+F 4 "C25879" H 2250 3300 50  0001 C CNN "LCSC"
 	1    2250 3300
 	1    0    0    -1  
 $EndComp
@@ -11917,9 +11915,9 @@ U 1 1 5CF55CCF
 P 1650 3300
 F 0 "C601" H 1765 3346 50  0000 L CNN
 F 1 "100nF" H 1765 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1688 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1688 3150 50  0001 C CNN
 F 3 "~" H 1650 3300 50  0001 C CNN
-F 4 "C14663" H 1650 3300 50  0001 C CNN "LCSC"
+F 4 "C1525" H 1650 3300 50  0001 C CNN "LCSC"
 	1    1650 3300
 	1    0    0    -1  
 $EndComp
@@ -11979,7 +11977,7 @@ $EndComp
 Text Label 5600 1900 2    50   ~ 0
 RESET
 Text Label 6100 1800 0    50   ~ 0
-V12s
+VinS
 $Comp
 L power:GND #PWR?
 U 1 1 5FAF599E
@@ -12020,7 +12018,7 @@ VcapS
 Wire Wire Line
 	8000 3050 8000 3250
 Text Notes 6350 3650 0    50   ~ 0
-VcapS is scaled from 2.8V to 1.1V\n(this will also drain the cap over time)
+VcapS is scaled from 2.75V to 1.1V\n(this will also drain the cap over time)
 $Comp
 L Device:R R?
 U 1 1 5FAFDE9B
@@ -12028,10 +12026,10 @@ P 8000 3900
 AR Path="/5FAFDE9B" Ref="R?"  Part="1" 
 AR Path="/5C33FF90/5FAFDE9B" Ref="R605"  Part="1" 
 F 0 "R605" H 8070 3946 50  0000 L CNN
-F 1 "130k" H 8070 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 3900 50  0001 C CNN
+F 1 "200k" H 8070 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 3900 50  0001 C CNN
 F 3 "~" H 8000 3900 50  0001 C CNN
-F 4 "C22795" H 8000 3900 50  0001 C CNN "LCSC"
+F 4 "C25764" H 8000 3900 50  0001 C CNN "LCSC"
 	1    8000 3900
 	1    0    0    -1  
 $EndComp
@@ -12066,10 +12064,10 @@ P 8000 3400
 AR Path="/5FAFDEAF" Ref="R?"  Part="1" 
 AR Path="/5C33FF90/5FAFDEAF" Ref="R604"  Part="1" 
 F 0 "R604" H 8070 3446 50  0000 L CNN
-F 1 "200k" H 8070 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 3400 50  0001 C CNN
+F 1 "300k" H 8070 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 3400 50  0001 C CNN
 F 3 "~" H 8000 3400 50  0001 C CNN
-F 4 "C25811" H 8000 3400 50  0001 C CNN "LCSC"
+F 4 "C25774" H 8000 3400 50  0001 C CNN "LCSC"
 	1    8000 3400
 	1    0    0    -1  
 $EndComp
@@ -12078,9 +12076,9 @@ VcapS
 Text HLabel 8000 3050 1    50   Input ~ 0
 Vcap
 Text Label 2400 3050 0    50   ~ 0
-V12s
+VinS
 Text Label 4650 4000 0    50   ~ 0
-V12s
+VinS
 Text Label 4650 3900 0    50   ~ 0
 PA0
 Text Label 4650 4400 0    50   ~ 0
@@ -12091,4 +12089,15 @@ Text Label 3800 3450 2    50   ~ 0
 ATT_Vcc
 Text Label 5800 5100 0    50   ~ 0
 RESET
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5FB5EC9E
+P 4100 2600
+F 0 "#PWR0102" H 4100 2450 50  0001 C CNN
+F 1 "+3.3V" V 4115 2728 50  0000 L CNN
+F 2 "" H 4100 2600 50  0001 C CNN
+F 3 "" H 4100 2600 50  0001 C CNN
+	1    4100 2600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 5 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
 Rev "revL"
@@ -80,9 +80,9 @@ AR Path="/5E467AE8" Ref="R?"  Part="1"
 AR Path="/5E460E30/5E467AE8" Ref="R501"  Part="1" 
 F 0 "R501" H 5870 2746 50  0000 L CNN
 F 1 "100k" H 5870 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5730 2700 50  0001 C CNN
 F 3 "~" H 5800 2700 50  0001 C CNN
-F 4 "C25803" H 5800 2700 50  0001 C CNN "LCSC"
+F 4 "C25741" H 5800 2700 50  0001 C CNN "LCSC"
 	1    5800 2700
 	1    0    0    -1  
 $EndComp
@@ -229,7 +229,7 @@ U 1 1 5FB8FE7E
 P 1450 2250
 F 0 "J501" H 1368 2567 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 1368 2476 50  0000 C CNN
-F 2 "" H 1450 2250 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 1450 2250 50  0001 C CNN
 F 3 "~" H 1450 2250 50  0001 C CNN
 	1    1450 2250
 	-1   0    0    -1  
