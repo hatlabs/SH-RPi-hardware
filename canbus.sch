@@ -24,12 +24,12 @@ SCK
 Wire Wire Line
 	1650 4100 1650 3950
 $Comp
-L Jumper:Jumper_2_Open JP801
+L Jumper:SolderJumper_2_Open JP801
 U 1 1 5C35395F
 P 2300 3750
 F 0 "JP801" H 2300 3893 50  0000 C CNN
 F 1 "Term" H 2300 3894 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 3750 50  0001 C CNN
+F 2 "custom:SolderJumper-2_P1.3mm_Open_TrianglePad_Narrow" H 2300 3750 50  0001 C CNN
 F 3 "~" H 2300 3750 50  0001 C CNN
 	1    2300 3750
 	0    1    1    0   
@@ -752,4 +752,8 @@ F 3 "" H 7750 1300 50  0001 C CNN
 	1    7750 1300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2300 3550 2300 3600
+Wire Wire Line
+	2300 3950 2300 3900
 $EndSCHEMATC
