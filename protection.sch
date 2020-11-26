@@ -231,6 +231,7 @@ F 0 "J501" H 1368 2467 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 1368 2376 50  0000 C CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 1450 2150 50  0001 C CNN
 F 3 "~" H 1450 2150 50  0001 C CNN
+F 4 "C8387" H 1450 2150 50  0001 C CNN "LCSC"
 	1    1450 2150
 	-1   0    0    -1  
 $EndComp
