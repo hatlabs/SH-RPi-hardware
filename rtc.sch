@@ -127,11 +127,11 @@ Wire Wire Line
 	3600 2900 3600 2750
 Wire Wire Line
 	3600 2750 3700 2750
-Wire Wire Line
-	3550 2550 3700 2550
-Wire Wire Line
-	3550 2050 3550 2550
-NoConn ~ 3700 2650
 Text HLabel 2600 1200 1    50   Input ~ 0
 ATT_Vcc
+Wire Wire Line
+	3550 2650 3700 2650
+Wire Wire Line
+	3550 2050 3550 2650
+NoConn ~ 3700 2550
 $EndSCHEMATC
