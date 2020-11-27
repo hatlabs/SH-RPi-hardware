@@ -22,7 +22,7 @@ AR Path="/5C346616" Ref="C?"  Part="1"
 AR Path="/5C345D5A/5C346616" Ref="C3"  Part="1" 
 F 0 "C3" H 3568 2396 50  0000 L CNN
 F 1 "10F" H 3568 2305 50  0000 L CNN
-F 2 "custom:CP_Radial_D10.0mm_P5.00mm_flat" H 3488 2200 50  0001 C CNN
+F 2 "SH-RPi:CP_Radial_D10.0mm_P5.00mm_flat" H 3488 2200 50  0001 C CNN
 F 3 "~" H 3450 2350 50  0001 C CNN
 	1    3450 2350
 	1    0    0    -1  
@@ -35,7 +35,7 @@ AR Path="/5C34661D" Ref="C?"  Part="1"
 AR Path="/5C345D5A/5C34661D" Ref="C4"  Part="1" 
 F 0 "C4" H 3568 3046 50  0000 L CNN
 F 1 "10F" H 3568 2955 50  0000 L CNN
-F 2 "custom:CP_Radial_D10.0mm_P5.00mm_flat" H 3488 2850 50  0001 C CNN
+F 2 "SH-RPi:CP_Radial_D10.0mm_P5.00mm_flat" H 3488 2850 50  0001 C CNN
 F 3 "~" H 3450 3000 50  0001 C CNN
 	1    3450 3000
 	1    0    0    -1  
@@ -150,7 +150,7 @@ AR Path="/5CA51D82" Ref="C?"  Part="1"
 AR Path="/5C345D5A/5CA51D82" Ref="C5"  Part="1" 
 F 0 "C5" H 4168 2396 50  0000 L CNN
 F 1 "10F" H 4168 2305 50  0000 L CNN
-F 2 "custom:CP_Radial_D10.0mm_P5.00mm_flat" H 4088 2200 50  0001 C CNN
+F 2 "SH-RPi:CP_Radial_D10.0mm_P5.00mm_flat" H 4088 2200 50  0001 C CNN
 F 3 "~" H 4050 2350 50  0001 C CNN
 	1    4050 2350
 	1    0    0    -1  
@@ -163,7 +163,7 @@ AR Path="/5CA51D88" Ref="C?"  Part="1"
 AR Path="/5C345D5A/5CA51D88" Ref="C6"  Part="1" 
 F 0 "C6" H 4168 3046 50  0000 L CNN
 F 1 "10F" H 4168 2955 50  0000 L CNN
-F 2 "custom:CP_Radial_D10.0mm_P5.00mm_flat" H 4088 2850 50  0001 C CNN
+F 2 "SH-RPi:CP_Radial_D10.0mm_P5.00mm_flat" H 4088 2850 50  0001 C CNN
 F 3 "~" H 4050 3000 50  0001 C CNN
 	1    4050 3000
 	1    0    0    -1  

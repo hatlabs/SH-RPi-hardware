@@ -37,8 +37,8 @@ The main features are:
 
 This repository contains the KiCad hardware design files for Sailor Hat.
 There are two other related repositories: 
-[firmware](https://github.com/mairas/sailor-hat-firmware) and 
-[daemon](https://github.com/mairas/sailor-hat-daemon).
+[firmware](https://github.com/hatlabs/SH-RPi-firmware) and 
+[daemon](https://github.com/hatlabs/SH-RPi-daemon).
 
 A rendering of Rev.L circuit board:
 

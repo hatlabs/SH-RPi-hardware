@@ -99,7 +99,7 @@
   <components>
     <comp ref="J1">
       <value>Screw_Terminal_01x04</value>
-      <footprint>custom:TerminalBlock_WJ15EDGRC-3.81-4P</footprint>
+      <footprint>SH-RPi:TerminalBlock_WJ15EDGRC-3.81-4P</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="LCSC">C7245</field>
@@ -143,7 +143,7 @@
     </comp>
     <comp ref="J3">
       <value>Conn_02x07_Counter_Clockwise</value>
-      <footprint>custom:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise</footprint>
+      <footprint>SH-RPi:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_02x07_Counter_Clockwise" description="Generic connector, double row, 02x07, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -214,7 +214,7 @@
     </comp>
     <comp ref="J4">
       <value>Screw_Terminal_01x02</value>
-      <footprint>custom:TerminalBlock_WJ15EDGRC-3.81-2P</footprint>
+      <footprint>SH-RPi:TerminalBlock_WJ15EDGRC-3.81-2P</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="LCSC">C8387</field>
@@ -321,7 +321,7 @@
     </comp>
     <comp ref="J5">
       <value>Screw_Terminal_01x03</value>
-      <footprint>custom:TerminalBlock_WJ15EDGRC-3.81-3P</footprint>
+      <footprint>SH-RPi:TerminalBlock_WJ15EDGRC-3.81-3P</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="LCSC">C8406</field>
@@ -579,7 +579,7 @@
     </comp>
     <comp ref="U2">
       <value>TPS61022</value>
-      <footprint>custom:TPS61022RWUR</footprint>
+      <footprint>SH-RPi:TPS61022RWUR</footprint>
       <fields>
         <field name="Mouser">595-TPS61022RWUR</field>
       </fields>
@@ -851,7 +851,7 @@
     </comp>
     <comp ref="BT1">
       <value>CR1220 3V</value>
-      <footprint>custom:BatteryHolder_Linx_BAT-HLD-012-SMT</footprint>
+      <footprint>SH-RPi:BatteryHolder_Linx_BAT-HLD-012-SMT</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Mouser">712-BAT-HLD-012-SMT</field>

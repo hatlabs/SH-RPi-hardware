@@ -11969,7 +11969,7 @@ AR Path="/5FAF5996" Ref="J?"  Part="1"
 AR Path="/5C33FF90/5FAF5996" Ref="J601"  Part="1" 
 F 0 "J601" H 5850 2417 50  0000 C CNN
 F 1 "Conn_02x07_Counter_Clockwise" H 5850 2326 50  0000 C CNN
-F 2 "custom:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise" H 5800 1900 50  0001 C CNN
+F 2 "SH-RPi:PinHeader_2x07_P2.54mm_Vertical_CounterClockwise" H 5800 1900 50  0001 C CNN
 F 3 "~" H 5800 1900 50  0001 C CNN
 F 4 "C492424" H 5800 1900 50  0001 C CNN "LCSC"
 	1    5800 1900

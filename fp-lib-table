@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name CSAB0630-100M)(type Legacy)(uri ${KIPRJMOD}/CSAB0630-100M.mod)(options "")(descr ""))
-  (lib (name custom)(type KiCad)(uri ${KIPRJMOD}/custom.pretty)(options "")(descr ""))
+  (lib (name SH-RPi)(type KiCad)(uri ${KIPRJMOD}/SH-RPi.pretty)(options "")(descr ""))
   (lib (name SH-ESP32)(type KiCad)(uri /Users/mairas/w/hatlabs/SH-ESP32/SH-ESP32-hardware/SH-ESP32.pretty)(options "")(descr ""))
 )
