@@ -476,17 +476,17 @@ $EndComp
 Text Notes 2950 5200 2    50   ~ 0
 Supercaps are now behind a\nseparate connector (min. 8A)
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x03 J?
 U 1 1 5FAF7481
-P 1700 5450
+P 1700 5550
 AR Path="/5FAF7481" Ref="J?"  Part="1" 
 AR Path="/5FAD80E5/5FAF7481" Ref="J701"  Part="1" 
-F 0 "J701" H 1780 5442 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 1780 5351 50  0000 L CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 1700 5450 50  0001 C CNN
-F 3 "~" H 1700 5450 50  0001 C CNN
-F 4 "C8387" H 1700 5450 50  0001 C CNN "LCSC"
-	1    1700 5450
+F 0 "J701" H 1780 5542 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 1780 5451 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 1700 5550 50  0001 C CNN
+F 3 "~" H 1700 5550 50  0001 C CNN
+F 4 "C8387" H 1700 5550 50  0001 C CNN "LCSC"
+	1    1700 5550
 	-1   0    0    -1  
 $EndComp
 Text HLabel 4200 1600 1    50   Input ~ 0
@@ -519,6 +519,7 @@ F 0 "U701" H 2800 6575 50  0000 C CNN
 F 1 "RCLAMP0524P-N" H 2800 6484 50  0000 C CNN
 F 2 "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 2800 6050 50  0001 C CNN
 F 3 "" H 2800 6050 50  0001 C CNN
+F 4 "C316044" H 2800 6150 50  0001 C CNN "LCSC"
 	1    2800 6150
 	1    0    0    -1  
 $EndComp
@@ -661,7 +662,7 @@ Connection ~ 6200 5450
 Wire Wire Line
 	6200 5450 6450 5450
 Wire Wire Line
-	1900 5550 2450 5550
+	1900 5550 2000 5550
 Wire Wire Line
 	2450 6050 2450 5950
 Connection ~ 2450 5550
@@ -700,4 +701,11 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1900 5650 2000 5650
+Wire Wire Line
+	2000 5650 2000 5550
+Connection ~ 2000 5550
+Wire Wire Line
+	2000 5550 2450 5550
 $EndSCHEMATC

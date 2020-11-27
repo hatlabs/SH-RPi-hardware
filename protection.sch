@@ -224,14 +224,15 @@ Wire Wire Line
 Wire Wire Line
 	4300 2150 5000 2150
 $Comp
-L Connector:Screw_Terminal_01x03 J501
+L Connector:Screw_Terminal_01x02 J501
 U 1 1 5FB8FE7E
-P 1450 2250
-F 0 "J501" H 1368 2567 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 1368 2476 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 1450 2250 50  0001 C CNN
-F 3 "~" H 1450 2250 50  0001 C CNN
-	1    1450 2250
+P 1450 2150
+F 0 "J501" H 1368 2467 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1368 2376 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 1450 2150 50  0001 C CNN
+F 3 "~" H 1450 2150 50  0001 C CNN
+F 4 "C8387" H 1450 2150 50  0001 C CNN "LCSC"
+	1    1450 2150
 	-1   0    0    -1  
 $EndComp
 Text Label 2950 2150 2    50   ~ 0
@@ -253,14 +254,9 @@ F 3 "" H 1900 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 2700 1900 2350
-Wire Wire Line
-	1900 2350 1650 2350
-Wire Wire Line
 	1650 2250 1900 2250
 Wire Wire Line
-	1900 2250 1900 2350
-Connection ~ 1900 2350
-Wire Wire Line
 	1950 2150 1650 2150
+Wire Wire Line
+	1900 2250 1900 2700
 $EndSCHEMATC
