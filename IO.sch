@@ -512,7 +512,7 @@ SDA
 Text HLabel 3150 2500 2    50   Input ~ 0
 SCL
 $Comp
-L sailor-hat:RCLAMP0524P-N U701
+L SH-RPi:RCLAMP0524P-N U701
 U 1 1 5FB6B31D
 P 2800 6150
 F 0 "U701" H 2800 6575 50  0000 C CNN
@@ -523,22 +523,6 @@ F 4 "C316044" H 2800 6150 50  0001 C CNN "LCSC"
 	1    2800 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 5450 2050 5450
-Wire Wire Line
-	2450 6150 2150 6150
-Wire Wire Line
-	2150 6150 2150 5450
-Connection ~ 2150 5450
-Wire Wire Line
-	2150 5450 3450 5450
-Wire Wire Line
-	2450 6250 2050 6250
-Wire Wire Line
-	2050 6250 2050 5450
-Connection ~ 2050 5450
-Wire Wire Line
-	2050 5450 2150 5450
 Wire Wire Line
 	3150 6150 3450 6150
 Wire Wire Line
@@ -663,22 +647,6 @@ Wire Wire Line
 	6200 5450 6450 5450
 Wire Wire Line
 	1900 5550 2000 5550
-Wire Wire Line
-	2450 6050 2450 5950
-Connection ~ 2450 5550
-Wire Wire Line
-	2450 5550 3150 5550
-Connection ~ 2450 5950
-Wire Wire Line
-	2450 5950 2450 5550
-Wire Wire Line
-	3150 6050 3150 5950
-Connection ~ 3150 5550
-Wire Wire Line
-	3150 5550 3800 5550
-Connection ~ 3150 5950
-Wire Wire Line
-	3150 5950 3150 5550
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5FB6095A
@@ -706,6 +674,26 @@ Wire Wire Line
 Wire Wire Line
 	2000 5650 2000 5550
 Connection ~ 2000 5550
+Connection ~ 2050 5450
 Wire Wire Line
-	2000 5550 2450 5550
+	2150 5450 3450 5450
+Connection ~ 2150 5450
+Wire Wire Line
+	2050 5450 2150 5450
+Wire Wire Line
+	1900 5450 2050 5450
+Wire Wire Line
+	2050 6250 2050 5450
+Wire Wire Line
+	2450 6250 2050 6250
+Wire Wire Line
+	2150 6150 2150 5450
+Wire Wire Line
+	2450 6150 2150 6150
+Wire Wire Line
+	2000 5550 3800 5550
+NoConn ~ 2450 5950
+NoConn ~ 2450 6050
+NoConn ~ 3150 5950
+NoConn ~ 3150 6050
 $EndSCHEMATC
