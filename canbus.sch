@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 8 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -340,44 +340,42 @@ Connection ~ 9400 2150
 Wire Wire Line
 	9400 2150 8750 2150
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector_Generic:Conn_01x04 J?
 U 1 1 5FB016D7
 P 1400 1650
 AR Path="/5FB016D7" Ref="J?"  Part="1" 
 AR Path="/5FAD80E5/5FB016D7" Ref="J?"  Part="1" 
 AR Path="/5C348474/5FB016D7" Ref="J801"  Part="1" 
 F 0 "J801" H 1320 1225 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1320 1316 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 1400 1650 50  0001 C CNN
+F 1 "JST XH horiz" H 1320 1316 50  0000 C CNN
+F 2 "SH-RPi:Boomelec_XH-4AW_1x04_P2.50mm_Horizontal" H 1400 1650 50  0001 C CNN
 F 3 "~" H 1400 1650 50  0001 C CNN
-F 4 "C7245" H 1400 1650 50  0001 C CNN "LCSC"
+F 4 "C21273" H 1400 1650 50  0001 C CNN "LCSC"
 	1    1400 1650
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5FB016DE
-P 1850 1550
+P 2250 1450
 AR Path="/5FB016DE" Ref="#FLG?"  Part="1" 
 AR Path="/5FAD80E5/5FB016DE" Ref="#FLG?"  Part="1" 
 AR Path="/5C348474/5FB016DE" Ref="#FLG0801"  Part="1" 
-F 0 "#FLG0801" H 1850 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 1850 1723 50  0000 C CNN
-F 2 "" H 1850 1550 50  0001 C CNN
-F 3 "~" H 1850 1550 50  0001 C CNN
-	1    1850 1550
+F 0 "#FLG0801" H 2250 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 1623 50  0000 C CNN
+F 2 "" H 2250 1450 50  0001 C CNN
+F 3 "~" H 2250 1450 50  0001 C CNN
+	1    2250 1450
 	1    0    0    -1  
 $EndComp
 Text Label 3500 1750 0    50   ~ 0
 CAN0_H
 Text Label 3500 1850 0    50   ~ 0
 CAN0_L
-Text Label 2200 1550 0    50   ~ 0
+Text Label 2450 1650 0    50   ~ 0
 CAN0_12V
-Text Label 2200 1650 0    50   ~ 0
+Text Label 1650 1550 0    50   ~ 0
 CAN0_GND
-Wire Wire Line
-	1600 1650 2200 1650
 $Comp
 L SH-RPi:HT75xx-1-SOT23 U802
 U 1 1 5FB27765
@@ -596,11 +594,6 @@ Text Label 1350 6100 2    50   ~ 0
 CAN0_12V
 Text Label 6000 6100 0    50   ~ 0
 CAN_5V
-Connection ~ 1850 1550
-Wire Wire Line
-	1850 1550 1600 1550
-Wire Wire Line
-	1850 1550 2200 1550
 $Comp
 L SH-RPi:RCLAMP0524P-N U801
 U 1 1 5FB46A7F
@@ -757,4 +750,32 @@ Wire Wire Line
 	2300 3550 2300 3600
 Wire Wire Line
 	2300 3950 2300 3900
+Wire Wire Line
+	1600 1550 1650 1550
+Wire Wire Line
+	2250 1650 2250 1450
+Connection ~ 2250 1650
+Wire Wire Line
+	2250 1650 2450 1650
+Wire Wire Line
+	1600 1650 2250 1650
+$Comp
+L Connector_Generic:Conn_01x02 J802
+U 1 1 5FD00858
+P 4900 1150
+F 0 "J802" H 4980 1142 50  0000 L CNN
+F 1 "Wire Link" H 4980 1051 50  0000 L CNN
+F 2 "SH-RPi:WireLink_1x02_P2.54mm" H 4900 1150 50  0001 C CNN
+F 3 "~" H 4900 1150 50  0001 C CNN
+	1    4900 1150
+	1    0    0    -1  
+$EndComp
+Text Label 4600 1150 2    50   ~ 0
+CAN0_GND
+Wire Wire Line
+	4700 1150 4600 1150
+Text Label 4600 1250 2    50   ~ 0
+CAN0_12V
+Wire Wire Line
+	4700 1250 4600 1250
 $EndSCHEMATC

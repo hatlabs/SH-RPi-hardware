@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -64,7 +64,7 @@ U 5CA65CC5
 F0 "Buck converter" 50
 F1 "buck.sch" 50
 F2 "Vin" I L 3200 1300 50 
-F3 "Vbuck" O R 3850 1300 50 
+F3 "Vcap" O R 3850 1300 50 
 $EndSheet
 Text Label 5000 1500 2    50   ~ 0
 EN5V
@@ -136,14 +136,13 @@ F2 "ATT_LED2" I L 4300 4850 50
 F3 "EN5V" I L 4300 5050 50 
 F4 "ATT_LED1" I L 4300 4750 50 
 F5 "ATT_LED0" I L 4300 4650 50 
-F6 "Vcap" I L 4300 2350 50 
-F7 "INT0" I L 4300 2900 50 
-F8 "CS0" I L 4300 3000 50 
-F9 "SCK" I L 4300 3100 50 
-F10 "SO" I L 4300 3300 50 
-F11 "SI" I L 4300 3200 50 
-F12 "SDA" I L 4300 3650 50 
-F13 "SCL" I L 4300 3750 50 
+F6 "INT0" I L 4300 2900 50 
+F7 "CS0" I L 4300 3000 50 
+F8 "SCK" I L 4300 3100 50 
+F9 "SO" I L 4300 3300 50 
+F10 "SI" I L 4300 3200 50 
+F11 "SDA" I L 4300 3650 50 
+F12 "SCL" I L 4300 3750 50 
 $EndSheet
 $Sheet
 S 1400 4250 1050 950 
@@ -178,8 +177,6 @@ Wire Wire Line
 	2300 1300 2200 1300
 Text Label 1250 2500 2    50   ~ 0
 Vin_prot
-Text Label 4200 2350 2    50   ~ 0
-Vcap
 Text Label 4200 2900 2    50   ~ 0
 INT0
 Text Label 4200 3000 2    50   ~ 0
@@ -224,8 +221,6 @@ Text Label 4200 5050 2    50   ~ 0
 EN5V
 Wire Wire Line
 	4200 5050 4300 5050
-Wire Wire Line
-	4200 2350 4300 2350
 $Sheet
 S 4300 5800 1500 450 
 U 5FB38EDE

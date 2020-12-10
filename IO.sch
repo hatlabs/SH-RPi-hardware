@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 7 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -128,7 +128,7 @@ U 1 1 5FAE04F8
 P 2350 3000
 F 0 "J702" H 2650 4400 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 2950 4300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2350 3000 50  0001 C CNN
+F 2 "SH-RPi:PinHeader_RPi-GPIO" H 2350 3000 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2350 3000 50  0001 C CNN
 	1    2350 3000
 	1    0    0    -1  
@@ -460,35 +460,6 @@ Text Notes 5000 2750 0    50   ~ 0
 Vcap
 Text Notes 3950 2750 0    50   ~ 0
 Vin voltage
-$Comp
-L power:GND #PWR?
-U 1 1 5FAF7478
-P 3800 5550
-AR Path="/5FAF7478" Ref="#PWR?"  Part="1" 
-AR Path="/5FAD80E5/5FAF7478" Ref="#PWR0711"  Part="1" 
-F 0 "#PWR0711" H 3800 5300 50  0001 C CNN
-F 1 "GND" H 3805 5377 50  0000 C CNN
-F 2 "" H 3800 5550 50  0001 C CNN
-F 3 "" H 3800 5550 50  0001 C CNN
-	1    3800 5550
-	-1   0    0    -1  
-$EndComp
-Text Notes 2950 5200 2    50   ~ 0
-Supercaps are now behind a\nseparate connector (min. 8A)
-$Comp
-L Connector:Screw_Terminal_01x03 J?
-U 1 1 5FAF7481
-P 1700 5550
-AR Path="/5FAF7481" Ref="J?"  Part="1" 
-AR Path="/5FAD80E5/5FAF7481" Ref="J701"  Part="1" 
-F 0 "J701" H 1780 5542 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 1780 5451 50  0000 L CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 1700 5550 50  0001 C CNN
-F 3 "~" H 1700 5550 50  0001 C CNN
-F 4 "C8406" H 1700 5550 50  0001 C CNN "LCSC"
-	1    1700 5550
-	-1   0    0    -1  
-$EndComp
 Text HLabel 4200 1600 1    50   Input ~ 0
 ATT_LED2
 Text HLabel 4650 1600 1    50   Input ~ 0
@@ -512,142 +483,6 @@ SDA
 Text HLabel 3150 2500 2    50   Input ~ 0
 SCL
 $Comp
-L SH-RPi:RCLAMP0524P-N U701
-U 1 1 5FB6B31D
-P 2800 6150
-F 0 "U701" H 2800 6575 50  0000 C CNN
-F 1 "RCLAMP0524P-N" H 2800 6484 50  0000 C CNN
-F 2 "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 2800 6050 50  0001 C CNN
-F 3 "" H 2800 6050 50  0001 C CNN
-F 4 "C316044" H 2800 6150 50  0001 C CNN "LCSC"
-	1    2800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 6150 3450 6150
-Wire Wire Line
-	3450 6150 3450 5450
-Connection ~ 3450 5450
-Wire Wire Line
-	3450 5450 3550 5450
-Wire Wire Line
-	3150 6250 3550 6250
-Wire Wire Line
-	3550 6250 3550 5450
-Connection ~ 3550 5450
-Wire Wire Line
-	3550 5450 3800 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5FB78DB9
-P 2750 6600
-AR Path="/5FB78DB9" Ref="#PWR?"  Part="1" 
-AR Path="/5FAD80E5/5FB78DB9" Ref="#PWR0709"  Part="1" 
-F 0 "#PWR0709" H 2750 6350 50  0001 C CNN
-F 1 "GND" H 2755 6427 50  0000 C CNN
-F 2 "" H 2750 6600 50  0001 C CNN
-F 3 "" H 2750 6600 50  0001 C CNN
-	1    2750 6600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FB793D5
-P 2850 6600
-AR Path="/5FB793D5" Ref="#PWR?"  Part="1" 
-AR Path="/5FAD80E5/5FB793D5" Ref="#PWR0710"  Part="1" 
-F 0 "#PWR0710" H 2850 6350 50  0001 C CNN
-F 1 "GND" H 2855 6427 50  0000 C CNN
-F 2 "" H 2850 6600 50  0001 C CNN
-F 3 "" H 2850 6600 50  0001 C CNN
-	1    2850 6600
-	-1   0    0    -1  
-$EndComp
-Text Label 3800 5450 0    50   ~ 0
-Vcap_CONN
-$Comp
-L Device:Ferrite_Bead FB701
-U 1 1 5FB7E43C
-P 5900 5450
-F 0 "FB701" V 5626 5450 50  0000 C CNN
-F 1 "GZ2012D601TF" V 5717 5450 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 5830 5450 50  0001 C CNN
-F 3 "~" H 5900 5450 50  0001 C CNN
-F 4 "C1017" V 5900 5450 50  0001 C CNN "LCSC"
-	1    5900 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C701
-U 1 1 5FB7F028
-P 5550 5650
-F 0 "C701" H 5665 5696 50  0000 L CNN
-F 1 "10uF/50V" H 5665 5605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5588 5500 50  0001 C CNN
-F 3 "~" H 5550 5650 50  0001 C CNN
-F 4 "C13585" H 5550 5650 50  0001 C CNN "LCSC"
-	1    5550 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C702
-U 1 1 5FB7F7AF
-P 6200 5650
-F 0 "C702" H 6315 5696 50  0000 L CNN
-F 1 "10uF" H 6315 5605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6238 5500 50  0001 C CNN
-F 3 "~" H 6200 5650 50  0001 C CNN
-F 4 "C15525" H 6200 5650 50  0001 C CNN "LCSC"
-	1    6200 5650
-	1    0    0    -1  
-$EndComp
-Text Label 5350 5450 2    50   ~ 0
-Vcap_CONN
-Text HLabel 6450 5450 2    50   Input ~ 0
-Vcap
-Wire Wire Line
-	5750 5450 5550 5450
-Wire Wire Line
-	5550 5500 5550 5450
-Connection ~ 5550 5450
-Wire Wire Line
-	5550 5450 5350 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5FB82711
-P 5550 5800
-AR Path="/5FB82711" Ref="#PWR?"  Part="1" 
-AR Path="/5FAD80E5/5FB82711" Ref="#PWR0715"  Part="1" 
-F 0 "#PWR0715" H 5550 5550 50  0001 C CNN
-F 1 "GND" H 5555 5627 50  0000 C CNN
-F 2 "" H 5550 5800 50  0001 C CNN
-F 3 "" H 5550 5800 50  0001 C CNN
-	1    5550 5800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FB82BCB
-P 6200 5800
-AR Path="/5FB82BCB" Ref="#PWR?"  Part="1" 
-AR Path="/5FAD80E5/5FB82BCB" Ref="#PWR0717"  Part="1" 
-F 0 "#PWR0717" H 6200 5550 50  0001 C CNN
-F 1 "GND" H 6205 5627 50  0000 C CNN
-F 2 "" H 6200 5800 50  0001 C CNN
-F 3 "" H 6200 5800 50  0001 C CNN
-	1    6200 5800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 5450 6200 5450
-Wire Wire Line
-	6200 5500 6200 5450
-Connection ~ 6200 5450
-Wire Wire Line
-	6200 5450 6450 5450
-Wire Wire Line
-	1900 5550 2000 5550
-$Comp
 L power:+3.3V #PWR0103
 U 1 1 5FB6095A
 P 2450 1250
@@ -669,31 +504,4 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 5650 2000 5650
-Wire Wire Line
-	2000 5650 2000 5550
-Connection ~ 2000 5550
-Connection ~ 2050 5450
-Wire Wire Line
-	2150 5450 3450 5450
-Connection ~ 2150 5450
-Wire Wire Line
-	2050 5450 2150 5450
-Wire Wire Line
-	1900 5450 2050 5450
-Wire Wire Line
-	2050 6250 2050 5450
-Wire Wire Line
-	2450 6250 2050 6250
-Wire Wire Line
-	2150 6150 2150 5450
-Wire Wire Line
-	2450 6150 2150 6150
-Wire Wire Line
-	2000 5550 3800 5550
-NoConn ~ 2450 5950
-NoConn ~ 2450 6050
-NoConn ~ 3150 5950
-NoConn ~ 3150 6050
 $EndSCHEMATC

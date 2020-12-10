@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 5 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -224,16 +224,16 @@ Wire Wire Line
 Wire Wire Line
 	4300 2150 5000 2150
 $Comp
-L Connector:Screw_Terminal_01x02 J501
+L Connector_Generic:Conn_01x02 J501
 U 1 1 5FB8FE7E
-P 1450 2150
-F 0 "J501" H 1368 2467 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1368 2376 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 1450 2150 50  0001 C CNN
-F 3 "~" H 1450 2150 50  0001 C CNN
-F 4 "C8387" H 1450 2150 50  0001 C CNN "LCSC"
-	1    1450 2150
-	-1   0    0    -1  
+P 1450 2250
+F 0 "J501" H 1368 2567 50  0000 C CNN
+F 1 "JST XH horiz" H 1368 2476 50  0000 C CNN
+F 2 "SH-RPi:Boomelec_XH-2AW_1x02_P2.50mm_Horiz" H 1450 2250 50  0001 C CNN
+F 3 "~" H 1450 2250 50  0001 C CNN
+F 4 "C33132" H 1450 2250 50  0001 C CNN "LCSC"
+	1    1450 2250
+	-1   0    0    1   
 $EndComp
 Text Label 2950 2150 2    50   ~ 0
 Vin
@@ -259,4 +259,39 @@ Wire Wire Line
 	1950 2150 1650 2150
 Wire Wire Line
 	1900 2250 1900 2700
+$Comp
+L Connector_Generic:Conn_01x02 J502
+U 1 1 5FCFA451
+P 1500 3450
+F 0 "J502" H 1418 3125 50  0000 C CNN
+F 1 "Wire Link" H 1418 3216 50  0000 C CNN
+F 2 "SH-RPi:WireLink_1x02_P2.54mm" H 1418 3217 50  0001 C CNN
+F 3 "~" H 1500 3450 50  0001 C CNN
+	1    1500 3450
+	-1   0    0    1   
+$EndComp
+Text Label 2000 3350 0    50   ~ 0
+Vin
+$Comp
+L power:GND #PWR?
+U 1 1 5FCFC5D6
+P 1950 3900
+AR Path="/5FCFC5D6" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5FCFC5D6" Ref="#PWR?"  Part="1" 
+AR Path="/5E460E30/5FCFC5D6" Ref="#PWR0505"  Part="1" 
+F 0 "#PWR0505" H 1950 3650 50  0001 C CNN
+F 1 "GND" H 1955 3727 50  0000 C CNN
+F 2 "" H 1950 3900 50  0001 C CNN
+F 3 "" H 1950 3900 50  0001 C CNN
+	1    1950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3450 1950 3450
+Wire Wire Line
+	2000 3350 1700 3350
+Wire Wire Line
+	1950 3450 1950 3900
+Text Notes 2400 3600 0    50   ~ 0
+Optional wire link to power the\nboard from NMEA 2000
 $EndSCHEMATC

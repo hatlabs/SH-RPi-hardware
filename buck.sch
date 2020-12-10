@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -183,7 +183,7 @@ Text HLabel 1000 3850 0    50   Input ~ 0
 Vin
 Connection ~ 5350 3300
 Text HLabel 7250 3300 2    50   Output ~ 0
-Vbuck
+Vcap
 Wire Wire Line
 	5350 3300 5750 3300
 $Comp
@@ -649,4 +649,72 @@ $EndComp
 Connection ~ 8300 2100
 Wire Wire Line
 	8300 2100 7900 2100
+Text Label 7350 5250 2    50   ~ 0
+Vcap
+Wire Wire Line
+	7350 5250 7500 5250
+Wire Wire Line
+	7950 5250 7950 5350
+$Comp
+L Device:CP C309
+U 1 1 5FCEF656
+P 7950 5500
+F 0 "C309" H 8068 5546 50  0000 L CNN
+F 1 "CXHP2R7606R-TW" H 8068 5455 50  0000 L CNN
+F 2 "SH-RPi:CP_Radial_D18.0mm_P7.50mm_flat" H 7988 5350 50  0001 C CNN
+F 3 "~" H 7950 5500 50  0001 C CNN
+	1    7950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCF1667
+P 7950 5750
+AR Path="/5FCF1667" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5FCF1667" Ref="#PWR?"  Part="1" 
+AR Path="/5CA65CC5/5FCF1667" Ref="#PWR0312"  Part="1" 
+F 0 "#PWR0312" H 7950 5500 50  0001 C CNN
+F 1 "GND" H 7955 5577 50  0000 C CNN
+F 2 "" H 7950 5750 50  0001 C CNN
+F 3 "" H 7950 5750 50  0001 C CNN
+	1    7950 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5750 7950 5650
+Text Notes 8350 5350 0    50   ~ 0
+60F (or thereabouts) supercapacitor,\n2.7V,\n18x40mm size
+$Comp
+L Device:C C310
+U 1 1 5FCF7980
+P 7500 5500
+F 0 "C310" H 7200 5600 50  0000 L CNN
+F 1 "100nF" H 7200 5500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7538 5350 50  0001 C CNN
+F 3 "~" H 7500 5500 50  0001 C CNN
+F 4 "C1525" H 7500 5500 50  0001 C CNN "LCSC"
+	1    7500 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5350 7500 5250
+Connection ~ 7500 5250
+Wire Wire Line
+	7500 5250 7950 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5FCF9BA6
+P 7500 5750
+AR Path="/5FCF9BA6" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/5FCF9BA6" Ref="#PWR?"  Part="1" 
+AR Path="/5CA65CC5/5FCF9BA6" Ref="#PWR0313"  Part="1" 
+F 0 "#PWR0313" H 7500 5500 50  0001 C CNN
+F 1 "GND" H 7505 5577 50  0000 C CNN
+F 2 "" H 7500 5750 50  0001 C CNN
+F 3 "" H 7500 5750 50  0001 C CNN
+	1    7500 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5750 7500 5650
 $EndSCHEMATC
