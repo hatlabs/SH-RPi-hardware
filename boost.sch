@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -102,7 +102,7 @@ Text Label 4200 2600 0    50   ~ 0
 FB
 Text HLabel 2150 1500 0    50   Input ~ 0
 Vin
-Text Notes 5150 2000 0    50   ~ 0
+Text Notes 4250 1800 0    50   ~ 0
 FB voltage divider designed\nto provide 5.21V at Vout.
 Text HLabel 6400 2300 2    50   Output ~ 0
 Vboost
@@ -399,9 +399,29 @@ Wire Wire Line
 Text Notes 2400 3600 0    50   ~ 0
 R21 pulls EN down when\nthe MCU is unpowered
 Wire Wire Line
-	3800 2300 4350 2300
+	3800 2300 4100 2300
 Wire Wire Line
-	3800 2600 4350 2600
+	3800 2600 4100 2600
 Wire Wire Line
 	4350 3000 4350 3050
+$Comp
+L Device:C C205
+U 1 1 5FD0AA6F
+P 4100 2450
+F 0 "C205" H 3986 2404 50  0000 R CNN
+F 1 "100pF" H 3986 2495 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4138 2300 50  0001 C CNN
+F 3 "~" H 4100 2450 50  0001 C CNN
+F 4 "C1546" H 4100 2450 50  0001 C CNN "LCSC"
+	1    4100 2450
+	1    0    0    1   
+$EndComp
+Connection ~ 4100 2600
+Wire Wire Line
+	4100 2600 4350 2600
+Connection ~ 4100 2300
+Wire Wire Line
+	4100 2300 4350 2300
+Text Notes 4000 2150 0    50   ~ 0
+C205 sets an additional feedforward\nzero frequency at 5.3 kHz
 $EndSCHEMATC

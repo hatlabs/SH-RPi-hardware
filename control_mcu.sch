@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 6 9
 Title "Sailor Hat for Raspberry Pi"
 Date ""
-Rev "revL"
+Rev "revM"
 Comp "Hat Laboratories"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -11803,7 +11803,7 @@ F 0 "D602" H 3800 2825 50  0000 C CNN
 F 1 "BAT54C" H 3800 2734 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3875 2725 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 3720 2600 50  0001 C CNN
-F 4 "C375703" H 3800 2600 50  0001 C CNN "LCSC"
+F 4 "C37704" H 3800 2600 50  0001 C CNN "LCSC"
 	1    3800 2600
 	1    0    0    -1  
 $EndComp
