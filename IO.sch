@@ -459,13 +459,13 @@ Vcap
 Text Notes 3950 2750 0    50   ~ 0
 Vin voltage
 Text HLabel 4200 1600 1    50   Input ~ 0
-ATT_LED2
+ATT_LED_VIN
 Text HLabel 4650 1600 1    50   Input ~ 0
 EN5V
 Text HLabel 5100 1600 1    50   Input ~ 0
-ATT_LED1
+ATT_LED_VCAP
 Text HLabel 5600 1600 1    50   Input ~ 0
-ATT_LED0
+ATT_LED_STATUS
 Text HLabel 6600 2450 0    50   Input ~ 0
 INT0
 Text HLabel 6600 2200 0    50   Input ~ 0
