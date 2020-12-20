@@ -113,12 +113,10 @@ NoConn ~ 1550 2500
 NoConn ~ 1550 2600
 NoConn ~ 1550 3300
 NoConn ~ 1550 3400
-NoConn ~ 3150 3700
 NoConn ~ 3150 2700
 NoConn ~ 3150 2200
 NoConn ~ 3150 2100
 NoConn ~ 1550 3500
-NoConn ~ 3150 3800
 NoConn ~ 1550 2800
 NoConn ~ 1550 2900
 NoConn ~ 1550 3000
@@ -461,13 +459,13 @@ Vcap
 Text Notes 3950 2750 0    50   ~ 0
 Vin voltage
 Text HLabel 4200 1600 1    50   Input ~ 0
-ATT_LED2
+ATT_LED_VIN
 Text HLabel 4650 1600 1    50   Input ~ 0
 EN5V
 Text HLabel 5100 1600 1    50   Input ~ 0
-ATT_LED1
+ATT_LED_VCAP
 Text HLabel 5600 1600 1    50   Input ~ 0
-ATT_LED0
+ATT_LED_STATUS
 Text HLabel 6600 2450 0    50   Input ~ 0
 INT0
 Text HLabel 6600 2200 0    50   Input ~ 0
@@ -478,9 +476,9 @@ Text HLabel 6600 1700 0    50   Input ~ 0
 SO
 Text HLabel 6600 1450 0    50   Input ~ 0
 SI
-Text HLabel 3150 2400 2    50   Input ~ 0
+Text HLabel 6600 2700 0    50   Input ~ 0
 SDA
-Text HLabel 3150 2500 2    50   Input ~ 0
+Text HLabel 6600 2950 0    50   Input ~ 0
 SCL
 $Comp
 L power:+3.3V #PWR0103
@@ -504,4 +502,44 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3150 2400
+NoConn ~ 3150 2500
+$Comp
+L Device:R R?
+U 1 1 5FD877B8
+P 6750 2950
+AR Path="/5FD877B8" Ref="R?"  Part="1" 
+AR Path="/5FAD80E5/5FD877B8" Ref="R711"  Part="1" 
+F 0 "R711" H 6820 2996 50  0000 L CNN
+F 1 "0" H 6820 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6680 2950 50  0001 C CNN
+F 3 "~" H 6750 2950 50  0001 C CNN
+F 4 "C21189" H 6750 2950 50  0001 C CNN "LCSC"
+	1    6750 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD877BF
+P 6750 2700
+AR Path="/5FD877BF" Ref="R?"  Part="1" 
+AR Path="/5FAD80E5/5FD877BF" Ref="R710"  Part="1" 
+F 0 "R710" H 6820 2746 50  0000 L CNN
+F 1 "0" H 6820 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6680 2700 50  0001 C CNN
+F 3 "~" H 6750 2700 50  0001 C CNN
+F 4 "C21189" H 6750 2700 50  0001 C CNN "LCSC"
+	1    6750 2700
+	0    -1   -1   0   
+$EndComp
+Text Label 3150 3700 0    50   ~ 0
+GPIO12
+Text Label 3150 3800 0    50   ~ 0
+GPIO13
+Text Label 6900 2700 0    50   ~ 0
+GPIO12
+Text Label 6900 2950 0    50   ~ 0
+GPIO13
+Text Notes 7250 2800 0    50   ~ 0
+Note 2: Also SDA and SCL are on\nnon-standard GPIOs
 $EndSCHEMATC

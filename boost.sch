@@ -135,7 +135,7 @@ F 3 "" H 3100 1800 50  0001 C CNN
 	1    3100 1800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1500 2600 0    50   Input ~ 0
+Text HLabel 1200 2600 0    50   Input ~ 0
 EN
 $Comp
 L power:GND #PWR?
@@ -164,7 +164,7 @@ F 4 "595-TPS61022RWUR" H 3400 2400 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 2600 1650 2600
+	1200 2600 1350 2600
 $Comp
 L power:GND #PWR?
 U 1 1 5CA6B503
@@ -190,50 +190,50 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPST SW201
 U 1 1 5D5B325B
-P 2150 2950
-F 0 "SW201" V 2196 2862 50  0000 R CNN
-F 1 "SW_SPST" V 2105 2862 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2150 2950 50  0001 C CNN
-F 3 "~" H 2150 2950 50  0001 C CNN
-	1    2150 2950
+P 1850 2950
+F 0 "SW201" V 1896 2862 50  0000 R CNN
+F 1 "SW_SPST" V 1805 2862 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 2950 50  0001 C CNN
+F 3 "~" H 1850 2950 50  0001 C CNN
+	1    1850 2950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5D5B16A2
-P 1800 2600
+P 1500 2600
 AR Path="/5D5B16A2" Ref="R?"  Part="1" 
 AR Path="/5C3480BB/5D5B16A2" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5D5B16A2" Ref="R201"  Part="1" 
-F 0 "R201" H 1870 2646 50  0000 L CNN
-F 1 "10k" H 1870 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1730 2600 50  0001 C CNN
-F 3 "~" H 1800 2600 50  0001 C CNN
-F 4 "C25744" H 1800 2600 50  0001 C CNN "LCSC"
-	1    1800 2600
+F 0 "R201" H 1570 2646 50  0000 L CNN
+F 1 "10k" H 1570 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1430 2600 50  0001 C CNN
+F 3 "~" H 1500 2600 50  0001 C CNN
+F 4 "C25744" H 1500 2600 50  0001 C CNN "LCSC"
+	1    1500 2600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1950 2600 2150 2600
+	1650 2600 1850 2600
 Wire Wire Line
-	2150 2750 2150 2600
-Connection ~ 2150 2600
+	1850 2750 1850 2600
+Connection ~ 1850 2600
 $Comp
 L power:GND #PWR?
 U 1 1 5D5B5E50
-P 2150 3200
+P 1850 3200
 AR Path="/5D5B5E50" Ref="#PWR?"  Part="1" 
 AR Path="/5C3480BB/5D5B5E50" Ref="#PWR?"  Part="1" 
 AR Path="/5CA73F16/5D5B5E50" Ref="#PWR0201"  Part="1" 
-F 0 "#PWR0201" H 2150 2950 50  0001 C CNN
-F 1 "GND" H 2155 3027 50  0000 C CNN
-F 2 "" H 2150 3200 50  0001 C CNN
-F 3 "" H 2150 3200 50  0001 C CNN
-	1    2150 3200
+F 0 "#PWR0201" H 1850 2950 50  0001 C CNN
+F 1 "GND" H 1855 3027 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 3200 2150 3150
+	1850 3200 1850 3150
 $Comp
 L Device:C C?
 U 1 1 5D8155D9
@@ -352,10 +352,8 @@ F 3 "" H 4850 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 3050 4850 2600
-Text Notes 900  3000 0    50   ~ 0
+Text Notes 600  3000 0    50   ~ 0
 Switch/header allows for\npower-cycling the RPi.
-Wire Wire Line
-	2150 2600 2600 2600
 Wire Wire Line
 	2400 2050 3000 2050
 Text Label 2650 2600 0    50   ~ 0
@@ -397,7 +395,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 3000 2600 3050
 Text Notes 2400 3600 0    50   ~ 0
-R21 pulls EN down when\nthe MCU is unpowered
+R202 pulls EN down when\nthe MCU is unpowered
 Wire Wire Line
 	3800 2300 4100 2300
 Wire Wire Line
@@ -424,4 +422,41 @@ Wire Wire Line
 	4100 2300 4350 2300
 Text Notes 4000 2150 0    50   ~ 0
 C205 sets an additional feedforward\nzero frequency at 5.3 kHz
+$Comp
+L Device:C C206
+U 1 1 5FDD2F9B
+P 2300 2850
+F 0 "C206" H 2415 2896 50  0000 L CNN
+F 1 "1uF" H 2415 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2338 2700 50  0001 C CNN
+F 3 "~" H 2300 2850 50  0001 C CNN
+F 4 "C52923" H 2300 2850 50  0001 C CNN "LCSC"
+	1    2300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2700 2300 2600
+Connection ~ 2300 2600
+Wire Wire Line
+	2300 2600 2600 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5FDD7BA3
+P 2300 3050
+AR Path="/5FDD7BA3" Ref="#PWR?"  Part="1" 
+AR Path="/5C3480BB/5FDD7BA3" Ref="#PWR?"  Part="1" 
+AR Path="/5CA73F16/5FDD7BA3" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 2300 2800 50  0001 C CNN
+F 1 "GND" H 2305 2877 50  0000 C CNN
+F 2 "" H 2300 3050 50  0001 C CNN
+F 3 "" H 2300 3050 50  0001 C CNN
+	1    2300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3050 2300 3000
+Wire Wire Line
+	1850 2600 2300 2600
+Text Notes 2400 3850 0    50   ~ 0
+C206 limits switch bouncing and slows\nreset on poweron
 $EndSCHEMATC
