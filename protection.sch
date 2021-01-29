@@ -13,21 +13,6 @@ Comment2 "To view a copy of this license, visit "
 Comment3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Polyfuse F?
-U 1 1 5E467AC2
-P 3500 2150
-AR Path="/5E467AC2" Ref="F?"  Part="1" 
-AR Path="/5C3476D8/5E467AC2" Ref="F?"  Part="1" 
-AR Path="/5E460E30/5E467AC2" Ref="F501"  Part="1" 
-F 0 "F501" V 3303 2150 50  0000 C CNN
-F 1 "ASMD2920-185" V 3394 2150 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric" V 3430 2150 50  0001 C CNN
-F 3 "~" H 3500 2150 50  0001 C CNN
-F 4 "C135379" H 3500 2150 50  0001 C CNN "LCSC"
-	1    3500 2150
-	0    1    1    0   
-$EndComp
 Text Label 4500 2150 0    50   ~ 0
 Vin_fused
 $Comp
@@ -294,4 +279,16 @@ Wire Wire Line
 	1950 3450 1950 3900
 Text Notes 2400 3600 0    50   ~ 0
 Optional wire link to power the\nboard from NMEA 2000
+$Comp
+L Device:Fuse F501
+U 1 1 601404CD
+P 3500 2150
+F 0 "F501" V 3303 2150 50  0000 C CNN
+F 1 "12H1200C" V 3394 2150 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 3430 2150 50  0001 C CNN
+F 3 "~" H 3500 2150 50  0001 C CNN
+F 4 "C182310" V 3500 2150 50  0001 C CNN "LCSC"
+	1    3500 2150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
