@@ -111,8 +111,6 @@ Wire Wire Line
 	4750 1850 4800 1850
 Connection ~ 4800 1850
 Wire Wire Line
-	4800 1850 5050 1850
-Wire Wire Line
 	1900 2150 1900 1850
 Wire Wire Line
 	1350 1850 950  1850
@@ -134,23 +132,6 @@ F 4 "C112941" H 1900 2300 50  0001 C CNN "LCSC"
 	1    1900 2300
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FB090D4
-P 5050 1850
-AR Path="/5C345D5A/5FB090D4" Ref="TP?"  Part="1" 
-AR Path="/5FB090D4" Ref="TP?"  Part="1" 
-AR Path="/5E460E30/5FB090D4" Ref="TP501"  Part="1" 
-F 0 "TP501" H 5108 1970 50  0000 L CNN
-F 1 "Vin_prot" H 5108 1879 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5250 1850 50  0001 C CNN
-F 3 "~" H 5250 1850 50  0001 C CNN
-	1    5050 1850
-	1    0    0    -1  
-$EndComp
-Connection ~ 5050 1850
-Wire Wire Line
-	5050 1850 5700 1850
 $Comp
 L Device:Ferrite_Bead FB501
 U 1 1 5FB171EB
@@ -324,4 +305,6 @@ Wire Wire Line
 	4050 1850 3750 1850
 Connection ~ 4050 1850
 Connection ~ 3750 1850
+Wire Wire Line
+	4800 1850 5700 1850
 $EndSCHEMATC

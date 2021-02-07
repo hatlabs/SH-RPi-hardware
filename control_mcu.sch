@@ -389,6 +389,7 @@ F 0 "J602" H 768 1367 50  0000 C CNN
 F 1 "Conn_01x02" H 768 1276 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 850 1150 50  0001 C CNN
 F 3 "~" H 850 1150 50  0001 C CNN
+F 4 "C492401" H 850 1150 50  0001 C CNN "LCSC"
 	1    850  1150
 	-1   0    0    -1  
 $EndComp

@@ -128,8 +128,6 @@ F 3 "" H 1400 4450 50  0001 C CNN
 $EndComp
 Text Notes 5700 4900 0    50   ~ 0
 FB voltage divider designed to have\na 2.6V voltage at Vout
-Text Notes 1800 5050 0    50   ~ 0
-Max 3A current output\n(without the limiting circuit)
 $Comp
 L Device:R R?
 U 1 1 5CA62D90
@@ -180,8 +178,6 @@ F 4 "C23630" H 3000 6600 50  0001 C CNN "LCSC"
 	1    3000 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 6350 2900 6350
 Wire Wire Line
 	3000 6350 3000 6450
 Wire Wire Line
@@ -322,33 +318,8 @@ Wire Wire Line
 Connection ~ 9150 1300
 Wire Wire Line
 	1500 6350 1800 6350
-$Comp
-L Connector:TestPoint TP301
-U 1 1 5FB10806
-P 2900 6350
-F 0 "TP301" H 2950 6550 50  0000 L CNN
-F 1 "REG3.3V" H 2950 6450 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 3100 6350 50  0001 C CNN
-F 3 "~" H 3100 6350 50  0001 C CNN
-	1    2900 6350
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 6350
-Wire Wire Line
-	2900 6350 3000 6350
 Wire Wire Line
 	3000 6350 3450 6350
-$Comp
-L Connector:TestPoint TP302
-U 1 1 5FB263CF
-P 9050 2750
-F 0 "TP302" H 9100 2950 50  0000 L CNN
-F 1 "COMPOUT" H 9100 2850 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 9250 2750 50  0001 C CNN
-F 3 "~" H 9250 2750 50  0001 C CNN
-	1    9050 2750
-	1    0    0    -1  
-$EndComp
 Text Label 8300 5100 2    50   ~ 0
 Vcap
 Wire Wire Line
@@ -579,17 +550,8 @@ Wire Wire Line
 	1550 1450 2350 1450
 Text Label 4100 1450 0    50   ~ 0
 VinF
-Text Label 1350 3650 2    50   ~ 0
+Text Label 900  3650 2    50   ~ 0
 VinF
-Wire Wire Line
-	1750 3850 1650 3850
-Wire Wire Line
-	1650 3850 1650 3650
-Wire Wire Line
-	1650 3650 1350 3650
-Wire Wire Line
-	1650 3650 1750 3650
-Connection ~ 1650 3650
 Wire Wire Line
 	1750 4050 1400 4050
 Wire Wire Line
@@ -697,11 +659,6 @@ Text Notes 2000 950  0    50   ~ 0
 EMI pre-filter design taken from PMP15013
 Text Notes 1750 2950 0    50   ~ 0
 Buck filter design from WEBENCH
-Wire Wire Line
-	9400 2750 9050 2750
-Connection ~ 9050 2750
-Wire Wire Line
-	8650 2750 9050 2750
 Wire Wire Line
 	9950 2750 9950 2900
 Wire Wire Line
@@ -916,27 +873,27 @@ Wire Wire Line
 $Comp
 L Device:D_Schottky D303
 U 1 1 603C875A
-P 5850 4000
-F 0 "D303" V 5896 3921 50  0000 R CNN
-F 1 "MSK4005" V 5805 3921 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-523" H 5850 4000 50  0001 C CNN
-F 3 "~" H 5850 4000 50  0001 C CNN
-F 4 "C345957" H 5850 4000 50  0001 C CNN "LCSC"
-	1    5850 4000
+P 5850 4350
+F 0 "D303" V 5896 4271 50  0000 R CNN
+F 1 "MSK4005" V 5805 4271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-523" H 5850 4350 50  0001 C CNN
+F 3 "~" H 5850 4350 50  0001 C CNN
+F 4 "C345957" H 5850 4350 50  0001 C CNN "LCSC"
+	1    5850 4350
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 603CD7E1
-P 5850 4350
+P 5850 4000
 AR Path="/5C3476D8/603CD7E1" Ref="R?"  Part="1" 
 AR Path="/5CA65CC5/603CD7E1" Ref="R312"  Part="1" 
-F 0 "R312" H 6000 4400 50  0000 C CNN
-F 1 "300k" H 6000 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 4350 50  0001 C CNN
-F 3 "~" H 5850 4350 50  0001 C CNN
-F 4 "C25774" H 5850 4350 50  0001 C CNN "LCSC"
-	1    5850 4350
+F 0 "R312" H 6000 4050 50  0000 C CNN
+F 1 "300k" H 6000 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 4000 50  0001 C CNN
+F 3 "~" H 5850 4000 50  0001 C CNN
+F 4 "C25774" H 5850 4000 50  0001 C CNN "LCSC"
+	1    5850 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1026,10 +983,10 @@ L Device:R R310
 U 1 1 603749B5
 P 7900 3100
 F 0 "R310" H 7970 3146 50  0000 L CNN
-F 1 "110k" H 7970 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 3100 50  0001 C CNN
+F 1 "200k" H 7970 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7830 3100 50  0001 C CNN
 F 3 "~" H 7900 3100 50  0001 C CNN
-F 4 "C22961" H 7900 3100 50  0001 C CNN "LCSC"
+F 4 "C25764" H 7900 3100 50  0001 C CNN "LCSC"
 	1    7900 3100
 	1    0    0    -1  
 $EndComp
@@ -1038,11 +995,77 @@ L Device:R R309
 U 1 1 60374F4A
 P 7900 2350
 F 0 "R309" H 7970 2396 50  0000 L CNN
-F 1 "180k" H 7970 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 2350 50  0001 C CNN
+F 1 "330k" H 7970 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7830 2350 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
-F 4 "C23146" H 7900 2350 50  0001 C CNN "LCSC"
+F 4 "C25778" H 7900 2350 50  0001 C CNN "LCSC"
 	1    7900 2350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	900  3650 1050 3650
+$Comp
+L Device:R R313
+U 1 1 6020EB8F
+P 1050 3850
+F 0 "R313" H 1120 3896 50  0000 L CNN
+F 1 "150k" H 1120 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 980 3850 50  0001 C CNN
+F 3 "~" H 1050 3850 50  0001 C CNN
+F 4 "C25755" H 1050 3850 50  0001 C CNN "LCSC"
+	1    1050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R314
+U 1 1 6020F311
+P 1050 4250
+F 0 "R314" H 1120 4296 50  0000 L CNN
+F 1 "24k" H 1120 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 980 4250 50  0001 C CNN
+F 3 "~" H 1050 4250 50  0001 C CNN
+F 4 "C25769" H 1050 4250 50  0001 C CNN "LCSC"
+	1    1050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3850 1300 4050
+Wire Wire Line
+	1300 4050 1050 4050
+Wire Wire Line
+	1050 4050 1050 4100
+Wire Wire Line
+	1300 3850 1750 3850
+Wire Wire Line
+	1050 4000 1050 4050
+Connection ~ 1050 4050
+$Comp
+L power:GND #PWR?
+U 1 1 602216A3
+P 1050 4450
+AR Path="/602216A3" Ref="#PWR?"  Part="1" 
+AR Path="/5C3476D8/602216A3" Ref="#PWR?"  Part="1" 
+AR Path="/5CA65CC5/602216A3" Ref="#PWR0304"  Part="1" 
+F 0 "#PWR0304" H 1050 4200 50  0001 C CNN
+F 1 "GND" H 1055 4277 50  0000 C CNN
+F 2 "" H 1050 4450 50  0001 C CNN
+F 3 "" H 1050 4450 50  0001 C CNN
+	1    1050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4450 1050 4400
+Wire Wire Line
+	1050 3700 1050 3650
+Connection ~ 1050 3650
+Wire Wire Line
+	1050 3650 1750 3650
+Text Notes 900  5150 0    50   ~ 0
+EN voltage divider set to\nplace the UVLO start and\nstop limits at 8.6 and 7.9V,\nrespectively.
+Text Label 1450 3850 0    50   ~ 0
+EN
+Wire Wire Line
+	8650 2750 9400 2750
+Wire Wire Line
+	2700 6350 3000 6350
 $EndSCHEMATC

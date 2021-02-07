@@ -509,8 +509,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 6300 5700 6100
 Wire Wire Line
-	5700 6100 5550 6100
-Wire Wire Line
 	6000 6100 5700 6100
 Connection ~ 5700 6100
 Wire Wire Line
@@ -601,20 +599,6 @@ Wire Wire Line
 Connection ~ 2800 6100
 Wire Wire Line
 	2800 6100 3450 6100
-$Comp
-L Connector:TestPoint TP802
-U 1 1 5FB14C6B
-P 5550 6100
-F 0 "TP802" H 5600 6300 50  0000 L CNN
-F 1 "CAN_5V" H 5600 6200 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5750 6100 50  0001 C CNN
-F 3 "~" H 5750 6100 50  0001 C CNN
-	1    5550 6100
-	1    0    0    -1  
-$EndComp
-Connection ~ 5550 6100
-Wire Wire Line
-	5550 6100 5350 6100
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5FB649C2
@@ -864,4 +848,6 @@ Wire Wire Line
 	1600 1750 2450 1750
 Wire Wire Line
 	1600 1850 2450 1850
+Wire Wire Line
+	5350 6100 5700 6100
 $EndSCHEMATC
