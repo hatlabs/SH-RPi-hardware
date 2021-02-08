@@ -298,4 +298,37 @@ F 3 "~" H 3100 1600 50  0001 C CNN
 	1    3100 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H902
+U 1 1 6042403C
+P 3100 2150
+F 0 "H902" H 3200 2196 50  0000 L CNN
+F 1 "MountingHole" H 3200 2105 50  0000 L CNN
+F 2 "SH-RPi:JlcpcbToolingHole" H 3100 2150 50  0001 C CNN
+F 3 "~" H 3100 2150 50  0001 C CNN
+	1    3100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H903
+U 1 1 6042449F
+P 3100 2500
+F 0 "H903" H 3200 2546 50  0000 L CNN
+F 1 "MountingHole" H 3200 2455 50  0000 L CNN
+F 2 "SH-RPi:JlcpcbToolingHole" H 3100 2500 50  0001 C CNN
+F 3 "~" H 3100 2500 50  0001 C CNN
+	1    3100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H904
+U 1 1 60425784
+P 3100 2850
+F 0 "H904" H 3200 2896 50  0000 L CNN
+F 1 "MountingHole" H 3200 2805 50  0000 L CNN
+F 2 "SH-RPi:JlcpcbToolingHole" H 3100 2850 50  0001 C CNN
+F 3 "~" H 3100 2850 50  0001 C CNN
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
