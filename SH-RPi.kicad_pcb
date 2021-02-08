@@ -12,12 +12,12 @@
   (page A4)
   (title_block
     (title "Sailor Hat for Raspberry Pi")
-    (date 2020-11-27)
+    (date 2021-02-08)
     (rev revM)
-    (company "Hat Laboratories")
+    (company "Hat Labs Ltd")
     (comment 1 https://creativecommons.org/licenses/by-sa/4.0)
     (comment 2 "To view a copy of this license, visit")
-    (comment 3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0.")
+    (comment 3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0.")
   )
 
   (layers
