@@ -2,129 +2,129 @@
 <export version="D">
   <design>
     <source>/Users/mairas/w/hatlabs/SH-RPi/SH-RPi-hardware/SH-RPi.sch</source>
-    <date>2020 December 19, Saturday 19:56:16</date>
-    <tool>Eeschema (5.1.8-0-10_14)</tool>
+    <date>2021 February 08, Monday 17:16:19</date>
+    <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>SH-RPi.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="2" name="/Boost converter/" tstamps="/5CA73F16/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>boost.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="3" name="/Buck converter/" tstamps="/5CA65CC5/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>buck.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="4" name="/RTC/" tstamps="/5D6F1C7C/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>rtc.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="5" name="/Protection/" tstamps="/5E460E30/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>protection.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="6" name="/Control MCU/" tstamps="/5C33FF90/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>control_mcu.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="7" name="/I/O/" tstamps="/5FAD80E5/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>IO.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="8" name="/CANbus interface/" tstamps="/5C348474/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>canbus.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="9" name="/PCB/" tstamps="/5FB38EDE/">
       <title_block>
         <title>Sailor Hat for Raspberry Pi</title>
-        <company>Hat Laboratories</company>
+        <company>Hat Labs Ltd</company>
         <rev>revM</rev>
-        <date/>
+        <date>2021-02-08</date>
         <source>pcb.sch</source>
         <comment number="1" value="https://creativecommons.org/licenses/by-sa/4.0"/>
         <comment number="2" value="To view a copy of this license, visit "/>
-        <comment number="3" value="Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."/>
+        <comment number="3" value="Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
   </design>
   <components>
     <comp ref="C202">
-      <value>22uF/6.3V</value>
+      <value>22uF/25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -135,44 +135,43 @@
       <tstamp>5CA6B4E8</tstamp>
     </comp>
     <comp ref="L201">
-      <value>MWSA0603-1R0MT</value>
-      <footprint>Inductor_SMD:L_Abracon_ASPI-0630LR</footprint>
+      <value>MWSA0402S-1R0MT</value>
+      <footprint>SH-RPi:L_MWSA0402</footprint>
       <fields>
-        <field name="LCSC">C112125</field>
-        <field name="Notes">Shun Xiang Nuo Elec SMMS0630-1R0M</field>
+        <field name="LCSC">C408332</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5CA6B4FC</tstamp>
     </comp>
     <comp ref="R203">
-      <value>300k</value>
+      <value>750k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25774</field>
+        <field name="LCSC">C122545</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5CA6B51B</tstamp>
     </comp>
     <comp ref="R204">
-      <value>39k</value>
+      <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25783</field>
+        <field name="LCSC">C25741</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5CA6B522</tstamp>
     </comp>
     <comp ref="C201">
-      <value>22uF/6.3V</value>
+      <value>10uF/25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C45783</field>
+        <field name="LCSC">C15850</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
@@ -192,6 +191,9 @@
       <value>SW_SPST</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C492401</field>
+      </fields>
       <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5D5B325B</tstamp>
@@ -208,7 +210,7 @@
       <tstamp>5D5B16A2</tstamp>
     </comp>
     <comp ref="C203">
-      <value>22uF/6.3V</value>
+      <value>22uF/25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -219,7 +221,7 @@
       <tstamp>5D8155D9</tstamp>
     </comp>
     <comp ref="C204">
-      <value>22uF/6.3V</value>
+      <value>22uF/25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -241,11 +243,11 @@
       <tstamp>5F480D4D</tstamp>
     </comp>
     <comp ref="C205">
-      <value>100pF</value>
+      <value>1pF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C1546</field>
+        <field name="LCSC">C1550</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
@@ -253,7 +255,7 @@
     </comp>
     <comp ref="C206">
       <value>1uF</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="LCSC">C52923</field>
@@ -262,17 +264,16 @@
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5FDD2F9B</tstamp>
     </comp>
-    <comp ref="C301">
-      <value>10uF/50V</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+    <comp ref="C207">
+      <value>1uF/25V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C13585</field>
-        <field name="Notes">50V</field>
+        <field name="LCSC">C52923</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5CA62D4C</tstamp>
+      <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
+      <tstamp>60184DB1</tstamp>
     </comp>
     <comp ref="C304">
       <value>100nF</value>
@@ -286,18 +287,18 @@
       <tstamp>5CA62D71</tstamp>
     </comp>
     <comp ref="L301">
-      <value>MWSA1004-150MT</value>
-      <footprint>Inductor_SMD:L_Wuerth_HCI-1040</footprint>
+      <value>MWSA0402S-3R3MT</value>
+      <footprint>SH-RPi:L_MWSA0402</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C151872</field>
+        <field name="LCSC">C408336</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5CA62D7A</tstamp>
     </comp>
     <comp ref="C305">
-      <value>22uF/6.3V</value>
+      <value>22uF/25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -309,33 +310,22 @@
       <tstamp>5CA62D82</tstamp>
     </comp>
     <comp ref="R303">
-      <value>220k</value>
+      <value>120k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25767</field>
+        <field name="LCSC">C25750</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5CA62D89</tstamp>
     </comp>
-    <comp ref="D301">
-      <value>SS54</value>
-      <footprint>Diode_SMD:D_SMA</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C22452</field>
-      </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5CA62D98</tstamp>
-    </comp>
     <comp ref="R302">
-      <value>470k</value>
+      <value>300k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25790</field>
+        <field name="LCSC">C25774</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
@@ -374,85 +364,38 @@
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5E278F8C</tstamp>
     </comp>
-    <comp ref="U302">
-      <value>TX4138</value>
-      <footprint>Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm</footprint>
-      <fields>
-        <field name="LCSC">C329267</field>
-      </fields>
-      <libsource lib="SH-RPi" part="TX4138" description=""/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5F3606B2</tstamp>
-    </comp>
     <comp ref="R304">
-      <value>20m</value>
+      <value>10m</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C127690</field>
+        <field name="LCSC">C127703</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5F365FDD</tstamp>
     </comp>
-    <comp ref="R301">
-      <value>5.1</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C25197</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5F3696AE</tstamp>
-    </comp>
     <comp ref="C306">
-      <value>12pF</value>
+      <value>10pF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C1547</field>
+        <field name="LCSC">C32949</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5F51F676</tstamp>
     </comp>
-    <comp ref="U303">
-      <value>INA199A1DCKR</value>
-      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering</footprint>
-      <datasheet>74R6382</datasheet>
-      <fields>
-        <field name="Field4">SC70-6</field>
-        <field name="Field5">INA199A1DCKR</field>
-        <field name="Field6">-</field>
-        <field name="Field7">Texas Instruments</field>
-        <field name="LCSC">C59135</field>
-      </fields>
-      <libsource lib="SH-RPi" part="INA199A1DCKR" description=""/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5F503EFE</tstamp>
-    </comp>
     <comp ref="R305">
-      <value>15k</value>
+      <value>120k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25756</field>
+        <field name="LCSC">C25750</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5F50E9D8</tstamp>
-    </comp>
-    <comp ref="R306">
-      <value>7.5k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C25918</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5F50F137</tstamp>
     </comp>
     <comp ref="C307">
       <value>100nF</value>
@@ -464,33 +407,6 @@
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5F532D6C</tstamp>
-    </comp>
-    <comp ref="C308">
-      <value>1nF</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C1523</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5F5B96B8</tstamp>
-    </comp>
-    <comp ref="TP301">
-      <value>REG3.3V</value>
-      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5FB10806</tstamp>
-    </comp>
-    <comp ref="TP302">
-      <value>CSA</value>
-      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
-      <tstamp>5FB263CF</tstamp>
     </comp>
     <comp ref="C309">
       <value>CXHP2R7606R-TW</value>
@@ -511,6 +427,28 @@
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5FCF7980</tstamp>
     </comp>
+    <comp ref="C314">
+      <value>10uF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C13585</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>601E9344</tstamp>
+    </comp>
+    <comp ref="C316">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C1525</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>60253819</tstamp>
+    </comp>
     <comp ref="D302">
       <value>MSK4005</value>
       <footprint>Diode_SMD:D_SOD-523</footprint>
@@ -521,6 +459,171 @@
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
       <tstamp>5F51426E</tstamp>
+    </comp>
+    <comp ref="U303">
+      <value>GS8052</value>
+      <footprint>Package_SO:SOP-8_3.76x4.96mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm358.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C157722</field>
+      </fields>
+      <libsource lib="SH-RPi" part="GS8052" description="Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6032CF21</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25765</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>603452D8</tstamp>
+    </comp>
+    <comp ref="R306">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C26083</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6034672B</tstamp>
+    </comp>
+    <comp ref="R307">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25765</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>603469A8</tstamp>
+    </comp>
+    <comp ref="R308">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C26083</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6034BFD8</tstamp>
+    </comp>
+    <comp ref="D303">
+      <value>MSK4005</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C345957</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>603C875A</tstamp>
+    </comp>
+    <comp ref="R312">
+      <value>300k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25774</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>603CD7E1</tstamp>
+    </comp>
+    <comp ref="U302">
+      <value>LMR16030PDDA</value>
+      <footprint>Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lmr33640.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C90665</field>
+      </fields>
+      <libsource lib="SH-RPi" part="LMR16030PDDA" description="Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>60409692</tstamp>
+    </comp>
+    <comp ref="R311">
+      <value>33k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25779</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6041C308</tstamp>
+    </comp>
+    <comp ref="D301">
+      <value>SS54</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C22452</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>60423559</tstamp>
+    </comp>
+    <comp ref="R310">
+      <value>200k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25764</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>603749B5</tstamp>
+    </comp>
+    <comp ref="R309">
+      <value>330k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25778</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>60374F4A</tstamp>
+    </comp>
+    <comp ref="R313">
+      <value>150k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25755</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6020EB8F</tstamp>
+    </comp>
+    <comp ref="R314">
+      <value>24k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25769</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6020F311</tstamp>
+    </comp>
+    <comp ref="R315">
+      <value>5.1R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25197</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Buck converter/" tstamps="/5CA65CC5/"/>
+      <tstamp>6034FD63</tstamp>
     </comp>
     <comp ref="C401">
       <value>100nF</value>
@@ -546,22 +649,11 @@
     </comp>
     <comp ref="BT401">
       <value>CR1220/3V</value>
-      <footprint>SH-RPi:BatteryHolder_Linx_BAT-HLD-012-SMT</footprint>
+      <footprint>SH-RPi:BatteryHolder_Myoung_MY-1220-03</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/RTC/" tstamps="/5D6F1C7C/"/>
       <tstamp>5FAFCA18</tstamp>
-    </comp>
-    <comp ref="F501">
-      <value>ASMD2920-185</value>
-      <footprint>Fuse:Fuse_2920_7451Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C135379</field>
-      </fields>
-      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
-      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
-      <tstamp>5E467AC2</tstamp>
     </comp>
     <comp ref="Q501">
       <value>WST03P06</value>
@@ -605,36 +697,6 @@
       <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
       <tstamp>5E5A3FFE</tstamp>
     </comp>
-    <comp ref="TP501">
-      <value>Vin_prot</value>
-      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
-      <tstamp>5FB090D4</tstamp>
-    </comp>
-    <comp ref="FB501">
-      <value>GZ2012D601TF</value>
-      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C1017</field>
-      </fields>
-      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
-      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
-      <tstamp>5FB171EB</tstamp>
-    </comp>
-    <comp ref="C501">
-      <value>10nF/50V</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C15195</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
-      <tstamp>5FB198E0</tstamp>
-    </comp>
     <comp ref="J501">
       <value>JST XH horiz</value>
       <footprint>SH-RPi:Boomelec_XH-2AW_1x02_P2.50mm_Horiz</footprint>
@@ -653,6 +715,61 @@
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
       <tstamp>5FCFA451</tstamp>
+    </comp>
+    <comp ref="F501">
+      <value>12H1200C</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C182310</field>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
+      <tstamp>601404CD</tstamp>
+    </comp>
+    <comp ref="C502">
+      <value>0.22uF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C5378</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
+      <tstamp>603C2335</tstamp>
+    </comp>
+    <comp ref="C501">
+      <value>4.7uF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C29823</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
+      <tstamp>603C2343</tstamp>
+    </comp>
+    <comp ref="L501">
+      <value>PCD0503KT120</value>
+      <footprint>SH-RPi:L_PCD0503</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C324292</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
+      <tstamp>603C2351</tstamp>
+    </comp>
+    <comp ref="C503">
+      <value>0.22uF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C5378</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
+      <tstamp>603C2358</tstamp>
     </comp>
     <comp ref="C602">
       <value>100nF</value>
@@ -767,6 +884,9 @@
       <value>Conn_01x02</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C492401</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Control MCU/" tstamps="/5C33FF90/"/>
       <tstamp>5FD961DC</tstamp>
@@ -1219,29 +1339,11 @@
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C15195</field>
+        <field name="LCSC">C1523</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/CANbus interface/" tstamps="/5C348474/"/>
       <tstamp>5FB277C3</tstamp>
-    </comp>
-    <comp ref="U801">
-      <value>RCLAMP0524P-N</value>
-      <footprint>Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm</footprint>
-      <fields>
-        <field name="LCSC">C587147</field>
-      </fields>
-      <libsource lib="SH-RPi" part="RCLAMP0524P-N" description=""/>
-      <sheetpath names="/CANbus interface/" tstamps="/5C348474/"/>
-      <tstamp>5FB46A7F</tstamp>
-    </comp>
-    <comp ref="TP802">
-      <value>CAN_5V</value>
-      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/CANbus interface/" tstamps="/5C348474/"/>
-      <tstamp>5FB14C6B</tstamp>
     </comp>
     <comp ref="J802">
       <value>Wire Link</value>
@@ -1493,6 +1595,14 @@
       <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
       <tstamp>5FB4F794</tstamp>
     </comp>
+    <comp ref="H901">
+      <value>MountingHole</value>
+      <footprint>SH-RPi:MountingHole_3.2mm_no_pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
+      <tstamp>603EEE8F</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector" part="Raspberry_Pi_2_3">
@@ -1547,21 +1657,6 @@
         <pin num="38" name="GPIO20/MOSI1" type="BiDi"/>
         <pin num="39" name="GND" type="power_in"/>
         <pin num="40" name="GPIO21/SCLK1" type="BiDi"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector" part="TestPoint">
-      <description>test point</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Pin*</fp>
-        <fp>Test*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">TP</field>
-        <field name="Value">TestPoint</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x02">
@@ -1775,6 +1870,21 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="L">
       <description>Inductor</description>
       <docs>~</docs>
@@ -1949,6 +2059,48 @@
         <pin num="14" name="GND" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="SH-RPi" part="GS8052">
+      <description>Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm358.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GS8052</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="SH-RPi" part="HT75xx-1-SOT23">
       <description>100mA Low Dropout Voltage Regulator, Fixed Output, SOT89</description>
       <docs>https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf</docs>
@@ -1966,24 +2118,27 @@
         <pin num="3" name="VIN" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="SH-RPi" part="INA199A1DCKR">
+    <libpart lib="SH-RPi" part="LMR16030PDDA">
+      <description>Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lmr33640.pdf</docs>
+      <footprints>
+        <fp>Texas*HSOP*1EP*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">INA199A1DCKR</field>
-        <field name="Footprint">SOT65P210X110-6N</field>
-        <field name="Datasheet">74R6382</field>
-        <field name="Field4">SC70-6</field>
-        <field name="Field5">INA199A1DCKR</field>
-        <field name="Field6">-</field>
-        <field name="Field7">Texas Instruments</field>
+        <field name="Value">LMR16030PDDA</field>
+        <field name="Footprint">Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias</field>
       </fields>
       <pins>
-        <pin num="1" name="REF" type="input"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="V+" type="power_in"/>
-        <pin num="4" name="IN+" type="input"/>
-        <pin num="5" name="IN-" type="input"/>
-        <pin num="6" name="OUT" type="output"/>
+        <pin num="1" name="BOOT" type="input"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="RT/SYNC" type="input"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="PGOOD" type="openCol"/>
+        <pin num="7" name="GND" type="power_out"/>
+        <pin num="8" name="SW" type="power_out"/>
+        <pin num="9" name="PAD" type="power_out"/>
       </pins>
     </libpart>
     <libpart lib="SH-RPi" part="RCLAMP0524P-N">
@@ -2020,23 +2175,6 @@
         <pin num="5" name="EN" type="input"/>
         <pin num="6" name="MODE" type="input"/>
         <pin num="7" name="VIN" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="SH-RPi" part="TX4138">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">TX4138</field>
-      </fields>
-      <pins>
-        <pin num="1" name="SW" type="power_out"/>
-        <pin num="2" name="ILIM" type="power_in"/>
-        <pin num="3" name="VIN" type="power_in"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="FB" type="input"/>
-        <pin num="6" name="EN" type="input"/>
-        <pin num="7" name="POK" type="output"/>
-        <pin num="8" name="BS" type="input"/>
-        <pin num="9" name="ILIM" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Switch" part="SW_SPST">
@@ -2126,6 +2264,9 @@
     <library logical="MCU_Microchip_ATtiny">
       <uri>/Library/Application Support/kicad/library/MCU_Microchip_ATtiny.lib</uri>
     </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
+    </library>
     <library logical="SH-RPi">
       <uri>/Users/mairas/w/hatlabs/SH-RPi/SH-RPi-hardware/SH-RPi.lib</uri>
     </library>
@@ -2153,66 +2294,67 @@
       <node ref="U803" pin="17"/>
     </net>
     <net code="4" name="/EN5V">
-      <node ref="U601" pin="3"/>
-      <node ref="J601" pin="3"/>
       <node ref="R201" pin="1"/>
       <node ref="R702" pin="1"/>
+      <node ref="J601" pin="3"/>
+      <node ref="U601" pin="3"/>
     </net>
     <net code="5" name="/ATT_LED_VIN">
-      <node ref="R701" pin="1"/>
       <node ref="J601" pin="13"/>
+      <node ref="R701" pin="1"/>
       <node ref="U601" pin="13"/>
     </net>
     <net code="6" name="/SCL">
-      <node ref="U601" pin="9"/>
-      <node ref="R711" pin="1"/>
       <node ref="U401" pin="8"/>
       <node ref="J601" pin="9"/>
+      <node ref="U601" pin="9"/>
+      <node ref="R711" pin="1"/>
     </net>
     <net code="7" name="/SDA">
-      <node ref="U401" pin="7"/>
       <node ref="J601" pin="8"/>
-      <node ref="U601" pin="8"/>
+      <node ref="U401" pin="7"/>
       <node ref="R710" pin="1"/>
+      <node ref="U601" pin="8"/>
     </net>
     <net code="8" name="/ATT_LED_VCAP">
-      <node ref="U601" pin="2"/>
-      <node ref="J601" pin="2"/>
       <node ref="R703" pin="1"/>
+      <node ref="J601" pin="2"/>
+      <node ref="U601" pin="2"/>
     </net>
     <net code="9" name="/ATT_LED_STATUS">
-      <node ref="R704" pin="1"/>
       <node ref="J601" pin="11"/>
+      <node ref="R704" pin="1"/>
       <node ref="U601" pin="11"/>
     </net>
     <net code="10" name="/ATT_Vcc">
       <node ref="U601" pin="1"/>
-      <node ref="C401" pin="1"/>
+      <node ref="D602" pin="1"/>
+      <node ref="D603" pin="1"/>
+      <node ref="C602" pin="1"/>
       <node ref="D601" pin="1"/>
       <node ref="J601" pin="1"/>
-      <node ref="D603" pin="1"/>
-      <node ref="R603" pin="1"/>
       <node ref="U401" pin="2"/>
-      <node ref="D602" pin="1"/>
-      <node ref="C602" pin="1"/>
+      <node ref="C401" pin="1"/>
+      <node ref="R603" pin="1"/>
     </net>
     <net code="11" name="5V">
+      <node ref="U201" pin="3"/>
+      <node ref="J702" pin="4"/>
+      <node ref="C203" pin="1"/>
       <node ref="R203" pin="1"/>
-      <node ref="C202" pin="1"/>
+      <node ref="C207" pin="1"/>
       <node ref="C205" pin="2"/>
       <node ref="C204" pin="1"/>
-      <node ref="C203" pin="1"/>
-      <node ref="U201" pin="3"/>
       <node ref="J702" pin="2"/>
-      <node ref="J702" pin="4"/>
+      <node ref="C202" pin="1"/>
     </net>
     <net code="12" name="/CS0">
-      <node ref="R708" pin="1"/>
       <node ref="U803" pin="18"/>
+      <node ref="R708" pin="1"/>
     </net>
     <net code="13" name="/INT0">
-      <node ref="R709" pin="1"/>
       <node ref="U803" pin="13"/>
+      <node ref="R709" pin="1"/>
     </net>
     <net code="14" name="/RTC_INT">
       <node ref="U401" pin="3"/>
@@ -2221,157 +2363,161 @@
       <node ref="J601" pin="12"/>
     </net>
     <net code="15" name="/Vcap">
-      <node ref="C201" pin="1"/>
-      <node ref="U303" pin="5"/>
-      <node ref="R604" pin="1"/>
       <node ref="L201" pin="1"/>
-      <node ref="U201" pin="7"/>
-      <node ref="R304" pin="1"/>
       <node ref="C310" pin="1"/>
       <node ref="C309" pin="1"/>
+      <node ref="R307" pin="1"/>
+      <node ref="R604" pin="1"/>
+      <node ref="R304" pin="1"/>
+      <node ref="C201" pin="1"/>
+      <node ref="U201" pin="7"/>
     </net>
     <net code="16" name="/Vin_prot">
-      <node ref="TP501" pin="1"/>
-      <node ref="U302" pin="2"/>
-      <node ref="D502" pin="1"/>
-      <node ref="Q501" pin="2"/>
-      <node ref="U302" pin="3"/>
-      <node ref="U302" pin="9"/>
-      <node ref="R601" pin="1"/>
-      <node ref="U301" pin="3"/>
       <node ref="C302" pin="1"/>
-      <node ref="C301" pin="1"/>
+      <node ref="U301" pin="3"/>
+      <node ref="U302" pin="2"/>
+      <node ref="R313" pin="1"/>
+      <node ref="C314" pin="1"/>
+      <node ref="R601" pin="1"/>
+      <node ref="Q501" pin="2"/>
+      <node ref="D502" pin="1"/>
     </net>
     <net code="17" name="+3V3">
-      <node ref="C913" pin="1"/>
-      <node ref="C914" pin="1"/>
-      <node ref="C902" pin="1"/>
-      <node ref="C807" pin="1"/>
-      <node ref="C806" pin="1"/>
-      <node ref="C912" pin="1"/>
-      <node ref="R806" pin="1"/>
-      <node ref="R805" pin="1"/>
-      <node ref="C911" pin="1"/>
-      <node ref="C903" pin="1"/>
-      <node ref="C904" pin="1"/>
-      <node ref="C910" pin="1"/>
       <node ref="U804" pin="1"/>
+      <node ref="C904" pin="1"/>
+      <node ref="U803" pin="20"/>
+      <node ref="C906" pin="1"/>
+      <node ref="C903" pin="1"/>
+      <node ref="C914" pin="1"/>
+      <node ref="C907" pin="1"/>
+      <node ref="C913" pin="1"/>
+      <node ref="C902" pin="1"/>
+      <node ref="C908" pin="1"/>
+      <node ref="C912" pin="1"/>
+      <node ref="C911" pin="1"/>
+      <node ref="C910" pin="1"/>
+      <node ref="R802" pin="1"/>
+      <node ref="C909" pin="1"/>
+      <node ref="R805" pin="1"/>
+      <node ref="R806" pin="1"/>
+      <node ref="J702" pin="17"/>
+      <node ref="J702" pin="1"/>
+      <node ref="C905" pin="1"/>
       <node ref="C901" pin="1"/>
       <node ref="D603" pin="2"/>
-      <node ref="C905" pin="1"/>
-      <node ref="J702" pin="1"/>
-      <node ref="C906" pin="1"/>
-      <node ref="J702" pin="17"/>
-      <node ref="C907" pin="1"/>
-      <node ref="R802" pin="1"/>
-      <node ref="C908" pin="1"/>
-      <node ref="C909" pin="1"/>
-      <node ref="U803" pin="20"/>
+      <node ref="C806" pin="1"/>
+      <node ref="C807" pin="1"/>
     </net>
     <net code="18" name="REG3.3V">
-      <node ref="U303" pin="3"/>
+      <node ref="D602" pin="2"/>
+      <node ref="R309" pin="1"/>
+      <node ref="U303" pin="8"/>
+      <node ref="U301" pin="2"/>
       <node ref="C303" pin="1"/>
       <node ref="C307" pin="2"/>
-      <node ref="U301" pin="2"/>
-      <node ref="TP301" pin="1"/>
-      <node ref="D602" pin="2"/>
     </net>
     <net code="19" name="/Control MCU/RESET">
-      <node ref="J601" pin="10"/>
-      <node ref="U601" pin="10"/>
       <node ref="R603" pin="2"/>
+      <node ref="U601" pin="10"/>
+      <node ref="J601" pin="10"/>
     </net>
     <net code="20" name="Net-(C604-Pad1)">
-      <node ref="R606" pin="2"/>
       <node ref="C604" pin="1"/>
       <node ref="FB601" pin="1"/>
+      <node ref="R606" pin="2"/>
     </net>
     <net code="21" name="GND">
-      <node ref="C902" pin="2"/>
-      <node ref="C903" pin="2"/>
-      <node ref="C901" pin="2"/>
       <node ref="C904" pin="2"/>
       <node ref="C905" pin="2"/>
-      <node ref="J702" pin="14"/>
+      <node ref="C903" pin="2"/>
       <node ref="C906" pin="2"/>
+      <node ref="C902" pin="2"/>
+      <node ref="C907" pin="2"/>
+      <node ref="C908" pin="2"/>
+      <node ref="C901" pin="2"/>
+      <node ref="C807" pin="2"/>
+      <node ref="C806" pin="2"/>
+      <node ref="J601" pin="14"/>
+      <node ref="C202" pin="2"/>
+      <node ref="U601" pin="14"/>
+      <node ref="D701" pin="1"/>
       <node ref="D702" pin="1"/>
+      <node ref="D703" pin="1"/>
+      <node ref="D704" pin="1"/>
+      <node ref="C201" pin="2"/>
+      <node ref="U804" pin="4"/>
+      <node ref="J702" pin="14"/>
       <node ref="J702" pin="20"/>
       <node ref="J702" pin="25"/>
       <node ref="J702" pin="30"/>
       <node ref="J702" pin="34"/>
       <node ref="J702" pin="39"/>
-      <node ref="R605" pin="2"/>
       <node ref="J702" pin="6"/>
       <node ref="J702" pin="9"/>
-      <node ref="C202" pin="2"/>
-      <node ref="C907" pin="2"/>
-      <node ref="C908" pin="2"/>
-      <node ref="U803" pin="10"/>
-      <node ref="C206" pin="2"/>
-      <node ref="U302" pin="4"/>
-      <node ref="D704" pin="1"/>
-      <node ref="Y801" pin="2"/>
-      <node ref="D703" pin="1"/>
-      <node ref="Y801" pin="4"/>
-      <node ref="D701" pin="1"/>
-      <node ref="C803" pin="2"/>
-      <node ref="C804" pin="2"/>
-      <node ref="C603" pin="2"/>
-      <node ref="J601" pin="14"/>
       <node ref="C604" pin="2"/>
-      <node ref="J502" pin="1"/>
-      <node ref="J501" pin="1"/>
-      <node ref="C501" pin="2"/>
       <node ref="C909" pin="2"/>
+      <node ref="C603" pin="2"/>
+      <node ref="C503" pin="2"/>
+      <node ref="C601" pin="2"/>
+      <node ref="C314" pin="2"/>
+      <node ref="C501" pin="2"/>
+      <node ref="R204" pin="2"/>
+      <node ref="C502" pin="2"/>
+      <node ref="C310" pin="2"/>
+      <node ref="J502" pin="1"/>
+      <node ref="C316" pin="2"/>
+      <node ref="J501" pin="1"/>
       <node ref="D501" pin="2"/>
-      <node ref="R501" pin="2"/>
+      <node ref="C309" pin="2"/>
+      <node ref="U201" pin="1"/>
+      <node ref="C602" pin="2"/>
       <node ref="C910" pin="2"/>
-      <node ref="U804" pin="4"/>
+      <node ref="C307" pin="1"/>
+      <node ref="R501" pin="2"/>
+      <node ref="R314" pin="2"/>
+      <node ref="C804" pin="2"/>
+      <node ref="C914" pin="2"/>
+      <node ref="R310" pin="2"/>
+      <node ref="C803" pin="2"/>
+      <node ref="C911" pin="2"/>
+      <node ref="R605" pin="2"/>
+      <node ref="U803" pin="10"/>
+      <node ref="C303" pin="2"/>
+      <node ref="C302" pin="2"/>
+      <node ref="C912" pin="2"/>
+      <node ref="U301" pin="1"/>
       <node ref="BT401" pin="3"/>
       <node ref="U401" pin="5"/>
-      <node ref="C911" pin="2"/>
-      <node ref="C401" pin="2"/>
-      <node ref="C806" pin="2"/>
-      <node ref="C807" pin="2"/>
-      <node ref="R204" pin="2"/>
-      <node ref="C912" pin="2"/>
-      <node ref="C913" pin="2"/>
-      <node ref="U303" pin="1"/>
-      <node ref="U303" pin="2"/>
-      <node ref="C914" pin="2"/>
-      <node ref="C201" pin="2"/>
-      <node ref="U602" pin="3"/>
-      <node ref="C602" pin="2"/>
-      <node ref="U201" pin="1"/>
-      <node ref="C303" pin="2"/>
-      <node ref="U201" pin="6"/>
-      <node ref="R306" pin="2"/>
-      <node ref="U602" pin="8"/>
-      <node ref="C302" pin="2"/>
-      <node ref="U301" pin="1"/>
-      <node ref="J602" pin="2"/>
-      <node ref="SW201" pin="1"/>
-      <node ref="C307" pin="1"/>
-      <node ref="U601" pin="14"/>
-      <node ref="C308" pin="2"/>
-      <node ref="C203" pin="2"/>
-      <node ref="R202" pin="2"/>
-      <node ref="C309" pin="2"/>
-      <node ref="C310" pin="2"/>
-      <node ref="R602" pin="2"/>
-      <node ref="C301" pin="2"/>
-      <node ref="C601" pin="2"/>
-      <node ref="C204" pin="2"/>
-      <node ref="C305" pin="2"/>
       <node ref="R303" pin="2"/>
+      <node ref="C305" pin="2"/>
+      <node ref="SW201" pin="1"/>
       <node ref="D301" pin="2"/>
+      <node ref="R311" pin="2"/>
+      <node ref="C401" pin="2"/>
+      <node ref="U303" pin="4"/>
+      <node ref="Y801" pin="4"/>
+      <node ref="J602" pin="2"/>
+      <node ref="R306" pin="2"/>
+      <node ref="C207" pin="2"/>
+      <node ref="C206" pin="2"/>
+      <node ref="U602" pin="8"/>
+      <node ref="R202" pin="2"/>
+      <node ref="U302" pin="9"/>
+      <node ref="R602" pin="2"/>
+      <node ref="U201" pin="6"/>
+      <node ref="U602" pin="3"/>
+      <node ref="U302" pin="7"/>
+      <node ref="C204" pin="2"/>
+      <node ref="Y801" pin="2"/>
+      <node ref="C913" pin="2"/>
+      <node ref="C203" pin="2"/>
     </net>
     <net code="22" name="/Control MCU/PB0_CONN">
+      <node ref="FB601" pin="2"/>
       <node ref="C603" pin="1"/>
       <node ref="U602" pin="1"/>
       <node ref="U602" pin="10"/>
       <node ref="U602" pin="2"/>
-      <node ref="FB601" pin="2"/>
       <node ref="U602" pin="9"/>
       <node ref="J602" pin="1"/>
     </net>
@@ -2389,16 +2535,16 @@
     </net>
     <net code="27" name="/Control MCU/VinS">
       <node ref="J601" pin="4"/>
-      <node ref="R601" pin="2"/>
+      <node ref="C601" pin="1"/>
       <node ref="D601" pin="2"/>
       <node ref="U601" pin="4"/>
-      <node ref="C601" pin="1"/>
+      <node ref="R601" pin="2"/>
       <node ref="R602" pin="1"/>
     </net>
     <net code="28" name="/Control MCU/VcapS">
-      <node ref="J601" pin="5"/>
-      <node ref="U601" pin="5"/>
       <node ref="R604" pin="2"/>
+      <node ref="U601" pin="5"/>
+      <node ref="J601" pin="5"/>
       <node ref="R605" pin="1"/>
     </net>
     <net code="29" name="/Control MCU/RXD">
@@ -2409,334 +2555,355 @@
       <node ref="U601" pin="6"/>
       <node ref="J601" pin="6"/>
     </net>
-    <net code="31" name="/CANbus interface/CAN0_12V">
+    <net code="31" name="Net-(U803-Pad12)">
+      <node ref="U803" pin="12"/>
+    </net>
+    <net code="32" name="Net-(U803-Pad11)">
+      <node ref="U803" pin="11"/>
+    </net>
+    <net code="33" name="Net-(U803-Pad15)">
+      <node ref="U803" pin="15"/>
+    </net>
+    <net code="34" name="Net-(U803-Pad3)">
+      <node ref="U803" pin="3"/>
+    </net>
+    <net code="35" name="Net-(U803-Pad4)">
+      <node ref="U803" pin="4"/>
+    </net>
+    <net code="36" name="Net-(U803-Pad5)">
+      <node ref="U803" pin="5"/>
+    </net>
+    <net code="37" name="Net-(U803-Pad6)">
+      <node ref="U803" pin="6"/>
+    </net>
+    <net code="38" name="Net-(U803-Pad7)">
+      <node ref="U803" pin="7"/>
+    </net>
+    <net code="39" name="/CANbus interface/CAN_RX">
+      <node ref="U803" pin="2"/>
+      <node ref="D804" pin="1"/>
+      <node ref="U804" pin="2"/>
+    </net>
+    <net code="40" name="/CANbus interface/CAN_TX">
+      <node ref="U804" pin="3"/>
+      <node ref="U803" pin="1"/>
+      <node ref="D805" pin="1"/>
+    </net>
+    <net code="41" name="/CANbus interface/OSC1">
+      <node ref="Y801" pin="3"/>
+      <node ref="U803" pin="9"/>
+      <node ref="C804" pin="1"/>
+    </net>
+    <net code="42" name="/CANbus interface/OSC2">
+      <node ref="C803" pin="1"/>
+      <node ref="U803" pin="8"/>
+      <node ref="Y801" pin="1"/>
+    </net>
+    <net code="43" name="/CANbus interface/RST">
+      <node ref="R802" pin="2"/>
+      <node ref="U803" pin="19"/>
+    </net>
+    <net code="44" name="/CANbus interface/CAN_5V">
+      <node ref="C805" pin="1"/>
+      <node ref="R804" pin="1"/>
+      <node ref="U802" pin="2"/>
+      <node ref="U804" pin="8"/>
+      <node ref="C808" pin="1"/>
+    </net>
+    <net code="45" name="/CANbus interface/CAN0_12V">
       <node ref="J801" pin="2"/>
       <node ref="J802" pin="2"/>
       <node ref="F801" pin="2"/>
     </net>
-    <net code="32" name="/CANbus interface/CAN0_GND">
+    <net code="46" name="/CANbus interface/CAN0_H">
+      <node ref="R803" pin="2"/>
+      <node ref="U804" pin="7"/>
+      <node ref="R801" pin="2"/>
+      <node ref="J801" pin="3"/>
+    </net>
+    <net code="47" name="/CANbus interface/CAN0_L">
+      <node ref="JP801" pin="1"/>
+      <node ref="U804" pin="6"/>
+      <node ref="J801" pin="4"/>
+    </net>
+    <net code="48" name="/CANbus interface/CAN0_GND">
       <node ref="D803" pin="1"/>
-      <node ref="D801" pin="2"/>
-      <node ref="J801" pin="1"/>
-      <node ref="C801" pin="2"/>
       <node ref="J802" pin="1"/>
-      <node ref="C808" pin="2"/>
       <node ref="U804" pin="5"/>
+      <node ref="C808" pin="2"/>
+      <node ref="D801" pin="2"/>
+      <node ref="C801" pin="2"/>
       <node ref="U802" pin="1"/>
-      <node ref="U801" pin="3"/>
-      <node ref="C805" pin="2"/>
-      <node ref="U801" pin="8"/>
+      <node ref="J801" pin="1"/>
       <node ref="C802" pin="2"/>
+      <node ref="C805" pin="2"/>
     </net>
-    <net code="33" name="/CANbus interface/CAN_5V">
-      <node ref="C805" pin="1"/>
-      <node ref="TP802" pin="1"/>
-      <node ref="U804" pin="8"/>
-      <node ref="C808" pin="1"/>
-      <node ref="R804" pin="1"/>
-      <node ref="U802" pin="2"/>
-    </net>
-    <net code="34" name="/CANbus interface/RST">
-      <node ref="R802" pin="2"/>
-      <node ref="U803" pin="19"/>
-    </net>
-    <net code="35" name="/CANbus interface/CAN_TX">
-      <node ref="D805" pin="1"/>
-      <node ref="U803" pin="1"/>
-      <node ref="U804" pin="3"/>
-    </net>
-    <net code="36" name="/CANbus interface/CAN_RX">
-      <node ref="U804" pin="2"/>
-      <node ref="D804" pin="1"/>
-      <node ref="U803" pin="2"/>
-    </net>
-    <net code="37" name="Net-(U803-Pad7)">
-      <node ref="U803" pin="7"/>
-    </net>
-    <net code="38" name="Net-(U803-Pad5)">
-      <node ref="U803" pin="5"/>
-    </net>
-    <net code="39" name="Net-(U803-Pad4)">
-      <node ref="U803" pin="4"/>
-    </net>
-    <net code="40" name="Net-(U803-Pad11)">
-      <node ref="U803" pin="11"/>
-    </net>
-    <net code="41" name="Net-(U803-Pad12)">
-      <node ref="U803" pin="12"/>
-    </net>
-    <net code="42" name="Net-(U803-Pad3)">
-      <node ref="U803" pin="3"/>
-    </net>
-    <net code="43" name="/CANbus interface/OSC1">
-      <node ref="U803" pin="9"/>
-      <node ref="C804" pin="1"/>
-      <node ref="Y801" pin="3"/>
-    </net>
-    <net code="44" name="/CANbus interface/OSC2">
-      <node ref="C803" pin="1"/>
-      <node ref="Y801" pin="1"/>
-      <node ref="U803" pin="8"/>
-    </net>
-    <net code="45" name="Net-(U803-Pad6)">
-      <node ref="U803" pin="6"/>
-    </net>
-    <net code="46" name="Net-(U803-Pad15)">
-      <node ref="U803" pin="15"/>
-    </net>
-    <net code="47" name="Net-(F801-Pad1)">
+    <net code="49" name="Net-(F801-Pad1)">
       <node ref="F801" pin="1"/>
       <node ref="FB801" pin="2"/>
     </net>
-    <net code="48" name="/CANbus interface/CAN12V_prot">
-      <node ref="D802" pin="1"/>
+    <net code="50" name="/CANbus interface/CAN12V_prot">
       <node ref="C802" pin="1"/>
       <node ref="U802" pin="3"/>
+      <node ref="D802" pin="1"/>
     </net>
-    <net code="49" name="/CANbus interface/CAN12V_fused">
-      <node ref="FB801" pin="1"/>
-      <node ref="D801" pin="1"/>
+    <net code="51" name="/CANbus interface/CAN12V_fused">
       <node ref="D802" pin="2"/>
+      <node ref="D801" pin="1"/>
+      <node ref="FB801" pin="1"/>
       <node ref="C801" pin="1"/>
     </net>
-    <net code="50" name="/CANbus interface/CAN0_H">
-      <node ref="R803" pin="2"/>
-      <node ref="U801" pin="9"/>
-      <node ref="R801" pin="2"/>
-      <node ref="U801" pin="2"/>
-      <node ref="U801" pin="10"/>
-      <node ref="U801" pin="1"/>
-      <node ref="J801" pin="3"/>
-      <node ref="U804" pin="7"/>
-    </net>
-    <net code="51" name="/CANbus interface/CAN0_L">
-      <node ref="J801" pin="4"/>
-      <node ref="U801" pin="4"/>
-      <node ref="U801" pin="5"/>
-      <node ref="U801" pin="6"/>
-      <node ref="U801" pin="7"/>
-      <node ref="JP801" pin="1"/>
-      <node ref="U804" pin="6"/>
-    </net>
-    <net code="52" name="Net-(JP801-Pad2)">
-      <node ref="R803" pin="1"/>
-      <node ref="R801" pin="1"/>
-      <node ref="JP801" pin="2"/>
-    </net>
-    <net code="53" name="Net-(D803-Pad2)">
-      <node ref="R804" pin="2"/>
-      <node ref="D803" pin="2"/>
-    </net>
-    <net code="54" name="Net-(D804-Pad2)">
-      <node ref="R805" pin="2"/>
-      <node ref="D804" pin="2"/>
-    </net>
-    <net code="55" name="Net-(D805-Pad2)">
+    <net code="52" name="Net-(D805-Pad2)">
       <node ref="R806" pin="2"/>
       <node ref="D805" pin="2"/>
     </net>
-    <net code="56" name="/Buck converter/BS">
-      <node ref="U302" pin="8"/>
-      <node ref="R301" pin="2"/>
+    <net code="53" name="Net-(D804-Pad2)">
+      <node ref="D804" pin="2"/>
+      <node ref="R805" pin="2"/>
     </net>
-    <net code="57" name="Net-(C304-Pad2)">
-      <node ref="R301" pin="1"/>
-      <node ref="C304" pin="2"/>
+    <net code="54" name="Net-(D803-Pad2)">
+      <node ref="R804" pin="2"/>
+      <node ref="D803" pin="2"/>
     </net>
-    <net code="58" name="/Buck converter/CSAOUT">
-      <node ref="U303" pin="6"/>
-      <node ref="R305" pin="1"/>
-      <node ref="TP302" pin="1"/>
+    <net code="55" name="Net-(JP801-Pad2)">
+      <node ref="JP801" pin="2"/>
+      <node ref="R803" pin="1"/>
+      <node ref="R801" pin="1"/>
     </net>
-    <net code="59" name="/Buck converter/V_CSADIV">
-      <node ref="R306" pin="1"/>
-      <node ref="C308" pin="1"/>
-      <node ref="R305" pin="2"/>
-      <node ref="D302" pin="2"/>
+    <net code="56" name="Net-(R311-Pad1)">
+      <node ref="R311" pin="1"/>
+      <node ref="U302" pin="4"/>
     </net>
-    <net code="60" name="Net-(U302-Pad7)">
-      <node ref="U302" pin="7"/>
-    </net>
-    <net code="61" name="Net-(U302-Pad6)">
-      <node ref="U302" pin="6"/>
-    </net>
-    <net code="62" name="/Buck converter/SW">
-      <node ref="L301" pin="1"/>
-      <node ref="U302" pin="1"/>
-      <node ref="D301" pin="1"/>
-      <node ref="C304" pin="1"/>
-    </net>
-    <net code="63" name="/Buck converter/FB">
+    <net code="57" name="/Buck converter/FB">
       <node ref="C306" pin="2"/>
+      <node ref="D302" pin="1"/>
       <node ref="R303" pin="1"/>
       <node ref="U302" pin="5"/>
       <node ref="R302" pin="2"/>
-      <node ref="D302" pin="1"/>
+      <node ref="D303" pin="2"/>
     </net>
-    <net code="64" name="/Buck converter/Vout">
+    <net code="58" name="Net-(U302-Pad6)">
+      <node ref="U302" pin="6"/>
+    </net>
+    <net code="59" name="/Buck converter/BS">
+      <node ref="C304" pin="2"/>
+      <node ref="U302" pin="1"/>
+    </net>
+    <net code="60" name="Net-(C304-Pad1)">
+      <node ref="R315" pin="2"/>
+      <node ref="C304" pin="1"/>
+    </net>
+    <net code="61" name="Net-(D302-Pad2)">
+      <node ref="R305" pin="2"/>
+      <node ref="D302" pin="2"/>
+    </net>
+    <net code="62" name="Net-(R301-Pad2)">
+      <node ref="R301" pin="2"/>
+      <node ref="R306" pin="1"/>
+      <node ref="U303" pin="5"/>
+    </net>
+    <net code="63" name="Net-(R307-Pad2)">
+      <node ref="R308" pin="2"/>
+      <node ref="R307" pin="2"/>
+      <node ref="U303" pin="6"/>
+    </net>
+    <net code="64" name="/Buck converter/COMP_OUT">
+      <node ref="R305" pin="1"/>
+      <node ref="U303" pin="1"/>
+    </net>
+    <net code="65" name="Net-(R308-Pad1)">
+      <node ref="U303" pin="7"/>
+      <node ref="U303" pin="3"/>
+      <node ref="R308" pin="1"/>
+    </net>
+    <net code="66" name="Net-(R309-Pad2)">
+      <node ref="U303" pin="2"/>
+      <node ref="R309" pin="2"/>
+      <node ref="R310" pin="1"/>
+    </net>
+    <net code="67" name="/Buck converter/Vout">
+      <node ref="C316" pin="1"/>
+      <node ref="R312" pin="1"/>
+      <node ref="C306" pin="1"/>
       <node ref="R304" pin="2"/>
       <node ref="R302" pin="1"/>
-      <node ref="U303" pin="4"/>
       <node ref="C305" pin="1"/>
       <node ref="L301" pin="2"/>
-      <node ref="C306" pin="1"/>
+      <node ref="R301" pin="1"/>
     </net>
-    <net code="65" name="/Boost converter/ENIN">
-      <node ref="C206" pin="1"/>
-      <node ref="R202" pin="1"/>
-      <node ref="R201" pin="2"/>
-      <node ref="SW201" pin="2"/>
-      <node ref="U201" pin="5"/>
+    <net code="68" name="Net-(D303-Pad1)">
+      <node ref="R312" pin="2"/>
+      <node ref="D303" pin="1"/>
     </net>
-    <net code="66" name="/Boost converter/FB">
-      <node ref="R203" pin="2"/>
-      <node ref="C205" pin="1"/>
-      <node ref="U201" pin="4"/>
-      <node ref="R204" pin="1"/>
+    <net code="69" name="/Buck converter/SW">
+      <node ref="L301" pin="1"/>
+      <node ref="U302" pin="8"/>
+      <node ref="D301" pin="1"/>
+      <node ref="R315" pin="1"/>
     </net>
-    <net code="67" name="/Boost converter/SW">
-      <node ref="L201" pin="2"/>
+    <net code="70" name="/Buck converter/EN">
+      <node ref="R313" pin="2"/>
+      <node ref="U302" pin="3"/>
+      <node ref="R314" pin="1"/>
+    </net>
+    <net code="71" name="/Boost converter/SW">
       <node ref="U201" pin="2"/>
+      <node ref="L201" pin="2"/>
     </net>
-    <net code="68" name="Net-(U401-Pad4)">
+    <net code="72" name="/Boost converter/FB">
+      <node ref="R203" pin="2"/>
+      <node ref="R204" pin="1"/>
+      <node ref="U201" pin="4"/>
+      <node ref="C205" pin="1"/>
+    </net>
+    <net code="73" name="/Boost converter/ENIN">
+      <node ref="U201" pin="5"/>
+      <node ref="SW201" pin="2"/>
+      <node ref="R201" pin="2"/>
+      <node ref="R202" pin="1"/>
+      <node ref="C206" pin="1"/>
+    </net>
+    <net code="74" name="Net-(U401-Pad4)">
       <node ref="U401" pin="4"/>
     </net>
-    <net code="69" name="Net-(U401-Pad1)">
+    <net code="75" name="Net-(U401-Pad1)">
       <node ref="U401" pin="1"/>
     </net>
-    <net code="70" name="Net-(BT401-Pad1)">
+    <net code="76" name="Net-(BT401-Pad1)">
       <node ref="BT401" pin="1"/>
     </net>
-    <net code="71" name="/RTC/VBAT">
+    <net code="77" name="/RTC/VBAT">
       <node ref="U401" pin="6"/>
       <node ref="BT401" pin="2"/>
     </net>
-    <net code="72" name="Net-(F501-Pad1)">
-      <node ref="F501" pin="1"/>
-      <node ref="FB501" pin="2"/>
-    </net>
-    <net code="73" name="/Protection/Vin">
-      <node ref="F501" pin="2"/>
-      <node ref="J501" pin="2"/>
-      <node ref="J502" pin="2"/>
-    </net>
-    <net code="74" name="/Protection/RP_G">
+    <net code="78" name="/Protection/RP_G">
       <node ref="Q501" pin="1"/>
       <node ref="D502" pin="2"/>
       <node ref="R501" pin="1"/>
     </net>
-    <net code="75" name="/Protection/Vin_fused">
-      <node ref="FB501" pin="1"/>
-      <node ref="Q501" pin="3"/>
+    <net code="79" name="/Protection/Vin">
+      <node ref="J501" pin="2"/>
+      <node ref="J502" pin="2"/>
+      <node ref="F501" pin="2"/>
+    </net>
+    <net code="80" name="/Protection/Vin_fused">
       <node ref="D501" pin="1"/>
+      <node ref="F501" pin="1"/>
+      <node ref="C502" pin="1"/>
       <node ref="C501" pin="1"/>
+      <node ref="L501" pin="1"/>
     </net>
-    <net code="76" name="/I/O/GPIO12">
-      <node ref="R710" pin="2"/>
-      <node ref="J702" pin="32"/>
+    <net code="81" name="/Protection/Vin_EMI">
+      <node ref="Q501" pin="3"/>
+      <node ref="L501" pin="2"/>
+      <node ref="C503" pin="1"/>
     </net>
-    <net code="77" name="/I/O/GPIO13">
-      <node ref="R711" pin="2"/>
-      <node ref="J702" pin="33"/>
+    <net code="82" name="Net-(J702-Pad24)">
+      <node ref="J702" pin="24"/>
     </net>
-    <net code="78" name="Net-(J702-Pad5)">
+    <net code="83" name="Net-(J702-Pad13)">
+      <node ref="J702" pin="13"/>
+    </net>
+    <net code="84" name="Net-(J702-Pad15)">
+      <node ref="J702" pin="15"/>
+    </net>
+    <net code="85" name="Net-(J702-Pad37)">
+      <node ref="J702" pin="37"/>
+    </net>
+    <net code="86" name="Net-(J702-Pad36)">
+      <node ref="J702" pin="36"/>
+    </net>
+    <net code="87" name="Net-(J702-Pad8)">
+      <node ref="J702" pin="8"/>
+    </net>
+    <net code="88" name="Net-(J702-Pad7)">
+      <node ref="J702" pin="7"/>
+    </net>
+    <net code="89" name="Net-(J702-Pad5)">
       <node ref="J702" pin="5"/>
     </net>
-    <net code="79" name="Net-(J702-Pad3)">
+    <net code="90" name="Net-(J702-Pad40)">
+      <node ref="J702" pin="40"/>
+    </net>
+    <net code="91" name="Net-(J702-Pad38)">
+      <node ref="J702" pin="38"/>
+    </net>
+    <net code="92" name="Net-(J702-Pad35)">
+      <node ref="J702" pin="35"/>
+    </net>
+    <net code="93" name="/I/O/GPIO12">
+      <node ref="J702" pin="32"/>
+      <node ref="R710" pin="2"/>
+    </net>
+    <net code="94" name="/I/O/GPIO6">
+      <node ref="J702" pin="31"/>
+      <node ref="R708" pin="2"/>
+    </net>
+    <net code="95" name="Net-(J702-Pad3)">
       <node ref="J702" pin="3"/>
     </net>
-    <net code="80" name="Net-(D702-Pad2)">
-      <node ref="D702" pin="2"/>
-      <node ref="R702" pin="2"/>
+    <net code="96" name="/I/O/GPIO5">
+      <node ref="J702" pin="29"/>
+      <node ref="R709" pin="2"/>
     </net>
-    <net code="81" name="Net-(D701-Pad2)">
-      <node ref="D701" pin="2"/>
-      <node ref="R701" pin="2"/>
+    <net code="97" name="Net-(J702-Pad28)">
+      <node ref="J702" pin="28"/>
     </net>
-    <net code="82" name="Net-(D703-Pad2)">
-      <node ref="D703" pin="2"/>
-      <node ref="R703" pin="2"/>
+    <net code="98" name="Net-(J702-Pad27)">
+      <node ref="J702" pin="27"/>
     </net>
-    <net code="83" name="Net-(D704-Pad2)">
+    <net code="99" name="Net-(J702-Pad26)">
+      <node ref="J702" pin="26"/>
+    </net>
+    <net code="100" name="/I/O/GPIO11">
+      <node ref="J702" pin="23"/>
+      <node ref="R707" pin="2"/>
+    </net>
+    <net code="101" name="Net-(J702-Pad22)">
+      <node ref="J702" pin="22"/>
+    </net>
+    <net code="102" name="/I/O/GPIO9">
+      <node ref="J702" pin="21"/>
+      <node ref="R706" pin="2"/>
+    </net>
+    <net code="103" name="/I/O/GPIO10">
+      <node ref="R705" pin="2"/>
+      <node ref="J702" pin="19"/>
+    </net>
+    <net code="104" name="Net-(J702-Pad18)">
+      <node ref="J702" pin="18"/>
+    </net>
+    <net code="105" name="Net-(J702-Pad16)">
+      <node ref="J702" pin="16"/>
+    </net>
+    <net code="106" name="Net-(J702-Pad12)">
+      <node ref="J702" pin="12"/>
+    </net>
+    <net code="107" name="Net-(J702-Pad11)">
+      <node ref="J702" pin="11"/>
+    </net>
+    <net code="108" name="Net-(J702-Pad10)">
+      <node ref="J702" pin="10"/>
+    </net>
+    <net code="109" name="Net-(D704-Pad2)">
       <node ref="R704" pin="2"/>
       <node ref="D704" pin="2"/>
     </net>
-    <net code="84" name="/I/O/GPIO10">
-      <node ref="J702" pin="19"/>
-      <node ref="R705" pin="2"/>
+    <net code="110" name="Net-(D703-Pad2)">
+      <node ref="D703" pin="2"/>
+      <node ref="R703" pin="2"/>
     </net>
-    <net code="85" name="/I/O/GPIO9">
-      <node ref="R706" pin="2"/>
-      <node ref="J702" pin="21"/>
+    <net code="111" name="Net-(D702-Pad2)">
+      <node ref="R702" pin="2"/>
+      <node ref="D702" pin="2"/>
     </net>
-    <net code="86" name="/I/O/GPIO11">
-      <node ref="R707" pin="2"/>
-      <node ref="J702" pin="23"/>
+    <net code="112" name="Net-(D701-Pad2)">
+      <node ref="D701" pin="2"/>
+      <node ref="R701" pin="2"/>
     </net>
-    <net code="87" name="/I/O/GPIO6">
-      <node ref="R708" pin="2"/>
-      <node ref="J702" pin="31"/>
-    </net>
-    <net code="88" name="/I/O/GPIO5">
-      <node ref="R709" pin="2"/>
-      <node ref="J702" pin="29"/>
-    </net>
-    <net code="89" name="Net-(J702-Pad26)">
-      <node ref="J702" pin="26"/>
-    </net>
-    <net code="90" name="Net-(J702-Pad24)">
-      <node ref="J702" pin="24"/>
-    </net>
-    <net code="91" name="Net-(J702-Pad13)">
-      <node ref="J702" pin="13"/>
-    </net>
-    <net code="92" name="Net-(J702-Pad15)">
-      <node ref="J702" pin="15"/>
-    </net>
-    <net code="93" name="Net-(J702-Pad37)">
-      <node ref="J702" pin="37"/>
-    </net>
-    <net code="94" name="Net-(J702-Pad36)">
-      <node ref="J702" pin="36"/>
-    </net>
-    <net code="95" name="Net-(J702-Pad8)">
-      <node ref="J702" pin="8"/>
-    </net>
-    <net code="96" name="Net-(J702-Pad7)">
-      <node ref="J702" pin="7"/>
-    </net>
-    <net code="97" name="Net-(J702-Pad40)">
-      <node ref="J702" pin="40"/>
-    </net>
-    <net code="98" name="Net-(J702-Pad38)">
-      <node ref="J702" pin="38"/>
-    </net>
-    <net code="99" name="Net-(J702-Pad35)">
-      <node ref="J702" pin="35"/>
-    </net>
-    <net code="100" name="Net-(J702-Pad28)">
-      <node ref="J702" pin="28"/>
-    </net>
-    <net code="101" name="Net-(J702-Pad27)">
-      <node ref="J702" pin="27"/>
-    </net>
-    <net code="102" name="Net-(J702-Pad22)">
-      <node ref="J702" pin="22"/>
-    </net>
-    <net code="103" name="Net-(J702-Pad18)">
-      <node ref="J702" pin="18"/>
-    </net>
-    <net code="104" name="Net-(J702-Pad16)">
-      <node ref="J702" pin="16"/>
-    </net>
-    <net code="105" name="Net-(J702-Pad12)">
-      <node ref="J702" pin="12"/>
-    </net>
-    <net code="106" name="Net-(J702-Pad11)">
-      <node ref="J702" pin="11"/>
-    </net>
-    <net code="107" name="Net-(J702-Pad10)">
-      <node ref="J702" pin="10"/>
+    <net code="113" name="/I/O/GPIO13">
+      <node ref="J702" pin="33"/>
+      <node ref="R711" pin="2"/>
     </net>
   </nets>
 </export>
