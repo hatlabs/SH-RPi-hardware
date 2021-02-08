@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/mairas/w/hatlabs/SH-RPi/SH-RPi-hardware/SH-RPi.sch</source>
-    <date>2021 February 08, Monday 18:05:45</date>
+    <date>2021 February 08, Monday 18:54:12</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -145,22 +145,22 @@
       <tstamp>5CA6B4FC</tstamp>
     </comp>
     <comp ref="R203">
-      <value>750k</value>
+      <value>150k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C122545</field>
+        <field name="LCSC">C25755</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
       <tstamp>5CA6B51B</tstamp>
     </comp>
     <comp ref="R204">
-      <value>100k</value>
+      <value>20k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C25741</field>
+        <field name="LCSC">C25765</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Boost converter/" tstamps="/5CA73F16/"/>
@@ -656,10 +656,10 @@
       <tstamp>5FAFCA18</tstamp>
     </comp>
     <comp ref="Q501">
-      <value>WST03P06</value>
+      <value>PJA3441</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
-        <field name="LCSC">C105166</field>
+        <field name="LCSC">C313504</field>
       </fields>
       <libsource lib="Transistor_FET" part="Si2371EDS" description="-3.6A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <sheetpath names="/Protection/" tstamps="/5E460E30/"/>
@@ -1284,7 +1284,7 @@
       <footprint>Diode_SMD:D_SMB</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C143164</field>
+        <field name="LCSC">C114000</field>
       </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/CANbus interface/" tstamps="/5C348474/"/>
