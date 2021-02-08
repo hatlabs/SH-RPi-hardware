@@ -287,4 +287,15 @@ Wire Wire Line
 Connection ~ 1750 6400
 Wire Wire Line
 	1750 6400 1750 6000
+$Comp
+L Mechanical:MountingHole H901
+U 1 1 603EEE8F
+P 3100 1600
+F 0 "H901" H 3200 1646 50  0000 L CNN
+F 1 "MountingHole" H 3200 1555 50  0000 L CNN
+F 2 "SH-RPi:MountingHole_3.2mm_no_pad" H 3100 1600 50  0001 C CNN
+F 3 "~" H 3100 1600 50  0001 C CNN
+	1    3100 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

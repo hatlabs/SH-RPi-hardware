@@ -1,9 +1,21 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP GS8052
+D Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8
+K dual opamp
+F http://www.ti.com/lit/ds/symlink/lm358.pdf
+$ENDCMP
+#
 $CMP HT75xx-1-SOT23
 D 100mA Low Dropout Voltage Regulator, Fixed Output, SOT89
 K 100mA LDO Regulator Fixed Positive
 F https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf
+$ENDCMP
+#
+$CMP LMR16030PDDA
+D Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8
+K simple-switcher buck step-down voltage-regulator
+F http://www.ti.com/lit/ds/symlink/lmr33640.pdf
 $ENDCMP
 #
 $CMP MCP25625T-E_ML

@@ -354,9 +354,9 @@ F 3 "~" H 2250 1450 50  0001 C CNN
 	1    2250 1450
 	1    0    0    -1  
 $EndComp
-Text Label 3500 1750 0    50   ~ 0
+Text Label 2450 1750 0    50   ~ 0
 CAN0_H
-Text Label 3500 1850 0    50   ~ 0
+Text Label 2450 1850 0    50   ~ 0
 CAN0_L
 Text Label 2450 1650 0    50   ~ 0
 CAN0_12V
@@ -509,8 +509,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 6300 5700 6100
 Wire Wire Line
-	5700 6100 5550 6100
-Wire Wire Line
 	6000 6100 5700 6100
 Connection ~ 5700 6100
 Wire Wire Line
@@ -550,7 +548,7 @@ F 0 "C801" H 2915 6496 50  0000 L CNN
 F 1 "10nF/50V" H 2915 6405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2838 6300 50  0001 C CNN
 F 3 "~" H 2800 6450 50  0001 C CNN
-F 4 "C15195" H 2800 6450 50  0001 C CNN "LCSC"
+F 4 "C1523" H 2800 6450 50  0001 C CNN "LCSC"
 	1    2800 6450
 	1    0    0    -1  
 $EndComp
@@ -580,38 +578,6 @@ Text Label 1350 6100 2    50   ~ 0
 CAN0_12V
 Text Label 6000 6100 0    50   ~ 0
 CAN_5V
-$Comp
-L SH-RPi:RCLAMP0524P-N U801
-U 1 1 5FB46A7F
-P 2950 2400
-F 0 "U801" H 2950 2825 50  0000 C CNN
-F 1 "RCLAMP0524P-N" H 2950 2734 50  0000 C CNN
-F 2 "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 2950 2300 50  0001 C CNN
-F 3 "" H 2950 2300 50  0001 C CNN
-F 4 "C587147" H 2950 2400 50  0001 C CNN "LCSC"
-	1    2950 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1750 2500 1750
-Wire Wire Line
-	3300 2300 3400 2300
-Wire Wire Line
-	3400 2300 3400 2200
-Connection ~ 3400 1750
-Wire Wire Line
-	3400 1750 3500 1750
-Wire Wire Line
-	2600 2300 2500 2300
-Wire Wire Line
-	2500 2300 2500 2200
-Connection ~ 2500 1750
-Wire Wire Line
-	2500 1750 3400 1750
-Text Label 2900 2850 3    50   ~ 0
-CAN0_GND
-Text Label 3000 2850 3    50   ~ 0
-CAN0_GND
 Wire Wire Line
 	6400 3900 6400 3800
 $Comp
@@ -633,56 +599,6 @@ Wire Wire Line
 Connection ~ 2800 6100
 Wire Wire Line
 	2800 6100 3450 6100
-Wire Wire Line
-	2600 2200 2500 2200
-Connection ~ 2500 2200
-Wire Wire Line
-	2500 2200 2500 1750
-Wire Wire Line
-	1600 1850 2450 1850
-Wire Wire Line
-	3300 2200 3400 2200
-Connection ~ 3400 2200
-Wire Wire Line
-	3400 2200 3400 1750
-Wire Wire Line
-	3300 2400 3450 2400
-Wire Wire Line
-	3450 2400 3450 1850
-Connection ~ 3450 1850
-Wire Wire Line
-	3450 1850 3500 1850
-Wire Wire Line
-	3300 2500 3450 2500
-Wire Wire Line
-	3450 2500 3450 2400
-Connection ~ 3450 2400
-Wire Wire Line
-	2600 2500 2450 2500
-Wire Wire Line
-	2450 2500 2450 2400
-Connection ~ 2450 1850
-Wire Wire Line
-	2450 1850 3450 1850
-Wire Wire Line
-	2600 2400 2450 2400
-Connection ~ 2450 2400
-Wire Wire Line
-	2450 2400 2450 1850
-$Comp
-L Connector:TestPoint TP802
-U 1 1 5FB14C6B
-P 5550 6100
-F 0 "TP802" H 5600 6300 50  0000 L CNN
-F 1 "CAN_5V" H 5600 6200 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 5750 6100 50  0001 C CNN
-F 3 "~" H 5750 6100 50  0001 C CNN
-	1    5550 6100
-	1    0    0    -1  
-$EndComp
-Connection ~ 5550 6100
-Wire Wire Line
-	5550 6100 5350 6100
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5FB649C2
@@ -928,4 +844,10 @@ F 3 "" H 9200 3800 50  0001 C CNN
 $EndComp
 Text Notes 8400 5500 0    50   ~ 0
 CAN indicator LEDs
+Wire Wire Line
+	1600 1750 2450 1750
+Wire Wire Line
+	1600 1850 2450 1850
+Wire Wire Line
+	5350 6100 5700 6100
 $EndSCHEMATC
