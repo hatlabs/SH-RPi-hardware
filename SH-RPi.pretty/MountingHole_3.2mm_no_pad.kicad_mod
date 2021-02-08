@@ -1,0 +1,18 @@
+(module MountingHole_3.2mm_no_pad locked (layer F.Cu) (tedit 602106FC)
+  (descr "Mounting Hole 3.2mm, no annular, M3")
+  (tags "mounting hole 3.2mm no annular m3")
+  (attr virtual)
+  (fp_text reference J501 (at 0 -2.85) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Conn_01x01 (at 0 2.85) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 1.9 0) (layer Cmts.User) (width 0.15))
+  (fp_circle (center 0 0) (end 2 0) (layer F.CrtYd) (width 0.05))
+  (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.2) (clearance 0.2))
+)
