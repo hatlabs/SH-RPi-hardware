@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/mairas/w/hatlabs/SH-RPi/SH-RPi-hardware/SH-RPi.sch</source>
-    <date>2021 February 08, Monday 17:44:43</date>
+    <date>2021 February 08, Monday 18:05:45</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1603,6 +1603,30 @@
       <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
       <tstamp>603EEE8F</tstamp>
     </comp>
+    <comp ref="H902">
+      <value>MountingHole</value>
+      <footprint>SH-RPi:JlcpcbToolingHole</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
+      <tstamp>6042403C</tstamp>
+    </comp>
+    <comp ref="H903">
+      <value>MountingHole</value>
+      <footprint>SH-RPi:JlcpcbToolingHole</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
+      <tstamp>6042449F</tstamp>
+    </comp>
+    <comp ref="H904">
+      <value>MountingHole</value>
+      <footprint>SH-RPi:JlcpcbToolingHole</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/PCB/" tstamps="/5FB38EDE/"/>
+      <tstamp>60425784</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector" part="Raspberry_Pi_2_3">
@@ -2136,9 +2160,9 @@
         <pin num="4" name="RT/SYNC" type="input"/>
         <pin num="5" name="FB" type="input"/>
         <pin num="6" name="PGOOD" type="openCol"/>
-        <pin num="7" name="GND" type="power_out"/>
+        <pin num="7" name="GND" type="power_in"/>
         <pin num="8" name="SW" type="power_out"/>
-        <pin num="9" name="PAD" type="power_out"/>
+        <pin num="9" name="PAD" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="SH-RPi" part="RCLAMP0524P-N">
