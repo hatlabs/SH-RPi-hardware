@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/mairas/w/hatlabs/SH-RPi/SH-RPi-hardware/SH-RPi.sch</source>
-    <date>2021 February 08, Monday 18:54:12</date>
+    <date>2021 February 08, Monday 19:18:47</date>
     <tool>Eeschema (5.1.9-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -181,6 +181,7 @@
       <value>TPS61022</value>
       <footprint>SH-RPi:TPS61022RWUR</footprint>
       <fields>
+        <field name="LCSC">C915088</field>
         <field name="Mouser">595-TPS61022RWUR</field>
       </fields>
       <libsource lib="SH-RPi" part="TPS61022" description=""/>
