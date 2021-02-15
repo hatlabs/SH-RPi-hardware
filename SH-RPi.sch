@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "Sailor Hat for Raspberry Pi"
-Date ""
+Date "2021-02-08"
 Rev "revM"
-Comp "Hat Laboratories"
+Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
 Comment4 ""
 $EndDescr
 Wire Wire Line

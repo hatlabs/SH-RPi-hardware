@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Sailor Hat for Raspberry Pi"
-Date ""
+Date "2021-02-08"
 Rev "revM"
-Comp "Hat Laboratories"
+Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
 Comment4 ""
 $EndDescr
 Text HLabel 5800 2250 0    50   Input ~ 0
@@ -400,7 +400,7 @@ F 0 "D801" V 3404 6479 50  0000 L CNN
 F 1 "SMBJ33CA" V 3495 6479 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB" H 3450 6400 50  0001 C CNN
 F 3 "~" H 3450 6400 50  0001 C CNN
-F 4 "C143164" H 3450 6400 50  0001 C CNN "LCSC"
+F 4 "C114000" H 3450 6400 50  0001 C CNN "LCSC"
 	1    3450 6400
 	0    1    1    0   
 $EndComp

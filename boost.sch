@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 9
 Title "Sailor Hat for Raspberry Pi"
-Date ""
+Date "2021-02-08"
 Rev "revM"
-Comp "Hat Laboratories"
+Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for ESP32 is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
 Comment4 ""
 $EndDescr
 $Comp
@@ -55,10 +55,10 @@ AR Path="/5CA6B51B" Ref="R?"  Part="1"
 AR Path="/5C3480BB/5CA6B51B" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5CA6B51B" Ref="R203"  Part="1" 
 F 0 "R203" H 4420 2496 50  0000 L CNN
-F 1 "750k" H 4420 2405 50  0000 L CNN
+F 1 "150k" H 4420 2405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4280 2450 50  0001 C CNN
 F 3 "~" H 4350 2450 50  0001 C CNN
-F 4 "C122545" H 4350 2450 50  0001 C CNN "LCSC"
+F 4 "C25755" H 4350 2450 50  0001 C CNN "LCSC"
 	1    4350 2450
 	1    0    0    -1  
 $EndComp
@@ -70,10 +70,10 @@ AR Path="/5CA6B522" Ref="R?"  Part="1"
 AR Path="/5C3480BB/5CA6B522" Ref="R?"  Part="1" 
 AR Path="/5CA73F16/5CA6B522" Ref="R204"  Part="1" 
 F 0 "R204" H 4420 2896 50  0000 L CNN
-F 1 "100k" H 4420 2805 50  0000 L CNN
+F 1 "20k" H 4420 2805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4280 2850 50  0001 C CNN
 F 3 "~" H 4350 2850 50  0001 C CNN
-F 4 "C25741" H 4350 2850 50  0001 C CNN "LCSC"
+F 4 "C25765" H 4350 2850 50  0001 C CNN "LCSC"
 	1    4350 2850
 	1    0    0    -1  
 $EndComp
@@ -160,6 +160,7 @@ F 1 "TPS61022" H 3400 2774 50  0000 C CNN
 F 2 "SH-RPi:TPS61022RWUR" H 3450 2600 50  0001 C CNN
 F 3 "" H 3450 2600 50  0001 C CNN
 F 4 "595-TPS61022RWUR" H 3400 2400 50  0001 C CNN "Mouser"
+F 5 "C915088" H 3400 2400 50  0001 C CNN "LCSC"
 	1    3400 2400
 	1    0    0    -1  
 $EndComp
