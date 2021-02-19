@@ -331,4 +331,6 @@ F 3 "~" H 3100 2850 50  0001 C CNN
 	1    3100 2850
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 1650 0    50   ~ 0
+This mounting hole meant for an optional zip tie\nsupport for the supercap
 $EndSCHEMATC
