@@ -15,23 +15,24 @@ The main features are:
 - Safe 8-32V power input, enabling use in both 12V and 24V systems without
   external voltage conversion. The inputs are protected to withstand different
   power surges commonly present in the vessel's electrical network.
-- Power management for 2.7V supercapacitors that provide so-called last gasp
+- Power management using a 2.7V 60F supercapacitor that provides so-called
+  last gasp
   energy for shutting down the device in a controlled fashion after the
   system power is cut. The amount of time the supercap can provide power
-  depends on the SBC power consumption and the supercap capacitance, but
-  20F supercapacitors can power a Raspberry Pi 4 for 15--20 seconds which is
-  enough for the operating system to safely shut down itself.
+  depends on the SBC power consumption but
+  a 60F supercapacitor can power a Raspberry Pi 4 for 40 seconds which is
+  more than enough for the operating system to safely shut down itself.
 - Peak power management: The same supercapacitor circuitry is able to provide
   peak current for power-hungry devices such as the Raspberry Pi 4B+, allowing
   those devices to be powered using current-limited subcircuits such as the
   NMEA2000 bus power wires.
-- Protection circuitry: The board is protected against noisy 12V voltages
+- Protection circuitry: The board is protected against noisy 12-24V voltages
   commonly present on marine vessels or vehicles.
 - An optocoupled CAN bus controller, allowing for NMEA 2000 compliant 
   connectivity to boat instrument network.
 - A battery-powered real-time clock circuit, allowing for the device to
   keep time even in absence of GPS or internet connection.
-- ATtiny841 microcontroller that controls the board communicates with
+- ATtiny1614 microcontroller that controls the board communicates with
   the computer using I2C and has pins and memory available for custom
   functionality.
 
@@ -40,10 +41,10 @@ There are two other related repositories:
 [firmware](https://github.com/hatlabs/SH-RPi-firmware) and 
 [daemon](https://github.com/hatlabs/SH-RPi-daemon).
 
-A rendering of Rev.L circuit board:
+A rendering of Rev.M circuit board:
 
-![PCB revision L](images/sailor-hat-revL-render.jpg)
+![PCB revision L](images/SH-RPi-revM-render.jpg)
 
-The PCB layout of Rev.L board:
+The PCB layout of Rev.M board:
 
-![PCB revision G](images/pcb-revL.jpg)
+![PCB revision G](images/SH-RPi-revM-pcb.png)
