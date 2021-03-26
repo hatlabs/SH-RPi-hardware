@@ -24,6 +24,12 @@ K 100mA LDO Regulator Fixed Positive
 F https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf
 $ENDCMP
 #
+$CMP LMR14050SDDA
+D Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8
+K simple-switcher buck step-down voltage-regulator
+F http://www.ti.com/lit/ds/symlink/lmr33640.pdf
+$ENDCMP
+#
 $CMP LMR16030PDDA
 D Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8
 K simple-switcher buck step-down voltage-regulator
