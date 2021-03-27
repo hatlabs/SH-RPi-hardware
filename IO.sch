@@ -120,17 +120,6 @@ NoConn ~ 1550 3500
 NoConn ~ 1550 2800
 NoConn ~ 1550 2900
 NoConn ~ 1550 3000
-$Comp
-L Connector:Raspberry_Pi_2_3 J702
-U 1 1 5FAE04F8
-P 2350 3000
-F 0 "J702" H 2650 4400 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2950 4300 50  0000 C CNN
-F 2 "SH-RPi:PinHeader_RPi-GPIO" H 2350 3000 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2350 3000 50  0001 C CNN
-	1    2350 3000
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1550 2400
 NoConn ~ 1550 3600
 Text GLabel 2150 1450 1    50   BiDi ~ 0
@@ -502,8 +491,6 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3150 2400
-NoConn ~ 3150 2500
 $Comp
 L Device:R R?
 U 1 1 5FD877B8
@@ -532,14 +519,25 @@ F 4 "C21189" H 6750 2700 50  0001 C CNN "LCSC"
 	1    6750 2700
 	0    -1   -1   0   
 $EndComp
-Text Label 3150 3700 0    50   ~ 0
-GPIO12
-Text Label 3150 3800 0    50   ~ 0
-GPIO13
 Text Label 6900 2700 0    50   ~ 0
-GPIO12
+GPIO2
 Text Label 6900 2950 0    50   ~ 0
-GPIO13
-Text Notes 7250 2800 0    50   ~ 0
-Note 2: Also SDA and SCL are on\nnon-standard GPIOs
+GPIO3
+Text Label 3150 2400 0    50   ~ 0
+GPIO2
+Text Label 3150 2500 0    50   ~ 0
+GPIO3
+$Comp
+L Connector:Raspberry_Pi_2_3 J702
+U 1 1 5FAE04F8
+P 2350 3000
+F 0 "J702" H 2650 4400 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2950 4300 50  0000 C CNN
+F 2 "SH-RPi:PinHeader_RPi-GPIO" H 2350 3000 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3150 3700
+NoConn ~ 3150 3800
 $EndSCHEMATC
