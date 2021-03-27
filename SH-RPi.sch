@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
