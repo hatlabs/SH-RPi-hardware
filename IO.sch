@@ -540,4 +540,38 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 $EndComp
 NoConn ~ 3150 3700
 NoConn ~ 3150 3800
+$Comp
+L Connector_Generic:Conn_01x02 J701
+U 1 1 607C5FD4
+P 6800 4050
+F 0 "J701" H 6718 3725 50  0000 C CNN
+F 1 "Conn_01x02" H 6718 3816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4050 50  0001 C CNN
+F 3 "~" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	1    0    0    1   
+$EndComp
+Text GLabel 6450 3950 0    50   BiDi ~ 0
+5V
+$Comp
+L power:GND #PWR?
+U 1 1 607C6AAC
+P 6450 4200
+AR Path="/607C6AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FAD80E5/607C6AAC" Ref="#PWR0709"  Part="1" 
+F 0 "#PWR0709" H 6450 3950 50  0001 C CNN
+F 1 "GND" H 6455 4027 50  0000 C CNN
+F 2 "" H 6450 4200 50  0001 C CNN
+F 3 "" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4200 6450 4050
+Wire Wire Line
+	6450 4050 6600 4050
+Wire Wire Line
+	6450 3950 6600 3950
+Text Notes 7100 4050 0    50   ~ 0
+Extra header connector for\n5V output for fans and similar.
 $EndSCHEMATC
