@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BUK7880-55A
+D 7A Id, 55V Vds, N-Channel Enhancement Mode MOSFET, SOT-223
+K n-channel n channel mosfet enhancement mode
+F https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf
+$ENDCMP
+#
+$CMP GS8051
+D Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifier, TSOT-23-5
+K single opamp
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf
+$ENDCMP
+#
 $CMP GS8052
 D Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8
 K dual opamp
@@ -12,6 +24,12 @@ K 100mA LDO Regulator Fixed Positive
 F https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf
 $ENDCMP
 #
+$CMP LMR14050SDDA
+D Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8
+K simple-switcher buck step-down voltage-regulator
+F http://www.ti.com/lit/ds/symlink/lmr33640.pdf
+$ENDCMP
+#
 $CMP LMR16030PDDA
 D Simple Switcher Buck Regulator, Adjustable output voltage, HSOP-8
 K simple-switcher buck step-down voltage-regulator
@@ -21,6 +39,18 @@ $ENDCMP
 $CMP MCP25625T-E_ML
 D Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN
 F https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf
+$ENDCMP
+#
+$CMP NTA4001N
+D 238mA Id, 20V Vds, N-Channel Enhancement Mode MOSFET, SC-75 (SOT-416)
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSP89-DS-v02_02-en.pdf?fileId=db3a30433b47825b013b4b8a07f90d55
+$ENDCMP
+#
+$CMP OPA188xxDBV
+D Zero-Drift, Precision, Low-Noise, Rail-to-Rail Output, 36-V Operational Amplifier, TSOT-23-5
+K single opamp zero-drift
+F http://www.ti.com/lit/ds/symlink/opa188.pdf
 $ENDCMP
 #
 #End Doc Library

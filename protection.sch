@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -212,10 +212,10 @@ L Device:Fuse F501
 U 1 1 601404CD
 P 1500 1850
 F 0 "F501" V 1303 1850 50  0000 C CNN
-F 1 "12H1200C" V 1394 1850 50  0000 C CNN
+F 1 "12H1250C" V 1394 1850 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" V 1430 1850 50  0001 C CNN
 F 3 "~" H 1500 1850 50  0001 C CNN
-F 4 "C182310" V 1500 1850 50  0001 C CNN "LCSC"
+F 4 "C182444" V 1500 1850 50  0001 C CNN "LCSC"
 	1    1500 1850
 	0    1    1    0   
 $EndComp

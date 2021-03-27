@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -123,14 +123,14 @@ Wire Wire Line
 Text Notes 650  3300 0    50   ~ 0
 Clamp VinS to always\nless than ATT_Vcc
 $Comp
-L Device:D_Schottky D601
+L Device:D D601
 U 1 1 5E237065
 P 750 2700
 F 0 "D601" V 704 2779 50  0000 L CNN
-F 1 "MSK4005" V 795 2779 50  0000 L CNN
+F 1 "1N4148WT" V 795 2779 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-523" H 750 2700 50  0001 C CNN
 F 3 "~" H 750 2700 50  0001 C CNN
-F 4 "C345957" H 750 2700 50  0001 C CNN "LCSC"
+F 4 "C414017" H 750 2700 50  0001 C CNN "LCSC"
 	1    750  2700
 	0    1    1    0   
 $EndComp
