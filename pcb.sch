@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -331,4 +331,6 @@ F 3 "~" H 3100 2850 50  0001 C CNN
 	1    3100 2850
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 1650 0    50   ~ 0
+This mounting hole meant for an optional zip tie\nsupport for the supercap
 $EndSCHEMATC

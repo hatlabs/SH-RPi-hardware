@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -114,10 +114,10 @@ AR Path="/5CF608F8" Ref="C?"  Part="1"
 AR Path="/5C3480BB/5CF608F8" Ref="C?"  Part="1" 
 AR Path="/5CA73F16/5CF608F8" Ref="C201"  Part="1" 
 F 0 "C201" H 3218 1696 50  0000 L CNN
-F 1 "10uF/25V" H 3218 1605 50  0000 L CNN
+F 1 "47uF/6.3V" H 3218 1605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3138 1500 50  0001 C CNN
 F 3 "~" H 3100 1650 50  0001 C CNN
-F 4 "C15850" H 3100 1650 50  0001 C CNN "LCSC"
+F 4 "C16780" H 3100 1650 50  0001 C CNN "LCSC"
 	1    3100 1650
 	1    0    0    -1  
 $EndComp

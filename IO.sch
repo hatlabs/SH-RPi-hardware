@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -120,17 +120,6 @@ NoConn ~ 1550 3500
 NoConn ~ 1550 2800
 NoConn ~ 1550 2900
 NoConn ~ 1550 3000
-$Comp
-L Connector:Raspberry_Pi_2_3 J702
-U 1 1 5FAE04F8
-P 2350 3000
-F 0 "J702" H 2650 4400 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2950 4300 50  0000 C CNN
-F 2 "SH-RPi:PinHeader_RPi-GPIO" H 2350 3000 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2350 3000 50  0001 C CNN
-	1    2350 3000
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1550 2400
 NoConn ~ 1550 3600
 Text GLabel 2150 1450 1    50   BiDi ~ 0
@@ -502,8 +491,6 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    2550 1250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3150 2400
-NoConn ~ 3150 2500
 $Comp
 L Device:R R?
 U 1 1 5FD877B8
@@ -532,14 +519,59 @@ F 4 "C21189" H 6750 2700 50  0001 C CNN "LCSC"
 	1    6750 2700
 	0    -1   -1   0   
 $EndComp
-Text Label 3150 3700 0    50   ~ 0
-GPIO12
-Text Label 3150 3800 0    50   ~ 0
-GPIO13
 Text Label 6900 2700 0    50   ~ 0
-GPIO12
+GPIO2
 Text Label 6900 2950 0    50   ~ 0
-GPIO13
-Text Notes 7250 2800 0    50   ~ 0
-Note 2: Also SDA and SCL are on\nnon-standard GPIOs
+GPIO3
+Text Label 3150 2400 0    50   ~ 0
+GPIO2
+Text Label 3150 2500 0    50   ~ 0
+GPIO3
+$Comp
+L Connector:Raspberry_Pi_2_3 J702
+U 1 1 5FAE04F8
+P 2350 3000
+F 0 "J702" H 2650 4400 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2950 4300 50  0000 C CNN
+F 2 "SH-RPi:PinHeader_RPi-GPIO" H 2350 3000 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3150 3700
+NoConn ~ 3150 3800
+$Comp
+L Connector_Generic:Conn_01x02 J701
+U 1 1 607C5FD4
+P 6800 4050
+F 0 "J701" H 6718 3725 50  0000 C CNN
+F 1 "Conn_01x02" H 6718 3816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4050 50  0001 C CNN
+F 3 "~" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	1    0    0    1   
+$EndComp
+Text GLabel 6450 3950 0    50   BiDi ~ 0
+5V
+$Comp
+L power:GND #PWR?
+U 1 1 607C6AAC
+P 6450 4200
+AR Path="/607C6AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FAD80E5/607C6AAC" Ref="#PWR0709"  Part="1" 
+F 0 "#PWR0709" H 6450 3950 50  0001 C CNN
+F 1 "GND" H 6455 4027 50  0000 C CNN
+F 2 "" H 6450 4200 50  0001 C CNN
+F 3 "" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4200 6450 4050
+Wire Wire Line
+	6450 4050 6600 4050
+Wire Wire Line
+	6450 3950 6600 3950
+Text Notes 7100 4050 0    50   ~ 0
+Extra header connector for\n5V output for fans and similar.
 $EndSCHEMATC

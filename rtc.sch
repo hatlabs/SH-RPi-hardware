@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -119,6 +119,7 @@ F 0 "BT401" H 2680 4342 50  0000 L CNN
 F 1 "CR1220/3V" H 2680 4251 50  0000 L CNN
 F 2 "SH-RPi:BatteryHolder_Myoung_MY-1220-03" H 2600 4300 50  0001 C CNN
 F 3 "~" H 2600 4300 50  0001 C CNN
+F 4 "C964818" H 2600 4300 50  0001 C CNN "LCSC"
 	1    2600 4300
 	-1   0    0    -1  
 $EndComp

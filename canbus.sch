@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-02-08"
-Rev "revM"
+Date "2021-03-27"
+Rev "v0.13.0"
 Comp "Hat Labs Ltd"
 Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
 Comment2 "To view a copy of this license, visit "
@@ -50,7 +50,7 @@ F 0 "U803" H 5950 3650 50  0000 C CNN
 F 1 "MCP2515-xST" H 6750 3650 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6400 1950 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 6500 2050 50  0001 C CNN
-F 4 "C15193" H 6400 2850 50  0001 C CNN "LCSC"
+F 4 "C185941" H 6400 2850 50  0001 C CNN "LCSC"
 	1    6400 2850
 	1    0    0    -1  
 $EndComp
