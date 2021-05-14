@@ -29,6 +29,8 @@ There are two other related repositories:
 [firmware](https://github.com/hatlabs/SH-RPi-firmware) and 
 [daemon](https://github.com/hatlabs/SH-RPi-daemon).
 
+The documentation site is at [hatlabs.github.io/sh-rpi](https://github.io/sh-rpi/). The devices are available for purchase at [hatlabs.fi](https://hatlabs.fi).
+
 A rendering of v1.0.0 circuit board:
 
-![PCB revision L](images/SH-RPi-v1.0.0-render.jpg)
+![PCB v1.0.0](images/SH-RPi-v1.0.0-render.jpg)
