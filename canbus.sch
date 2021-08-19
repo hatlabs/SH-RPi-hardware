@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-04-15"
-Rev "v1.0.0"
+Date "2021-08-19"
+Rev "v1.0.1"
 Comp "Hat Labs Ltd"
-Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment1 "https://creativecommons.org/licenses/by/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0."
 Comment4 ""
 $EndDescr
 Text HLabel 5800 2250 0    50   Input ~ 0
@@ -548,7 +548,7 @@ F 0 "C801" H 2915 6496 50  0000 L CNN
 F 1 "10nF/50V" H 2915 6405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2838 6300 50  0001 C CNN
 F 3 "~" H 2800 6450 50  0001 C CNN
-F 4 "C1523" H 2800 6450 50  0001 C CNN "LCSC"
+F 4 "C15195" H 2800 6450 50  0001 C CNN "LCSC"
 	1    2800 6450
 	1    0    0    -1  
 $EndComp

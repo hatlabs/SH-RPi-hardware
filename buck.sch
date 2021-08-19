@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-04-15"
-Rev "v1.0.0"
+Date "2021-08-19"
+Rev "v1.0.1"
 Comp "Hat Labs Ltd"
-Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment1 "https://creativecommons.org/licenses/by/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0."
 Comment4 ""
 $EndDescr
 $Comp
