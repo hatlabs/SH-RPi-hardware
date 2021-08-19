@@ -141,7 +141,7 @@ Wire Wire Line
 Text HLabel 750  2450 1    50   Input ~ 0
 ATT_Vcc
 Text Notes 750  4000 0    50   ~ 0
-VinS scaled to provide 1.1V for 32V input
+VinS scaled to provide 1.1V for 32.1V input
 Wire Wire Line
 	2250 3050 2400 3050
 Connection ~ 2250 3050
