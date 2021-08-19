@@ -502,7 +502,7 @@ Text Notes 7400 850  0    50   ~ 0
 Current limiting circuit
 Text Notes 2150 3600 0    50   ~ 0
 Buck filter design from WEBENCH
-Text Label 10100 2750 0    50   ~ 0
+Text Label 10700 2750 0    50   ~ 0
 FB
 $Comp
 L Device:D D302
@@ -783,7 +783,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 6750 2900 6750
 Wire Wire Line
-	9800 2750 10100 2750
+	9800 2750 10200 2750
 $Comp
 L Device:R R315
 U 1 1 6034FD63
@@ -1029,4 +1029,17 @@ Wire Wire Line
 Connection ~ 4900 4550
 Wire Wire Line
 	4900 4550 5300 4550
+Wire Wire Line
+	10500 2750 10700 2750
+$Comp
+L Jumper:SolderJumper_2_Bridged JP301
+U 1 1 6133009F
+P 10350 2750
+F 0 "JP301" H 10350 2955 50  0000 C CNN
+F 1 "Bridged" H 10350 2864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 10350 2750 50  0001 C CNN
+F 3 "~" H 10350 2750 50  0001 C CNN
+	1    10350 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
