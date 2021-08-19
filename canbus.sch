@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-04-15"
-Rev "v1.0.0"
+Date "2021-08-19"
+Rev "v1.0.1"
 Comp "Hat Labs Ltd"
-Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment1 "https://creativecommons.org/licenses/by/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0."
 Comment4 ""
 $EndDescr
 Text HLabel 5800 2250 0    50   Input ~ 0
@@ -369,10 +369,10 @@ P 5050 6200
 AR Path="/5C348474/5FB27765" Ref="U802"  Part="1" 
 AR Path="/5E460E30/5FB27765" Ref="U?"  Part="1" 
 F 0 "U802" H 5050 6567 50  0000 C CNN
-F 1 "H7550-H#" H 5050 6476 50  0000 C CNN
+F 1 "PJ75AL50SA" H 5050 6476 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5050 6525 50  0001 C CIN
 F 3 "" H 5050 6300 50  0001 C CNN
-F 4 "C277875" H 5050 6200 50  0001 C CNN "LCSC"
+F 4 "C411735" H 5050 6200 50  0001 C CNN "LCSC"
 	1    5050 6200
 	1    0    0    -1  
 $EndComp
@@ -479,10 +479,10 @@ AR Path="/5CA65CC5/5FB2779F" Ref="C?"  Part="1"
 AR Path="/5C348474/5FB2779F" Ref="C802"  Part="1" 
 AR Path="/5E460E30/5FB2779F" Ref="C?"  Part="1" 
 F 0 "C802" H 4565 6496 50  0000 L CNN
-F 1 "2.2uF/50V" H 4565 6405 50  0000 L CNN
+F 1 "10uF/50V" H 4565 6405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 4488 6300 50  0001 C CNN
 F 3 "~" H 4450 6450 50  0001 C CNN
-F 4 "C50254" H 4450 6450 50  0001 C CNN "LCSC"
+F 4 "C13585" H 4450 6450 50  0001 C CNN "LCSC"
 	1    4450 6450
 	1    0    0    -1  
 $EndComp
@@ -494,10 +494,10 @@ AR Path="/5CA65CC5/5FB277A6" Ref="C?"  Part="1"
 AR Path="/5C348474/5FB277A6" Ref="C805"  Part="1" 
 AR Path="/5E460E30/5FB277A6" Ref="C?"  Part="1" 
 F 0 "C805" H 5815 6496 50  0000 L CNN
-F 1 "2.2uF/16V" H 5815 6405 50  0000 L CNN
+F 1 "10uF/10V" H 5815 6405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 6300 50  0001 C CNN
 F 3 "~" H 5700 6450 50  0001 C CNN
-F 4 "C23630" H 5700 6450 50  0001 C CNN "LCSC"
+F 4 "C19702" H 5700 6450 50  0001 C CNN "LCSC"
 	1    5700 6450
 	1    0    0    -1  
 $EndComp
@@ -548,7 +548,7 @@ F 0 "C801" H 2915 6496 50  0000 L CNN
 F 1 "10nF/50V" H 2915 6405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2838 6300 50  0001 C CNN
 F 3 "~" H 2800 6450 50  0001 C CNN
-F 4 "C1523" H 2800 6450 50  0001 C CNN "LCSC"
+F 4 "C15195" H 2800 6450 50  0001 C CNN "LCSC"
 	1    2800 6450
 	1    0    0    -1  
 $EndComp

@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-04-15"
-Rev "v1.0.0"
+Date "2021-08-19"
+Rev "v1.0.1"
 Comp "Hat Labs Ltd"
-Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment1 "https://creativecommons.org/licenses/by/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0."
 Comment4 ""
 $EndDescr
 Text Label 2100 1850 0    50   ~ 0
@@ -36,10 +36,10 @@ P 5750 1950
 AR Path="/5E467ADC" Ref="Q?"  Part="1" 
 AR Path="/5E460E30/5E467ADC" Ref="Q501"  Part="1" 
 F 0 "Q501" V 6092 1950 50  0000 C CNN
-F 1 "5P40" V 6001 1950 50  0000 C CNN
+F 1 "WST4041" V 6001 1950 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 1875 50  0001 L CIN
 F 3 "" H 5750 1950 50  0001 L CNN
-F 4 "C239051" H 5750 1950 50  0001 C CNN "LCSC"
+F 4 "C148357" H 5750 1950 50  0001 C CNN "LCSC"
 F 5 "5P40, WST4041, PJA3441 or equivalent" V 5750 1950 50  0001 C CNN "Notes"
 	1    5750 1950
 	0    -1   -1   0   

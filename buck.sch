@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "Sailor Hat for Raspberry Pi"
-Date "2021-04-15"
-Rev "v1.0.0"
+Date "2021-08-19"
+Rev "v1.0.1"
 Comp "Hat Labs Ltd"
-Comment1 "https://creativecommons.org/licenses/by-sa/4.0"
+Comment1 "https://creativecommons.org/licenses/by/4.0"
 Comment2 "To view a copy of this license, visit "
-Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY-SA 4.0."
+Comment3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0."
 Comment4 ""
 $EndDescr
 $Comp
@@ -147,10 +147,10 @@ L SH-RPi:HT75xx-1-SOT23 U301
 U 1 1 5E27841B
 P 2300 6850
 F 0 "U301" H 2300 7217 50  0000 C CNN
-F 1 "H7533-H#" H 2300 7126 50  0000 C CNN
+F 1 "PJ75AL33SA" H 2300 7126 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 7175 50  0001 C CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/Siproin-H7533-H_C277872.pdf" H 2300 6950 50  0001 C CNN
-F 4 "C277872" H 2300 6850 50  0001 C CNN "LCSC"
+F 3 "" H 2300 6950 50  0001 C CNN
+F 4 "C411736" H 2300 6850 50  0001 C CNN "LCSC"
 	1    2300 6850
 	1    0    0    -1  
 $EndComp
@@ -159,10 +159,10 @@ L Device:C C302
 U 1 1 5E278894
 P 1700 7000
 F 0 "C302" H 1815 7046 50  0000 L CNN
-F 1 "2.2uF/50V" H 1815 6955 50  0000 L CNN
+F 1 "10uF/50V" H 1815 6955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1738 6850 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
-F 4 "C50254" H 1700 7000 50  0001 C CNN "LCSC"
+F 4 "C13585" H 1700 7000 50  0001 C CNN "LCSC"
 	1    1700 7000
 	1    0    0    -1  
 $EndComp
@@ -171,10 +171,10 @@ L Device:C C303
 U 1 1 5E278F8C
 P 2900 7000
 F 0 "C303" H 3015 7046 50  0000 L CNN
-F 1 "2.2uF/16V" H 3015 6955 50  0000 L CNN
+F 1 "10uF/10V" H 3015 6955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2938 6850 50  0001 C CNN
 F 3 "~" H 2900 7000 50  0001 C CNN
-F 4 "C23630" H 2900 7000 50  0001 C CNN "LCSC"
+F 4 "C19702" H 2900 7000 50  0001 C CNN "LCSC"
 	1    2900 7000
 	1    0    0    -1  
 $EndComp
@@ -502,7 +502,7 @@ Text Notes 7400 850  0    50   ~ 0
 Current limiting circuit
 Text Notes 2150 3600 0    50   ~ 0
 Buck filter design from WEBENCH
-Text Label 10100 2750 0    50   ~ 0
+Text Label 10700 2750 0    50   ~ 0
 FB
 $Comp
 L Device:D D302
@@ -783,7 +783,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 6750 2900 6750
 Wire Wire Line
-	9800 2750 10100 2750
+	9800 2750 10200 2750
 $Comp
 L Device:R R315
 U 1 1 6034FD63
@@ -1029,4 +1029,17 @@ Wire Wire Line
 Connection ~ 4900 4550
 Wire Wire Line
 	4900 4550 5300 4550
+Wire Wire Line
+	10500 2750 10700 2750
+$Comp
+L Jumper:SolderJumper_2_Bridged JP301
+U 1 1 6133009F
+P 10350 2750
+F 0 "JP301" H 10350 2955 50  0000 C CNN
+F 1 "Bridged" H 10350 2864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 10350 2750 50  0001 C CNN
+F 3 "~" H 10350 2750 50  0001 C CNN
+	1    10350 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
