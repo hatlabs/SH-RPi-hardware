@@ -2495,7 +2495,7 @@
     (at 88.196 64.508 -90)
     (descr "SOT-23, Standard")
     (tags "SOT-23")
-    (property "LCSC" "C411735")
+    (property "LCSC" "C277875")
     (property "Sheetfile" "canbus.kicad_sch")
     (property "Sheetname" "CANbus interface")
     (path "/00000000-0000-0000-0000-00005c348474/00000000-0000-0000-0000-00005fb27765")
@@ -2504,7 +2504,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 14309ed0-76e3-47ef-908d-3f87cc66a0a4)
     )
-    (fp_text value "PJ75AL50SA" (at 0 2.5 90) (layer "F.Fab") hide
+    (fp_text value "H7550-H#" (at 0 2.5 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3cb27818-a73d-49bb-b9f9-ede075840922)
     )
@@ -3057,7 +3057,7 @@
     (at 49.276 77.1525 90)
     (descr "SOT-23, Standard")
     (tags "SOT-23")
-    (property "LCSC" "C411736")
+    (property "LCSC" "C277872")
     (property "Sheetfile" "buck.kicad_sch")
     (property "Sheetname" "Buck converter")
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-00005e27841b")
@@ -3066,7 +3066,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f8a2804a-bafd-4113-8476-2d54d15df9b3)
     )
-    (fp_text value "PJ75AL33SA" (at 0 2.5 90) (layer "F.Fab") hide
+    (fp_text value "H7533-H#" (at 0 2.5 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6ef0ba67-c14c-4869-86db-8caf7d618986)
     )

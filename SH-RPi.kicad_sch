@@ -1250,7 +1250,7 @@
       (reference "U201") (unit 1) (value "TPS61022") (footprint "SH-RPi:TPS61022RWUR")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-00005e27841b"
-      (reference "U301") (unit 1) (value "PJ75AL33SA") (footprint "Package_TO_SOT_SMD:SOT-23")
+      (reference "U301") (unit 1) (value "H7533-H#") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-0000606c7606"
       (reference "U302") (unit 1) (value "LMR14050SDDA") (footprint "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias")
@@ -1274,7 +1274,7 @@
       (reference "U602") (unit 1) (value "RCLAMP0524P-N") (footprint "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm")
     )
     (path "/00000000-0000-0000-0000-00005c348474/00000000-0000-0000-0000-00005fb27765"
-      (reference "U802") (unit 1) (value "PJ75AL50SA") (footprint "Package_TO_SOT_SMD:SOT-23")
+      (reference "U802") (unit 1) (value "H7550-H#") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-00005c348474/00000000-0000-0000-0000-00005f392014"
       (reference "U803") (unit 1) (value "MCP2515-xST") (footprint "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm")
