@@ -570,6 +570,7 @@
     )
   )
 
+
   (junction (at 60.96 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 40e5a36c-b036-47ee-9da2-61479a006559)
   )
@@ -882,7 +883,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 41f9fe4b-2a85-4c88-b1a9-6058d8b40c8f)
     (property "Reference" "JP801" (id 0) (at 92.71 69.85 0))
-    (property "Value" "SolderJumper_2_Bridged" (id 1) (at 92.71 72.39 0))
+    (property "Value" "Bridged" (id 1) (at 92.71 72.39 0))
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (id 2) (at 92.71 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -924,6 +925,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PCF8563.pdf" (id 3) (at 127 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C7440" (id 4) (at 127 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 316ae764-da96-437e-819d-a885cc30c99a))
