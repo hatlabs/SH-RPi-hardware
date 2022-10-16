@@ -1146,10 +1146,10 @@
     (path "/00000000-0000-0000-0000-00005e460e30/5eecf980-60be-45f7-921c-485b873d4e53"
       (reference "#PWR0706") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005d6f1c7c/c1ba1538-396e-4565-8fe6-695f810c8eda"
+    (path "/00000000-0000-0000-0000-00005d6f1c7c/00000000-0000-0000-0000-00005c354d0d"
       (reference "#PWR0801") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005d6f1c7c/00000000-0000-0000-0000-00005c354d0d"
+    (path "/00000000-0000-0000-0000-00005d6f1c7c/c1ba1538-396e-4565-8fe6-695f810c8eda"
       (reference "#PWR0802") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005d6f1c7c/cdb0b4c7-bdfd-4772-9fa5-42ccc55e990b"
@@ -1178,9 +1178,6 @@
     )
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/77c5b418-00d5-4fa8-9fc4-c576f779e84f"
       (reference "#PWR01002") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005d6f1c7c/ff8ec47e-e351-4e08-ad7e-6363d993f58f"
-      (reference "BT801") (unit 1) (value "Battery_Cell") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/ad3d750d-7468-4f99-9047-ff116be71c33"
       (reference "C201") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1421,6 +1418,9 @@
     )
     (path "/00000000-0000-0000-0000-00005fad80e5/00000000-0000-0000-0000-0000607c5fd4"
       (reference "J503") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal")
+    )
+    (path "/00000000-0000-0000-0000-00005d6f1c7c/d5be2f0c-ea2f-45f0-98cc-c34bafb9d55c"
+      (reference "J801") (unit 1) (value "Conn_01x03") (footprint "SH-RPi:BatteryHolder_Myoung_MY-1220-03")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-00006133009f"
       (reference "JP301") (unit 1) (value "Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
