@@ -1881,7 +1881,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 0247be20-364d-45da-ad4b-9fc2fd5ed4ea)
-    (at 60.4 54.6 180)
+    (at 61.1 54.4 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C11702")
@@ -2097,7 +2097,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 09b33eba-e444-4ccc-8b3b-86077c4f9b8c)
-    (at 92.7 59.2 180)
+    (at 92.3 59.2 180)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "LCSC" "C2145")
@@ -2359,7 +2359,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 0bb42c86-e1ea-4edd-aaff-dd1cfc9bb815)
-    (at 60.4 52.6 180)
+    (at 61.1 52.4 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C11702")
@@ -2627,7 +2627,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 1430b23b-9583-470f-98b6-bd8f3d025e12)
-    (at 93.7 56.9)
+    (at 93.3 56.9)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C25744")
@@ -3568,7 +3568,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 2f5931d4-5807-419a-aef7-f64bb4888d2e)
-    (at 83.5 80.8)
+    (at 83.5 80)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "LCSC" "C496613")
@@ -3666,7 +3666,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 3b678f47-529e-451c-9373-79f8fac106f4)
-    (at 91.8 56.9 180)
+    (at 91.4 56.9 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C25123")
@@ -3838,7 +3838,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 432c94fc-6c08-48fd-908f-d7ba463c8218)
-    (at 92.7 54.6)
+    (at 92.3 54.6)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "LCSC" "C2145")
@@ -4787,7 +4787,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 6c77079c-8910-4af1-9a70-ee62b9bc3fcc)
-    (at 60.4 53.6 180)
+    (at 61.1 53.4 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C11702")
@@ -5073,7 +5073,7 @@
 
   (footprint "LED_SMD:LED_0603_1608Metric" (layer "F.Cu")
     (tedit 5F68FEF1) (tstamp 7c2d4b01-fc30-48d9-9067-1dbe0ba03750)
-    (at 58.5 57.5 90)
+    (at 58.5 56 90)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "LCSC" "C434422")
@@ -5218,7 +5218,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 81fa9e5b-c8ca-44bd-b401-37987ff29fdd)
-    (at 71.1 79.9 90)
+    (at 71.1 79.2 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "LCSC" "C15525")
@@ -5391,7 +5391,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 85096af0-be85-4ca3-b61e-b13c778bec26)
-    (at 93.7 61.4 180)
+    (at 93.3 61.4 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C25741")
@@ -8227,7 +8227,7 @@
 
   (footprint "LED_SMD:LED_0603_1608Metric" (layer "F.Cu")
     (tedit 5F68FEF1) (tstamp 91dd0d3b-ba01-4010-b75c-eece37dce189)
-    (at 58.5 66.5 90)
+    (at 58.5 67 90)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "LCSC" "C434422")
@@ -9096,7 +9096,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp a3f2057c-0929-46a9-a837-5e72b70e0037)
-    (at 60.4 51.6 180)
+    (at 61.1 51.4 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C11702")
@@ -9362,7 +9362,7 @@
 
   (footprint "LED_SMD:LED_0603_1608Metric" (layer "F.Cu")
     (tedit 5F68FEF1) (tstamp b317c578-a4d6-4d0c-95be-c0607aa57faa)
-    (at 58.5 71 90)
+    (at 58.5 72.5 90)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "LCSC" "C434422")
@@ -11387,7 +11387,7 @@
 
   (footprint "Diode_SMD:D_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEF0) (tstamp eb754a40-044c-4a7f-98a2-8aa1c08fc3ae)
-    (at 67.6 81.1)
+    (at 66.8 81.1)
     (descr "Diode SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "diode")
     (property "LCSC" "C2936977")
@@ -11551,7 +11551,7 @@
 
   (footprint "Diode_SMD:D_SOD-323" (layer "F.Cu")
     (tedit 58641739) (tstamp f3376af3-0771-4aa1-bfe4-077079f88908)
-    (at 93 62.9 180)
+    (at 92.6 62.9 180)
     (descr "SOD-323")
     (tags "SOD-323")
     (property "LCSC" "C188195")
@@ -11601,7 +11601,7 @@
 
   (footprint "LED_SMD:LED_0603_1608Metric" (layer "F.Cu")
     (tedit 5F68FEF1) (tstamp f6ebc276-7930-4376-a063-37c198e7bd94)
-    (at 58.5 62 90)
+    (at 58.5 61.5 90)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED")
     (property "LCSC" "C434422")
@@ -11750,7 +11750,7 @@
 
   (footprint "SH-RPi:BatteryHolder_Myoung_MY-1220-03" (layer "B.Cu")
     (tedit 602140B9) (tstamp 73b7d215-b648-45ae-882f-7ba2dbc77df3)
-    (at 94.6 85.7 180)
+    (at 93 85.695 180)
     (descr "http://www.keyelco.com/product-pdf.cfm?p=777")
     (tags "Keystone type 3000 coin cell retainer")
     (property "LCSC" "C964818")
