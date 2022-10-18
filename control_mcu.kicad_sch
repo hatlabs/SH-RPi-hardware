@@ -1828,7 +1828,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x06_Odd_Even") (at 243.84 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2cd113fa-73ea-4ff8-af5a-ad509f5dd567)
-    (property "Reference" "J403" (id 0) (at 245.11 63.5 0))
+    (property "Reference" "J402" (id 0) (at 245.11 63.5 0))
     (property "Value" "Conn_02x06_Odd_Even" (id 1) (at 245.11 66.04 0))
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (id 2) (at 243.84 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
