@@ -53,7 +53,7 @@
   (pad 2 thru_hole oval (at 2.5 0) (size 1.7 1.95) (drill 0.95) (layers *.Cu *.Mask))
   (pad 3 thru_hole oval (at 5 0) (size 1.7 1.95) (drill 0.95) (layers *.Cu *.Mask))
   (pad 4 thru_hole oval (at 7.5 0) (size 1.7 1.95) (drill 0.95) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
