@@ -1329,7 +1329,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bcbc4da2-57f3-4a75-b62f-ab60b4e57fdb)
   )
-  (label "EN_OUT" (at 238.76 74.93 180)
+  (label "EN5V" (at 238.76 74.93 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ca27b3fd-e7db-4f47-beeb-a5772cbce5ba)
   )

@@ -1163,7 +1163,7 @@
     (uuid fb31663d-9a4a-4567-b514-5f7455c655db)
   )
 
-  (hierarchical_label "Vcap" (shape input) (at 35.56 36.83 180)
+  (hierarchical_label "Vcap" (shape bidirectional) (at 35.56 36.83 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 896d8f79-0a7f-42f7-8d94-923c29cb0e58)
   )

@@ -383,10 +383,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 59008674-6ee7-43cd-8012-839b059c9e25)
   )
-  (text "TODO:\n- Adjustable input current limit" (at 26.67 172.72 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 698a27dc-574b-43aa-b1e8-559b00d98581)
-  )
   (text "5-9.0V\n0-5V at startup" (at 111.76 24.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7ea2a909-8909-44cb-ae0b-7032eb7c0b1a)
@@ -850,7 +846,7 @@
     (property "Sheet file" "supercap.kicad_sch" (id 1) (at 138.43 66.6246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "Vcap" input (at 138.43 55.88 180)
+    (pin "Vcap" bidirectional (at 138.43 55.88 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 361e52b1-a97c-45e1-abe3-517d6c132e8a)
     )
@@ -911,6 +907,15 @@
     )
     (path "/2d5cee90-a290-4eac-8944-8afb2eee9b63"
       (reference "#PWR0102") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005fad80e5/bcd1e7ea-5edf-41a5-9d99-738e4757802d"
+      (reference "#PWR0103") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005fad80e5/956808d3-38cf-43dc-8743-89e78b34e404"
+      (reference "#PWR0104") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005fad80e5/ef697c2b-9e96-48db-a7db-89c6875d132f"
+      (reference "#PWR0105") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/a05d97bd-a33d-470c-9892-c1cf207a2e85"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
@@ -1082,9 +1087,6 @@
     )
     (path "/00000000-0000-0000-0000-00005fad80e5/00000000-0000-0000-0000-00005fae04d0"
       (reference "#PWR0506") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005fad80e5/00000000-0000-0000-0000-00005fb6095a"
-      (reference "#PWR0507") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005fad80e5/00000000-0000-0000-0000-00005fae04d6"
       (reference "#PWR0508") (unit 1) (value "GND") (footprint "")
@@ -1264,7 +1266,7 @@
       (reference "C801") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005d6f1c7c/1e12aa0a-af7b-4ec9-8391-e60862673027"
-      (reference "C802") (unit 1) (value "22pF C0G") (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (reference "C802") (unit 1) (value "22pF C0G") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005d6f1c7c/00000000-0000-0000-0000-00005c353cb0"
       (reference "C803") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -1438,10 +1440,10 @@
       (reference "J801") (unit 1) (value "Conn_01x03") (footprint "SH-RPi:BatteryHolder_Myoung_MY-1220-03")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-00006133009f"
-      (reference "JP301") (unit 1) (value "Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
+      (reference "JP301") (unit 1) (value "Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
     )
     (path "/00000000-0000-0000-0000-00005d6f1c7c/41f9fe4b-2a85-4c88-b1a9-6058d8b40c8f"
-      (reference "JP801") (unit 1) (value "Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
+      (reference "JP801") (unit 1) (value "Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/d27e0b46-198f-4720-bcf0-61d37886764a"
       (reference "L201") (unit 1) (value "FXL0420-1R0-M") (footprint "SH-RPi:L_MWSA0402")
