@@ -6,8 +6,8 @@
 
   (title_block
     (title "Sailor Hat for Raspberry Pi")
-    (date "2022-10-14")
-    (rev "v2.0.0-alpha")
+    (date "2022-10-21")
+    (rev "v2.0.0-a1")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by/4.0")
     (comment 2 "To view a copy of this license, visit ")
@@ -902,7 +902,7 @@
     (uuid 41f9fe4b-2a85-4c88-b1a9-6058d8b40c8f)
     (property "Reference" "JP801" (id 0) (at 92.71 69.85 0))
     (property "Value" "Bridged" (id 1) (at 92.71 72.39 0))
-    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" (id 2) (at 92.71 76.2 0)
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" (id 2) (at 92.71 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 92.71 76.2 0)
