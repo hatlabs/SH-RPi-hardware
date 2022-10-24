@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.5,
-          "width": 1.0
+          "height": 3.3,
+          "width": 2.41
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -407,7 +407,6 @@
           "/Buck converter stage 1/B1_VIN",
           "/Buck converter stage 1/SW",
           "/Buck converter stage 2/SW",
-          "/Protection/Vin_EMI",
           "/Protection/Vin_fused",
           "/Vcap",
           "/Vin",
