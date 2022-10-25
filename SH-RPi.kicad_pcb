@@ -7,7 +7,7 @@
   (paper "A4")
   (title_block
     (title "Sailor Hat for Raspberry Pi")
-    (date "2022-10-21")
+    (date "2022-10-25")
     (rev "v2.0.0-a1")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by/4.0")
