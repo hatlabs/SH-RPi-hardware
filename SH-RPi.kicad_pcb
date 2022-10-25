@@ -3733,7 +3733,7 @@
     (property "Sheetfile" "File: supercap.kicad_sch")
     (property "Sheetname" "Supercapacitor")
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/4207b452-9273-453b-9d2d-a687a28ad5f7")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "C1006" (at 0 2.375) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1ed6b780-2709-4661-b3a5-bf1d8771359e)
@@ -5246,8 +5246,9 @@
     (at 60.5 47.4)
     (property "Sheetfile" "File: pcb.kicad_sch")
     (property "Sheetname" "PCB")
+    (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005fb38ede/6160e2aa-5552-4931-b5da-90d297cd700f")
-    (attr through_hole)
+    (attr through_hole exclude_from_bom)
     (fp_text reference "P601" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 4fd4c113-9cf8-475b-a200-cb599d23c501)
@@ -7380,7 +7381,7 @@
     (property "Sheetfile" "File: supercap.kicad_sch")
     (property "Sheetname" "Supercapacitor")
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/237c0b3d-c64c-40a6-9a2c-f22f8f86084f")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "C1004" (at 0 2.375) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d1b0e8d3-0bac-4add-ab31-fa3223535f11)
@@ -8037,7 +8038,7 @@
     (property "Sheetfile" "File: supercap.kicad_sch")
     (property "Sheetname" "Supercapacitor")
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/1665eedb-5ca4-47f2-9440-f9da62ee61c2")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "C1005" (at 0 2.375) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ca0269c6-93fa-4da3-a05d-491883f0a6f9)
@@ -8102,8 +8103,9 @@
     (at 71.7 89.4 180)
     (property "Sheetfile" "File: pcb.kicad_sch")
     (property "Sheetname" "PCB")
+    (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005fb38ede/30a978c7-b1a6-4dfe-a168-16698c407c8a")
-    (attr through_hole)
+    (attr through_hole exclude_from_bom)
     (fp_text reference "P605" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
       (tstamp 939719f3-4e8b-4139-821b-c0b81d4c1281)
@@ -8648,8 +8650,9 @@
     (at 88.9 64.2 180)
     (property "Sheetfile" "File: pcb.kicad_sch")
     (property "Sheetname" "PCB")
+    (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005fb38ede/e949165b-417b-43d3-a191-840c5afd9396")
-    (attr through_hole)
+    (attr through_hole exclude_from_bom)
     (fp_text reference "P602" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
       (tstamp b29e3a99-f8e1-4dd2-a1f1-c54d984e1447)
@@ -9660,8 +9663,9 @@
     (tags "Logo OSHW")
     (property "Sheetfile" "File: pcb.kicad_sch")
     (property "Sheetname" "PCB")
+    (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005fb38ede/030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "P603" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp ba8ea96f-627d-4d3d-a079-a2c0f3e1afeb)
@@ -11100,8 +11104,9 @@
     (tags "Logo WEEE")
     (property "Sheetfile" "File: pcb.kicad_sch")
     (property "Sheetname" "PCB")
+    (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005fb38ede/60bf939f-3ea5-4054-80ff-a7458ab6bf99")
-    (attr exclude_from_pos_files)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "P604" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 41d9aeb6-7f02-4580-bd26-2cfd806028df)
