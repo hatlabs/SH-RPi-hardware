@@ -89,7 +89,7 @@
   )
 
   (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7)
     (property "Reference" "P603" (id 0) (at 168.91 81.2799 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -140,7 +140,7 @@
   )
 
   (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 107.95 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 30a978c7-b1a6-4dfe-a168-16698c407c8a)
     (property "Reference" "P605" (id 0) (at 168.91 109.2199 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -157,7 +157,7 @@
   )
 
   (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 60bf939f-3ea5-4054-80ff-a7458ab6bf99)
     (property "Reference" "P604" (id 0) (at 168.91 95.2499 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -174,7 +174,7 @@
   )
 
   (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 52.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 6160e2aa-5552-4931-b5da-90d297cd700f)
     (property "Reference" "P601" (id 0) (at 168.91 53.3399 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -225,7 +225,7 @@
   )
 
   (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid e949165b-417b-43d3-a191-840c5afd9396)
     (property "Reference" "P602" (id 0) (at 168.91 67.3099 0)
       (effects (font (size 1.27 1.27)) (justify left))
