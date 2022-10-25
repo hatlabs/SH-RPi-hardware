@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 4.9,
-          "width": 2.95
+          "height": 3.3,
+          "width": 2.41
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -48,7 +48,13 @@
           "min_clearance": 0.19999999999999998
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -80,7 +86,7 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
@@ -100,28 +106,28 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.049999999999999996,
-        "min_hole_clearance": 0.0,
-        "min_hole_to_hole": 0.25,
+        "min_clearance": 0.09,
+        "min_copper_edge_clearance": 0.19999999999999998,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.09999999999999999,
-        "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.39999999999999997,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.44999999999999996,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
-        0.1,
         0.2,
         0.25,
         0.4,
         0.6,
         1.0,
-        1.5
+        1.5,
+        2.0
       ],
       "via_dimensions": [
         {
@@ -129,11 +135,15 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.5,
+          "drill": 0.2
+        },
+        {
           "diameter": 0.6,
           "drill": 0.3
         },
         {
-          "diameter": 0.6,
+          "diameter": 0.8,
           "drill": 0.4
         },
         {
@@ -378,8 +388,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.4,
+        "via_diameter": 0.5,
+        "via_drill": 0.2,
         "wire_width": 6.0
       },
       {
@@ -393,13 +403,21 @@
         "microvia_drill": 0.3,
         "name": "Power",
         "nets": [
+          "+5V",
+          "/Buck converter stage 1/B1_VIN",
+          "/Buck converter stage 1/SW",
+          "/Buck converter stage 2/SW",
+          "/Protection/Vin_fused",
+          "/Vcap",
+          "/Vin",
+          "/Vin_prot",
           "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.6,
-        "via_diameter": 1.0,
-        "via_drill": 0.6,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6.0
       }
     ],
@@ -466,15 +484,11 @@
     ],
     [
       "00000000-0000-0000-0000-00005ca73f16",
-      "Boost converter"
+      "Buck converter stage 2"
     ],
     [
       "00000000-0000-0000-0000-00005ca65cc5",
-      "Buck converter"
-    ],
-    [
-      "00000000-0000-0000-0000-00005c348474",
-      "CANbus interface"
+      "Buck converter stage 1"
     ],
     [
       "00000000-0000-0000-0000-00005c33ff90",
@@ -495,6 +509,14 @@
     [
       "00000000-0000-0000-0000-00005d6f1c7c",
       "RTC"
+    ],
+    [
+      "caa47269-ff8c-4597-a222-89999085b9d0",
+      "LDO regulator"
+    ],
+    [
+      "ecd2763a-3907-4788-8647-bdc5ef5ca119",
+      "Supercapacitor"
     ]
   ],
   "text_variables": {}
