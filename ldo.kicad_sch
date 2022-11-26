@@ -623,7 +623,7 @@
     (in_bom yes) (on_board yes)
     (uuid 0d9a3ec5-bc34-40f0-9d57-6c2d1636fc89)
     (property "Reference" "C903" (id 0) (at 127.381 73.7616 0)
-      (effects (font (size 0 0)) (justify left))
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF/6.3V" (id 1) (at 127.381 76.073 0)
       (effects (font (size 1.27 1.27)) (justify left))
