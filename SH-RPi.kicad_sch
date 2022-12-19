@@ -932,9 +932,6 @@
     (path "/00000000-0000-0000-0000-00005ca73f16/a128b796-c75a-43ab-a515-18841bf564cc"
       (reference "#PWR0209") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-0000601e934b"
-      (reference "#PWR0301") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005ca65cc5/23b7d8a5-30a4-4e1c-9ec1-54840cf2afb3"
       (reference "#PWR0302") (unit 1) (value "GND") (footprint "")
     )
@@ -1169,6 +1166,12 @@
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/77c5b418-00d5-4fa8-9fc4-c576f779e84f"
       (reference "#PWR01002") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/329e1863-0322-465a-a15d-6f8df5e84412"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/4ee9999f-c63a-40c5-b75c-4f7c9bdc97c5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005ca73f16/ad3d750d-7468-4f99-9047-ff116be71c33"
       (reference "C201") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
@@ -1183,9 +1186,6 @@
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/181d2c3c-f5a2-46f5-8919-63547902efc4"
       (reference "C205") (unit 1) (value "47uF/6.3V") (footprint "Capacitor_SMD:C_1210_3225Metric")
-    )
-    (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-0000601e9344"
-      (reference "C301") (unit 1) (value "2.2uF/50V") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/0061083b-62c8-45b2-8bd0-338a4278ca39"
       (reference "C302") (unit 1) (value "1uF/50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1282,6 +1282,12 @@
     )
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/4207b452-9273-453b-9d2d-a687a28ad5f7"
       (reference "C1006") (unit 1) (value "CAS SCAP 3.0V20F") (footprint "SH-RPi:CP_Radial_D12.0mm_H25.0mm_P5.30mm_Horizontal")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/0ba733e6-e7d4-44be-af8d-ee251eb7ebc3"
+      (reference "C?") (unit 1) (value "10uF/50V") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/f1c7f2a9-6e05-4c9f-ae92-15ff8b41227b"
+      (reference "C?") (unit 1) (value "10uF/50V") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/472be2ab-fa48-438d-94de-cd06d6735910"
       (reference "D201") (unit 1) (value "1N4148WT") (footprint "Diode_SMD:D_SOD-523")
