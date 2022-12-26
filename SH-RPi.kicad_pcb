@@ -1500,7 +1500,7 @@
     (at 116.25 70.65 180)
     (descr "Diode SMA (DO-214AC)")
     (tags "Diode SMA (DO-214AC)")
-    (property "LCSC" "C65009")
+    (property "LCSC" "C5125733")
     (property "Sheetfile" "File: buck_stage_1.kicad_sch")
     (property "Sheetname" "Buck converter stage 1")
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-000060423559")
@@ -1509,7 +1509,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a2dc8827-113a-41d3-8f29-e977131487c6)
     )
-    (fp_text value "SS56" (at 0 2.6) (layer "F.Fab") hide
+    (fp_text value "SSL56F" (at 0 2.6) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 72bbd121-30ff-4633-8079-674012909915)
     )
