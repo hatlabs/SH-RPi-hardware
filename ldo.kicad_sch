@@ -544,7 +544,7 @@
     (property "Reference" "TP901" (id 0) (at 121.92 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LLDO" (id 1) (at 121.92 77.47 0)
+    (property "Value" "3V3" (id 1) (at 121.92 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 127 83.82 0)

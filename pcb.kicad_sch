@@ -233,7 +233,7 @@
     (property "Value" "Hat Labs logo" (id 1) (at 168.91 69.8499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SH-RPi:Hat_Labs_63.5mm" (id 2) (at 162.56 66.04 0)
+    (property "Footprint" "SH-RPi:Hat_Labs_25.4mm" (id 2) (at 162.56 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 162.56 66.04 0)

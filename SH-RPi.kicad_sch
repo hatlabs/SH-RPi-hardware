@@ -920,11 +920,23 @@
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-00005ca62dc4"
       (reference "#PWR0321") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005ca65cc5/f3843f5a-14ca-4b50-9840-6669ebe8b42d"
+    (path "/00000000-0000-0000-0000-00005ca65cc5/35422753-0eb8-49be-a2f1-0249ce0fc1f7"
       (reference "#PWR0322") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005ca65cc5/e386294a-0a64-48a0-bde0-018823c80b90"
+    (path "/00000000-0000-0000-0000-00005ca65cc5/0d7038a1-dab4-4eee-af8a-aba296146511"
       (reference "#PWR0323") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/45ed70f7-0e61-408f-91d4-57eb2f405802"
+      (reference "#PWR0324") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/f3843f5a-14ca-4b50-9840-6669ebe8b42d"
+      (reference "#PWR0325") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/e386294a-0a64-48a0-bde0-018823c80b90"
+      (reference "#PWR0326") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/df7639d9-f159-4939-9db2-55bfa6cac348"
+      (reference "#PWR0327") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005fd96f07"
       (reference "#PWR0401") (unit 1) (value "GND") (footprint "")
@@ -1136,6 +1148,15 @@
     (path "/00000000-0000-0000-0000-00005ca65cc5/42ca263b-af93-4e7f-b9a0-440b0b03fac7"
       (reference "C312") (unit 1) (value "10nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/2e0e64f4-b2c4-4380-9c5c-ce7d0f6bbd4f"
+      (reference "C313") (unit 1) (value "CG") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/3183bc3b-99e9-4d29-9a1c-13f0f4a3ae39"
+      (reference "C314") (unit 1) (value "CFB") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/9950eb95-4a02-4860-b33d-42a0b876d311"
+      (reference "C315") (unit 1) (value "Ccomp") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005fda159a"
       (reference "C401") (unit 1) (value "33pF 50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
@@ -1341,7 +1362,7 @@
       (reference "P601") (unit 1) (value "HL pictogram") (footprint "SH-RPi:HL_pictogram_6.3mm")
     )
     (path "/00000000-0000-0000-0000-00005fb38ede/e949165b-417b-43d3-a191-840c5afd9396"
-      (reference "P602") (unit 1) (value "Hat Labs logo") (footprint "SH-RPi:Hat_Labs_63.5mm")
+      (reference "P602") (unit 1) (value "Hat Labs logo") (footprint "SH-RPi:Hat_Labs_25.4mm")
     )
     (path "/00000000-0000-0000-0000-00005fb38ede/030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7"
       (reference "P603") (unit 1) (value "OSHW logo") (footprint "Symbol:OSHW-Logo_11.4x12mm_SilkScreen")
@@ -1430,11 +1451,26 @@
     (path "/00000000-0000-0000-0000-00005ca65cc5/9420766e-3f21-4904-af86-795a7bbb9589"
       (reference "R314") (unit 1) (value "3.3k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/b7624d2a-39ec-4197-a858-e01e329daae2"
+      (reference "R315") (unit 1) (value "RG") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/95bdab42-96a7-492b-88b7-f1a38dbf4156"
+      (reference "R316") (unit 1) (value "ROut") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/3072c066-d92d-4fcd-a9aa-e8d658ad8510"
+      (reference "R317") (unit 1) (value "RFBH") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/fe4ea87d-87fc-48d6-90b4-8596648c7f5e"
+      (reference "R318") (unit 1) (value "RFBL") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-00005ca65cc5/a8497f02-b67e-421e-8b4a-a3fd80f47d39"
-      (reference "R315") (unit 1) (value "7.5k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R319") (unit 1) (value "7.5k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/84f3ad91-c477-4d64-abbf-804831545a1f"
-      (reference "R316") (unit 1) (value "3.9k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R320") (unit 1) (value "3.9k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/a72ae1d0-c1f6-4849-a199-809315d98ce9"
+      (reference "R321") (unit 1) (value "Rcomp") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005cf4ff7c"
       (reference "R401") (unit 1) (value "56k") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -1535,6 +1571,12 @@
     (path "/ecd2763a-3907-4788-8647-bdc5ef5ca119/1514d3f0-4ca0-4471-b064-68248b458231"
       (reference "R1018") (unit 1) (value "300k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/00000000-0000-0000-0000-00005ca73f16/e78c1ee9-f0b2-4f84-b18e-004e8583cafe"
+      (reference "TP201") (unit 1) (value "SW2") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/00000000-0000-0000-0000-00005ca65cc5/cc913fc5-56e1-4383-9d82-7078140ae2c0"
+      (reference "TP301") (unit 1) (value "SW1") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
     (path "/00000000-0000-0000-0000-00005fad80e5/dd2f14f8-6f04-4bfb-a338-fc47139b8999"
       (reference "TP501") (unit 1) (value "SDA") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
@@ -1542,7 +1584,7 @@
       (reference "TP502") (unit 1) (value "SCL") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/caa47269-ff8c-4597-a222-89999085b9d0/c1589cad-403a-490c-b683-115c450a268f"
-      (reference "TP901") (unit 1) (value "LLDO") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+      (reference "TP901") (unit 1) (value "3V3") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/00000000-0000-0000-0000-00005ca73f16/2b9b36fb-ca5c-4f9c-b291-7508ca57c57b"
       (reference "U201") (unit 1) (value "RT6365") (footprint "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias")
