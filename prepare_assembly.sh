@@ -11,7 +11,7 @@ kikit panelize \
     --layout 'grid; rows: 1; cols: 1; space: 2mm' \
     --tabs 'annotation' \
     --cuts 'vcuts; layer: Edge.Cuts' \
-    --framing 'railstb; width: 5mm; space: 2 mm' \
+    --framing 'frame; width: 5mm; space: 2 mm' \
     --tooling '4hole; hoffset: 2.5mm; voffset: 2.5mm; size: 1.152mm' \
     --fiducials '4fid; hoffset: 5mm; voffset: 3.85mm; coppersize: 2mm; opening: 1mm;' \
     --text 'simple; text: JLCJLCJLCJLC; anchor: mt; voffset: 2.5mm; hjustify: center; vjustify: center;' \
