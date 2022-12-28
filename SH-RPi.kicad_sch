@@ -1350,7 +1350,7 @@
       (reference "J101") (unit 1) (value "Conn_01x02") (footprint "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/79c8a821-5a55-45c5-908f-e9b54af77df3"
-      (reference "J301") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical")
+      (reference "J301") (unit 1) (value "Conn_02x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/f4911843-2d64-4726-ab2c-ceee3ff7080a"
       (reference "J401") (unit 1) (value "Conn_02x02_Top_Bottom") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical")

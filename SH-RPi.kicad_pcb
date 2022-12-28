@@ -5724,7 +5724,7 @@
     (at 106 58.5)
     (descr "Through hole straight pin header, 2x02, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x02 2.54mm double row")
-    (property "LCSC" "C152150")
+    (property "LCSC" "C492419")
     (property "Sheetfile" "buck_stage_1.kicad_sch")
     (property "Sheetname" "Buck converter stage 1")
     (path "/00000000-0000-0000-0000-00005ca65cc5/79c8a821-5a55-45c5-908f-e9b54af77df3")
@@ -5733,7 +5733,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b8147d0b-c438-42ec-b458-ed003660858e)
     )
-    (fp_text value "Conn_01x04" (at 1.27 4.87) (layer "F.Fab") hide
+    (fp_text value "Conn_02x02" (at 1.27 4.87) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5c93e45f-7ced-4310-b4ab-d90675579876)
     )
