@@ -8661,7 +8661,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/3072c066-d92d-4fcd-a9aa-e8d658ad8510")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "R317" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 25cf15f0-df70-41d4-90c5-29328bd38c0a)
@@ -8705,7 +8705,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/fe4ea87d-87fc-48d6-90b4-8596648c7f5e")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "R318" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp ab8206c8-09ca-44af-9d79-8ed8778b0c9a)
@@ -8749,7 +8749,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/95bdab42-96a7-492b-88b7-f1a38dbf4156")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "R316" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp aec3fcc0-8880-4a7f-907c-51344c84f7dc)
@@ -11320,7 +11320,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/b7624d2a-39ec-4197-a858-e01e329daae2")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "R315" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 751a7979-f56a-418b-8fac-420604fb1bbc)
@@ -11364,7 +11364,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/a72ae1d0-c1f6-4849-a199-809315d98ce9")
-    (attr exclude_from_bom)
+    (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "R321" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp c5ef3608-760d-4d47-a1bc-c3048bf266e2)
@@ -11996,7 +11996,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/9950eb95-4a02-4860-b33d-42a0b876d311")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "C315" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 44b45da0-d001-4665-9307-5a0e62b1ce6b)
@@ -12039,7 +12039,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/2e0e64f4-b2c4-4380-9c5c-ce7d0f6bbd4f")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "C313" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp fab70a26-0fba-48c0-b682-2d8b27f21068)
@@ -12111,7 +12111,7 @@
     (property "Sheetname" "Buck converter stage 1")
     (property "exclude_from_bom" "")
     (path "/00000000-0000-0000-0000-00005ca65cc5/3183bc3b-99e9-4d29-9a1c-13f0f4a3ae39")
-    (attr smd exclude_from_bom)
+    (attr smd exclude_from_pos_files exclude_from_bom)
     (fp_text reference "C314" (at 0 1.43) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 3c0c266e-dbbd-4266-b38a-21d4e541d856)
