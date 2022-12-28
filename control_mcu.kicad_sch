@@ -706,7 +706,6 @@
   )
 
   (no_connect (at 163.83 73.66) (uuid 8979b7b6-be44-4bb5-96e8-f9020e579e35))
-  (no_connect (at 163.83 96.52) (uuid fbf839ab-031f-42c8-a202-fc374b80d26a))
 
   (wire (pts (xy 217.17 73.66) (xy 229.87 73.66))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -904,6 +903,10 @@
     (uuid 5d37372b-6ee0-4c2d-a478-692cf7788aa3)
   )
 
+  (wire (pts (xy 163.83 96.52) (xy 170.18 96.52))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 5dcc2cb5-ed4c-4b43-826e-601407a0590b)
+  )
   (wire (pts (xy 229.87 72.39) (xy 238.76 72.39))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 5f6eea7c-789c-4950-848b-6a7680d1f60d)
@@ -1324,6 +1327,10 @@
   (hierarchical_label "TXD5" (shape input) (at 251.46 69.85 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 88c615e0-753a-4ebf-b0a9-01dc23ad7e1e)
+  )
+  (hierarchical_label "RGPIO4" (shape bidirectional) (at 170.18 96.52 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 8e24fb06-6b62-474d-8046-f00713a95b2c)
   )
   (hierarchical_label "Vin_prot" (shape input) (at 64.77 104.14 90)
     (effects (font (size 1.27 1.27)) (justify left))

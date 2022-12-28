@@ -712,7 +712,7 @@
     (uuid fd6af701-ab37-4240-85bd-333e41d8c623)
   )
 
-  (text "Cut the solder jumper\nto disable RTC" (at 85.09 64.77 0)
+  (text "Cut the solder jumper\nto disable the RTC" (at 85.09 64.77 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 20e6f076-6a03-4dea-a733-3eca3e88124c)
   )
