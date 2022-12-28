@@ -1,0 +1,13 @@
+"Expression","X correction","Y correction","Rotation"
+"^COS1333TR$",0,0,-90
+":Boomelec_XH-2AW_1x02_P2.50mm_",1.25,0,180
+":PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_",1.905,0,0
+":PinHeader_1x04_P2.54mm_",0,3.81,90
+":PinHeader_2x02_P2.54mm_",1.27,1.27,90
+":PinHeader_2x06_P2.54mm_",1.27,6.35,90
+":SOIC-8_3.9x4.9mm_P1.27mm",0,0,-90
+":SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_",0,0,-90
+":SOT-23",0,0,180
+":SS5U100_TO-277",0.8,0,0
+":Texas_HSOP-8-1EP_3.9x4.9mm",0,0,-90
+":VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm",0,0,-90
