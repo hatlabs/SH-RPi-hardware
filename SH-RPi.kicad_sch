@@ -1260,7 +1260,7 @@
       (reference "D302") (unit 1) (value "1N4148WT") (footprint "Diode_SMD:D_SOD-523")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/00000000-0000-0000-0000-000060423559"
-      (reference "D303") (unit 1) (value "SSL56F") (footprint "Diode_SMD:D_SMA")
+      (reference "D303") (unit 1) (value "SS56FL") (footprint "Diode_SMD:D_SMA")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/9fa7de3f-b47b-4fe7-a7e1-3b4dc2cf23c3"
       (reference "D304") (unit 1) (value "BZT52C3V3S") (footprint "Diode_SMD:D_SOD-323")
