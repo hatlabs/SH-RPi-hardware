@@ -749,7 +749,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a1068235-1ba8-4330-9363-055e1ab14228)
     )
-    (fp_text value "GZ2012D101TF" (at 0 1.55) (layer "F.Fab") hide
+    (fp_text value "GZ2012D601TF" (at 0 1.55) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3718d2b9-9595-4bc6-b359-6570ea4ac0f7)
     )
@@ -826,7 +826,7 @@
     (at 102.3 80.5)
     (descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "fuse")
-    (property "LCSC" "C354899")
+    (property "LCSC" "C140479")
     (property "Sheetfile" "protection.kicad_sch")
     (property "Sheetname" "Protection")
     (path "/00000000-0000-0000-0000-00005e460e30/00000000-0000-0000-0000-0000601404cd")
@@ -835,7 +835,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp eeaa97f6-4e75-48c3-bef0-7901478aa46d)
     )
-    (fp_text value "1206T4A63V" (at 0 1.82) (layer "F.Fab") hide
+    (fp_text value "12T.40000063AG12S1B02" (at 0 1.82) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fa3b621f-8268-4d33-b9ba-86adc3b12ed0)
     )
@@ -1627,7 +1627,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bbb037f3-e266-4aa3-b3fb-bf2859aea60c)
     )
-    (fp_text value "GZ2012D101TF" (at 0 1.55 90) (layer "F.Fab") hide
+    (fp_text value "GZ2012D601TF" (at 0 1.55 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 88ae43d5-8fa5-419b-9813-460baab064d0)
     )

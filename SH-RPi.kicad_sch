@@ -1305,13 +1305,13 @@
       (reference "D1003") (unit 1) (value "1N5819WS") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/00000000-0000-0000-0000-00005e460e30/00000000-0000-0000-0000-0000601404cd"
-      (reference "F701") (unit 1) (value "1206T4A63V") (footprint "Fuse:Fuse_1206_3216Metric")
+      (reference "F701") (unit 1) (value "12T.40000063AG12S1B02") (footprint "Fuse:Fuse_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005fda284b"
-      (reference "FB401") (unit 1) (value "GZ2012D101TF") (footprint "Inductor_SMD:L_0805_2012Metric")
+      (reference "FB401") (unit 1) (value "GZ2012D601TF") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/9ac1bcff-64b3-41fc-8549-d1eba5db2f7d"
-      (reference "FB402") (unit 1) (value "GZ2012D101TF") (footprint "Inductor_SMD:L_0805_2012Metric")
+      (reference "FB402") (unit 1) (value "GZ2012D601TF") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005fb38ede/0646eda9-562b-477b-8970-4ce9fe455d7e"
       (reference "H601") (unit 1) (value "MountingHole") (footprint "SH-RPi:MountingHole_Pi_2.75mm_M2.5")
