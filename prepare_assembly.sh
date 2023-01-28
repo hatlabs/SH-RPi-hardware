@@ -5,11 +5,11 @@ set -euo pipefail
 
 # Create a 1x1 "panel" with top and bottom rails
 
-echo "✛ Panelizing..."
+echo "↔️ Panelizing..."
 
 kikit panelize \
     --layout 'grid; rows: 1; cols: 1; space: 2mm' \
-    --tabs 'annotation' \
+    --tabs 'fixed; vwidth: 55mm; hwidth:46.5mm; vcount: 1; hcount: 1' \
     --cuts 'vcuts; layer: Edge.Cuts' \
     --framing 'frame; width: 5mm; space: 2 mm' \
     --tooling '4hole; hoffset: 2.5mm; voffset: 2.5mm; size: 1.152mm' \
@@ -21,6 +21,9 @@ kikit panelize \
     #--tabs 'fixed; width: 5mm; vcount: 2; hcount: 2' \
 
 # --no-drc 
+
+echo "🔩 Generating fabrication files..."
+
 kikit fab jlcpcb \
     --no-drc \
     --assembly \
