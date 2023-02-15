@@ -6,8 +6,8 @@
 
   (title_block
     (title "Sailor Hat for Raspberry Pi")
-    (date "2023-01-28")
-    (rev "v2.0.0-a4")
+    (date "2023-02-12")
+    (rev "v2.0.0")
     (company "Hat Labs Ltd")
     (comment 1 "https://creativecommons.org/licenses/by/4.0")
     (comment 2 "To view a copy of this license, visit ")
@@ -73,7 +73,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (id 5) (at 0 0 0)
@@ -945,10 +945,10 @@
       (reference "#PWR0321") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/f3843f5a-14ca-4b50-9840-6669ebe8b42d"
-      (reference "#PWR0325") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0322") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/e386294a-0a64-48a0-bde0-018823c80b90"
-      (reference "#PWR0326") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0323") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005fd96f07"
       (reference "#PWR0401") (unit 1) (value "GND") (footprint "")
@@ -1373,11 +1373,14 @@
     (path "/00000000-0000-0000-0000-00005fb38ede/030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7"
       (reference "P603") (unit 1) (value "OSHW logo") (footprint "Symbol:OSHW-Logo_11.4x12mm_SilkScreen")
     )
-    (path "/00000000-0000-0000-0000-00005fb38ede/60bf939f-3ea5-4054-80ff-a7458ab6bf99"
-      (reference "P604") (unit 1) (value "WEEE logo") (footprint "Symbol:WEEE-Logo_4.2x6mm_SilkScreen")
-    )
     (path "/00000000-0000-0000-0000-00005fb38ede/30a978c7-b1a6-4dfe-a168-16698c407c8a"
-      (reference "P605") (unit 1) (value "cc-by logo") (footprint "SH-RPi:cc-by_5mm")
+      (reference "P604") (unit 1) (value "cc-by logo") (footprint "SH-RPi:cc-by_5mm")
+    )
+    (path "/00000000-0000-0000-0000-00005fb38ede/60bf939f-3ea5-4054-80ff-a7458ab6bf99"
+      (reference "P605") (unit 1) (value "WEEE logo") (footprint "Symbol:WEEE-Logo_4.2x6mm_SilkScreen")
+    )
+    (path "/00000000-0000-0000-0000-00005fb38ede/531b8c70-40ec-4f81-84cf-40370327f4e7"
+      (reference "P606") (unit 1) (value "CE logo") (footprint "Symbol:CE-Logo_8.5x6mm_SilkScreen")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/f0bf893f-6c1b-43cc-93f2-9f70b3fc69fc"
       (reference "Q301") (unit 1) (value "MMBT5551") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -1458,10 +1461,10 @@
       (reference "R314") (unit 1) (value "3.3k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/a8497f02-b67e-421e-8b4a-a3fd80f47d39"
-      (reference "R319") (unit 1) (value "7.5k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R315") (unit 1) (value "7.5k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005ca65cc5/84f3ad91-c477-4d64-abbf-804831545a1f"
-      (reference "R320") (unit 1) (value "3.9k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R316") (unit 1) (value "3.9k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005c33ff90/00000000-0000-0000-0000-00005cf4ff7c"
       (reference "R401") (unit 1) (value "56k") (footprint "Resistor_SMD:R_0402_1005Metric")
