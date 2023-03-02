@@ -1,0 +1,34 @@
+Drill report for SH-RPi-panel.kicad_pcb
+Created on Wednesday 15. February 2023 at 19.17.08
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'SH-RPi-panel.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.200mm  0.0079"  (1184 holes)
+    T2  0.200mm  0.0079"  (48 holes)
+    T3  0.300mm  0.0118"  (76 holes)
+    T4  0.400mm  0.0157"  (96 holes)
+    T5  0.600mm  0.0236"  (104 holes)
+    T6  1.000mm  0.0394"  (104 holes)
+    T7  1.100mm  0.0433"  (160 holes)
+    T8  1.200mm  0.0472"  (16 holes)
+
+    Total plated holes count 1788
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T9  1.152mm  0.0454"  (4 holes)
+    T10  2.000mm  0.0787"  (8 holes)
+    T11  2.750mm  0.1083"  (16 holes)
+
+    Total unplated holes count 28
