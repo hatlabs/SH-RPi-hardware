@@ -3,6 +3,8 @@
 set -euo pipefail
 #shopt -s inherit_errexit
 
+BOARD=SH-RPi
+
 echo "Panelizing..."
 
 kikit panelize \
@@ -14,7 +16,7 @@ kikit panelize \
     --fiducials '4fid; hoffset: 5mm; voffset: 3.85mm; coppersize: 2mm; opening: 1mm;' \
     --text 'simple; text: JLCJLCJLCJLC; anchor: mt; voffset: 2.5mm; hoffset: 20mm; hjustify: center; vjustify: center;' \
     --post 'millradius: 1mm' \
-    SH-RPi.kicad_pcb SH-RPi-panel.kicad_pcb
+    ${BOARD}.kicad_pcb ${BOARD}-panel.kicad_pcb
 # ./panelize.py
 
 echo "Generating fabrication files..."
@@ -23,8 +25,8 @@ kikit fab jlcpcb \
     --no-drc \
     --assembly \
     --correctionpatterns footprint_correction_patterns.csv \
-    --schematic SH-RPi.kicad_sch \
-    SH-RPi-panel.kicad_pcb \
+    --schematic ${BOARD}.kicad_sch \
+    ${BOARD}-panel.kicad_pcb \
     assembly-panel
 
     
