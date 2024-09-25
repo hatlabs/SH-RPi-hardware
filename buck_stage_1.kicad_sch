@@ -5389,7 +5389,7 @@
 				)
 			)
 		)
-		(property "Value" "FXL0530-3R3-M"
+		(property "Value" "SLO0530H3R3MTT"
 			(at 147.32 119.4054 90)
 			(effects
 				(font
@@ -5442,7 +5442,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C475518"
+		(property "LCSC" "C325963"
 			(at 147.32 121.92 0)
 			(effects
 				(font
