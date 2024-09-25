@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "(6.0.10-0)"
+      "Version": "8.0.5"
     },
-    "CreationDate": "2023-02-15T19:17:08+02:00"
+    "CreationDate": "2024-09-25T12:57:29+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "SH-RPi-panel",
       "GUID": "53482d52-5069-42d7-9061-6e656c2e6b69",
-      "Revision": "v2.0.0"
+      "Revision": "v2.0.1"
     },
     "Size": {
-      "X": 155.4,
-      "Y": 138.4
+      "X": 85.3,
+      "Y": 261.3
     },
     "LayerNumber": 4,
     "BoardThickness": 1.5896,
@@ -24,8 +24,8 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.09,
-      "PadToTrack": 0.09,
+      "PadToPad": 0.127,
+      "PadToTrack": 0.127,
       "TrackToTrack": 0.127,
       "MinLineWidth": 0.2,
       "TrackToRegion": 0.2,
