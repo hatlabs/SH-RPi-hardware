@@ -20,15 +20,13 @@ kikit panelize \
 
     #--tabs 'fixed; width: 5mm; vcount: 2; hcount: 2' \
 
-# --no-drc 
+# --no-drc
 
 echo "🔩 Generating fabrication files..."
 
 kikit fab jlcpcb \
     --no-drc \
     --assembly \
-    --correctionpatterns footprint_correction_patterns.csv \
     --schematic SH-RPi.kicad_sch \
     SH-RPi-panel.kicad_pcb \
     assembly-panel
-    

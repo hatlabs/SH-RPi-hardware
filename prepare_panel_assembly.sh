@@ -8,7 +8,7 @@ BOARD=SH-RPi
 echo "Panelizing..."
 
 kikit panelize \
-    --layout 'grid; rows: 2; cols: 2; space: 5mm' \
+    --layout 'grid; rows: 4; cols: 1; space: 5mm' \
     --tabs 'fixed; vwidth: 55mm; hwidth:46.5mm; vcount: 1; hcount: 1' \
     --cuts 'vcuts; layer: Edge.Cuts' \
     --framing 'frame; width: 5mm; space: 2 mm' \
@@ -24,10 +24,9 @@ echo "Generating fabrication files..."
 kikit fab jlcpcb \
     --no-drc \
     --assembly \
-    --correctionpatterns footprint_correction_patterns.csv \
     --schematic ${BOARD}.kicad_sch \
     ${BOARD}-panel.kicad_pcb \
     assembly-panel
 
-    
+
 echo "Done."
