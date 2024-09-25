@@ -1,330 +1,836 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 9ca189d1-2874-4b6e-890a-aff8e4c0ca19)
-
-  (paper "A4")
-
-  (title_block
-    (title "Sailor Hat for Raspberry Pi")
-    (date "2023-02-12")
-    (rev "v2.0.0")
-    (company "Hat Labs Ltd")
-    (comment 1 "https://creativecommons.org/licenses/by/4.0")
-    (comment 2 "To view a copy of this license, visit ")
-    (comment 3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0.")
-  )
-
-  (lib_symbols
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "SH-RPi:SilkScreenPicture" (in_bom yes) (on_board yes)
-      (property "Reference" "P" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SilkScreenPicture" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SilkScreenPicture_0_1"
-        (rectangle (start -5.08 2.54) (end 5.08 -7.62)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 2.54)
-            (xy 5.08 -7.62)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 2.54)
-            (xy -5.08 -7.62)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-
-  (text "Raspberry Pi\nmounting holes" (at 50.8 45.72 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid fba33eda-3de6-4cd7-87e4-dc293d623145)
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 80.01 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7)
-    (property "Reference" "P603" (at 168.91 81.2799 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "OSHW logo" (at 168.91 83.8199 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:OSHW-Logo_11.4x12mm_SilkScreen" (at 162.56 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P603") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 53.34 53.34 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0646eda9-562b-477b-8970-4ce9fe455d7e)
-    (property "Reference" "H601" (at 55.88 52.0699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 55.88 54.6099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5" (at 53.34 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "H601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 53.34 60.96 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0ed2137c-f3d4-42c0-85ba-f9f508443804)
-    (property "Reference" "H602" (at 55.88 59.6899 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 55.88 62.2299 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5" (at 53.34 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "H602") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 93.98 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 30a978c7-b1a6-4dfe-a168-16698c407c8a)
-    (property "Reference" "P604" (at 168.91 95.2499 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "cc-by logo" (at 168.91 97.7899 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:cc-by_5mm" (at 162.56 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P604") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 121.92 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 531b8c70-40ec-4f81-84cf-40370327f4e7)
-    (property "Reference" "P606" (at 168.91 123.1899 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CE logo" (at 168.91 125.7299 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:CE-Logo_8.5x6mm_SilkScreen" (at 162.56 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P606") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 107.95 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 60bf939f-3ea5-4054-80ff-a7458ab6bf99)
-    (property "Reference" "P605" (at 168.91 109.2199 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "WEEE logo" (at 168.91 111.7599 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" (at 162.56 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P605") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 52.07 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6160e2aa-5552-4931-b5da-90d297cd700f)
-    (property "Reference" "P601" (at 168.91 53.3399 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "HL pictogram" (at 168.91 55.8799 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:HL_pictogram_6.3mm" (at 162.56 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P601") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 53.34 76.2 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 65045675-d442-4434-94f4-825cf614a21c)
-    (property "Reference" "H604" (at 55.88 74.9299 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 55.88 77.4699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5" (at 53.34 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "H604") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 53.34 68.58 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid da6ab390-bdfb-455f-9593-eb05b8553c45)
-    (property "Reference" "H603" (at 55.88 67.3099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 55.88 69.8499 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5" (at 53.34 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "H603") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "SH-RPi:SilkScreenPicture") (at 162.56 66.04 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e949165b-417b-43d3-a191-840c5afd9396)
-    (property "Reference" "P602" (at 168.91 67.3099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Hat Labs logo" (at 168.91 69.8499 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SH-RPi:Hat_Labs_25.4mm" (at 162.56 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 162.56 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "SH-RPi"
-        (path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
-          (reference "P602") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9ca189d1-2874-4b6e-890a-aff8e4c0ca19")
+	(paper "A4")
+	(title_block
+		(title "Sailor Hat for Raspberry Pi")
+		(date "2024-09-25")
+		(rev "v2.0.1")
+		(company "Hat Labs Ltd")
+		(comment 1 "https://creativecommons.org/licenses/by/4.0")
+		(comment 2 "To view a copy of this license, visit ")
+		(comment 3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0.")
+	)
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "SH-RPi:SilkScreenPicture"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "P"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SilkScreenPicture"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SilkScreenPicture_0_1"
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy -5.08 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(text "Raspberry Pi\nmounting holes"
+		(exclude_from_sim no)
+		(at 50.8 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fba33eda-3de6-4cd7-87e4-dc293d623145")
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "030514f1-eeb6-48a0-b1bd-e4d09f1a2ca7")
+		(property "Reference" "P603"
+			(at 168.91 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OSHW logo"
+			(at 168.91 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:OSHW-Logo_11.4x12mm_SilkScreen"
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 53.34 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0646eda9-562b-477b-8970-4ce9fe455d7e")
+		(property "Reference" "H601"
+			(at 55.88 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 55.88 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5"
+			(at 53.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "H601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 53.34 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ed2137c-f3d4-42c0-85ba-f9f508443804")
+		(property "Reference" "H602"
+			(at 55.88 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 55.88 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5"
+			(at 53.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "H602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30a978c7-b1a6-4dfe-a168-16698c407c8a")
+		(property "Reference" "P604"
+			(at 168.91 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "cc-by logo"
+			(at 168.91 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:cc-by_5mm"
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P604")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "531b8c70-40ec-4f81-84cf-40370327f4e7")
+		(property "Reference" "P606"
+			(at 168.91 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CE logo"
+			(at 168.91 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:CE-Logo_8.5x6mm_SilkScreen"
+			(at 162.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60bf939f-3ea5-4054-80ff-a7458ab6bf99")
+		(property "Reference" "P605"
+			(at 168.91 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WEEE logo"
+			(at 168.91 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Symbol:WEEE-Logo_4.2x6mm_SilkScreen"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P605")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6160e2aa-5552-4931-b5da-90d297cd700f")
+		(property "Reference" "P601"
+			(at 168.91 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HL pictogram"
+			(at 168.91 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 53.34 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65045675-d442-4434-94f4-825cf614a21c")
+		(property "Reference" "H604"
+			(at 55.88 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 55.88 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5"
+			(at 53.34 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "H604")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 53.34 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da6ab390-bdfb-455f-9593-eb05b8553c45")
+		(property "Reference" "H603"
+			(at 55.88 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 55.88 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:MountingHole_Pi_2.75mm_M2.5"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "H603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SH-RPi:SilkScreenPicture")
+		(at 162.56 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e949165b-417b-43d3-a191-840c5afd9396")
+		(property "Reference" "P602"
+			(at 168.91 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Hat Labs logo"
+			(at 168.91 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SH-RPi:Hat_Labs_25.4mm"
+			(at 162.56 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SH-RPi"
+				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005fb38ede"
+					(reference "P602")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
