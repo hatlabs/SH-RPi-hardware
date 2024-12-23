@@ -1689,7 +1689,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "buck_stage_5V.kicad_sch"
+		(property "Sheetfile" "buck_5V.kicad_sch"
 			(at 154.94 42.4946 0)
 			(effects
 				(font
