@@ -1621,7 +1621,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "buck_stage_1.kicad_sch"
+		(property "Sheetfile" "buck_8.8V.kicad_sch"
 			(at 74.93 43.7646 0)
 			(effects
 				(font
@@ -1680,7 +1680,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-00005ca73f16")
-		(property "Sheetname" "Buck converter stage 2"
+		(property "Sheetname" "Buck converter 5V"
 			(at 154.94 28.4984 0)
 			(effects
 				(font
@@ -1689,7 +1689,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "buck_stage_2.kicad_sch"
+		(property "Sheetfile" "buck_5V.kicad_sch"
 			(at 154.94 42.4946 0)
 			(effects
 				(font
@@ -2079,7 +2079,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "ldo.kicad_sch"
+		(property "Sheetfile" "ldo_3.3V.kicad_sch"
 			(at 106.68 66.6246 0)
 			(effects
 				(font
