@@ -2664,7 +2664,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MSK340A"
+		(property "Value" "MBRA340T3G-FS"
 			(at 148.082 140.843 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2708,7 +2708,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C434027"
+		(property "LCSC" "C5563736"
 			(at 146.05 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -3456,7 +3456,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C36871"
+		(property "LCSC" "C137947"
 			(at 203.2 135.89 0)
 			(hide yes)
 			(show_name no)
