@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "SH-RPi")(type "KiCad")(uri "${KIPRJMOD}/SH-RPi.kicad_sym")(options "")(descr ""))
+  (lib (name "EasyEDA_Lib")(type "EasyEDA (JLCEDA) Pro")(uri "${KIPRJMOD}/EasyEDA_Lib/EasyEDA_Lib.elibz")(options "")(descr ""))
 )
